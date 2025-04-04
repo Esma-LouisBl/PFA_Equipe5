@@ -699,7 +699,7 @@ MonoBehaviour:
   textComponent: {fileID: 2142022792}
   lines:
   - Bonjour
-  - oui je le savais tu
+  - oui
   textSpeed: 0.05
 --- !u!1 &2142022790
 GameObject:
