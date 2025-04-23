@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e6a862dae1ccf488ae4d4570f9f88c, type: 3}
-  m_Name: George
+  m_Script: {fileID: 11500000, guid: 653a19eafa2e9bf43bf155c64d39467e, type: 3}
+  m_Name: 1
   m_EditorClassIdentifier: 
-  speakerName: George
-  textColor: {r: 0.6739578, g: 0, b: 1, a: 1}
+  labels:
+  - text: Manger
+    nextScene: {fileID: 0}
+  - text: Feur
+    nextScene: {fileID: 0}

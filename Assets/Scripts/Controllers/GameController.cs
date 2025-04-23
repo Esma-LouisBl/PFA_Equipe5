@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     public BackgroundController backgroundController;
     public ChooseController chooseController;
 
-    private State state = State.IDLE;
+    private State _state = State.IDLE;
 
     private enum State
     {
@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            if (state == State.IDLE && bottomBar.IsCompleted())
+            if (_state == State.IDLE && bottomBar.IsCompleted())
             {
                 if (bottomBar.IsLastSentence())
                 {
@@ -51,7 +51,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator SwitchScene(GameScene scene)
     {
-        state = State.ANIMATE;
+        _state = State.ANIMATE;
         currentScene = scene;
         bottomBar.Hide();
         yield return new WaitForSeconds(1f);
@@ -64,11 +64,11 @@ public class GameController : MonoBehaviour
             bottomBar.Show();
             yield return new WaitForSeconds(1f);
             bottomBar.PlayScene(storyScene);
-            state = State.IDLE;
+            _state = State.IDLE;
         }
         else if (scene is ChooseScene)
         {
-            state = State.CHOOSE;
+            _state = State.CHOOSE;
             chooseController.SetupChoose(scene as ChooseScene);
         }
     }

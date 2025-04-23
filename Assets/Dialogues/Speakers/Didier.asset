@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e6a862dae1ccf488ae4d4570f9f88c, type: 3}
-  m_Name: Author
+  m_Script: {fileID: 11500000, guid: f41b93f82b1515146896b9cbe680119e, type: 3}
+  m_Name: Didier
   m_EditorClassIdentifier: 
-  speakerName: 
-  textColor: {r: 0, g: 0, b: 0, a: 0}
+  speakerName: Didier
+  textColor: {r: 0.3915936, g: 0.6792453, b: 0.3236027, a: 0}
