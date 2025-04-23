@@ -18,8 +18,20 @@ MonoBehaviour:
     - responseText: Mal
       nextNode:
         dialogueText: "Courage \xE7a ira mieux demain"
-        responses: []
+        responses:
+        - responseText: test
+          nextNode:
+            dialogueText: 
+            responses: []
+        - responseText: test
+          nextNode:
+            dialogueText: 
+            responses: []
     - responseText: "Tr\xE8s mal"
       nextNode:
         dialogueText: Tant pis
-        responses: []
+        responses:
+        - responseText: Fermer Dialogue
+          nextNode:
+            dialogueText: 
+            responses: []
