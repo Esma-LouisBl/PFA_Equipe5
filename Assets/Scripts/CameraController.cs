@@ -1,28 +1,30 @@
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 public class CameraController : MonoBehaviour
 {
+    private Transform playerCamera;
+    private float xRotation = 0f;
 
-    public float Sensitivity
+    public float sensitivity = 2f;
+
+
+    void Start()
     {
-        get { return sensitivity; }
-        set { sensitivity = value; }
+        playerCamera = Camera.main.transform;
+        Cursor.lockState = CursorLockMode.Locked;
     }
-    [Range(0.1f, 9f)][SerializeField] float sensitivity = 2f;
-    [Range(0f, 90f)][SerializeField] float yRotationLimit = 88f;
-
-    Vector2 rotation = Vector2.zero;
-    const string xAxis = "Mouse X"; //Strings in direct code generate garbage, storing and re-using them creates no garbage
-    const string yAxis = "Mouse Y";
 
     void Update()
     {
-        rotation.x += Input.GetAxis(xAxis) * sensitivity;
-        rotation.y += Input.GetAxis(yAxis) * sensitivity;
-        rotation.y = Mathf.Clamp(rotation.y, -yRotationLimit, yRotationLimit);
-        var xQuat = Quaternion.AngleAxis(rotation.x, Vector3.up);
-        var yQuat = Quaternion.AngleAxis(rotation.y, Vector3.left);
+        // Rotation de la caméra
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 
-        transform.localRotation = xQuat * yQuat; //Quaternions seem to rotate more consistently than EulerAngles. Sensitivity seemed to change slightly at certain degrees using Euler. transform.localEulerAngles = new Vector3(-rotation.y, rotation.x, 0);
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        transform.Rotate(Vector3.up * mouseX);
     }
 }
