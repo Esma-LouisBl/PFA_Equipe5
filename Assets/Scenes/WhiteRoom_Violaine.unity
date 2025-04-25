@@ -552,7 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _customCursor: {fileID: 2800000, guid: 9ebb9b12cafb3e6419f278e4d7e7fcaa, type: 3}
   _cameraPivot: {fileID: 69325267}
-  _speed: 2
+  _speed: 20
 --- !u!1 &1388464553
 GameObject:
   m_ObjectHideFlags: 0
