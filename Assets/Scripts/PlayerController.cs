@@ -1,46 +1,42 @@
-using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float movementSpeed = 20f;
-    private float rotationSpeed = 350f;
-    [SerializeField]
-    private float distance = 1.5f;
-    [SerializeField]
-    private Transform playerTransform;
+    [SerializeField] private float movementSpeed = 20f;
+    [SerializeField] private float rotationSpeed = 350f;
+    [SerializeField] private float distance = 1.5f;
+    [SerializeField] private CursorController cursorController;
+    [SerializeField] private LayerMask waypointLayer;
 
-    [SerializeField]
-    private LayerMask waypointLayer;
     private Vector3 waypointPosition;
     private Quaternion targetRotation;
 
     private bool isMoving = false;
-    private bool isRotating = false;
-    private bool playerCanMove = true; // Test
+    public bool isRotating = false;
+
     void Update()
     {
-        if (playerCanMove)
+        if (GameManager.Instance.PlayerCanMove)
         {
             if (!isMoving && !isRotating)
             {
                 if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
-                    targetRotation = Quaternion.Euler(0f, playerTransform.eulerAngles.y - 90f, 0f);
+                    targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y - 90f, 0f);
                     isRotating = true;
                 }
                 else if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
-                    targetRotation = Quaternion.Euler(0f, playerTransform.eulerAngles.y + 90f, 0f);
+                    targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y + 90f, 0f);
                     isRotating = true;
                 }
                 else if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
-                    TryToMove(playerTransform.forward);
+                    TryToMove(transform.forward);
                 }
                 else if (Input.GetKeyDown(KeyCode.DownArrow))
                 {
-                    TryToMove(-playerTransform.forward);
+                    TryToMove(-transform.forward);
                 }
             }
 
@@ -55,6 +51,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
     private void TryToMove(Vector3 direction)
     {
         Ray ray = new Ray(transform.position, direction);
@@ -65,6 +62,7 @@ public class PlayerController : MonoBehaviour
             isMoving = true;
         }
     }
+
     private void Move()
     {
         transform.position = Vector3.MoveTowards(transform.position, waypointPosition, movementSpeed * Time.deltaTime);
@@ -78,11 +76,16 @@ public class PlayerController : MonoBehaviour
 
     private void Rotation()
     {
-        playerTransform.rotation = Quaternion.RotateTowards(playerTransform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        cursorController.EnableCursor(false);
 
-        if (Quaternion.Angle(playerTransform.rotation, targetRotation) < 1f)
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+        if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
         {
-            playerTransform.rotation = targetRotation;
+            transform.rotation = targetRotation;
+
+            cursorController.EnableCursor(true);
+
             isRotating = false;
         }
     }

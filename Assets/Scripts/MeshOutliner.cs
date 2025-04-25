@@ -4,7 +4,6 @@ using UnityEngine.EventSystems;
 public class MeshOutliner : MonoBehaviour
 {
     private Transform highlight;
-    private Transform selection;
     private RaycastHit raycastHit;
 
     void Update()
@@ -19,6 +18,7 @@ public class MeshOutliner : MonoBehaviour
         if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit))
         {
             highlight = raycastHit.transform;
+
             if (highlight.CompareTag("Selectable"))
             {
                 if (highlight.gameObject.GetComponent<Outline>() != null)

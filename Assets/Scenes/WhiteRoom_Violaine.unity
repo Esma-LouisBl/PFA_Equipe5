@@ -329,6 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 307157155}
+  - component: {fileID: 307157156}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -351,6 +352,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &307157156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307157154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6785049f0d96b428406198568b7d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerCanMove: 1
 --- !u!1 &408295055
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1290757954}
   - component: {fileID: 1290757955}
+  - component: {fileID: 1290757956}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -495,14 +510,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290757953}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.56, y: 4.32, z: 21.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 69325267}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1290757955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,11 +530,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366107af60a45db4b8e3ae1d6fbc69a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 20
+  rotationSpeed: 350
   distance: 50
-  playerTransform: {fileID: 1290757954}
+  cursorController: {fileID: 1290757956}
   waypointLayer:
     serializedVersion: 2
     m_Bits: 64
+  isRotating: 0
+--- !u!114 &1290757956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290757953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bc672136ca1a04d80a71b4de25ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _customCursor: {fileID: 2800000, guid: 9ebb9b12cafb3e6419f278e4d7e7fcaa, type: 3}
+  _cameraPivot: {fileID: 69325267}
+  _speed: 2
 --- !u!1 &1388464553
 GameObject:
   m_ObjectHideFlags: 0
