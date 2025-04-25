@@ -4,5 +4,5 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public bool PlayerIsMoving;
+    public bool playerCanMove;
 }
