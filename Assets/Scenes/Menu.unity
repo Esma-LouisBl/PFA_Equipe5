@@ -530,7 +530,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.9254902, g: 0.6627451, b: 0.3294118, a: 1}
+  m_Color: {r: 0.21902815, g: 0.29650438, b: 0.4339623, a: 1}
   m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
@@ -1134,7 +1134,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.5529412, g: 0.5882353, b: 0.36078432, a: 1}
+  m_Color: {r: 0.38863945, g: 0.4433962, b: 0.33254716, a: 1}
   m_Intensity: 5
   m_Range: 5
   m_SpotAngle: 30
@@ -1388,7 +1388,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 0
-  m_Color: {r: 1, g: 0.96852994, b: 0.4764151, a: 1}
+  m_Color: {r: 0.6603774, g: 0.64034796, b: 0.41429335, a: 1}
   m_Intensity: 5
   m_Range: 3.0821245
   m_SpotAngle: 106.427086
@@ -1612,7 +1612,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.5529412, g: 0.5882353, b: 0.36078432, a: 1}
+  m_Color: {r: 0.38863945, g: 0.4433962, b: 0.33254716, a: 1}
   m_Intensity: 5
   m_Range: 5
   m_SpotAngle: 30
@@ -1733,7 +1733,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 0
-  m_Color: {r: 1, g: 0.96852994, b: 0.4764151, a: 1}
+  m_Color: {r: 0.6603774, g: 0.64034796, b: 0.41429335, a: 1}
   m_Intensity: 5
   m_Range: 3.0821245
   m_SpotAngle: 106.427086
@@ -1962,7 +1962,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 1733
+  m_ColorTemperature: 12626
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
