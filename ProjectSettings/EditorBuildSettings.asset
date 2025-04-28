@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f82d831f9f1aadc4a887c0c97b4b24af
   - enabled: 1
-    path: Assets/Scenes/WhiteRoom.unity
+    path: Assets/Scenes/WhiteRoom_Dialogue.unity
     guid: 6af2c6704686c9f4a993b9ab56e1db12
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
