@@ -3,7 +3,7 @@ using UnityEngine;
 public class CursorController : MonoBehaviour
 {
     [SerializeField] 
-    Texture2D _customCursor;
+    private Texture2D _customCursor;
 
     [SerializeField] 
     private Transform _cameraPivot;
