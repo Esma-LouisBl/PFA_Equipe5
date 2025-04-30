@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
+    public Image personImage;
 
     private int sentenceIndex = -1;
     private StoryScene currentScene;
@@ -56,6 +58,8 @@ public class BottomBarController : MonoBehaviour
         StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+
+        personImage.sprite = currentScene.sentences[sentenceIndex].speaker.sprite;
     }
 
     public bool IsCompleted()
