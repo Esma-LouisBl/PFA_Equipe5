@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DeadZoneCamera : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class DeadZoneCamera : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField]
     private CursorController cursorController;
 
     private float _baseSpeed;
+    [SerializeField] private float _highSpeed;
 
     private void Awake()
     {
@@ -15,11 +16,6 @@ public class DeadZoneCamera : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        cursorController._speed = _baseSpeed;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        cursorController._speed = 3f;
+        cursorController._speed = _highSpeed;
     }
 }
