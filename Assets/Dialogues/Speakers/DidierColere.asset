@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Didier
   textColor: {r: 0.39215687, g: 0.6784314, b: 0.3254902, a: 0}
-  sprite: {fileID: 21300000, guid: e7d2f80f58d92c348a48f13889d673d6, type: 3}
+  material: {fileID: 2100000, guid: dbfb4a7e22c79e14c8735c69b22b837d, type: 2}

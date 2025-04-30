@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
+    public MeshRenderer plane;
+
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
-    public Image personImage;
 
     private int sentenceIndex = -1;
     private StoryScene currentScene;
@@ -59,7 +60,7 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
-        personImage.sprite = currentScene.sentences[sentenceIndex].speaker.sprite;
+        plane.material = currentScene.sentences[sentenceIndex].speaker.material;
     }
 
     public bool IsCompleted()
