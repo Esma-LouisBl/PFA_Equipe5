@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 389e5006096ea7248bfe7b77ea98b3cd
+guid: bd9cc865eb2b6b246a7a9bb860031b4b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface4
-    second: {fileID: 2100000, guid: 1dde86327cf6ba540b653bc585604e49, type: 2}
+      name: PaperCut
+    second: {fileID: 2100000, guid: 5e8883bbe433051448fef18a5cf02dcc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
