@@ -20,6 +20,6 @@ public class DeadZoneCamera : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        cursorController._speed = _baseSpeed*3;
+        cursorController._speed = 3f;
     }
 }
