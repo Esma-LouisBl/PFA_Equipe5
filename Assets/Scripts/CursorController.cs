@@ -9,7 +9,7 @@ public class CursorController : MonoBehaviour
     private Transform _cameraPivot;
 
     [SerializeField] 
-    private float _speed = 8f;
+    public float _speed = 8f;
     private float maxAngleX = 10f;
     private float maxAngleY = 10f;
 
