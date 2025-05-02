@@ -9,16 +9,29 @@ public class TestimoniesController : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI _textPeter, _textHolly, _textOliver;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    [SerializeField]
+    private GameObject _window;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (_window.activeSelf)
+            {
+                _window.SetActive(false);
+            }
+            else
+            {
+                _window.SetActive(true);
+            }
+        }
     }
     public void UploadPeter()
     {
         _textPeter.text = "";
         foreach (string testimony in testimoniesPeter)
         {
+            _textPeter.text += "- ";
             _textPeter.text += testimony;
             _textPeter.text += "\n";
         }

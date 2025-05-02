@@ -18,6 +18,6 @@ MonoBehaviour:
     testimony: 
   - text: Tu veux faire quoi ?
     speaker: {fileID: 11400000, guid: 09d1ebd9b3f6a134ba357cc75e43d5f5, type: 2}
-    testimony: coupable
+    testimony: il mange du pain
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: ec653d3b374221d408db5c177e47d902, type: 2}
