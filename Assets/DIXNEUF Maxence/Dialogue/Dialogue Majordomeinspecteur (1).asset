@@ -49,7 +49,8 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
   - text: "pas de probl\xE8me"
     speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
-  - text: 
-    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  - text: "\u201Cbaille\u201D je n\u2019ai pas fermer les yeux de la nuit avec cette
+      affaire, je pourrais bien aller dormir"
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 6be0cf439045dbd44a86114de57faa42, type: 2}

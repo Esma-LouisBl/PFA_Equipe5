@@ -19,4 +19,4 @@ MonoBehaviour:
   - text: "Bien s\xFBr, en quoi puis-je \xEAtre utile ?"
     speaker: {fileID: 11400000, guid: 6cb4669cfc1a9bb4ca785e5818db3391, type: 2}
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 9618693d1a9220e4281a1c9c278d3b70, type: 2}

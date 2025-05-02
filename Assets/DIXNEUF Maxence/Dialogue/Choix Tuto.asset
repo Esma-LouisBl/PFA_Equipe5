@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: Aller Dormir
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: f8da04de60da8f74b983e64ab9968152, type: 2}
   - text: Commencer l'affaire
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: f174b3c6773f2ce47a1b834e0edae79b, type: 2}
