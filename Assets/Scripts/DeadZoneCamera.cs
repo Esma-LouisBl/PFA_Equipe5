@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+/*
 public class DeadZoneCamera : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField]
@@ -14,3 +14,4 @@ public class DeadZoneCamera : MonoBehaviour, IPointerEnterHandler
         cursorController._speed = _highSpeed;
     }
 }
+*/
