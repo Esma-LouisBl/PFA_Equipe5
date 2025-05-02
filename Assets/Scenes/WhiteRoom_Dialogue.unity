@@ -1069,6 +1069,51 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1103379604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103379606}
+  - component: {fileID: 1103379605}
+  m_Layer: 0
+  m_Name: TestimoniesController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1103379605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103379604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad58d8496d3243469ae4da22f0be564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testimonies: []
+--- !u!4 &1103379606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103379604}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1316909781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1149,7 @@ MonoBehaviour:
   plane: {fileID: 794865406}
   barText: {fileID: 485666077}
   personNameText: {fileID: 478243241}
+  testimoniesController: {fileID: 1103379605}
 --- !u!224 &1316909783
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1436,3 +1482,4 @@ SceneRoots:
   - {fileID: 1730906298}
   - {fileID: 156558502}
   - {fileID: 794865408}
+  - {fileID: 1103379606}
