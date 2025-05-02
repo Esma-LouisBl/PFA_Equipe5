@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: "G\xE9rant"
   m_EditorClassIdentifier: 
   speakerName: "G\xE9rant"
-  textColor: {r: 0.13118546, g: 0.41509432, b: 0.1752335, a: 0}
+  textColor: {r: 0.091518685, g: 0.08726415, b: 0.3490566, a: 0}
   sprite: {fileID: 0}
