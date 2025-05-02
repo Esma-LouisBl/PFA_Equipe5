@@ -10,7 +10,10 @@ public class TestimoniesController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _textPeter, _textHolly, _textOliver;
     [SerializeField]
-    private GameObject _window;
+    private GameObject _window, _peter, _holly, _oliver;
+
+    private int _witnessIndex;
+
 
     private void Update()
     {
@@ -24,6 +27,27 @@ public class TestimoniesController : MonoBehaviour
             {
                 _window.SetActive(true);
             }
+        }
+
+        if (_witnessIndex == 0)
+        {
+            _peter.SetActive(true);
+            _oliver.SetActive(false);
+            _holly.SetActive(false);
+        }
+
+        if (_witnessIndex == 1)
+        {
+            _peter.SetActive(false);
+            _oliver.SetActive(true);
+            _holly.SetActive(false);
+        }
+
+        if (_witnessIndex == 2)
+        {
+            _peter.SetActive(false);
+            _oliver.SetActive(false);
+            _holly.SetActive(true);
         }
     }
     public void UploadPeter()
@@ -53,6 +77,30 @@ public class TestimoniesController : MonoBehaviour
         {
             _textOliver.text += testimony;
             _textOliver.text += "\n";
+        }
+    }
+
+    public void ChangeTestimonyUp()
+    {
+        if (_witnessIndex < 2)
+        {
+            _witnessIndex++;
+        }
+        else
+        {
+            _witnessIndex =0;
+        }
+    }
+
+    public void ChangeTestimonyDown()
+    {
+        if (_witnessIndex > 0)
+        {
+            _witnessIndex--;
+        }
+        else
+        {
+            _witnessIndex = 2;
         }
     }
 }
