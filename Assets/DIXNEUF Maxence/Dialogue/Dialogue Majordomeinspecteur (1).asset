@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: Dialogue Majordomeinspecteur (1)
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Bonjour Edwin sa fessait longtemps qu\u2019on ne s'\xE9tait pas vu, comment
+      va-tu depuis ta reconversion en majordome ? "
+    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  - text: "Ma foi bien malgr\xE9 l\u2019incident d\u2019hier soir et toi ?"
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "Comme tu as vu j\u2019ai \xE9t\xE9 promus au rang d\u2019inspecteur \xE0
+      la suite de plus affaire r\xE9solue et j\u2019ai \xE9t\xE9 d\xE9p\xEAch\xE9
+      sur r\xE9soudre cette enqu\xEAte, j\u2019esp\xE8re que tu pourrais m'aider
+      \xE0 r\xE9soudre l\u2019enqu\xEAte comme \xE0 l\u2019\xE9poque ? "
+    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  - text: "Cela ne me d\xE9range pas, il n\u2019a rien \xE0 faire au manoir t\u2019en
+      que l\u2019enqu\xEAte es en cours mais tu te souviens que j\u2019ai toujours
+      ma n\xE9crophobie ?"
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "Oui bien s\xFBr, tu pourrais prendre les t\xE9moignages des t\xE9moins
+      et des suspects, moi j\u2019irais sur la sc\xE8ne de crime pour y trouver des
+      preuves"
+    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  - text: "pas de probl\xE8me, tu as des informations sur la victime ?"
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "Le nom de la victime est Lawrence Brown, elle avait la trentaine et travaillait
+      en tant que journaliste pour The Times. Elle a \xE9t\xE9 retrouv\xE9e morte
+      dans le bureau du g\xE9rant du manoir "
+    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  - text: "D\u2019accord, je vais appeler sa famille pour en savoir plus sure elle  "
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "Tu pourrais aussi interroger monsieur Warner, si la victime a \xE9t\xE9
+      retrouver dans son bureau alors il doit savoir quelle chose"
+    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  - text: ' Il y a de grande chance oui'
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "pour ma part, je vais aller sur la sc\xE8ne de crime pour r\xE9cup\xE9rer
+      un maximum de preuve, appelle-moi d\xE8s que tu auras du nouveau"
+    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  - text: "pas de probl\xE8me"
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: 
+    speaker: {fileID: 11400000, guid: ee1d97c21d31cbc40a87e6aaba759eca, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 6be0cf439045dbd44a86114de57faa42, type: 2}

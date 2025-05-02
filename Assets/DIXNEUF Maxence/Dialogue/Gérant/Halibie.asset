@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: Halibie
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Je suis all\xE9 dans ma chambre pour me pr\xE9parer pour une interview
+      avec Madame Lawrence mais lors que je suis retourn\xE9e dans mon bureau, je
+      l\u2019ai retrouv\xE9 d\xE9c\xE9d\xE9"
+    speaker: {fileID: 11400000, guid: 6cb4669cfc1a9bb4ca785e5818db3391, type: 2}
+  - text: "Pourquoi \xE9tait-elle dans votre bureau ?"
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "Elle m'a interpel\xE9 durant la soir\xE9e inauguration pour \xE9crire
+      une interview sur le manoir et mon passer pour le Times, je ne pouvais refuser.
+      Je lui ai proposer d\u2019aller dans mon bureau pour la r\xE9aliser au calme
+      et pour que je puise me pr\xE9parer pour celle-ci et apr\xE8s vous savez la
+      suite"
+    speaker: {fileID: 11400000, guid: 6cb4669cfc1a9bb4ca785e5818db3391, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 9618693d1a9220e4281a1c9c278d3b70, type: 2}
