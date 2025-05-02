@@ -65,7 +65,22 @@ public class BottomBarController : MonoBehaviour
 
         plane.material = currentScene.sentences[sentenceIndex].speaker.material;
 
-        //TESTIMONIES
+        CollectTestimonies();
+        
+    }
+
+    public bool IsCompleted()
+    {
+        return state == State.COMPLETED;
+    }
+
+    public bool IsLastSentence()
+    {
+        return sentenceIndex + 1 == currentScene.sentences.Count;
+    }
+
+    public void CollectTestimonies()
+    {
         if (currentScene.sentences[sentenceIndex].testimony != "")  //Check if there's a testimony in the sentence
         {
             if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Peter")   //Check from who is the testimony
@@ -92,16 +107,6 @@ public class BottomBarController : MonoBehaviour
                 }
             }
         }
-    }
-
-    public bool IsCompleted()
-    {
-        return state == State.COMPLETED;
-    }
-
-    public bool IsLastSentence()
-    {
-        return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
     private IEnumerator TypeText(string text)
