@@ -17,6 +17,9 @@ public class BottomBarController : MonoBehaviour
     private Animator animator;
     private bool isHidden = false;
 
+    [SerializeField]
+    private TestimoniesController testimoniesController;
+
     private enum State
     {
         PLAYING, COMPLETED
@@ -61,6 +64,12 @@ public class BottomBarController : MonoBehaviour
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
         plane.material = currentScene.sentences[sentenceIndex].speaker.material;
+
+        if (currentScene.sentences[sentenceIndex].testimony != "")
+        {
+            testimoniesController.testimonies.Add(currentScene.sentences[sentenceIndex].testimony);
+        }
+        Debug.Log(testimoniesController.testimonies);
     }
 
     public bool IsCompleted()
