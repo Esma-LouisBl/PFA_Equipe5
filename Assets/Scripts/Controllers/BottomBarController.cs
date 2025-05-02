@@ -65,11 +65,33 @@ public class BottomBarController : MonoBehaviour
 
         plane.material = currentScene.sentences[sentenceIndex].speaker.material;
 
-        if (currentScene.sentences[sentenceIndex].testimony != "")
+        //TESTIMONIES
+        if (currentScene.sentences[sentenceIndex].testimony != "")  //Check if there's a testimony in the sentence
         {
-            testimoniesController.testimonies.Add(currentScene.sentences[sentenceIndex].testimony);
+            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Peter")   //Check from who is the testimony
+            {
+                if (!testimoniesController.testimoniesPeter.Contains(currentScene.sentences[sentenceIndex].testimony))  //Check if the testimony has ever been collected
+                {
+                    testimoniesController.testimoniesPeter.Add(currentScene.sentences[sentenceIndex].testimony);
+                }
+            }
+
+            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Holly")   //Same for Holly
+            {
+                if (!testimoniesController.testimoniesHolly.Contains(currentScene.sentences[sentenceIndex].testimony))
+                {
+                    testimoniesController.testimoniesHolly.Add(currentScene.sentences[sentenceIndex].testimony);
+                }
+            }
+
+            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Oliver")  //Same for Oliver
+            {
+                if (!testimoniesController.testimoniesOliver.Contains(currentScene.sentences[sentenceIndex].testimony))
+                {
+                    testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
+                }
+            }
         }
-        Debug.Log(testimoniesController.testimonies);
     }
 
     public bool IsCompleted()
