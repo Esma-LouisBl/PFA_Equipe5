@@ -88,6 +88,7 @@ public class BottomBarController : MonoBehaviour
                 if (!testimoniesController.testimoniesPeter.Contains(currentScene.sentences[sentenceIndex].testimony))  //Check if the testimony has ever been collected
                 {
                     testimoniesController.testimoniesPeter.Add(currentScene.sentences[sentenceIndex].testimony);
+                    testimoniesController.UploadPeter();
                 }
             }
 
@@ -96,6 +97,7 @@ public class BottomBarController : MonoBehaviour
                 if (!testimoniesController.testimoniesHolly.Contains(currentScene.sentences[sentenceIndex].testimony))
                 {
                     testimoniesController.testimoniesHolly.Add(currentScene.sentences[sentenceIndex].testimony);
+                    testimoniesController.UploadHolly();
                 }
             }
 
@@ -104,6 +106,7 @@ public class BottomBarController : MonoBehaviour
                 if (!testimoniesController.testimoniesOliver.Contains(currentScene.sentences[sentenceIndex].testimony))
                 {
                     testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
+                    testimoniesController.UploadOliver();
                 }
             }
         }
