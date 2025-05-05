@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 389e5006096ea7248bfe7b77ea98b3cd
+guid: e75e8056c8fefb440ba46f2107d8b3ab
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface4
-    second: {fileID: 2100000, guid: 1dde86327cf6ba540b653bc585604e49, type: 2}
+      name: M_Notebook_003
+    second: {fileID: 2100000, guid: bc2cbe28667fd9344ae193d72f0e867e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
