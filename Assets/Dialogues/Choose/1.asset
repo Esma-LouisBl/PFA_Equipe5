@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: Manger
-    nextScene: {fileID: 11400000, guid: d8e15cff5cd95614b9ccaa414d3d37f4, type: 2}
-  - text: Feur
     nextScene: {fileID: 11400000, guid: 90e6e8f2d0cf11144b7d2fd9ae66fa65, type: 2}
+  - text: Feur
+    nextScene: {fileID: 0}

@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
     public BackgroundController backgroundController;
     public ChooseController chooseController;
 
+    public ConditionsController conditionsController;
+
     private State _state = State.IDLE;
 
     private enum State
@@ -34,12 +36,31 @@ public class GameController : MonoBehaviour
             {
                 if (bottomBar.IsLastSentence())
                 {
-                    PlayScene((currentScene as StoryScene).nextScene);
+                    if ((currentScene as StoryScene).conditionToUnlock == "")   //if there is no condition for the next Scene
+                    {
+                        PlayScene((currentScene as StoryScene).nextScene);  //play the Scene "nextScene"
+                    }
+                    else
+                    {
+                        if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock))  //if there is a condition for the next Scene and the player completed it
+                        {
+                            PlayScene((currentScene as StoryScene).conditionScene); //play the Scene "conditionScene"
+                        }
+                        else    //if the player doesn't complete the condition
+                        {
+                            PlayScene((currentScene as StoryScene).nextScene);  //play the Scene "nextScene"
+                        }
+                    }
                 }
                 else
                 {
                     bottomBar.PlayNextSentence();
                 }
+            }
+
+            else if (_state == State.IDLE && !bottomBar.IsCompleted())  //click but sentence isn't complete yet
+            {
+                bottomBar.Interrupt();
             }
         }
     }

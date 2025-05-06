@@ -6,15 +6,25 @@ using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
+
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
-    public Image personImage;
 
     private int sentenceIndex = -1;
     private StoryScene currentScene;
     private State state = State.COMPLETED;
     private Animator animator;
     private bool isHidden = false;
+
+    private bool _interrupted = false;
+
+    [SerializeField]
+    private TestimoniesController _testimoniesController;
+    [SerializeField]
+    private SuspectsController _suspectsController;
+    [SerializeField]
+    private ConditionsController _conditionsController;
 
     private enum State
     {
@@ -59,7 +69,11 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
-        personImage.sprite = currentScene.sentences[sentenceIndex].speaker.sprite;
+        spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+
+        CollectTestimonies();
+        CollectAlibis();
+        CollectConditions();
     }
 
     public bool IsCompleted()
@@ -72,6 +86,58 @@ public class BottomBarController : MonoBehaviour
         return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
+    public void CollectTestimonies()
+    {
+        if (currentScene.sentences[sentenceIndex].testimony != "")  //Check if there's a testimony in the sentence
+        {
+            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Peter")   //Check from who is the testimony
+            {
+                if (!_testimoniesController.testimoniesPeter.Contains(currentScene.sentences[sentenceIndex].testimony))  //Check if the testimony has ever been collected
+                {
+                    _testimoniesController.testimoniesPeter.Add(currentScene.sentences[sentenceIndex].testimony);
+                    _testimoniesController.UploadPeter();
+                }
+            }
+
+            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Holly")   //Same for Holly
+            {
+                if (!_testimoniesController.testimoniesHolly.Contains(currentScene.sentences[sentenceIndex].testimony))
+                {
+                    _testimoniesController.testimoniesHolly.Add(currentScene.sentences[sentenceIndex].testimony);
+                    _testimoniesController.UploadHolly();
+                }
+            }
+
+            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Oliver")  //Same for Oliver
+            {
+                if (!_testimoniesController.testimoniesOliver.Contains(currentScene.sentences[sentenceIndex].testimony))
+                {
+                    _testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
+                    _testimoniesController.UploadOliver();
+                }
+            }
+        }
+    }
+
+    public void CollectAlibis()
+    {
+        if (currentScene.sentences[sentenceIndex].alibi != "")  //déclenche l'apparition de l'alibi du perso correspondant sur la fiche des suspects
+        {
+            _suspectsController.TurnOnAlibi(currentScene.sentences[sentenceIndex].alibi);
+        }
+    }
+
+    public void CollectConditions()
+    {
+        if (currentScene.sentences[sentenceIndex].collectedCondition != "")
+        {
+            if (!_conditionsController.collectedConditions.Contains(currentScene.sentences[sentenceIndex].collectedCondition))
+            {
+                _conditionsController.collectedConditions.Add(currentScene.sentences[sentenceIndex].collectedCondition);
+            }
+        }
+    }
+
     private IEnumerator TypeText(string text)
     {
         barText.text = "";
@@ -80,13 +146,29 @@ public class BottomBarController : MonoBehaviour
 
         while (state != State.COMPLETED)
         {
-            barText.text += text[wordIndex];
-            yield return new WaitForSeconds(0.05f);
-            if(++wordIndex == text.Length)
+            if (!_interrupted)
             {
+                barText.text += text[wordIndex];
+                yield return new WaitForSeconds(0.05f);
+                if (++wordIndex == text.Length)
+                {
+                    state = State.COMPLETED;
+                    break;
+                }
+            }
+
+            else
+            {
+                barText.text = text;
                 state = State.COMPLETED;
+                _interrupted = false;
                 break;
             }
         }
+    }
+
+    public void Interrupt()
+    {
+        _interrupted = true;
     }
 }

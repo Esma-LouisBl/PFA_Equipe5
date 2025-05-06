@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f41b93f82b1515146896b9cbe680119e, type: 3}
-  m_Name: Didier
+  m_Name: Peter
   m_EditorClassIdentifier: 
-  speakerName: Didier
+  speakerName: Peter
   textColor: {r: 0.3915936, g: 0.6792453, b: 0.3236027, a: 0}
-  sprite: {fileID: 21300000, guid: 02996bcfa3ad2054facdb6d022ad89af, type: 3}
+  speakerSprite: {fileID: 21300000, guid: 760a8f1ea49f1ee4090ad78551711663, type: 3}
