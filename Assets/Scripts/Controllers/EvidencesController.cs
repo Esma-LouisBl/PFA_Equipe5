@@ -1,4 +1,4 @@
-using UnityEditor.PackageManager.UI;
+using TMPro;
 using UnityEngine;
 
 public class EvidencesController : MonoBehaviour
@@ -8,11 +8,9 @@ public class EvidencesController : MonoBehaviour
     [SerializeField]
     private GameObject _window;
     [SerializeField]
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private TextMeshProUGUI _name, _description;
+    [SerializeField]
+    private MeshFilter _mesh;
 
     void Update()
     {

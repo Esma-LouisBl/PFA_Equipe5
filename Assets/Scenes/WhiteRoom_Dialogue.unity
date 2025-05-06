@@ -470,9 +470,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1953863691}
-        m_TargetAssemblyTypeName: SuspectsController, Assembly-CSharp
-        m_MethodName: ChangeSuspectDown
+      - m_Target: {fileID: 1375152486}
+        m_TargetAssemblyTypeName: EvidencesController, Assembly-CSharp
+        m_MethodName: ChangeEvidenceDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1177,9 +1177,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1953863691}
-        m_TargetAssemblyTypeName: SuspectsController, Assembly-CSharp
-        m_MethodName: ChangeSuspectUp
+      - m_Target: {fileID: 1375152486}
+        m_TargetAssemblyTypeName: EvidencesController, Assembly-CSharp
+        m_MethodName: ChangeEvidenceUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3744,6 +3744,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _window: {fileID: 998999084}
+  _name: {fileID: 149306506}
+  _description: {fileID: 1215452273}
+  _mesh: {fileID: 1287458716}
 --- !u!1 &1408847094
 GameObject:
   m_ObjectHideFlags: 0
