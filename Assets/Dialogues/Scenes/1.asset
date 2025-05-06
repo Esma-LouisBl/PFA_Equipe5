@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   sentences:
-  - text: "fouiezhgfpurehviufbl r euh fmezoihr\"\xF4hf riuzeh\"paoizyhf fzeuha\"puidhdzf
-      h roiezhfpezi uhf zeuihyrezoiuhfezlyug reezrr"
+  - text: "Je peux pas \xEAtre suspect."
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
     testimony: 
     collectedCondition: 
-  - text: Tu veux faire quoi ?
+    alibi: 
+  - text: "Normal, j'\xE9tais dans la cuisine en train de manger du pain."
     speaker: {fileID: 11400000, guid: 09d1ebd9b3f6a134ba357cc75e43d5f5, type: 2}
     testimony: il mange du pain
     collectedCondition: 
+    alibi: Peter
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: ec653d3b374221d408db5c177e47d902, type: 2}
   conditionScene: {fileID: 11400000, guid: a6e453834ec5a6547b1b28a33fb4773c, type: 2}

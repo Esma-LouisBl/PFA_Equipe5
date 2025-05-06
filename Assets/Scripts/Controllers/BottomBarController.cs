@@ -20,9 +20,11 @@ public class BottomBarController : MonoBehaviour
     private bool _interrupted = false;
 
     [SerializeField]
-    private TestimoniesController testimoniesController;
+    private TestimoniesController _testimoniesController;
     [SerializeField]
-    private ConditionsController conditionsController;
+    private SuspectsController _suspectsController;
+    [SerializeField]
+    private ConditionsController _conditionsController;
 
     private enum State
     {
@@ -70,6 +72,7 @@ public class BottomBarController : MonoBehaviour
         spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
 
         CollectTestimonies();
+        CollectAlibis();
         CollectConditions();
     }
 
@@ -89,30 +92,38 @@ public class BottomBarController : MonoBehaviour
         {
             if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Peter")   //Check from who is the testimony
             {
-                if (!testimoniesController.testimoniesPeter.Contains(currentScene.sentences[sentenceIndex].testimony))  //Check if the testimony has ever been collected
+                if (!_testimoniesController.testimoniesPeter.Contains(currentScene.sentences[sentenceIndex].testimony))  //Check if the testimony has ever been collected
                 {
-                    testimoniesController.testimoniesPeter.Add(currentScene.sentences[sentenceIndex].testimony);
-                    testimoniesController.UploadPeter();
+                    _testimoniesController.testimoniesPeter.Add(currentScene.sentences[sentenceIndex].testimony);
+                    _testimoniesController.UploadPeter();
                 }
             }
 
             if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Holly")   //Same for Holly
             {
-                if (!testimoniesController.testimoniesHolly.Contains(currentScene.sentences[sentenceIndex].testimony))
+                if (!_testimoniesController.testimoniesHolly.Contains(currentScene.sentences[sentenceIndex].testimony))
                 {
-                    testimoniesController.testimoniesHolly.Add(currentScene.sentences[sentenceIndex].testimony);
-                    testimoniesController.UploadHolly();
+                    _testimoniesController.testimoniesHolly.Add(currentScene.sentences[sentenceIndex].testimony);
+                    _testimoniesController.UploadHolly();
                 }
             }
 
             if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Oliver")  //Same for Oliver
             {
-                if (!testimoniesController.testimoniesOliver.Contains(currentScene.sentences[sentenceIndex].testimony))
+                if (!_testimoniesController.testimoniesOliver.Contains(currentScene.sentences[sentenceIndex].testimony))
                 {
-                    testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
-                    testimoniesController.UploadOliver();
+                    _testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
+                    _testimoniesController.UploadOliver();
                 }
             }
+        }
+    }
+
+    public void CollectAlibis()
+    {
+        if (currentScene.sentences[sentenceIndex].alibi != "")  //déclenche l'apparition de l'alibi du perso correspondant sur la fiche des suspects
+        {
+            _suspectsController.TurnOnAlibi(currentScene.sentences[sentenceIndex].alibi);
         }
     }
 
@@ -120,9 +131,9 @@ public class BottomBarController : MonoBehaviour
     {
         if (currentScene.sentences[sentenceIndex].collectedCondition != "")
         {
-            if (!conditionsController.collectedConditions.Contains(currentScene.sentences[sentenceIndex].collectedCondition))
+            if (!_conditionsController.collectedConditions.Contains(currentScene.sentences[sentenceIndex].collectedCondition))
             {
-                conditionsController.collectedConditions.Add(currentScene.sentences[sentenceIndex].collectedCondition);
+                _conditionsController.collectedConditions.Add(currentScene.sentences[sentenceIndex].collectedCondition);
             }
         }
     }

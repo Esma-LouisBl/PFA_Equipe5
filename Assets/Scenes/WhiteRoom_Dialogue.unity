@@ -2577,7 +2577,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 276440470}
         m_TargetAssemblyTypeName: TestimoniesController, Assembly-CSharp
-        m_MethodName: ChangeTestimonyDown
+        m_MethodName: ChangeTestimonyUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2622,8 +2622,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1542248770}
   barText: {fileID: 485666077}
   personNameText: {fileID: 478243241}
-  testimoniesController: {fileID: 276440470}
-  conditionsController: {fileID: 1698584220}
+  _testimoniesController: {fileID: 276440470}
+  _suspectsController: {fileID: 1953863691}
+  _conditionsController: {fileID: 1698584220}
 --- !u!224 &1316909783
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4141,7 +4142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Alibi
+  m_text: "Alibi : Il \xE9tait en train de manger du pain."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4335,15 +4336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a29cdd92ea90f4790eeb0df74bbb6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _infoPeter: {fileID: 834257927}
-  _infoHolly: {fileID: 406187848}
-  _infoOliver: {fileID: 2035543105}
   _alibiPeter: {fileID: 1864259083}
   _alibiHolly: {fileID: 1505565549}
   _alibiOliver: {fileID: 1427219802}
-  _spritePeter: {fileID: 1614248620}
-  _spriteHolly: {fileID: 742938067}
-  _spriteOliver: {fileID: 133744190}
   _window: {fileID: 214510718}
   _peter: {fileID: 404838716}
   _holly: {fileID: 1809158367}
@@ -4470,7 +4465,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 276440470}
         m_TargetAssemblyTypeName: TestimoniesController, Assembly-CSharp
-        m_MethodName: ChangeTestimonyUp
+        m_MethodName: ChangeTestimonyDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

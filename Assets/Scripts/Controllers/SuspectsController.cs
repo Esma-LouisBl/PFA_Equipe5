@@ -5,13 +5,36 @@ using UnityEngine.UI;
 public class SuspectsController : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI _infoPeter, _infoHolly, _infoOliver, _alibiPeter, _alibiHolly, _alibiOliver;
-    [SerializeField]
-    private Image _spritePeter, _spriteHolly, _spriteOliver;
+    private TextMeshProUGUI _alibiPeter, _alibiHolly, _alibiOliver;
+    //[SerializeField]
+    //private Image _spritePeter, _spriteHolly, _spriteOliver;
     [SerializeField]
     private GameObject _window, _peter, _holly, _oliver;
 
     private int _suspectIndex;
+
+    private void Start()
+    {
+        _alibiPeter.enabled = false;
+        _alibiHolly.enabled = false;
+        _alibiOliver.enabled = false;
+
+    }
+    public void TurnOnAlibi(string suspect)
+    {
+        if (suspect == "Peter")
+        {
+            _alibiPeter.enabled = true;
+        }
+        if (suspect == "Holly")
+        {
+            _alibiHolly.enabled = true;
+        }
+        if (suspect == "Oliver")
+        {
+            _alibiOliver.enabled = true;
+        }
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
