@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
-    public MeshRenderer plane;
+    public SpriteRenderer spriteRenderer;
 
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
@@ -63,7 +63,7 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
-        plane.material = currentScene.sentences[sentenceIndex].speaker.material;
+        spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
 
         CollectTestimonies();
         

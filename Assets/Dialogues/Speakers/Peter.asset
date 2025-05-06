@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Peter
   textColor: {r: 0.3915936, g: 0.6792453, b: 0.3236027, a: 0}
-  material: {fileID: 2100000, guid: 030f54017affb3440a07ea2e188e726e, type: 2}
+  speakerSprite: {fileID: 21300000, guid: 760a8f1ea49f1ee4090ad78551711663, type: 3}
