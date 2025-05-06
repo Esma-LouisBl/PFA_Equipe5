@@ -19,6 +19,8 @@ public class BottomBarController : MonoBehaviour
 
     [SerializeField]
     private TestimoniesController testimoniesController;
+    [SerializeField]
+    private ConditionsController conditionsController;
 
     private enum State
     {
@@ -66,7 +68,7 @@ public class BottomBarController : MonoBehaviour
         spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
 
         CollectTestimonies();
-        
+        CollectConditions();
     }
 
     public bool IsCompleted()
@@ -108,6 +110,17 @@ public class BottomBarController : MonoBehaviour
                     testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
                     testimoniesController.UploadOliver();
                 }
+            }
+        }
+    }
+
+    public void CollectConditions()
+    {
+        if (currentScene.sentences[sentenceIndex].collectedCondition != "")
+        {
+            if (!conditionsController.collectedConditions.Contains(currentScene.sentences[sentenceIndex].collectedCondition))
+            {
+                conditionsController.collectedConditions.Add(currentScene.sentences[sentenceIndex].collectedCondition);
             }
         }
     }

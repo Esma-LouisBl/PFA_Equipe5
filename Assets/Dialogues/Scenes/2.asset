@@ -16,8 +16,10 @@ MonoBehaviour:
   - text: lalalalaa
     speaker: {fileID: 11400000, guid: 09d1ebd9b3f6a134ba357cc75e43d5f5, type: 2}
     testimony: couteau
+    collectedCondition: mange du pain
   - text: miam je mange
     speaker: {fileID: 11400000, guid: 09d1ebd9b3f6a134ba357cc75e43d5f5, type: 2}
     testimony: coupable
+    collectedCondition: 
   background: {fileID: 0}
   nextScene: {fileID: 0}
