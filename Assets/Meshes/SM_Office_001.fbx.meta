@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 5438ff0cf7cb213468d6d99e6ef0b3b8
+guid: 1c42ba85d1da7a2409dfa6b378a991b7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Office_001
+    second: {fileID: 2100000, guid: 1dde86327cf6ba540b653bc585604e49, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
