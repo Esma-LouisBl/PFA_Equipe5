@@ -17,6 +17,8 @@ public class BottomBarController : MonoBehaviour
     private Animator animator;
     private bool isHidden = false;
 
+    private bool _interrupted = false;
+
     [SerializeField]
     private TestimoniesController testimoniesController;
     [SerializeField]
@@ -133,13 +135,29 @@ public class BottomBarController : MonoBehaviour
 
         while (state != State.COMPLETED)
         {
-            barText.text += text[wordIndex];
-            yield return new WaitForSeconds(0.05f);
-            if(++wordIndex == text.Length)
+            if (!_interrupted)
             {
+                barText.text += text[wordIndex];
+                yield return new WaitForSeconds(0.05f);
+                if (++wordIndex == text.Length)
+                {
+                    state = State.COMPLETED;
+                    break;
+                }
+            }
+
+            else
+            {
+                barText.text = text;
                 state = State.COMPLETED;
+                _interrupted = false;
                 break;
             }
         }
+    }
+
+    public void Interrupt()
+    {
+        _interrupted = true;
     }
 }

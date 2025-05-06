@@ -57,6 +57,11 @@ public class GameController : MonoBehaviour
                     bottomBar.PlayNextSentence();
                 }
             }
+
+            else if (_state == State.IDLE && !bottomBar.IsCompleted())  //click but sentence isn't complete yet
+            {
+                bottomBar.Interrupt();
+            }
         }
     }
 
