@@ -8,6 +8,9 @@ public class StoryScene : GameScene
     public List<Sentence> sentences;
     public Sprite background;
     public GameScene nextScene;
+    public GameScene conditionScene;
+
+    public string conditionToUnlock;
 
     [System.Serializable]
     public struct Sentence

@@ -2065,6 +2065,7 @@ MonoBehaviour:
   bottomBar: {fileID: 1316909782}
   backgroundController: {fileID: 223990280}
   chooseController: {fileID: 588663800}
+  conditionsController: {fileID: 1698584220}
 --- !u!114 &1730906295
 MonoBehaviour:
   m_ObjectHideFlags: 0
