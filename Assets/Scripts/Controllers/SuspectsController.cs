@@ -6,8 +6,6 @@ public class SuspectsController : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI _alibiPeter, _alibiHolly, _alibiOliver;
-    //[SerializeField]
-    //private Image _spritePeter, _spriteHolly, _spriteOliver;
     [SerializeField]
     private GameObject _window, _peter, _holly, _oliver;
 
