@@ -1344,19 +1344,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 820773258}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -2.231038
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.3254454
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.0053443
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1364,7 +1364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1395,6 +1395,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
+--- !u!4 &768082231 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 152928cab4151664287cc98ba21e1c3c, type: 3}
+  m_PrefabInstance: {fileID: 768082230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &782195779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1692,6 +1697,7 @@ Transform:
   - {fileID: 746149637}
   - {fileID: 1130518104}
   - {fileID: 2021830278}
+  - {fileID: 768082231}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854094614
@@ -5012,4 +5018,3 @@ SceneRoots:
   - {fileID: 1151062453}
   - {fileID: 820773258}
   - {fileID: 1056923167}
-  - {fileID: 768082230}
