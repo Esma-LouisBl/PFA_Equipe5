@@ -13,6 +13,8 @@ public class EvidencesController : MonoBehaviour
     private TextMeshProUGUI _name, _description;
     [SerializeField]
     private MeshFilter _mesh;
+    [SerializeField]
+    private MeshRenderer _renderer;
 
     public List<Evidence> evidences;
 
@@ -33,6 +35,7 @@ public class EvidencesController : MonoBehaviour
         _name.text = evidences[_evidenceIndex].name;
         _description.text = evidences[_evidenceIndex].evidenceDescription;
         _mesh.mesh = evidences[_evidenceIndex].evidenceMesh;
+        _renderer.material = evidences[_evidenceIndex].evidenceMaterial;
     }
 
     public void ChangeEvidenceUp()

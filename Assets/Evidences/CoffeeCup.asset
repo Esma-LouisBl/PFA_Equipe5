@@ -15,3 +15,4 @@ MonoBehaviour:
   evidenceName: "Tasse \xE0 caf\xE9"
   evidenceDescription: "Un peu \xE9br\xE9ch\xE9e"
   evidenceMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  evidenceMaterial: {fileID: 2100000, guid: 1dde86327cf6ba540b653bc585604e49, type: 2}
