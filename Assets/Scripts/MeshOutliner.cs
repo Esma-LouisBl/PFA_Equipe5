@@ -3,39 +3,39 @@ using UnityEngine.EventSystems;
 
 public class MeshOutliner : MonoBehaviour
 {
-    private Transform _highlight;
+    public Transform highlight;
     private RaycastHit raycastHit;
 
     void Update()
     {
-        if (_highlight != null)
+        if (highlight != null)
         {
-            _highlight.gameObject.GetComponent<Outline>().enabled = false;
-            _highlight = null;
+            highlight.gameObject.GetComponent<Outline>().enabled = false;
+            highlight = null;
         }
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit))
         {
-            _highlight = raycastHit.transform;
+            highlight = raycastHit.transform;
 
-            if (_highlight.CompareTag("Selectable"))
+            if (highlight.CompareTag("Selectable"))
             {
-                if (_highlight.gameObject.GetComponent<Outline>() != null)
+                if (highlight.gameObject.GetComponent<Outline>() != null)
                 {
-                    _highlight.gameObject.GetComponent<Outline>().enabled = true;
+                    highlight.gameObject.GetComponent<Outline>().enabled = true;
                 }
                 else
                 {
-                    Outline outline = _highlight.gameObject.AddComponent<Outline>();
+                    Outline outline = highlight.gameObject.AddComponent<Outline>();
                     outline.enabled = true;
-                    _highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.white;
-                    _highlight.gameObject.GetComponent<Outline>().OutlineWidth = 7.0f;
+                    highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.white;
+                    highlight.gameObject.GetComponent<Outline>().OutlineWidth = 7.0f;
                 }
             }
             else
             {
-                _highlight = null;
+                highlight = null;
             }
         }
     }

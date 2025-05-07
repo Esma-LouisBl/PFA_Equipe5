@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -15,7 +16,14 @@ public class EvidencesController : MonoBehaviour
     [SerializeField]
     private MeshRenderer _renderer;
 
+    private float _rotation;
+
     public List<Evidence> evidences;
+
+    private void Start()
+    {
+        StartCoroutine(EvidenceRotation());
+    }
 
     void Update()
     {
@@ -40,6 +48,15 @@ public class EvidencesController : MonoBehaviour
         _description.text = evidences[_evidenceIndex].evidenceDescription;
         _mesh.mesh = evidences[_evidenceIndex].evidenceMesh;
         _renderer.material = evidences[_evidenceIndex].evidenceMaterial;
+    }
+
+    private IEnumerator EvidenceRotation()
+    {   while (true)
+        {
+            _rotation += 0.2f;
+            _mesh.transform.localRotation = Quaternion.Euler(0, _rotation, 0);
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 
     public void ChangeEvidenceUp()
