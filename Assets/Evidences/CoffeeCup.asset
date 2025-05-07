@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidenceName: "Tasse \xE0 caf\xE9"
   evidenceDescription: "Un peu \xE9br\xE9ch\xE9e"
-  evidenceMesh: {fileID: 0}
+  evidenceMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}

@@ -31,11 +31,13 @@ public class EvidencesController : MonoBehaviour
         }
 
         _name.text = evidences[_evidenceIndex].name;
+        _description.text = evidences[_evidenceIndex].evidenceDescription;
+        _mesh.mesh = evidences[_evidenceIndex].evidenceMesh;
     }
 
     public void ChangeEvidenceUp()
     {
-        if (_evidenceIndex < 2)
+        if (_evidenceIndex < evidences.Count-1)
         {
             _evidenceIndex++;
         }
@@ -53,7 +55,7 @@ public class EvidencesController : MonoBehaviour
         }
         else
         {
-            _evidenceIndex = 2;
+            _evidenceIndex = evidences.Count-1;
         }
     }
 }
