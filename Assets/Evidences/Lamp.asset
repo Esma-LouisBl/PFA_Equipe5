@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidenceName: Lampe
   evidenceDescription: "Tach\xE9e de sang"
-  evidenceMesh: {fileID: 1595783810130990727, guid: 1eb4b4666c927a34b88d253e4c507b86, type: 3}
+  evidenceMesh: {fileID: 1595783810130990727, guid: 4c2888909b1ad5e4c9cf131ea8350300, type: 3}
   evidenceMaterial: {fileID: 2100000, guid: c214c3384f04baa45ad3c3d52b5a90e3, type: 2}
