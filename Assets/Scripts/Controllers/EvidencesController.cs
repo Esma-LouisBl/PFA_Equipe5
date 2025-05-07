@@ -44,7 +44,7 @@ public class EvidencesController : MonoBehaviour
 
     private void EvidenceUpdate()
     {
-        _name.text = evidences[_evidenceIndex].name;
+        _name.text = evidences[_evidenceIndex].evidenceName;
         _description.text = evidences[_evidenceIndex].evidenceDescription;
         _mesh.mesh = evidences[_evidenceIndex].evidenceMesh;
         _renderer.material = evidences[_evidenceIndex].evidenceMaterial;
