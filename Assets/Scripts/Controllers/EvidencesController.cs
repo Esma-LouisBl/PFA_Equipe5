@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -32,6 +31,11 @@ public class EvidencesController : MonoBehaviour
             }
         }
 
+        EvidenceUpdate();
+    }
+
+    private void EvidenceUpdate()
+    {
         _name.text = evidences[_evidenceIndex].name;
         _description.text = evidences[_evidenceIndex].evidenceDescription;
         _mesh.mesh = evidences[_evidenceIndex].evidenceMesh;
