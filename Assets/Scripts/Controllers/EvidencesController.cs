@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -12,6 +14,8 @@ public class EvidencesController : MonoBehaviour
     [SerializeField]
     private MeshFilter _mesh;
 
+    public List<Evidence> evidences;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -25,6 +29,8 @@ public class EvidencesController : MonoBehaviour
                 _window.SetActive(true);
             }
         }
+
+        _name.text = evidences[_evidenceIndex].name;
     }
 
     public void ChangeEvidenceUp()
