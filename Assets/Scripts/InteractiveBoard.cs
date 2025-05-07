@@ -6,8 +6,10 @@ public class InteractiveBoard : MonoBehaviour
     private Vector3 offset;
     private float x;
 
-    
     public Collider waypointArea;
+    private bool isDragging = false;
+    
+
 
     void Start()
     {
@@ -23,18 +25,22 @@ public class InteractiveBoard : MonoBehaviour
 
     void OnMouseDown()
     {
+        isDragging = true;
+        
         offset = transform.position - MouseWorldPosition();
+        
+    }
+
+    void OnMouseUp()
+    {
+        isDragging = false;
     }
 
     void OnMouseDrag()
     {
         
         Vector3 newPosition = MouseWorldPosition() + offset;
-
-        
         newPosition = ClampToWaypointArea(newPosition);
-
-        
         transform.position = newPosition;
     }
 
@@ -45,18 +51,35 @@ public class InteractiveBoard : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
 
-    
     Vector3 ClampToWaypointArea(Vector3 position)
     {
-        
         Bounds bounds = waypointArea.bounds;
-
-        
         position.x = Mathf.Clamp(position.x, bounds.min.x, bounds.max.x);
         position.y = Mathf.Clamp(position.y, bounds.min.y, bounds.max.y);
         position.z = Mathf.Clamp(position.z, bounds.min.z, bounds.max.z);
-
         return position;
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!isDragging && other.CompareTag("Selectable") && other.gameObject != gameObject)
+        {
+            if (other.transform.parent != transform)
+            {
+                other.transform.SetParent(transform, true);
+            }
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (!isDragging && other.CompareTag("Selectable") && other.transform.parent == transform)
+        {
+            other.transform.SetParent(null, true);
+        }
+    }
+
+
 }
+
 
