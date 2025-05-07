@@ -29,14 +29,7 @@ public class EvidencesController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (_window.activeSelf)
-            {
-                _window.SetActive(false);
-            }
-            else
-            {
-                _window.SetActive(true);
-            }
+            OpenAndClose();
         }
 
         EvidenceUpdate();
@@ -80,6 +73,18 @@ public class EvidencesController : MonoBehaviour
         else
         {
             _evidenceIndex = evidences.Count-1;
+        }
+    }
+
+    public void OpenAndClose()
+    {
+        if (_window.activeSelf)
+        {
+            _window.SetActive(false);
+        }
+        else
+        {
+            _window.SetActive(true);
         }
     }
 }

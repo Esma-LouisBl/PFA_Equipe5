@@ -37,14 +37,7 @@ public class SuspectsController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            if (_window.activeSelf)
-            {
-                _window.SetActive(false);
-            }
-            else
-            {
-                _window.SetActive(true);
-            }
+            OpenAndClose();
         }
 
         if (_suspectIndex == 0)
@@ -89,6 +82,18 @@ public class SuspectsController : MonoBehaviour
         else
         {
             _suspectIndex = 2;
+        }
+    }
+
+    public void OpenAndClose()
+    {
+        if (_window.activeSelf)
+        {
+            _window.SetActive(false);
+        }
+        else
+        {
+            _window.SetActive(true);
         }
     }
 }
