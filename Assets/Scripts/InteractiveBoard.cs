@@ -8,6 +8,7 @@ public class InteractiveBoard : MonoBehaviour
 
     public Collider waypointArea;
     private bool isDragging = false;
+
     
 
 
