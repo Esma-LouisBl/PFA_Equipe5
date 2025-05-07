@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
 
     private enum State
     {
-        IDLE, ANIMATE, CHOOSE
+        IDLE, ANIMATE, CHOOSE, STOP
     }
 
     void Start()
@@ -36,20 +36,28 @@ public class GameController : MonoBehaviour
             {
                 if (bottomBar.IsLastSentence())
                 {
-                    if ((currentScene as StoryScene).conditionToUnlock == "")   //if there is no condition for the next Scene
+                    if ((currentScene as StoryScene).nextScene != null) //check if there is a scene after this one
                     {
-                        PlayScene((currentScene as StoryScene).nextScene);  //play the Scene "nextScene"
-                    }
-                    else
-                    {
-                        if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock))  //if there is a condition for the next Scene and the player completed it
-                        {
-                            PlayScene((currentScene as StoryScene).conditionScene); //play the Scene "conditionScene"
-                        }
-                        else    //if the player doesn't complete the condition
+                        if ((currentScene as StoryScene).conditionToUnlock == "")   //if there is no condition for the next Scene
                         {
                             PlayScene((currentScene as StoryScene).nextScene);  //play the Scene "nextScene"
                         }
+                        else
+                        {
+                            if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock))  //if there is a condition for the next Scene and the player completed it
+                            {
+                                PlayScene((currentScene as StoryScene).conditionScene); //play the Scene "conditionScene"
+                            }
+                            else    //if the player doesn't complete the condition
+                            {
+                                PlayScene((currentScene as StoryScene).nextScene);  //play the Scene "nextScene"
+                            }
+                        }
+                    }
+                    else
+                    {
+                        _state = State.STOP;
+                        Debug.Log("skibidi prout");
                     }
                 }
                 else
