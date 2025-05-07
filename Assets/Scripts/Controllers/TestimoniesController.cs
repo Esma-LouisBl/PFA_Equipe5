@@ -19,14 +19,7 @@ public class TestimoniesController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (_window.activeSelf)
-            {
-                _window.SetActive(false);
-            }
-            else
-            {
-                _window.SetActive(true);
-            }
+            OpenAndClose();
         }
 
         if (_witnessIndex == 0)
@@ -101,6 +94,18 @@ public class TestimoniesController : MonoBehaviour
         else
         {
             _witnessIndex = 2;
+        }
+    }
+
+    public void OpenAndClose()
+    {
+        if (_window.activeSelf)
+        {
+            _window.SetActive(false);
+        }
+        else
+        {
+            _window.SetActive(true);
         }
     }
 }
