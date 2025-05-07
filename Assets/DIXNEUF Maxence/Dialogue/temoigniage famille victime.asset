@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: temoigniage famille victime
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Allo
+    speaker: {fileID: 11400000, guid: a48b93bfbd6422f458c184206a3a07f4, type: 2}
+  - text: "Bonjour, je suis Edwin un ancien d\xE9tective. Je vous appelle car j\u2019aurais
+      besoin d\u2019information sur votre fille ? "
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "D\xE9soler, ils sont partis \xE0 l\u2019\xE9trange pour leurs travails "
+    speaker: {fileID: 11400000, guid: a48b93bfbd6422f458c184206a3a07f4, type: 2}
+  - text: "D\u2019accords, pouvez-vous les pr\xE9venir que j\u2019ai essay\xE9 de
+      leur parler ? "
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "pas de soucis, je leurs transmettrais quand j\u2019aurais de leurs nouvelles"
+    speaker: {fileID: 11400000, guid: a48b93bfbd6422f458c184206a3a07f4, type: 2}
+  - text: "Merci, Bonne journ\xE9e"
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  - text: "De M\xEAme"
+    speaker: {fileID: 11400000, guid: a48b93bfbd6422f458c184206a3a07f4, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: b6387c3c6048abb41a45a28001e880d6, type: 2}

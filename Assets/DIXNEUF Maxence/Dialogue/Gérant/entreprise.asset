@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: entreprise
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Je d\xE9tiens l\u2019entreprise \u201C Diageo\u201D qui est sp\xE9cialis\xE9
+      dans la fabrication et la commercialisation de vins, bi\xE8res et spiritueux.
+      Nous sommes plusieurs branches dans l\u2019entreprise et je m\u2019occupe des
+      spiritueux plus sp\xE9cialement du Gin Gordon\u2019s     "
+    speaker: {fileID: 11400000, guid: d072dc367df49fd4d992dc8d1e728726, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 9618693d1a9220e4281a1c9c278d3b70, type: 2}
