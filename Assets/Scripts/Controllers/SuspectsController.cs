@@ -18,7 +18,7 @@ public class SuspectsController : MonoBehaviour
         _alibiOliver.enabled = false;
 
     }
-    public void TurnOnAlibi(string suspect)
+    public void TurnOnAlibi(string suspect) //Show the alibi if the name of the person is written in the Alibi section of the sentence
     {
         if (suspect == "Peter")
         {
