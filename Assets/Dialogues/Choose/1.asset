@@ -16,4 +16,4 @@ MonoBehaviour:
   - text: Manger
     nextScene: {fileID: 11400000, guid: 90e6e8f2d0cf11144b7d2fd9ae66fa65, type: 2}
   - text: Feur
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 283e73b38ac2d474d876908c03a00488, type: 2}

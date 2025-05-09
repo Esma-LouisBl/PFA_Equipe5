@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public ConditionsController conditionsController;
 
     private State _state = State.IDLE;
+    public bool isActive;
 
     private enum State
     {
@@ -56,8 +57,8 @@ public class GameController : MonoBehaviour
                     }
                     else
                     {
-                        _state = State.STOP;
-                        Debug.Log("skibidi prout");
+                        _state = State.STOP;    //DOESN'T WORK IF IT ENDS WITH A CHOOSE SCENE
+                        bottomBar.Hide();
                     }
                 }
                 else
@@ -70,6 +71,15 @@ public class GameController : MonoBehaviour
             {
                 bottomBar.Interrupt();
             }
+        }
+
+        if (_state == State.STOP)
+        {
+            isActive = false;
+        }
+        else
+        {
+            isActive = true;
         }
     }
 

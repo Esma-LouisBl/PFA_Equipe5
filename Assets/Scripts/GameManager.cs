@@ -1,10 +1,13 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public bool PlayerCanMove;
+    public GameController controller;
+
+    public bool playerCanMove;
 
     void Awake()
     {
@@ -15,6 +18,18 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if (controller.isActive == false)
+        {
+            playerCanMove = true;
+        }
+        else
+        {
+            playerCanMove = false;
         }
     }
 }

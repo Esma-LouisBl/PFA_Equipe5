@@ -687,7 +687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6785049f0d96b428406198568b7d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCanMove: 1
+  controller: {fileID: 1730906294}
+  playerCanMove: 0
 --- !u!1 &99474663
 GameObject:
   m_ObjectHideFlags: 0
@@ -8930,6 +8931,7 @@ MonoBehaviour:
   backgroundController: {fileID: 223990280}
   chooseController: {fileID: 588663800}
   conditionsController: {fileID: 1698584220}
+  isActive: 0
 --- !u!114 &1730906295
 MonoBehaviour:
   m_ObjectHideFlags: 0

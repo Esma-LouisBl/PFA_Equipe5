@@ -47,7 +47,7 @@ public class CursorController : MonoBehaviour
 
     void Update()
     {
-        if (!GameManager.Instance.PlayerCanMove || !playerCanUseCursor) return;
+        if (!GameManager.Instance.playerCanMove || !playerCanUseCursor) return;
 
         Vector2 mousePos = Input.mousePosition;
         Vector2 offset = mousePos - screenCenter;

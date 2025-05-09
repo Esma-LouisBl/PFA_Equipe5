@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance.PlayerCanMove)
+        if (GameManager.Instance.playerCanMove)
         {
             if (!isMoving && !isRotating)
             {
