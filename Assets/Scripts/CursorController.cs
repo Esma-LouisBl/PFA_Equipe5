@@ -27,12 +27,12 @@ public class CursorController : MonoBehaviour
         if (condition)
         {
             Cursor.visible = true;
-            Cursor.SetCursor(_customCursor, Vector2.zero, CursorMode.Auto);
+            //Cursor.SetCursor(_customCursor, Vector2.zero, CursorMode.Auto);
         }
         else
         {
             Cursor.visible = false;
-            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             _cameraPivot.localRotation = Quaternion.identity;
         }
     }
@@ -40,7 +40,7 @@ public class CursorController : MonoBehaviour
     void Start()
     {
         screenCenter = new Vector2(Screen.width / 2f, Screen.height / 2f);
-        Cursor.SetCursor(_customCursor, screenCenter, CursorMode.Auto);
+        //Cursor.SetCursor(_customCursor, screenCenter, CursorMode.Auto);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
