@@ -1,15 +1,12 @@
 using UnityEngine;
-
 public class InteractiveBoard : MonoBehaviour
 {
-    
     private Vector3 offset;
     private float x;
     [SerializeField]
     private Collider waypointArea;
     private bool isDragging = false;
-
-
+    private int dragButton = 0; // 0 = left, 1 = right
 
     void Start()
     {
@@ -21,14 +18,18 @@ public class InteractiveBoard : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = x;
         transform.position = pos;
+
+        HandleRightClickDrag();
     }
 
     void OnMouseDown()
     {
-        isDragging = true;
-        
-        offset = transform.position - MouseWorldPosition();
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            isDragging = true;
+            dragButton = 0;
+            offset = transform.position - MouseWorldPosition();
+        }
     }
 
     void OnMouseUp()
@@ -38,10 +39,39 @@ public class InteractiveBoard : MonoBehaviour
 
     void OnMouseDrag()
     {
-        
-        Vector3 newPosition = MouseWorldPosition() + offset;
-        newPosition = ClampToWaypointArea(newPosition);
-        transform.position = newPosition;
+        if (dragButton == 0 && isDragging)
+        {
+            Vector3 newPosition = MouseWorldPosition() + offset;
+            newPosition = ClampToWaypointArea(newPosition);
+            transform.position = newPosition;
+        }
+    }
+
+    void HandleRightClickDrag()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            // Raycast to check if we're clicking on this object
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit) && hit.collider == GetComponent<Collider>())
+            {
+                isDragging = true;
+                dragButton = 1;
+                offset = transform.position - MouseWorldPosition();
+            }
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            isDragging = false;
+        }
+
+        if (isDragging && dragButton == 1 && Input.GetMouseButton(1))
+        {
+            Vector3 newPosition = MouseWorldPosition() + offset;
+            newPosition = ClampToWaypointArea(newPosition);
+            transform.position = newPosition;
+        }
     }
 
     Vector3 MouseWorldPosition()
@@ -59,6 +89,8 @@ public class InteractiveBoard : MonoBehaviour
         position.z = Mathf.Clamp(position.z, bounds.min.z, bounds.max.z);
         return position;
     }
+
+
 
 
     //private void OnTriggerEnter(Collider other)
