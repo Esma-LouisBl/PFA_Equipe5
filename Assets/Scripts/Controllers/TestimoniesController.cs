@@ -16,6 +16,13 @@ public class TestimoniesController : MonoBehaviour
 
     [SerializeField]
     private MeshOutliner _outliner;
+
+    private GameManager _gameManager;
+
+    private void Start()
+    {
+        _gameManager = FindAnyObjectByType<GameManager>();
+    }
     private void Update()
     {
         if (_outliner.item == "Testimonies" && _outliner.selected)
@@ -106,10 +113,12 @@ public class TestimoniesController : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
+            _gameManager.playerCanMove = true;
         }
         else
         {
             _window.SetActive(true);
+            _gameManager.playerCanMove = false;
         }
     }
 }

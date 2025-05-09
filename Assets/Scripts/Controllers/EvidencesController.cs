@@ -23,9 +23,13 @@ public class EvidencesController : MonoBehaviour
     [SerializeField]
     private MeshOutliner _outliner;
 
+    [SerializeField]
+    private GameManager _gameManager;
+
     private void Start()
     {
         StartCoroutine(EvidenceRotation());
+        //_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -87,10 +91,12 @@ public class EvidencesController : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
+            _gameManager.playerCanMove = true;
         }
         else
         {
             _window.SetActive(true);
+            _gameManager.playerCanMove = false;
         }
     }
 }

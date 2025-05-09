@@ -14,8 +14,12 @@ public class SuspectsController : MonoBehaviour
     [SerializeField]
     private MeshOutliner _outliner;
 
+    private GameManager _gameManager;
+
     private void Start()
     {
+        _gameManager = FindAnyObjectByType<GameManager>();
+
         _alibiPeter.enabled = false;
         _alibiHolly.enabled = false;
         _alibiOliver.enabled = false;
@@ -96,10 +100,12 @@ public class SuspectsController : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
+            _gameManager.playerCanMove = true;
         }
         else
         {
             _window.SetActive(true);
+            _gameManager.playerCanMove = false;
         }
     }
 }

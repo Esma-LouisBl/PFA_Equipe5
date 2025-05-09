@@ -7743,6 +7743,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: adaa2cb8a6879294e8ec783aecdc23b4, type: 2}
   - {fileID: 11400000, guid: 847506ef283f49544806da1588d09791, type: 2}
   _outliner: {fileID: 1004273155}
+  _gameManager: {fileID: 97514707}
 --- !u!1 &1408847094
 GameObject:
   m_ObjectHideFlags: 0
