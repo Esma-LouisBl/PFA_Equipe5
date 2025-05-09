@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class InteractiveBoard : MonoBehaviour
 {
-    [SerializeField]
+    
     private Vector3 offset;
     private float x;
-
-    public Collider waypointArea;
+    [SerializeField]
+    private Collider waypointArea;
     private bool isDragging = false;
 
-    
 
 
     void Start()
@@ -62,23 +61,23 @@ public class InteractiveBoard : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!isDragging && other.CompareTag("Selectable") && other.gameObject != gameObject)
-        {
-            if (other.transform.parent != transform)
-            {
-                other.transform.SetParent(transform, true);
-            }
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (!isDragging && other.CompareTag("Selectable") && other.transform.parent == transform)
-        {
-            other.transform.SetParent(null, true);
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (!isDragging && other.CompareTag("Selectable") && other.gameObject != gameObject)
+    //    {
+    //        if (other.transform.parent != transform)
+    //        {
+    //            other.transform.SetParent(transform, true);
+    //        }
+    //    }
+    //}
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (!isDragging && other.CompareTag("Selectable") && other.transform.parent == transform)
+    //    {
+    //        other.transform.SetParent(null, true);
+    //    }
+    //}
 
 
 }
