@@ -18,12 +18,7 @@ MonoBehaviour:
     collectedCondition: 
     testimony: 
     alibi: 
-  - text: "Normal, j'\xE9tais dans la cuisine en train de manger du pain."
-    speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
-    collectedCondition: 
-    testimony: il mange du pain
-    alibi: Peter
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: ec653d3b374221d408db5c177e47d902, type: 2}
-  conditionScene: {fileID: 11400000, guid: a6e453834ec5a6547b1b28a33fb4773c, type: 2}
-  conditionToUnlock: lui c'est Didier
+  nextScene: {fileID: 0}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: 
