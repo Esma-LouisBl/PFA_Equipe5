@@ -1,15 +1,12 @@
 using UnityEngine;
-
 public class InteractiveBoard : MonoBehaviour
 {
-    [SerializeField]
     private Vector3 offset;
     private float x;
-
-    public Collider waypointArea;
+    [SerializeField]
+    private Collider waypointArea;
     private bool isDragging = false;
-    
-
+    private int dragButton = 0; // 0 = left, 1 = right
 
     void Start()
     {
@@ -21,14 +18,18 @@ public class InteractiveBoard : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = x;
         transform.position = pos;
+
+        HandleRightClickDrag();
     }
 
     void OnMouseDown()
     {
-        isDragging = true;
-        
-        offset = transform.position - MouseWorldPosition();
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            isDragging = true;
+            dragButton = 0;
+            offset = transform.position - MouseWorldPosition();
+        }
     }
 
     void OnMouseUp()
@@ -38,10 +39,39 @@ public class InteractiveBoard : MonoBehaviour
 
     void OnMouseDrag()
     {
-        
-        Vector3 newPosition = MouseWorldPosition() + offset;
-        newPosition = ClampToWaypointArea(newPosition);
-        transform.position = newPosition;
+        if (dragButton == 0 && isDragging)
+        {
+            Vector3 newPosition = MouseWorldPosition() + offset;
+            newPosition = ClampToWaypointArea(newPosition);
+            transform.position = newPosition;
+        }
+    }
+
+    void HandleRightClickDrag()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            // Raycast to check if we're clicking on this object
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit) && hit.collider == GetComponent<Collider>())
+            {
+                isDragging = true;
+                dragButton = 1;
+                offset = transform.position - MouseWorldPosition();
+            }
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            isDragging = false;
+        }
+
+        if (isDragging && dragButton == 1 && Input.GetMouseButton(1))
+        {
+            Vector3 newPosition = MouseWorldPosition() + offset;
+            newPosition = ClampToWaypointArea(newPosition);
+            transform.position = newPosition;
+        }
     }
 
     Vector3 MouseWorldPosition()
@@ -61,23 +91,25 @@ public class InteractiveBoard : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!isDragging && other.CompareTag("Selectable") && other.gameObject != gameObject)
-        {
-            if (other.transform.parent != transform)
-            {
-                other.transform.SetParent(transform, true);
-            }
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (!isDragging && other.CompareTag("Selectable") && other.transform.parent == transform)
-        {
-            other.transform.SetParent(null, true);
-        }
-    }
+
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (!isDragging && other.CompareTag("Selectable") && other.gameObject != gameObject)
+    //    {
+    //        if (other.transform.parent != transform)
+    //        {
+    //            other.transform.SetParent(transform, true);
+    //        }
+    //    }
+    //}
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (!isDragging && other.CompareTag("Selectable") && other.transform.parent == transform)
+    //    {
+    //        other.transform.SetParent(null, true);
+    //    }
+    //}
 
 
 }
