@@ -1391,6 +1391,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 521206169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &201231373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
+  m_PrefabInstance: {fileID: 1206200604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &214510718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,7 +2366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlight: {fileID: 0}
 --- !u!65 &359691828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6421,16 +6425,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Notebook_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1206200606}
   m_SourcePrefab: {fileID: 100100000, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
 --- !u!4 &1206200605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
   m_PrefabInstance: {fileID: 1206200604}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1206200606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201231373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1215452271
 GameObject:
   m_ObjectHideFlags: 0
@@ -9655,7 +9678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlight: {fileID: 0}
 --- !u!65 &1868791411
 BoxCollider:
   m_ObjectHideFlags: 0
