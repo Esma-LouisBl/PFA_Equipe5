@@ -15,7 +15,7 @@ public class MeshOutliner : MonoBehaviour
         }
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit))
+        if (Physics.Raycast(ray, out raycastHit))
         {
             _highlight = raycastHit.transform;
 
@@ -40,4 +40,3 @@ public class MeshOutliner : MonoBehaviour
         }
     }
 }
-
