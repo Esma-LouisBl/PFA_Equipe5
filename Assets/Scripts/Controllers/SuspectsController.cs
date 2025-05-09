@@ -11,6 +11,9 @@ public class SuspectsController : MonoBehaviour
 
     private int _suspectIndex;
 
+    [SerializeField]
+    private MeshOutliner _outliner;
+
     private void Start()
     {
         _alibiPeter.enabled = false;

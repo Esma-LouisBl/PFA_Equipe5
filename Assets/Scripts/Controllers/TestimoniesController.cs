@@ -14,7 +14,8 @@ public class TestimoniesController : MonoBehaviour
 
     private int _witnessIndex;
 
-
+    [SerializeField]
+    private MeshOutliner _outliner;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))

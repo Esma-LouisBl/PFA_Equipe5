@@ -2347,7 +2347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e317cff01d62b2e48800500b52dde421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0, z: 0}
   waypointArea: {fileID: 0}
 --- !u!114 &359691827
 MonoBehaviour:
@@ -2361,6 +2360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: 
+  selected: 0
 --- !u!65 &359691828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2766,6 +2767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: Suspects
+  selected: 0
 --- !u!64 &381194583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4434,6 +4437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: Testimonies
+  selected: 0
 --- !u!64 &648946322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5500,6 +5505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: Evidences
+  selected: 0
 --- !u!64 &1004273158
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7734,6 +7741,7 @@ MonoBehaviour:
   evidences:
   - {fileID: 11400000, guid: adaa2cb8a6879294e8ec783aecdc23b4, type: 2}
   - {fileID: 11400000, guid: 847506ef283f49544806da1588d09791, type: 2}
+  _outliner: {fileID: 1004273155}
 --- !u!1 &1408847094
 GameObject:
   m_ObjectHideFlags: 0
@@ -9787,7 +9795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e317cff01d62b2e48800500b52dde421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0, z: 0}
   waypointArea: {fileID: 0}
 --- !u!114 &1868791410
 MonoBehaviour:
@@ -9801,6 +9808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: 
+  selected: 0
 --- !u!65 &1868791411
 BoxCollider:
   m_ObjectHideFlags: 0

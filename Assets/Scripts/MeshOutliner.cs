@@ -6,6 +6,9 @@ public class MeshOutliner : MonoBehaviour
     private Transform _highlight;
     private RaycastHit raycastHit;
 
+    public string item;
+    public bool selected = false;
+
     void Update()
     {
         if (_highlight != null)
@@ -32,10 +35,13 @@ public class MeshOutliner : MonoBehaviour
                     _highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.white;
                     _highlight.gameObject.GetComponent<Outline>().OutlineWidth = 7.0f;
                 }
+
+                selected = true;
             }
             else
             {
                 _highlight = null;
+                selected = false;
             }
         }
     }

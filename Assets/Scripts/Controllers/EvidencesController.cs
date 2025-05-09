@@ -20,6 +20,9 @@ public class EvidencesController : MonoBehaviour
 
     public List<Evidence> evidences;
 
+    [SerializeField]
+    private MeshOutliner _outliner;
+
     private void Start()
     {
         StartCoroutine(EvidenceRotation());
@@ -27,9 +30,12 @@ public class EvidencesController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (_outliner.item == "Evidences" && _outliner.selected)
         {
-            OpenAndClose();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
         }
 
         EvidenceUpdate();
