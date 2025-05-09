@@ -18,9 +18,12 @@ public class TestimoniesController : MonoBehaviour
     private MeshOutliner _outliner;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (_outliner.item == "Testimonies" && _outliner.selected)
         {
-            OpenAndClose();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
         }
 
         if (_witnessIndex == 0)

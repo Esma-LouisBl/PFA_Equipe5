@@ -22,7 +22,7 @@ public class MeshOutliner : MonoBehaviour
         {
             _highlight = raycastHit.transform;
 
-            if (_highlight.CompareTag("Selectable"))
+            if (_highlight.CompareTag("Selectable") && _highlight.gameObject.name == gameObject.name)
             {
                 if (_highlight.gameObject.GetComponent<Outline>() != null)
                 {

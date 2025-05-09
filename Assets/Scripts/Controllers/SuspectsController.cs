@@ -38,9 +38,12 @@ public class SuspectsController : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (_outliner.item == "Suspects" && _outliner.selected)
         {
-            OpenAndClose();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
         }
 
         if (_suspectIndex == 0)

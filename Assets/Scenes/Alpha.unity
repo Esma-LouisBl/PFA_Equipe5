@@ -1839,6 +1839,7 @@ MonoBehaviour:
   _peter: {fileID: 932235298}
   _holly: {fileID: 1791445020}
   _oliver: {fileID: 1366400881}
+  _outliner: {fileID: 648946321}
 --- !u!1001 &279036584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5751,10 +5752,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1004273155}
+      addedObject: {fileID: 1004273158}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1004273158}
+      addedObject: {fileID: 1004273155}
   m_SourcePrefab: {fileID: 100100000, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
 --- !u!1 &1093348650
 GameObject:
@@ -10121,6 +10122,7 @@ MonoBehaviour:
   _peter: {fileID: 404838716}
   _holly: {fileID: 1809158367}
   _oliver: {fileID: 1063860909}
+  _outliner: {fileID: 381194582}
 --- !u!1 &1984776601
 GameObject:
   m_ObjectHideFlags: 0
