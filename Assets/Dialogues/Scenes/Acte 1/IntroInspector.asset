@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: IntroInspector
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Edwin !
+    speaker: {fileID: 11400000, guid: 8365065178d97ef448f3d13cb1c54bb4, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "\xC7a fait longtemps\u202F! Depuis ta reconversion non\u202F?"
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Ma foi... Je pr\xE9f\xE9rais m\u2019occuper des archives plut\xF4t que
+      de servir le caf\xE9 \xE0 Monsieur. Et toi, comment te portes-tu ?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "\xC0 vrai dire, on ne peut mieux ! Comme tu peux le voir j\u2019ai \xE9t\xE9
+      promu."
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Et puis, quand j\u2019ai vu d\u2019o\xF9 venait l\u2019appel de ce matin
+      au poste, j'ai tout de suite saut\xE9 sur l\u2019occasion !  J\u2019esp\xE8re
+      que je pourrais compter sur toi comme \xE0 la bonne \xE9poque ?"
+    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Cela ne me d\xE9range pas, il n\u2019y a rien \xE0 faire au manoir actuellement
+      mais... "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Tu sais, j\u2019ai encore du mal avec les cadavres et cela s'est assez
+      aggrav\xE9\u2026 "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "De plus, j\u2019aimerais \xE9viter de devoir rendre mon d\xE9jeuner."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: 

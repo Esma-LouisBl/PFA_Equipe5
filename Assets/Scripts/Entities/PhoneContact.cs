@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewContact", menuName = "Data/New Contact")]
+[CreateAssetMenu(fileName = "NewContact", menuName = "Data/Entities/New Contact")]
 
 public class PhoneContact : ScriptableObject
 {

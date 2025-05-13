@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewEvidence", menuName = "Data/New Evidence")]
+[CreateAssetMenu(fileName = "NewEvidence", menuName = "Data/Entities/New Evidence")]
 public class Evidence : ScriptableObject
 {
     public string evidenceName, evidenceDescription;
