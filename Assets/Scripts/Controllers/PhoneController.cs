@@ -39,6 +39,34 @@ public class PhoneController : MonoBehaviour
     {
         _gameController.currentScene = contactList[_index].scene;
     }
+
+    public void ChangeIndexUp()
+    {
+        if (_index < contactList.Count -1)
+        {
+            _index++;
+        }
+        else
+        {
+            _index = 0;
+        }
+        Debug.Log(_index.ToString());
+    }
+
+    public void ChangeIndexDown()
+    {
+        if (_index > 0)
+        {
+            _index--;
+        }
+        else
+        {
+            _index = contactList.Count -1;
+        }
+        Debug.Log(_index.ToString());
+
+    }
+
     public void OpenAndClose()
     {
         if (_window.activeSelf)
