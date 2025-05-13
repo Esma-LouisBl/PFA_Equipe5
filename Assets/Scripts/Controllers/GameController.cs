@@ -12,11 +12,11 @@ public class GameController : MonoBehaviour
     public ConditionsController conditionsController;
 
     private State _state = State.IDLE;
-    public bool isActive;
+    public bool isActive, restart;
 
     private enum State
     {
-        IDLE, ANIMATE, CHOOSE, STOP
+        IDLE, ANIMATE, CHOOSE, STOP, RESTART
     }
 
     void Start()
@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             if (_state == State.IDLE && bottomBar.IsCompleted())
             {
@@ -80,6 +80,22 @@ public class GameController : MonoBehaviour
         else
         {
             isActive = true;
+        }
+
+        if (restart == true)
+        {
+            _state = State.RESTART;
+            restart = false;
+        }
+
+        if (_state == State.RESTART)
+        {
+            _state = State.IDLE;
+            StoryScene storyScene = currentScene as StoryScene;
+            bottomBar.PlayScene(storyScene);
+            backgroundController.SetImage(storyScene.background);
+
+            bottomBar.Show();
         }
     }
 

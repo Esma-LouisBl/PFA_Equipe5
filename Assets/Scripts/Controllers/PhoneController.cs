@@ -37,7 +37,9 @@ public class PhoneController : MonoBehaviour
 
     public void LoadScene()
     {
+        OpenAndClose();
         _gameController.currentScene = contactList[_index].scene;
+        _gameController.restart = true;
     }
 
     public void ChangeIndexUp()
@@ -50,7 +52,6 @@ public class PhoneController : MonoBehaviour
         {
             _index = 0;
         }
-        Debug.Log(_index.ToString());
     }
 
     public void ChangeIndexDown()
@@ -63,7 +64,6 @@ public class PhoneController : MonoBehaviour
         {
             _index = contactList.Count -1;
         }
-        Debug.Log(_index.ToString());
 
     }
 
