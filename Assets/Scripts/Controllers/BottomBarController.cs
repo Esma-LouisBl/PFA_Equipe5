@@ -26,6 +26,8 @@ public class BottomBarController : MonoBehaviour
     [SerializeField]
     private ConditionsController _conditionsController;
     [SerializeField]
+    private PhoneController _phoneController;
+    [SerializeField]
     private GameManager _gameManager;
 
     private enum State
@@ -49,6 +51,7 @@ public class BottomBarController : MonoBehaviour
 
     public void Show()
     {
+        ClearText();
         animator.SetTrigger("Show");
         isHidden = false;
     }
@@ -144,6 +147,17 @@ public class BottomBarController : MonoBehaviour
             if (!_conditionsController.collectedConditions.Contains(currentScene.sentences[sentenceIndex].collectedCondition))
             {
                 _conditionsController.collectedConditions.Add(currentScene.sentences[sentenceIndex].collectedCondition);
+            }
+        }
+    }
+
+    public void CollectPhoneContacts()
+    {
+        if (currentScene.sentences[sentenceIndex].phoneContact != null)
+        {
+            if (!_phoneController.contactList.Contains(currentScene.sentences[sentenceIndex].phoneContact))
+            {
+                _phoneController.contactList.Add(currentScene.sentences[sentenceIndex].phoneContact);
             }
         }
     }

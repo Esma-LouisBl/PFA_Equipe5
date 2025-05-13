@@ -21,6 +21,7 @@ public class StoryScene : GameScene
         public string collectedCondition;
         public string testimony;
         public string alibi;
+        public PhoneContact phoneContact;
     }
 }
 

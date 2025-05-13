@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class PhoneContact : ScriptableObject
 {
-    public string name;
+    public string contactName;
     public StoryScene scene;
 }

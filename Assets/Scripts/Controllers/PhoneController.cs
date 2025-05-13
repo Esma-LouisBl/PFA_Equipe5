@@ -26,7 +26,7 @@ public class PhoneController : MonoBehaviour
 
     void Update()
     {
-        _name.text = contactList[_index].name;
+        _name.text = contactList[_index].contactName;
 
         if (_outliner.selectedPhone == true)
         {
