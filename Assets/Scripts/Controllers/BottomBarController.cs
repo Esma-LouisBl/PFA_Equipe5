@@ -69,7 +69,10 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
-        spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+        if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
+        {
+            spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+        }
 
         CollectTestimonies();
         CollectAlibis();

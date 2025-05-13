@@ -59,7 +59,54 @@ MonoBehaviour:
     collectedCondition: 
     testimony: 
     alibi: 
+  - text: "Bien s\xFBr, bien s\xFBr. Tu n\u2019auras qu\u2019\xE0 t\u2019occuper
+      de mener les diff\xE9rents interrogatoires pendant que j\u2019irais sur place
+      pour trouver des indices."
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: Merci. Tu as pu obtenir des informations sur la victime ?
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: Le nom de la victime est Lawrence Brown, une femme de trente ans qui travaillait
+      en tant que journaliste pour The Times.
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Elle a \xE9t\xE9 retrouv\xE9e morte dans le bureau du g\xE9rant du manoir.
+      Sa mort serait estim\xE9e aux alentours de 19h30. "
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: 'Quelqu''un a pu contacter sa famille ? '
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Pas encore mais je peux te donner le num\xE9ro de la demeure familiale.
+      Je vais aller examiner la sc\xE8ne du crime pendant ce temps et essayer d\u2019obtenir
+      des informations."
+    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Tu pourrais aussi interroger Monsieur Warner. Si la victime a \xE9t\xE9
+      retrouv\xE9e dans son bureau ce n\u2019est pas qu\u2019une co\xEFncidence. "
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Je m\u2019en occupe."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: dc66bbd90ed0fa94ebbb4e2dc102bedd, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: 
