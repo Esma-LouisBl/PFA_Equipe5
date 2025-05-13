@@ -17,6 +17,8 @@ public class PhoneController : MonoBehaviour
     private MeshOutliner _outliner;
     [SerializeField]
     private GameManager _gameManager;
+    [SerializeField]
+    private CursorController _cursorController;
     void Start()
     {
         
@@ -40,6 +42,7 @@ public class PhoneController : MonoBehaviour
         OpenAndClose();
         _gameController.currentScene = contactList[_index].scene;
         _gameController.restart = true;
+        _cursorController.LookForward();
     }
 
     public void ChangeIndexUp()

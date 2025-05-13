@@ -7056,6 +7056,7 @@ MonoBehaviour:
   _window: {fileID: 2058448247}
   _outliner: {fileID: 882496780}
   _gameManager: {fileID: 97514707}
+  _cursorController: {fileID: 1797189652}
 --- !u!1 &1158541911
 GameObject:
   m_ObjectHideFlags: 0
@@ -9740,6 +9741,7 @@ MonoBehaviour:
   chooseController: {fileID: 588663800}
   conditionsController: {fileID: 1698584220}
   isActive: 0
+  restart: 0
 --- !u!114 &1730906295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9914,6 +9916,7 @@ MonoBehaviour:
   deadZoneRadius: 50
   maxAngleX: 10
   maxAngleY: 10
+  _recenterDuration: 0.5
 --- !u!114 &1797189653
 MonoBehaviour:
   m_ObjectHideFlags: 0
