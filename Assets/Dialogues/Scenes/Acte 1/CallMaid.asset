@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: CallMaid
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "...All\xF4\u202F?"
+    speaker: {fileID: 11400000, guid: df55313f3802e3f47b15bc25171341d8, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Bonjour, ai-je l\u2019honneur de parler \xE0 Madame Brown ?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Oh non, Monsieur. Madame est en d\xE9placement \xE0 l\u2019\xE9tranger
+      avec son mari. Je suis l\u2019une des femmes de m\xE9nage, je travaille pour
+      la famille."
+    speaker: {fileID: 11400000, guid: df55313f3802e3f47b15bc25171341d8, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Oh, pardonnez ma maladresse, je suis Edwin Justice. J\u2019enqu\xEAte
+      sur le d\xE9c\xE8s de Madame Lawrence Brown et j\u2019aurais besoin de m\u2019entretenir
+      avec la famille."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Je suis navr\xE9e, Monsieur, mais ils sont partis pour affaires \xE0 l\u2019\xE9tranger.
+      Ils ne rentreront pas avant le mois prochain."
+    speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Je vois. Aviez-vous rencontr\xE9 personnellement Madame Lawrence Brown\u202F?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Pas vraiment, Madame ne venait pas souvent \xE0 la r\xE9sidence familiale
+      ... Et, pour \xEAtre honn\xEAte, elle ne semblait pas tr\xE8s port\xE9e sur
+      les visites ou les mondanit\xE9s."
+    speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Est-ce que vous conna\xEEtriez quelqu\u2019un de son entourage qui pourrait
+      me renseigner ?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Franchement, je ne saurais pas vous dire. Si vous voulez en savoir plus,
+      le mieux serait d\u2019attendre le retour de Monsieur et de Madame."
+    speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Tr\xE8s bien. Pourriez-vous leur faire savoir que j'ai appel\xE9 ?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  - text: "Bien s\xFBr, je n\u2019y manquerais pas. Bonne journ\xE9e \xE0 vous, Monsieur. "
+    speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 327b4e85061087c4b93048f5edf24fc7, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: 
