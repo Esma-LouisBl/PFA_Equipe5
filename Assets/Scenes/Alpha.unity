@@ -689,6 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1730906294}
   playerCanMove: 0
+  readingNote: 0
 --- !u!1 &99474663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,7 +2363,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: 
-  selected: 0
+  selectedSuspects: 0
+  selectedEvidences: 0
+  selectedTestimonies: 0
 --- !u!65 &359691828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2769,7 +2772,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: Suspects
-  selected: 0
+  selectedSuspects: 0
+  selectedEvidences: 0
+  selectedTestimonies: 0
 --- !u!64 &381194583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4439,7 +4444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: Testimonies
-  selected: 0
+  selectedSuspects: 0
+  selectedEvidences: 0
+  selectedTestimonies: 0
 --- !u!64 &648946322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5507,7 +5514,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: Evidences
-  selected: 0
+  selectedSuspects: 0
+  selectedEvidences: 0
+  selectedTestimonies: 0
 --- !u!64 &1004273158
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9811,7 +9820,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: 
-  selected: 0
+  selectedSuspects: 0
+  selectedEvidences: 0
+  selectedTestimonies: 0
 --- !u!65 &1868791411
 BoxCollider:
   m_ObjectHideFlags: 0

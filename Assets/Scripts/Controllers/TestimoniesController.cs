@@ -25,7 +25,7 @@ public class TestimoniesController : MonoBehaviour
     }
     private void Update()
     {
-        if (_outliner.item == "Testimonies" && _outliner.selected)
+        if (_outliner.selectedTestimonies == true)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {

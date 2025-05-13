@@ -42,7 +42,7 @@ public class SuspectsController : MonoBehaviour
     }
     private void Update()
     {
-        if (_outliner.item == "Suspects" && _outliner.selected)
+        if (_outliner.selectedSuspects == true)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {

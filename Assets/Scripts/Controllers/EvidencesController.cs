@@ -29,12 +29,11 @@ public class EvidencesController : MonoBehaviour
     private void Start()
     {
         StartCoroutine(EvidenceRotation());
-        //_gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Update()
     {
-        if (_outliner.item == "Evidences" && _outliner.selected)
+        if (_outliner.selectedEvidences == true)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
