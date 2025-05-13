@@ -100,12 +100,12 @@ public class SuspectsController : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
-            _gameManager.playerCanMove = true;
+            _gameManager.readingNote = false;
         }
         else
         {
             _window.SetActive(true);
-            _gameManager.playerCanMove = false;
+            _gameManager.readingNote = true;
         }
     }
 }

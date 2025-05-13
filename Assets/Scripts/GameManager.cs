@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameController controller;
 
     public bool playerCanMove;
+    public bool readingNote = false;
 
     void Awake()
     {
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (controller.isActive == false)
+        if (controller.isActive == false && readingNote == false)
         {
             playerCanMove = true;
         }
