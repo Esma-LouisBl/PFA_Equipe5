@@ -44,21 +44,24 @@ public class MeshOutliner : MonoBehaviour
                 //selected = false;
             }
 
-            if (_highlight.gameObject.GetComponent<MeshOutliner>() != null)     //check if there's a MeshOutliner in the object highlighted
+            MeshOutliner meshOutliner = _highlight?.gameObject?.GetComponent<MeshOutliner>();
+            if (meshOutliner != null)
             {
-                if (_highlight.gameObject.GetComponent<MeshOutliner>().item == "Evidences")     //bruteforce to know which notebook is it
+                if (meshOutliner.item == "Evidences")
                 {
                     selectedEvidences = true;
                 }
-                if (_highlight.gameObject.GetComponent<MeshOutliner>().item == "Suspects")
+                if (meshOutliner.item == "Suspects")
                 {
                     selectedSuspects = true;
                 }
-                if (_highlight.gameObject.GetComponent<MeshOutliner>().item == "Testimonies")
+                if (meshOutliner.item == "Testimonies")
                 {
                     selectedTestimonies = true;
                 }
             }
+
+
         }
         else
         {
