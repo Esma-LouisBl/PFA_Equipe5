@@ -7897,6 +7897,7 @@ MonoBehaviour:
   _testimoniesController: {fileID: 276440470}
   _suspectsController: {fileID: 1953863691}
   _conditionsController: {fileID: 1698584220}
+  _gameManager: {fileID: 97514707}
 --- !u!224 &1316909783
 RectTransform:
   m_ObjectHideFlags: 0

@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -32,5 +34,16 @@ public class GameManager : MonoBehaviour
         {
             playerCanMove = false;
         }
+    }
+
+    public void GameOver()
+    {
+        StartCoroutine(BlackScreen());
+    }
+
+    private IEnumerator BlackScreen()
+    {
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene(0);
     }
 }

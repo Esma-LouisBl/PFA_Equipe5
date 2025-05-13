@@ -25,6 +25,8 @@ public class BottomBarController : MonoBehaviour
     private SuspectsController _suspectsController;
     [SerializeField]
     private ConditionsController _conditionsController;
+    [SerializeField]
+    private GameManager _gameManager;
 
     private enum State
     {
@@ -72,6 +74,11 @@ public class BottomBarController : MonoBehaviour
         if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
         {
             spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+        }
+
+        if (currentScene.name == "Abandon")
+        {
+            _gameManager.GameOver();
         }
 
         CollectTestimonies();
