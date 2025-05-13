@@ -7,7 +7,7 @@ public class MeshOutliner : MonoBehaviour
     private RaycastHit raycastHit;
 
     public string item;
-    public bool selectedSuspects, selectedEvidences, selectedTestimonies;
+    public bool selectedSuspects, selectedEvidences, selectedTestimonies, selectedPhone;
 
     void Update()
     {
@@ -57,6 +57,10 @@ public class MeshOutliner : MonoBehaviour
                 {
                     selectedTestimonies = true;
                 }
+                if (meshOutliner.item == "Phone")
+                {
+                    selectedPhone = true;
+                }
             }
 
 
@@ -66,6 +70,7 @@ public class MeshOutliner : MonoBehaviour
             selectedEvidences = false;
             selectedSuspects = false;
             selectedTestimonies = false;
+            selectedPhone = false;
         }
     }
 }
