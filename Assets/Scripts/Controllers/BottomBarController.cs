@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
+    [SerializeField]
+    private float _textSpeed = 0.05f;
     public SpriteRenderer spriteRenderer;
 
     public TextMeshProUGUI barText;
@@ -174,7 +176,7 @@ public class BottomBarController : MonoBehaviour
             if (!_interrupted)
             {
                 barText.text += text[wordIndex];
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(_textSpeed);
                 if (++wordIndex == text.Length)
                 {
                     state = State.COMPLETED;

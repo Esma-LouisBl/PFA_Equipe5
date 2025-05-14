@@ -19,6 +19,7 @@ MonoBehaviour:
     collectedCondition: 
     testimony: 
     alibi: 
+    phoneContact: {fileID: 0}
   - text: "\u202FLe corps d\u2019une femme a \xE9t\xE9 retrouv\xE9 plus t\xF4t dans
       la matin\xE9e au manoir Warner House, la police a \xE9t\xE9 appel\xE9e sur
       les lieux apr\xE8s la d\xE9couverte du corps, on ignore toujours l\u2019identit\xE9
@@ -27,6 +28,7 @@ MonoBehaviour:
     collectedCondition: 
     testimony: 
     alibi: 
+    phoneContact: {fileID: 0}
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 524a3c74bbfbf8543b7e50372eb0f50c, type: 2}
   conditionScene: {fileID: 0}
