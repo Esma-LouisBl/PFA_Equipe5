@@ -13,8 +13,46 @@ MonoBehaviour:
   m_Name: CallWarner
   m_EditorClassIdentifier: 
   sentences:
-  - text: "j'arrive bient\xF4t"
+  - text: "Bonjour Monsieur. Je suis navr\xE9 de devoir vous d\xE9ranger aussi t\xF4t."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+    phoneContact: {fileID: 0}
+  - text: "\xC9pargnez-moi les politesses, Edwin. C\u2019est une v\xE9ritable trag\xE9die...
+      Je ne sais pas si j\u2019arriverais \xE0 retrouver le sommeil apr\xE8s une
+      telle sc\xE8ne."
+    speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+    phoneContact: {fileID: 0}
+  - text: "Cela dit, je dois admettre que je suis un peu soulag\xE9 de vous voir
+      prendre les choses en main. Vous avez toujours su faire preuve de discr\xE9tion
+      et de m\xE9thode. On a besoin de \xE7a ici, surtout apr\xE8s cet \xE9v\xE9nement."
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+    phoneContact: {fileID: 0}
+  - text: "Vous me l'aviez demand\xE9, et je suis \xE0 votre service."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+    phoneContact: {fileID: 0}
+  - text: "Cela dit, je vais devoir vous poser quelques questions.  Je suis d\xE9sol\xE9
+      de ne pas pouvoir \xEAtre plus\u2026 courtois, mais la situation ne me laisse
+      gu\xE8re le choix."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+    phoneContact: {fileID: 0}
+  - text: "Cela dit, je vais devoir vous poser quelques questions.  Je suis d\xE9sol\xE9
+      de ne pas pouvoir \xEAtre plus\u2026 courtois, mais la situation ne me laisse
+      gu\xE8re le choix."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: 
     alibi: 
