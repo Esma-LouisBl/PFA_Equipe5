@@ -9,68 +9,74 @@ public class MeshOutliner : MonoBehaviour
     public string item;
     public bool selectedSuspects, selectedEvidences, selectedTestimonies, selectedPhone;
 
+    //[SerializeField]
+    //private GameManager _gameManager;
+
     void Update()
     {
-        if (_highlight != null)
-        {
-            _highlight.gameObject.GetComponent<Outline>().enabled = false;
-            _highlight = null;
-        }
-
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out raycastHit))
-        {
-            _highlight = raycastHit.transform;
-
-            if (_highlight.CompareTag("Selectable"))
+        //if (_gameManager.playerCanMove)
+        //{
+            if (_highlight != null)
             {
-                if (_highlight.gameObject.GetComponent<Outline>() != null)
+                _highlight.gameObject.GetComponent<Outline>().enabled = false;
+                _highlight = null;
+            }
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out raycastHit))
+            {
+                _highlight = raycastHit.transform;
+
+                if (_highlight.CompareTag("Selectable"))
                 {
-                    _highlight.gameObject.GetComponent<Outline>().enabled = true;
+                    if (_highlight.gameObject.GetComponent<Outline>() != null)
+                    {
+                        _highlight.gameObject.GetComponent<Outline>().enabled = true;
+                    }
+                    else
+                    {
+                        Outline outline = _highlight.gameObject.AddComponent<Outline>();
+                        outline.enabled = true;
+                        _highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.white;
+                        _highlight.gameObject.GetComponent<Outline>().OutlineWidth = 7.0f;
+                    }
+
                 }
                 else
                 {
-                    Outline outline = _highlight.gameObject.AddComponent<Outline>();
-                    outline.enabled = true;
-                    _highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.white;
-                    _highlight.gameObject.GetComponent<Outline>().OutlineWidth = 7.0f;
+                    _highlight = null;
                 }
+
+                MeshOutliner meshOutliner = _highlight?.gameObject?.GetComponent<MeshOutliner>();   //check what object is highlighted
+                if (meshOutliner != null)
+                {
+                    if (meshOutliner.item == "Evidences")
+                    {
+                        selectedEvidences = true;
+                    }
+                    if (meshOutliner.item == "Suspects")
+                    {
+                        selectedSuspects = true;
+                    }
+                    if (meshOutliner.item == "Testimonies")
+                    {
+                        selectedTestimonies = true;
+                    }
+                    if (meshOutliner.item == "Phone")
+                    {
+                        selectedPhone = true;
+                    }
+                }
+
 
             }
             else
             {
-                _highlight = null;
+                selectedEvidences = false;
+                selectedSuspects = false;
+                selectedTestimonies = false;
+                selectedPhone = false;
             }
-
-            MeshOutliner meshOutliner = _highlight?.gameObject?.GetComponent<MeshOutliner>();   //check what object is highlighted
-            if (meshOutliner != null)
-            {
-                if (meshOutliner.item == "Evidences")
-                {
-                    selectedEvidences = true;
-                }
-                if (meshOutliner.item == "Suspects")
-                {
-                    selectedSuspects = true;
-                }
-                if (meshOutliner.item == "Testimonies")
-                {
-                    selectedTestimonies = true;
-                }
-                if (meshOutliner.item == "Phone")
-                {
-                    selectedPhone = true;
-                }
-            }
-
-
         }
-        else
-        {
-            selectedEvidences = false;
-            selectedSuspects = false;
-            selectedTestimonies = false;
-            selectedPhone = false;
-        }
-    }
+    //}
 }
