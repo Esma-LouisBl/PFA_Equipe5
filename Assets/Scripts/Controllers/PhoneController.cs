@@ -19,10 +19,6 @@ public class PhoneController : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private CursorController _cursorController;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {

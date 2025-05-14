@@ -87,6 +87,7 @@ public class BottomBarController : MonoBehaviour
         CollectTestimonies();
         CollectAlibis();
         CollectConditions();
+        CollectPhoneContacts();
     }
 
     public bool IsCompleted()
