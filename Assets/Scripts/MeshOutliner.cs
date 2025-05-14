@@ -9,13 +9,9 @@ public class MeshOutliner : MonoBehaviour
     public string item;
     public bool selectedSuspects, selectedEvidences, selectedTestimonies, selectedPhone;
 
-    //[SerializeField]
-    //private GameManager _gameManager;
 
     void Update()
     {
-        //if (_gameManager.playerCanMove)
-        //{
             if (_highlight != null)
             {
                 _highlight.gameObject.GetComponent<Outline>().enabled = false;
@@ -77,6 +73,5 @@ public class MeshOutliner : MonoBehaviour
                 selectedTestimonies = false;
                 selectedPhone = false;
             }
-        }
-    //}
+    }
 }

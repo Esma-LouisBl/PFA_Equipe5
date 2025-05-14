@@ -56,6 +56,6 @@ MonoBehaviour:
     alibi: 
     phoneContact: {fileID: 0}
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: e4e38be61677f7c44949d6400a5dfc12, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: 
