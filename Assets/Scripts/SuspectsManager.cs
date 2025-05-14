@@ -1,0 +1,77 @@
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class SuspectsManager : MonoBehaviour
+{
+    private List<Suspects> unlockedSuspects = new List<Suspects>();
+    private int currentIndex;
+
+    [SerializeField]
+    private Image _leftArrow;
+    [SerializeField]
+    private Image _rightArrow;
+    [SerializeField]
+    private Image _suspectLeft;
+    [SerializeField]
+    private Image _suspectRight;
+
+    [SerializeField]
+    private Image _suspectImage;
+    [SerializeField]
+    private TextMeshProUGUI _number;
+    [SerializeField]
+    private TextMeshProUGUI _description;
+    [SerializeField]
+    private TextMeshProUGUI _alibi;
+
+    public void UnlockedEvidence(Suspects newSuspect)
+    {
+        unlockedSuspects.Add(newSuspect);
+        UIUpdate();
+    }
+
+    private void UIUpdate()
+    {
+        _suspectImage.sprite = unlockedSuspects[currentIndex].SuspectSprite;
+        _number.text = unlockedSuspects[currentIndex].SuspectNumber;
+        _description.text = unlockedSuspects[currentIndex].Informations;
+        _alibi.text = unlockedSuspects[currentIndex].Alibi;
+
+        bool canUseLeft = currentIndex > 0;
+        bool canUseRight = currentIndex < unlockedSuspects.Count - 1;
+
+        _leftArrow.gameObject.SetActive(canUseLeft);
+        _suspectLeft.gameObject.SetActive(canUseLeft);
+
+        _rightArrow.gameObject.SetActive(canUseRight);
+        _suspectRight.gameObject.SetActive(canUseRight);
+    }
+
+    public void NextSuspect()
+    {
+        if (currentIndex < unlockedSuspects.Count - 1)
+        {
+            currentIndex++;
+        }
+        else
+        {
+            currentIndex = 0;
+        }
+        UIUpdate();
+    }
+    
+    public void PreviousSuspect()
+    {
+        if (currentIndex > 0)
+        {
+            currentIndex--;
+        }
+        else
+        {
+            currentIndex = unlockedSuspects.Count - 1;
+        }
+        UIUpdate();
+    }
+}
