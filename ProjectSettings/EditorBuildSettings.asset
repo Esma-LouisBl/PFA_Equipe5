@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alpha.unity
     guid: 502d8ce31dc34c346964f7a20f8c03eb
+  - enabled: 0
+    path: Assets/Scenes/WhiteRoom_Dialogue.unity
+    guid: 966ae2919de4b58499a38914bacc5764
+  - enabled: 1
+    path: Assets/Scenes/AlphaThomas.unity
+    guid: b0f10d7b428291042bf652470146b5af
+  - enabled: 1
+    path: Assets/Scenes/Alpha.unity
+    guid: 502d8ce31dc34c346964f7a20f8c03eb
+  - enabled: 1
+    path: Assets/Scenes/WhiteRoom_3C.unity
+    guid: dc2f2d188cfd5ab468853475b3a1f8a5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
