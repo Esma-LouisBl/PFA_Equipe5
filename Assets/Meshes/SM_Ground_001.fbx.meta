@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d349ee0a4b91ac4ab6c2c42f47755c5
+guid: 47e6e211bd55d2a4e92229a712db31c5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_GlassSC_001
-    second: {fileID: 2100000, guid: d6303e6af70441f47ae7b20374e14777, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_ShelfCabinet_001
-    second: {fileID: 2100000, guid: 7add5a9d82def184bb59721e15d1ef12, type: 2}
+      name: M_Ground_001
+    second: {fileID: 2100000, guid: fc499f6dda9901c4481a6ec8eeb2ee54, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -50,9 +45,9 @@ ModelImporter:
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 1
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -86,7 +81,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []

@@ -2,7 +2,7 @@ using UnityEngine;
 public class InteractiveBoard : MonoBehaviour
 {
     private Vector3 offset;
-    private float x;
+    private float z;
     [SerializeField]
     private Collider waypointArea;
     private bool isDragging = false;
@@ -10,13 +10,13 @@ public class InteractiveBoard : MonoBehaviour
 
     void Start()
     {
-        x = transform.position.x;
+        z = transform.position.z;
     }
 
     void Update()
     {
         Vector3 pos = transform.position;
-        pos.x = x;
+        pos.z = z;
         transform.position = pos;
 
         HandleRightClickDrag();
