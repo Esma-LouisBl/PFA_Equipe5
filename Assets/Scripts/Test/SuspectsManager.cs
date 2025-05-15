@@ -29,7 +29,21 @@ public class SuspectsManager : MonoBehaviour
 
     [SerializeField]
     private GameObject _window;
+    [SerializeField]
+    private MeshOutliner _outliner;
+    [SerializeField]
+    private GameManager _gameManager;
 
+    private void Update()
+    {
+        if (_outliner.selectedSuspects == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
+        }
+    }
     public void UnlockedEvidence(SuspectData newSuspect)
     {
         if (!_unlockedSuspects.Contains(newSuspect))
@@ -87,12 +101,15 @@ public class SuspectsManager : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
-            //_gameManager.readingNote = false;
+            _gameManager.readingNote = false;
         }
         else
         {
-            _window.SetActive(true);
-            //_gameManager.readingNote = true;
+            if (!_gameManager.readingNote)
+            {
+                _window.SetActive(true);
+                _gameManager.readingNote = true;
+            }
         }
     }
 }

@@ -25,7 +25,21 @@ public class TestimoniesManager : MonoBehaviour
 
     [SerializeField]
     private GameObject _window;
+    [SerializeField]
+    private MeshOutliner _outliner;
+    [SerializeField]
+    private GameManager _gameManager;
 
+    private void Update()
+    {
+        if (_outliner.selectedTestimonies == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
+        }
+    }
     public void UnlockedTestimony(TestimonyData newTestimony)
     {
         if (!_unlockedTestimonies.Contains(newTestimony))    //check if the testimony has already been collected
@@ -81,12 +95,15 @@ public class TestimoniesManager : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
-            //_gameManager.readingNote = false;
+            _gameManager.readingNote = false;
         }
         else
         {
-            _window.SetActive(true);
-            //_gameManager.readingNote = true;
+            if (!_gameManager.readingNote)
+            {
+                _window.SetActive(true);
+                _gameManager.readingNote = true;
+            }
         }
     }
 }

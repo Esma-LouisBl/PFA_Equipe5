@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6785049f0d96b428406198568b7d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 1045449768}
   playerCanMove: 0
   readingNote: 0
 --- !u!1 &116508766
@@ -2057,6 +2057,8 @@ MonoBehaviour:
   _name: {fileID: 1681684700}
   _description: {fileID: 1192156152}
   _window: {fileID: 124842125}
+  _outliner: {fileID: 648946321}
+  _gameManager: {fileID: 97514707}
 --- !u!1 &220879830
 GameObject:
   m_ObjectHideFlags: 0
@@ -11754,6 +11756,8 @@ MonoBehaviour:
   _description: {fileID: 2127183905}
   _alibi: {fileID: 431036423}
   _window: {fileID: 1950142462}
+  _outliner: {fileID: 381194582}
+  _gameManager: {fileID: 97514707}
 --- !u!114 &1431849087
 MonoBehaviour:
   m_ObjectHideFlags: 0

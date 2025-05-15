@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    public void GameOver()      //POUR LA DEMO (1er choix)
     {
         StartCoroutine(BlackScreen());
     }

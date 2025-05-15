@@ -94,8 +94,11 @@ public class EvidencesController : MonoBehaviour
         }
         else
         {
-            _window.SetActive(true);
-            _gameManager.readingNote = true;
+            if (!_gameManager.readingNote)
+            {
+                _window.SetActive(true);
+                _gameManager.readingNote = true;
+            }
         }
     }
 }
