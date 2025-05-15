@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class SuspectsManager : MonoBehaviour
 {
-    private List<SuspectData> unlockedSuspects = new List<SuspectData>();
-    private int currentIndex;
+    private List<SuspectData> _unlockedSuspects = new List<SuspectData>();
+    private int _currentIndex;
 
     [SerializeField]
     private Image _leftArrow;
@@ -32,22 +32,22 @@ public class SuspectsManager : MonoBehaviour
 
     public void UnlockedEvidence(SuspectData newSuspect)
     {
-        if (!unlockedSuspects.Contains(newSuspect))
+        if (!_unlockedSuspects.Contains(newSuspect))
         {
-            unlockedSuspects.Add(newSuspect);
+            _unlockedSuspects.Add(newSuspect);
             UIUpdate();
         }
     }
 
     private void UIUpdate()
     {
-        _suspectImage.sprite = unlockedSuspects[currentIndex].SuspectSprite;
-        _number.text = unlockedSuspects[currentIndex].SuspectNumber;
-        _description.text = unlockedSuspects[currentIndex].Informations;
-        _alibi.text = unlockedSuspects[currentIndex].Alibi;
+        _suspectImage.sprite = _unlockedSuspects[_currentIndex].SuspectSprite;
+        _number.text = _unlockedSuspects[_currentIndex].SuspectNumber;
+        _description.text = _unlockedSuspects[_currentIndex].Informations;
+        _alibi.text = _unlockedSuspects[_currentIndex].Alibi;
 
-        bool canUseLeft = currentIndex > 0;
-        bool canUseRight = currentIndex < unlockedSuspects.Count - 1;
+        bool canUseLeft = _currentIndex > 0;
+        bool canUseRight = _currentIndex < _unlockedSuspects.Count - 1;
 
         _leftArrow.gameObject.SetActive(canUseLeft);
         _suspectLeft.gameObject.SetActive(canUseLeft);
@@ -58,26 +58,26 @@ public class SuspectsManager : MonoBehaviour
 
     public void NextSuspect()
     {
-        if (currentIndex < unlockedSuspects.Count - 1)
+        if (_currentIndex < _unlockedSuspects.Count - 1)
         {
-            currentIndex++;
+            _currentIndex++;
         }
         else
         {
-            currentIndex = 0;
+            _currentIndex = 0;
         }
         UIUpdate();
     }
     
     public void PreviousSuspect()
     {
-        if (currentIndex > 0)
+        if (_currentIndex > 0)
         {
-            currentIndex--;
+            _currentIndex--;
         }
         else
         {
-            currentIndex = unlockedSuspects.Count - 1;
+            _currentIndex = _unlockedSuspects.Count - 1;
         }
         UIUpdate();
     }

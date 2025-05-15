@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class TestimoniesManager : MonoBehaviour
 {
-    private List<TestimonyData> unlockedTestimonies = new List<TestimonyData>();
-    private int currentIndex;
+    private List<TestimonyData> _unlockedTestimonies = new List<TestimonyData>();
+    private int _currentIndex;
 
     [SerializeField]
     private Image _leftArrow;
@@ -28,20 +28,20 @@ public class TestimoniesManager : MonoBehaviour
 
     public void UnlockedTestimony(TestimonyData newTestimony)
     {
-        if (!unlockedTestimonies.Contains(newTestimony))    //check if the testimony has already been collected
+        if (!_unlockedTestimonies.Contains(newTestimony))    //check if the testimony has already been collected
         {
-            unlockedTestimonies.Add(newTestimony);
+            _unlockedTestimonies.Add(newTestimony);
             UIUpdate();
         }
     }
 
     private void UIUpdate()
     {
-        _name.text = unlockedTestimonies[currentIndex].Name;
-        _description.text = unlockedTestimonies[currentIndex].Description;
+        _name.text = _unlockedTestimonies[_currentIndex].Name;
+        _description.text = _unlockedTestimonies[_currentIndex].Description;
 
-        bool canUseLeft = currentIndex > 0;
-        bool canUseRight = currentIndex < unlockedTestimonies.Count - 1;
+        bool canUseLeft = _currentIndex > 0;
+        bool canUseRight = _currentIndex < _unlockedTestimonies.Count - 1;
 
         _leftArrow.gameObject.SetActive(canUseLeft);
         _testimonyLeft.gameObject.SetActive(canUseLeft);
@@ -52,26 +52,26 @@ public class TestimoniesManager : MonoBehaviour
 
     public void NextTestimony()
     {
-        if (currentIndex < unlockedTestimonies.Count - 1)
+        if (_currentIndex < _unlockedTestimonies.Count - 1)
         {
-            currentIndex++;
+            _currentIndex++;
         }
         else
         {
-            currentIndex = 0;
+            _currentIndex = 0;
         }
         UIUpdate();
     }
     
     public void PreviousTestimony()
     {
-        if (currentIndex > 0)
+        if (_currentIndex > 0)
         {
-            currentIndex--;
+            _currentIndex--;
         }
         else
         {
-            currentIndex = unlockedTestimonies.Count - 1;
+            _currentIndex = _unlockedTestimonies.Count - 1;
         }
         UIUpdate();
     }
