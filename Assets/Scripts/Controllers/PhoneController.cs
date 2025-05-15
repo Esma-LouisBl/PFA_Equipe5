@@ -75,8 +75,11 @@ public class PhoneController : MonoBehaviour
         }
         else
         {
-            _window.SetActive(true);
-            _gameManager.readingNote = true;
+            if (_gameManager.playerCanMove)
+            {
+                _window.SetActive(true);
+                _gameManager.readingNote = true;
+            }
         }
     }
 }
