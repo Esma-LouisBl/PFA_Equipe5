@@ -7,8 +7,7 @@ public class MeshOutliner : MonoBehaviour
     private RaycastHit raycastHit;
 
     public string item;
-    public bool selectedSuspects, selectedEvidences, selectedTestimonies, selectedPhone;
-
+    public bool selectedSuspects, selectedEvidences, selectedTestimonies, selectedPhone, selectedDesk;
 
     void Update()
     {
@@ -44,7 +43,8 @@ public class MeshOutliner : MonoBehaviour
                 }
 
                 MeshOutliner meshOutliner = _highlight?.gameObject?.GetComponent<MeshOutliner>();   //check what object is highlighted
-                if (meshOutliner != null)
+                
+            if (meshOutliner != null)
                 {
                     if (meshOutliner.item == "Evidences")
                     {
@@ -61,10 +61,8 @@ public class MeshOutliner : MonoBehaviour
                     if (meshOutliner.item == "Phone")
                     {
                         selectedPhone = true;
-                    }
+                    }  
                 }
-
-
             }
             else
             {
@@ -72,6 +70,7 @@ public class MeshOutliner : MonoBehaviour
                 selectedSuspects = false;
                 selectedTestimonies = false;
                 selectedPhone = false;
+                selectedDesk = false;
             }
     }
 }

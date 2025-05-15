@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public bool playerCanMove;
     public bool readingNote = false;
 
+    public bool PlayerHasEvidence = false;
+
     void Awake()
     {
         if (Instance == null)

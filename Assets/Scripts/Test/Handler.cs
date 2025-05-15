@@ -4,21 +4,23 @@ public class Handler : MonoBehaviour
 {
     [SerializeField]
     private Transform _playerHandPosition;
-    private GameObject currentEvidence;
-
-    public bool playerHasEvidence;
+    
+    public GameObject CurrentEvidence;
 
     public void HoldEvidence(EvidenceData evidence)
     {
-        currentEvidence = Instantiate(evidence.Mesh, _playerHandPosition);
-        currentEvidence.transform.localPosition = Vector3.zero;
-        currentEvidence.transform.localRotation = Quaternion.identity;
-        playerHasEvidence = true;
+        if (!GameManager.Instance.PlayerHasEvidence)
+        {
+            CurrentEvidence = Instantiate(evidence.MeshGO, _playerHandPosition);
+            CurrentEvidence.transform.localPosition = Vector3.zero;
+            CurrentEvidence.transform.localRotation = Quaternion.identity;
+            GameManager.Instance.PlayerHasEvidence = true;
+        }
     }
 
     public void DropEvidence()
     {
-        Destroy(currentEvidence);
-        playerHasEvidence = false;
+        Destroy(CurrentEvidence);
+        GameManager.Instance.PlayerHasEvidence = false;
     }
 }
