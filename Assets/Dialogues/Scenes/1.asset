@@ -32,6 +32,6 @@ MonoBehaviour:
     suspect: {fileID: 11400000, guid: 8c4075b6cc510754a839a3e4c5212426, type: 2}
     phoneContact: {fileID: 0}
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 90e6e8f2d0cf11144b7d2fd9ae66fa65, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: 
