@@ -17,6 +17,8 @@ public class BottomBarController : MonoBehaviour
     private StoryScene currentScene;
     private State state = State.COMPLETED;
     private Animator animator;
+    [SerializeField]
+    private Animator _spriteAnimator;
     private bool isHidden = false;
 
     private bool _interrupted = false;
@@ -59,6 +61,16 @@ public class BottomBarController : MonoBehaviour
         isHidden = false;
     }
 
+    public void HideSpeaker()
+    {
+        _spriteAnimator.SetTrigger("HideSpeaker");
+    }
+
+    public void ShowSpeaker()
+    {
+        _spriteAnimator.SetTrigger("ShowSpeaker");
+    }
+
     public void ClearText()
     {
         barText.text = "";
@@ -82,9 +94,18 @@ public class BottomBarController : MonoBehaviour
             spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
         }
 
-        if (currentScene.name == "Abandon")
+        if (currentScene.name == "Abandon")     //POUR LA DEMO
         {
             _gameManager.GameOver();
+        }
+
+        if (currentScene.sentences[sentenceIndex].showSprite)
+        {
+            ShowSpeaker();
+        }
+        if (currentScene.sentences[sentenceIndex].hideSprite)
+        {
+            HideSpeaker();
         }
 
         CollectTestimonies();
