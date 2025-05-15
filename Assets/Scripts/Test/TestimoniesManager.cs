@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,9 @@ public class TestimoniesManager : MonoBehaviour
     private TextMeshProUGUI _name;
     [SerializeField]
     private TextMeshProUGUI _description;
+
+    [SerializeField]
+    private GameObject _window;
 
     public void UnlockedTestimony(TestimonyData newTestimony)
     {
@@ -70,5 +74,19 @@ public class TestimoniesManager : MonoBehaviour
             currentIndex = unlockedTestimonies.Count - 1;
         }
         UIUpdate();
+    }
+
+    public void OpenAndClose()
+    {
+        if (_window.activeSelf)
+        {
+            _window.SetActive(false);
+            //_gameManager.readingNote = false;
+        }
+        else
+        {
+            _window.SetActive(true);
+            //_gameManager.readingNote = true;
+        }
     }
 }
