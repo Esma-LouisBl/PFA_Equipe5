@@ -19,9 +19,8 @@ public class StoryScene : GameScene
         public Speaker speaker;
 
         public string collectedCondition;
-        //public string testimony;
         public TestimonyData testimony;
-        public string alibi;
+        public SuspectData suspect;
         public PhoneContact phoneContact;
     }
 }

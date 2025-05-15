@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da1f8b15c12d6d94bbba063fcf7610c8, type: 3}
-  m_Name: PeterWarner
+  m_Name: Oliver
   m_EditorClassIdentifier: 
-  SuspectSprite: {fileID: 0}
-  SuspectNumber: 
-  Informations: 
-  Alibi: 
+  SuspectSprite: {fileID: 21300000, guid: baede525eb6b5334aa37476db1275939, type: 3}
+  SuspectNumber: 002
+  Informations: Oliver - Journaliste
+  Alibi: Fuyait vers un monde meilleur, probablement loin de toute forme de prog
+    OSKOUR

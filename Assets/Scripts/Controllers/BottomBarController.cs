@@ -21,14 +21,11 @@ public class BottomBarController : MonoBehaviour
 
     private bool _interrupted = false;
 
-    //[SerializeField]
-    //private TestimoniesController _testimoniesController;
-
     [SerializeField]
     private TestimoniesManager _testimoniesManager;
-
     [SerializeField]
-    private SuspectsController _suspectsController;
+    private SuspectsManager _suspectsManager;
+
     [SerializeField]
     private ConditionsController _conditionsController;
     [SerializeField]
@@ -91,7 +88,7 @@ public class BottomBarController : MonoBehaviour
         }
 
         CollectTestimonies();
-        CollectAlibis();
+        CollectSuspects();
         CollectConditions();
         CollectPhoneContacts();
     }
@@ -114,11 +111,11 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
-    public void CollectAlibis()
+    public void CollectSuspects()
     {
-        if (currentScene.sentences[sentenceIndex].alibi != "")  //déclenche l'apparition de l'alibi du perso correspondant sur la fiche des suspects
+        if (currentScene.sentences[sentenceIndex].suspect != null)
         {
-            _suspectsController.TurnOnAlibi(currentScene.sentences[sentenceIndex].alibi);
+            _suspectsManager.UnlockedEvidence(currentScene.sentences[sentenceIndex].suspect);
         }
     }
 

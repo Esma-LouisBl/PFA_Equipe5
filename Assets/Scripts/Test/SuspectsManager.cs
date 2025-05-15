@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,10 +27,16 @@ public class SuspectsManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _alibi;
 
+    [SerializeField]
+    private GameObject _window;
+
     public void UnlockedEvidence(SuspectData newSuspect)
     {
-        unlockedSuspects.Add(newSuspect);
-        UIUpdate();
+        if (!unlockedSuspects.Contains(newSuspect))
+        {
+            unlockedSuspects.Add(newSuspect);
+            UIUpdate();
+        }
     }
 
     private void UIUpdate()
@@ -73,5 +80,19 @@ public class SuspectsManager : MonoBehaviour
             currentIndex = unlockedSuspects.Count - 1;
         }
         UIUpdate();
+    }
+
+    public void OpenAndClose()
+    {
+        if (_window.activeSelf)
+        {
+            _window.SetActive(false);
+            //_gameManager.readingNote = false;
+        }
+        else
+        {
+            _window.SetActive(true);
+            //_gameManager.readingNote = true;
+        }
     }
 }
