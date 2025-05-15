@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewSpeaker", menuName = "Data/New Speaker")]
+[CreateAssetMenu(fileName = "NewSpeaker", menuName = "Data/Entities/New Speaker")]
 [System.Serializable]
 public class Speaker : ScriptableObject
 {

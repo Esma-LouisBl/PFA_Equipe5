@@ -20,6 +20,12 @@ public class EvidencesController : MonoBehaviour
 
     public List<Evidence> evidences;
 
+    [SerializeField]
+    private MeshOutliner _outliner;
+
+    [SerializeField]
+    private GameManager _gameManager;
+
     private void Start()
     {
         StartCoroutine(EvidenceRotation());
@@ -27,9 +33,12 @@ public class EvidencesController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (_outliner.selectedEvidences == true)
         {
-            OpenAndClose();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
         }
 
         EvidenceUpdate();
@@ -81,10 +90,15 @@ public class EvidencesController : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
+            _gameManager.readingNote = false;
         }
         else
         {
-            _window.SetActive(true);
+            if (!_gameManager.readingNote)
+            {
+                _window.SetActive(true);
+                _gameManager.readingNote = true;
+            }
         }
     }
 }

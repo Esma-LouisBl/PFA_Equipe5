@@ -28,6 +28,6 @@ Material:
     - _OutlineWidth: 10
     - _ZTest: 8
     m_Colors:
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.22745098, g: 0.3859996, b: 0.81960785, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

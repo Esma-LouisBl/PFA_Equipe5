@@ -14,12 +14,23 @@ public class TestimoniesController : MonoBehaviour
 
     private int _witnessIndex;
 
+    [SerializeField]
+    private MeshOutliner _outliner;
 
+    private GameManager _gameManager;
+
+    private void Start()
+    {
+        _gameManager = FindAnyObjectByType<GameManager>();
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (_outliner.selectedTestimonies == true)
         {
-            OpenAndClose();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
         }
 
         if (_witnessIndex == 0)
@@ -102,10 +113,12 @@ public class TestimoniesController : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
+            _gameManager.readingNote = false;
         }
         else
         {
             _window.SetActive(true);
+            _gameManager.readingNote = true;
         }
     }
 }

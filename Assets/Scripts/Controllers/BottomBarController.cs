@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
+    [SerializeField]
+    private float _textSpeed = 0.05f;
     public SpriteRenderer spriteRenderer;
 
     public TextMeshProUGUI barText;
@@ -20,11 +22,16 @@ public class BottomBarController : MonoBehaviour
     private bool _interrupted = false;
 
     [SerializeField]
-    private TestimoniesController _testimoniesController;
+    private TestimoniesManager _testimoniesManager;
     [SerializeField]
-    private SuspectsController _suspectsController;
+    private SuspectsManager _suspectsManager;
+
     [SerializeField]
     private ConditionsController _conditionsController;
+    [SerializeField]
+    private PhoneController _phoneController;
+    [SerializeField]
+    private GameManager _gameManager;
 
     private enum State
     {
@@ -47,6 +54,7 @@ public class BottomBarController : MonoBehaviour
 
     public void Show()
     {
+        ClearText();
         animator.SetTrigger("Show");
         isHidden = false;
     }
@@ -69,11 +77,20 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
-        spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+        if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
+        {
+            spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+        }
+
+        if (currentScene.name == "Abandon")
+        {
+            _gameManager.GameOver();
+        }
 
         CollectTestimonies();
-        CollectAlibis();
+        CollectSuspects();
         CollectConditions();
+        CollectPhoneContacts();
     }
 
     public bool IsCompleted()
@@ -88,42 +105,17 @@ public class BottomBarController : MonoBehaviour
 
     public void CollectTestimonies()
     {
-        if (currentScene.sentences[sentenceIndex].testimony != "")  //Check if there's a testimony in the sentence
+        if (currentScene.sentences[sentenceIndex].testimony != null)  //Check if there's a testimony in the sentence
         {
-            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Peter")   //Check from who is the testimony
-            {
-                if (!_testimoniesController.testimoniesPeter.Contains(currentScene.sentences[sentenceIndex].testimony))  //Check if the testimony has ever been collected
-                {
-                    _testimoniesController.testimoniesPeter.Add(currentScene.sentences[sentenceIndex].testimony);
-                    _testimoniesController.UploadPeter();
-                }
-            }
-
-            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Holly")   //Same for Holly
-            {
-                if (!_testimoniesController.testimoniesHolly.Contains(currentScene.sentences[sentenceIndex].testimony))
-                {
-                    _testimoniesController.testimoniesHolly.Add(currentScene.sentences[sentenceIndex].testimony);
-                    _testimoniesController.UploadHolly();
-                }
-            }
-
-            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Oliver")  //Same for Oliver
-            {
-                if (!_testimoniesController.testimoniesOliver.Contains(currentScene.sentences[sentenceIndex].testimony))
-                {
-                    _testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
-                    _testimoniesController.UploadOliver();
-                }
-            }
+            _testimoniesManager.UnlockedTestimony(currentScene.sentences[sentenceIndex].testimony);
         }
     }
 
-    public void CollectAlibis()
+    public void CollectSuspects()
     {
-        if (currentScene.sentences[sentenceIndex].alibi != "")  //déclenche l'apparition de l'alibi du perso correspondant sur la fiche des suspects
+        if (currentScene.sentences[sentenceIndex].suspect != null)
         {
-            _suspectsController.TurnOnAlibi(currentScene.sentences[sentenceIndex].alibi);
+            _suspectsManager.UnlockedEvidence(currentScene.sentences[sentenceIndex].suspect);
         }
     }
 
@@ -134,6 +126,17 @@ public class BottomBarController : MonoBehaviour
             if (!_conditionsController.collectedConditions.Contains(currentScene.sentences[sentenceIndex].collectedCondition))
             {
                 _conditionsController.collectedConditions.Add(currentScene.sentences[sentenceIndex].collectedCondition);
+            }
+        }
+    }
+
+    public void CollectPhoneContacts()
+    {
+        if (currentScene.sentences[sentenceIndex].phoneContact != null)
+        {
+            if (!_phoneController.contactList.Contains(currentScene.sentences[sentenceIndex].phoneContact))
+            {
+                _phoneController.contactList.Add(currentScene.sentences[sentenceIndex].phoneContact);
             }
         }
     }
@@ -149,7 +152,7 @@ public class BottomBarController : MonoBehaviour
             if (!_interrupted)
             {
                 barText.text += text[wordIndex];
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(_textSpeed);
                 if (++wordIndex == text.Length)
                 {
                     state = State.COMPLETED;

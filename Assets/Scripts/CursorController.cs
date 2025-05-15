@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class CursorController : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class CursorController : MonoBehaviour
 
     private Vector2 screenCenter;
     private bool playerCanUseCursor = true;
+
+    // Ajouté pour recentrage fluide
+    private bool _isRecentering = false;
+    [SerializeField] private float _recenterDuration = 0.5f;
 
     public void EnableCursor(bool condition)
     {
@@ -47,14 +52,14 @@ public class CursorController : MonoBehaviour
 
     void Update()
     {
-        if (!GameManager.Instance.playerCanMove || !playerCanUseCursor) return;
+        if (!GameManager.Instance.playerCanMove || !playerCanUseCursor || _isRecentering) return;
 
         Vector2 mousePos = Input.mousePosition;
         Vector2 offset = mousePos - screenCenter;
 
         float distance = offset.magnitude;
 
-        if (distance < deadZoneRadius)  //Check if cursor in DeadZone
+        if (distance < deadZoneRadius)      //Check if cursor in DeadZone
         {
             _cameraPivot.localRotation = Quaternion.Slerp(_cameraPivot.localRotation, Quaternion.identity, Time.deltaTime * _maxSpeed);
             return;
@@ -71,5 +76,31 @@ public class CursorController : MonoBehaviour
 
         Quaternion targetRotation = Quaternion.Euler(angleX, angleY, 0f);
         _cameraPivot.localRotation = Quaternion.Slerp(_cameraPivot.localRotation, targetRotation, Time.deltaTime * currentSpeed);
+    }
+
+    public void LookForward()   //called to look smoothly to the screen center
+    {
+        if (!_isRecentering)
+            StartCoroutine(RecenterCameraCoroutine());
+    }
+
+    private IEnumerator RecenterCameraCoroutine()
+    {
+        _isRecentering = true;
+
+        Quaternion startRotation = _cameraPivot.localRotation;
+        Quaternion targetRotation = Quaternion.identity;
+
+        float elapsed = 0f;
+        while (elapsed < _recenterDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.SmoothStep(0f, 1f, elapsed / _recenterDuration);
+            _cameraPivot.localRotation = Quaternion.Slerp(startRotation, targetRotation, t);
+            yield return null;
+        }
+
+        _cameraPivot.localRotation = targetRotation;
+        _isRecentering = false;
     }
 }

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: CallMaid_002
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Nous ne pourrons rien savoir aupr\xE8s de la famille de la victime\u2026
+      J\u2019esp\xE8re que Gavin trouvera des indices sur le lieu du crime."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+    phoneContact: {fileID: 0}
+  - text: En attendant, je devrais faire venir Monsieur Warner pour lui poser des
+      questions.
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: 
+    alibi: 
+    phoneContact: {fileID: 11400000, guid: e2aee803db11d184b9824d494601b6bb, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: 

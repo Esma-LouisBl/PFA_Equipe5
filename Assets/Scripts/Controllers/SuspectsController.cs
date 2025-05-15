@@ -11,8 +11,15 @@ public class SuspectsController : MonoBehaviour
 
     private int _suspectIndex;
 
+    [SerializeField]
+    private MeshOutliner _outliner;
+
+    private GameManager _gameManager;
+
     private void Start()
     {
+        _gameManager = FindAnyObjectByType<GameManager>();
+
         _alibiPeter.enabled = false;
         _alibiHolly.enabled = false;
         _alibiOliver.enabled = false;
@@ -35,9 +42,12 @@ public class SuspectsController : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (_outliner.selectedSuspects == true)
         {
-            OpenAndClose();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                OpenAndClose();
+            }
         }
 
         if (_suspectIndex == 0)
@@ -90,10 +100,12 @@ public class SuspectsController : MonoBehaviour
         if (_window.activeSelf)
         {
             _window.SetActive(false);
+            _gameManager.readingNote = false;
         }
         else
         {
             _window.SetActive(true);
+            _gameManager.readingNote = true;
         }
     }
 }

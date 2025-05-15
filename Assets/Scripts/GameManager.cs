@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class GameManager : MonoBehaviour
     public GameController controller;
 
     public bool playerCanMove;
+    public bool readingNote = false;
+
+    public bool PlayerHasEvidence = false;
 
     void Awake()
     {
@@ -23,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (controller.isActive == false)
+        if (controller.isActive == false && readingNote == false)
         {
             playerCanMove = true;
         }
@@ -31,5 +36,16 @@ public class GameManager : MonoBehaviour
         {
             playerCanMove = false;
         }
+    }
+
+    public void GameOver()      //POUR LA DEMO (1er choix)
+    {
+        StartCoroutine(BlackScreen());
+    }
+
+    private IEnumerator BlackScreen()
+    {
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene(0);
     }
 }
