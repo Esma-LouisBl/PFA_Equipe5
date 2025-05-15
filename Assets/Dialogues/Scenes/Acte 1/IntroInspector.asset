@@ -48,8 +48,16 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
   - text: "Et puis, quand j\u2019ai vu d\u2019o\xF9 venait l\u2019appel de ce matin
-      au poste, j'ai tout de suite saut\xE9 sur l\u2019occasion !  J\u2019esp\xE8re
-      que je pourrais compter sur toi comme \xE0 la bonne \xE9poque ?"
+      au poste, j'ai tout de suite saut\xE9 sur l\u2019occasion !"
+    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "J\u2019esp\xE8re que je pourrais compter sur toi comme \xE0 la bonne \xE9poque
+      ? "
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -127,9 +135,16 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Pas encore mais je peux te donner le num\xE9ro de la demeure familiale.
-      Je vais aller examiner la sc\xE8ne du crime pendant ce temps et essayer d\u2019obtenir
-      des informations."
+  - text: "Pas encore mais je peux te donner le num\xE9ro de la demeure familiale."
+    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Je vais aller examiner la sc\xE8ne du crime pendant ce temps et essayer
+      d\u2019obtenir des informations."
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
