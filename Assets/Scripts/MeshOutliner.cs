@@ -61,7 +61,11 @@ public class MeshOutliner : MonoBehaviour
                     if (meshOutliner.item == "Phone")
                     {
                         selectedPhone = true;
-                    }  
+                    }
+                    if (meshOutliner.item == "Desk")
+                    {
+                        selectedDesk = true;
+                    }
                 }
             }
             else

@@ -14,6 +14,11 @@ public class EvidencesSystem : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _testText;
 
+    public void Start()
+    {
+        currentEvidence = _allEvidences[currentIndex];
+        _testText.text = currentEvidence.Name;
+    }
     public void ChangeEvidence()
     {
         currentIndex++;
@@ -24,6 +29,5 @@ public class EvidencesSystem : MonoBehaviour
     public void ChooseEvidence()
     {
         _playerHandler.HoldEvidence(currentEvidence);
-        Debug.Log(GameManager.Instance.PlayerHasEvidence);
     }
 }

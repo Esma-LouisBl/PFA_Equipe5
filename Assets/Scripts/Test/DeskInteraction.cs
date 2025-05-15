@@ -3,6 +3,9 @@ using UnityEngine;
 public class DeskInteraction : MonoBehaviour
 {
     [SerializeField]
+    private MeshOutliner _outliner;
+
+    [SerializeField]
     private Handler _playerHandler;
     [SerializeField]
     private GameObject _currentEvidence;
@@ -21,10 +24,15 @@ public class DeskInteraction : MonoBehaviour
             gameObject.tag = "Untagged";
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && GameManager.Instance.PlayerHasEvidence)
+        if (_outliner.selectedDesk == true)
         {
-            _currentEvidence = Instantiate(_playerHandler.CurrentEvidence, _dropPoint);
-            _playerHandler.DropEvidence();
+            if (Input.GetKeyDown(KeyCode.Mouse0) && GameManager.Instance.PlayerHasEvidence)
+            {
+                _currentEvidence = Instantiate(_playerHandler.CurrentEvidence, _dropPoint);
+                _playerHandler.DropEvidence();
+                // + Jouer un texte. A la fin de ce texte, l'objet est détruit 
+                //Destroy(_currentEvidence);
+            }
         }
     }
 }
