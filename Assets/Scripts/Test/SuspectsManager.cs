@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SuspectsManager : MonoBehaviour
 {
-    private List<Suspects> unlockedSuspects = new List<Suspects>();
+    private List<SuspectData> unlockedSuspects = new List<SuspectData>();
     private int currentIndex;
 
     [SerializeField]
@@ -26,7 +26,7 @@ public class SuspectsManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _alibi;
 
-    public void UnlockedEvidence(Suspects newSuspect)
+    public void UnlockedEvidence(SuspectData newSuspect)
     {
         unlockedSuspects.Add(newSuspect);
         UIUpdate();

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Suspects", menuName = "Folders/Suspects")]
-public class Suspects : ScriptableObject
+public class SuspectData : ScriptableObject
 {
     public Sprite SuspectSprite;
     public string SuspectNumber;

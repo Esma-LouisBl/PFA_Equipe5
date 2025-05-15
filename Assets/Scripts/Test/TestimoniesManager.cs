@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TestimoniesManager : MonoBehaviour
 {
-    private List<Testimony> unlockedTestimonies = new List<Testimony>();
+    private List<TestimonyData> unlockedTestimonies = new List<TestimonyData>();
     private int currentIndex;
 
     [SerializeField]
@@ -22,7 +22,7 @@ public class TestimoniesManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _description;
 
-    public void UnlockedTestimony(Testimony newTestimony)
+    public void UnlockedTestimony(TestimonyData newTestimony)
     {
         unlockedTestimonies.Add(newTestimony);
         UIUpdate();
