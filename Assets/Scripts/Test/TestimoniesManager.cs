@@ -24,8 +24,11 @@ public class TestimoniesManager : MonoBehaviour
 
     public void UnlockedTestimony(TestimonyData newTestimony)
     {
-        unlockedTestimonies.Add(newTestimony);
-        UIUpdate();
+        if (!unlockedTestimonies.Contains(newTestimony))    //check if the testimony has already been collected
+        {
+            unlockedTestimonies.Add(newTestimony);
+            UIUpdate();
+        }
     }
 
     private void UIUpdate()

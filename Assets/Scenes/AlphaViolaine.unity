@@ -4507,17 +4507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be69e4ca71336ba4e94fb625cfafd13b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedTestimonies: []
-  unlockedSuspects: []
-  currentIndex: 0
-  _leftArrow: {fileID: 67932011}
-  _rightArrow: {fileID: 1504691508}
-  _evidenceLeft: {fileID: 20476396}
-  _evidenceRight: {fileID: 812093111}
-  _name: {fileID: 0}
-  _description: {fileID: 0}
-  isForTestimonies: 0
-  isForSuspects: 0
 --- !u!1 &541733950
 GameObject:
   m_ObjectHideFlags: 0
@@ -11194,7 +11183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1730906294
 MonoBehaviour:
   m_ObjectHideFlags: 0

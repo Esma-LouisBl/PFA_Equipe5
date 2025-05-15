@@ -21,8 +21,12 @@ public class BottomBarController : MonoBehaviour
 
     private bool _interrupted = false;
 
+    //[SerializeField]
+    //private TestimoniesController _testimoniesController;
+
     [SerializeField]
-    private TestimoniesController _testimoniesController;
+    private TestimoniesManager _testimoniesManager;
+
     [SerializeField]
     private SuspectsController _suspectsController;
     [SerializeField]
@@ -104,34 +108,9 @@ public class BottomBarController : MonoBehaviour
 
     public void CollectTestimonies()
     {
-        if (currentScene.sentences[sentenceIndex].testimony != "")  //Check if there's a testimony in the sentence
+        if (currentScene.sentences[sentenceIndex].testimony != null)  //Check if there's a testimony in the sentence
         {
-            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Peter")   //Check from who is the testimony
-            {
-                if (!_testimoniesController.testimoniesPeter.Contains(currentScene.sentences[sentenceIndex].testimony))  //Check if the testimony has ever been collected
-                {
-                    _testimoniesController.testimoniesPeter.Add(currentScene.sentences[sentenceIndex].testimony);
-                    _testimoniesController.UploadPeter();
-                }
-            }
-
-            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Holly")   //Same for Holly
-            {
-                if (!_testimoniesController.testimoniesHolly.Contains(currentScene.sentences[sentenceIndex].testimony))
-                {
-                    _testimoniesController.testimoniesHolly.Add(currentScene.sentences[sentenceIndex].testimony);
-                    _testimoniesController.UploadHolly();
-                }
-            }
-
-            if (currentScene.sentences[sentenceIndex].speaker.speakerName == "Oliver")  //Same for Oliver
-            {
-                if (!_testimoniesController.testimoniesOliver.Contains(currentScene.sentences[sentenceIndex].testimony))
-                {
-                    _testimoniesController.testimoniesOliver.Add(currentScene.sentences[sentenceIndex].testimony);
-                    _testimoniesController.UploadOliver();
-                }
-            }
+            _testimoniesManager.UnlockedTestimony(currentScene.sentences[sentenceIndex].testimony);
         }
     }
 
