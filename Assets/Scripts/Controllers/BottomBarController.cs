@@ -34,6 +34,8 @@ public class BottomBarController : MonoBehaviour
     private PhoneController _phoneController;
     [SerializeField]
     private GameManager _gameManager;
+    [SerializeField]
+    private EvidencesSystem _evidencesSystem;
 
     private enum State
     {
@@ -112,6 +114,7 @@ public class BottomBarController : MonoBehaviour
         CollectSuspects();
         CollectConditions();
         CollectPhoneContacts();
+        CollectEvidences();
     }
 
     public bool IsCompleted()
@@ -160,6 +163,21 @@ public class BottomBarController : MonoBehaviour
                 _phoneController.contactList.Add(currentScene.sentences[sentenceIndex].phoneContact);
             }
         }
+    }
+
+    public void CollectEvidences()
+    {
+        if (currentScene.sentences[sentenceIndex].evidence != null)
+        {
+            _evidencesSystem.AddEvidence(currentScene.sentences[sentenceIndex].evidence);
+        }
+    }
+
+    public string GetCurrentSpeaker()
+    {
+        string currentSpeakerName;
+        currentSpeakerName = (currentScene.sentences[sentenceIndex].speaker.speakerName);
+        return currentSpeakerName;
     }
 
     private IEnumerator TypeText(string text)

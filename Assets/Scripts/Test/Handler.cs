@@ -15,17 +15,17 @@ public class Handler : MonoBehaviour
 
     public void HoldEvidence(EvidenceData evidence)
     {
-        if (!GameManager.Instance.PlayerHasEvidence)
-        {
+        //if (!GameManager.Instance.PlayerHasEvidence)
+        //{
             CurrentEvidence = evidence.EvidenceGO;
             _evidence.sprite = evidence.EvidenceSprite;
             GameManager.Instance.PlayerHasEvidence = true;
-        }
+        //}
     }
 
     public void DropEvidence()
     {
-        _evidence.sprite = _emptyImage;
+        _evidence.sprite = null;
         GameManager.Instance.PlayerHasEvidence = false;
     }
 }

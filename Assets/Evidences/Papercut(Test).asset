@@ -15,8 +15,8 @@ MonoBehaviour:
   Name: Papercut
   EvidenceSprite: {fileID: 21300000, guid: 4f58c74fa2e090b49b5260ea6367908a, type: 3}
   EvidenceGO: {fileID: 919132149155446097, guid: 2ebbe591ecfca6841b3cc7f3c19e257b, type: 3}
-  Informations: 
+  Informations: "\xE7a coupe"
   ReactionPeter: {fileID: 0}
   ReactionHolly: {fileID: 0}
-  ReactionOliver: {fileID: 0}
+  ReactionOliver: {fileID: 11400000, guid: 0d87702f5e897e34a8b58603256d2caa, type: 2}
   ReactionInspector: {fileID: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Desk Lamp
   EvidenceSprite: {fileID: 21300000, guid: 55262f312eb7dc944917808d0a7a283b, type: 3}
   EvidenceGO: {fileID: 919132149155446097, guid: 1eb4b4666c927a34b88d253e4c507b86, type: 3}
-  Informations: 
+  Informations: "Tach\xE9e de sang"
   ReactionPeter: {fileID: 0}
   ReactionHolly: {fileID: 0}
   ReactionOliver: {fileID: 0}
