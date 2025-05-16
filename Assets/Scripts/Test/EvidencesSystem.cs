@@ -24,7 +24,6 @@ public class EvidencesSystem : MonoBehaviour
         if (currentIndex < _allEvidences.Count -1)
         {
             currentIndex++;
-            //_testText.text = currentEvidence.Name;
         }
         else
         {
@@ -39,7 +38,6 @@ public class EvidencesSystem : MonoBehaviour
         if (currentIndex > 0)
         {
             currentIndex--;
-            //_testText.text = currentEvidence.Name;
         }
         else
         {

@@ -162,6 +162,13 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
+    public string GetCurrentSpeaker()
+    {
+        string currentSpeakerName;
+        currentSpeakerName = (currentScene.sentences[sentenceIndex].speaker.speakerName);
+        return currentSpeakerName;
+    }
+
     private IEnumerator TypeText(string text)
     {
         barText.text = "";
