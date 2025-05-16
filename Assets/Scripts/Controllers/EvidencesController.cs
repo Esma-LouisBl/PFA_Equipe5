@@ -18,13 +18,14 @@ public class EvidencesController : MonoBehaviour
 
     private float _rotation;
 
-    public List<Evidence> evidences;
 
     [SerializeField]
     private MeshOutliner _outliner;
 
     [SerializeField]
     private GameManager _gameManager;
+    [SerializeField]
+    private EvidencesSystem _evidencesSystem;
 
     private void Start()
     {
@@ -46,10 +47,10 @@ public class EvidencesController : MonoBehaviour
 
     private void EvidenceUpdate()
     {
-        _name.text = evidences[_evidenceIndex].evidenceName;
-        _description.text = evidences[_evidenceIndex].evidenceDescription;
-        _mesh.mesh = evidences[_evidenceIndex].evidenceMesh;
-        _renderer.material = evidences[_evidenceIndex].evidenceMaterial;
+        _name.text = _evidencesSystem.currentEvidence.Name;
+        _description.text = _evidencesSystem.currentEvidence.Informations;
+        _mesh.mesh = _evidencesSystem.currentEvidence.EvidenceGO.GetComponent<MeshFilter>().sharedMesh;
+        _renderer.material = _evidencesSystem.currentEvidence.EvidenceGO.GetComponent<MeshRenderer>().sharedMaterial;
     }
 
     private IEnumerator EvidenceRotation()
@@ -63,26 +64,12 @@ public class EvidencesController : MonoBehaviour
 
     public void ChangeEvidenceUp()
     {
-        if (_evidenceIndex < evidences.Count-1)
-        {
-            _evidenceIndex++;
-        }
-        else
-        {
-            _evidenceIndex = 0;
-        }
+        _evidencesSystem.ChangeEvidenceUp();
     }
 
     public void ChangeEvidenceDown()
     {
-        if (_evidenceIndex > 0)
-        {
-            _evidenceIndex--;
-        }
-        else
-        {
-            _evidenceIndex = evidences.Count-1;
-        }
+        _evidencesSystem.ChangeEvidenceDown();
     }
 
     public void OpenAndClose()
