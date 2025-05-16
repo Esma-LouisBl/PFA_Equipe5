@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Handler : MonoBehaviour
 {
@@ -7,20 +8,24 @@ public class Handler : MonoBehaviour
     
     public GameObject CurrentEvidence;
 
+    [SerializeField]
+    private Image _evidence;
+    [SerializeField]
+    private Sprite _emptyImage;
+
     public void HoldEvidence(EvidenceData evidence)
     {
         if (!GameManager.Instance.PlayerHasEvidence)
         {
-            CurrentEvidence = Instantiate(evidence.MeshGO, _playerHandPosition);
-            CurrentEvidence.transform.localPosition = Vector3.zero;
-            CurrentEvidence.transform.localRotation = Quaternion.identity;
+            CurrentEvidence = evidence.EvidenceGO;
+            _evidence.sprite = evidence.EvidenceSprite;
             GameManager.Instance.PlayerHasEvidence = true;
         }
     }
 
     public void DropEvidence()
     {
-        Destroy(CurrentEvidence);
+        _evidence.sprite = _emptyImage;
         GameManager.Instance.PlayerHasEvidence = false;
     }
 }

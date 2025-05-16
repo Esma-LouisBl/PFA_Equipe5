@@ -4,7 +4,8 @@ using UnityEngine;
 public class EvidenceData : ScriptableObject
 {
     public string Name;
-    public GameObject MeshGO;
+    public Sprite EvidenceSprite;
+    public GameObject EvidenceGO;
     public string Informations;
 
     public StoryScene ReactionPeter;

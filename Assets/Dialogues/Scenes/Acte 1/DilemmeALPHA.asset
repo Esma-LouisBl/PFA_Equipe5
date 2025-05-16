@@ -14,13 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: "Malgr\xE9 les \xE9v\xE9nements, il me reste beaucoup de choses \xE0 faire
-      et de papiers \xE0 terminer. Je me demande si je devrais vraiment participer
-      \xE0 cette enqu\xEAte\u2026 Ce n\u2019est pas pour rien que j\u2019ai arr\xEAt\xE9
+      et de papiers \xE0 terminer.Ce n\u2019est pas pour rien que j\u2019ai arr\xEAt\xE9
       ce m\xE9tier apr\xE8s tout. "
     speaker: {fileID: 11400000, guid: 3b4e0230ef73e1348a8b4886e898d150, type: 2}
     collectedCondition: 
-    testimony: 
-    alibi: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+  - text: "Je me demande si je devrais vraiment participer \xE0 cette enqu\xEAte\u2026 "
+    speaker: {fileID: 11400000, guid: 3b4e0230ef73e1348a8b4886e898d150, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 044071021fb92bb42a3c2730f386d6de, type: 2}
   conditionScene: {fileID: 0}
