@@ -12,11 +12,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Glasses_001
-    second: {fileID: 2100000, guid: c78315f5dd8a2fe439f66756b1519a76, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: M_ShelfCabinet_001
     second: {fileID: 2100000, guid: 7add5a9d82def184bb59721e15d1ef12, type: 2}
   materials:

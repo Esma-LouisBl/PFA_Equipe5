@@ -10,20 +10,20 @@ public class RedLine : MonoBehaviour
     public List<Vector3> ropePositions { get; set; } = new List<Vector3>();
 
     private Vector3 offset;
-    private float x;
+    private float z;
     private bool isDragging = false;
     private GameObject currentRopeObject;
 
     private void Awake()
     {
         AddPosToRope(Vector3.zero);
-        x = transform.position.x;
+        z = transform.position.z;
     }
 
     private void Update()
     {
         Vector3 pos = transform.position;
-        pos.x = x;
+        pos.z = z;
         transform.position = pos;
 
         if (Input.GetMouseButton(1))
