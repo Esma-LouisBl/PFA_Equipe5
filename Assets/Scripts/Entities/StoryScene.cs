@@ -22,6 +22,7 @@ public class StoryScene : GameScene
         public TestimonyData testimony;
         public SuspectData suspect;
         public PhoneContact phoneContact;
+        public PhoneContact contactToRemove;
         public EvidenceData evidence;
 
         public bool showSprite;
