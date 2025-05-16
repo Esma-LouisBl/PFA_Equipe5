@@ -19,6 +19,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 11400000, guid: 28af9e788f225be46a6ed2a7511bbee2, type: 2}
+    evidence: {fileID: 0}
     showSprite: 1
     hideSprite: 0
   - text: "A vrai dire pas vraiment, j\u2019ai tent\xE9 d\u2019avoir la famille de
@@ -28,6 +30,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 11400000, guid: 61618666fe63b044ea6577399c03b9a2, type: 2}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Apparemment, le reste de la famille est en d\xE9placement \xE0 l\u2019\xE9tranger. "
@@ -36,6 +40,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 11400000, guid: e2aee803db11d184b9824d494601b6bb, type: 2}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "De plus, Lawrence Brown n\u2019allait pas vraiment \xE0 la r\xE9sidence
@@ -45,6 +51,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: 'Ah, sais-tu quand ils seront de retour ? '
@@ -53,6 +61,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
