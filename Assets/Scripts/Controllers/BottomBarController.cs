@@ -58,7 +58,7 @@ public class BottomBarController : MonoBehaviour
 
     public void Show()
     {
-        ClearText();
+        //ClearText();
         animator.SetTrigger("Show");
         isHidden = false;
     }
