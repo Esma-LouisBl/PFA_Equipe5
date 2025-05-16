@@ -13,6 +13,8 @@ public class EvidencesSystem : MonoBehaviour
     private Handler _playerHandler;
     [SerializeField]
     private TextMeshProUGUI _testText;
+    [SerializeField]
+    private EvidencesController _evidencesController;
 
     public void Start()
     {
@@ -50,6 +52,7 @@ public class EvidencesSystem : MonoBehaviour
         public void ChooseEvidence()
     {
         _playerHandler.HoldEvidence(currentEvidence);
+        _evidencesController.OpenAndClose();
     }
 
     public void AddEvidence(EvidenceData evidence)

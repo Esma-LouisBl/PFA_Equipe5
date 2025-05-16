@@ -1158,6 +1158,7 @@ MonoBehaviour:
   currentEvidence: {fileID: 0}
   _playerHandler: {fileID: 2056040564}
   _testText: {fileID: 2092181151}
+  _evidencesController: {fileID: 1375152486}
 --- !u!1 &91664655
 GameObject:
   m_ObjectHideFlags: 0
