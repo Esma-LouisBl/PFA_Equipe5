@@ -924,6 +924,68 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1001 &87208685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 936468657}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.64394665
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5062697
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.556887
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76428246
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.64488167
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 80.314
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+      propertyPath: m_Name
+      value: SM_Phone_001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+--- !u!4 &87208686 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2499e7ac89d1c5944a5d9b762e181d23, type: 3}
+  m_PrefabInstance: {fileID: 87208685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &91664655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,6 +7381,8 @@ Transform:
   - {fileID: 1973254386}
   - {fileID: 1438434397}
   - {fileID: 1976106812}
+  - {fileID: 2039099165}
+  - {fileID: 87208686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965531765
@@ -16066,6 +16130,68 @@ RectTransform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1c42ba85d1da7a2409dfa6b378a991b7, type: 3}
   m_PrefabInstance: {fileID: 973760449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2039099164
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 936468657}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0815164
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6636028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.3264465
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+      propertyPath: m_Name
+      value: SM_PhoneBook_001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+--- !u!4 &2039099165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1f0dc5e53e6b7fc4f8eeae29cad9fe31, type: 3}
+  m_PrefabInstance: {fileID: 2039099164}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2040933642 stripped
 Transform:

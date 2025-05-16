@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: 1stInvestigationReport
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Alors, du nouveau\u202F?"
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 1
+    hideSprite: 0
+  - text: "A vrai dire pas vraiment, j\u2019ai tent\xE9 d\u2019avoir la famille de
+      la victime mais je n\u2019ai pu \xE9changer qu\u2019avec une de leur domestique."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Apparemment, le reste de la famille est en d\xE9placement \xE0 l\u2019\xE9tranger. "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "De plus, Lawrence Brown n\u2019allait pas vraiment \xE0 la r\xE9sidence
+      familiale donc elle n\u2019a pu m\u2019en parler plus. "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: 'Ah, sais-tu quand ils seront de retour ? '
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4d8d56b4448c7a84eb072d709db4b776, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: 

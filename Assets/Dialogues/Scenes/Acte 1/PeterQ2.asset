@@ -34,7 +34,7 @@ MonoBehaviour:
       soir\xE9e et elle paraissait \xEAtre une personne bienveillante en qu\xEAte
       de savoir, d\u2019histoire et de v\xE9rit\xE9 dans ses \xE9crits."
     speaker: {fileID: 11400000, guid: 1882c8f5fd824fb42a890614c3da354f, type: 2}
-    collectedCondition: 
+    collectedCondition: Act1 3
     testimony: {fileID: 11400000, guid: 19660fcb44b47dd49aff55585aa843d2, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
