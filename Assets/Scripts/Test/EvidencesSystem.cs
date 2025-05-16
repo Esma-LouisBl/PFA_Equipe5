@@ -51,4 +51,13 @@ public class EvidencesSystem : MonoBehaviour
     {
         _playerHandler.HoldEvidence(currentEvidence);
     }
+
+    public void AddEvidence(EvidenceData evidence)
+    {
+        if (!_allEvidences.Contains(evidence))
+        {
+            _allEvidences.Add(evidence);
+        }
+    }
+
 }

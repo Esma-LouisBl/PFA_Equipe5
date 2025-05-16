@@ -1155,8 +1155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _allEvidences:
   - {fileID: 11400000, guid: 422d2131e896603498fc65c811e19688, type: 2}
-  - {fileID: 11400000, guid: af01ad19b1750ea4dbe674ab90fe0d8f, type: 2}
-  - {fileID: 11400000, guid: 0b0fa5356d128b04fa717033e10d65bc, type: 2}
   currentEvidence: {fileID: 0}
   _playerHandler: {fileID: 2056040564}
   _testText: {fileID: 2092181151}
@@ -11186,6 +11184,7 @@ MonoBehaviour:
   _conditionsController: {fileID: 1698584220}
   _phoneController: {fileID: 1151773686}
   _gameManager: {fileID: 97514707}
+  _evidencesSystem: {fileID: 89023273}
 --- !u!224 &1310856696
 RectTransform:
   m_ObjectHideFlags: 0
