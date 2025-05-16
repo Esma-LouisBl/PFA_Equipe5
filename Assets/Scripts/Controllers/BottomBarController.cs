@@ -58,7 +58,7 @@ public class BottomBarController : MonoBehaviour
 
     public void Show()
     {
-        ClearText();
+        //ClearText();
         animator.SetTrigger("Show");
         isHidden = false;
     }
@@ -115,6 +115,7 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
+        RemoveContact();
     }
 
     public bool IsCompleted()
@@ -161,6 +162,17 @@ public class BottomBarController : MonoBehaviour
             if (!_phoneController.contactList.Contains(currentScene.sentences[sentenceIndex].phoneContact))
             {
                 _phoneController.contactList.Add(currentScene.sentences[sentenceIndex].phoneContact);
+            }
+        }
+    }
+
+    public void RemoveContact()
+    {
+        if (currentScene.sentences[sentenceIndex].contactToRemove != null)
+        {
+            if (_phoneController.contactList.Contains(currentScene.sentences[sentenceIndex].contactToRemove))
+            {
+                _phoneController.contactList.Remove(currentScene.sentences[sentenceIndex].contactToRemove);
             }
         }
     }

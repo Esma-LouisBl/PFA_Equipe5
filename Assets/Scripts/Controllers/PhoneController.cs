@@ -39,6 +39,7 @@ public class PhoneController : MonoBehaviour
         _gameController.currentScene = contactList[_index].scene;
         _gameController.restart = true;
         _cursorController.LookForward();
+        _index = 0;
     }
 
     public void ChangeIndexUp()
