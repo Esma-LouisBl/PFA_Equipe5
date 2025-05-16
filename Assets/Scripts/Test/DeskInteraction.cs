@@ -54,7 +54,6 @@ public class DeskInteraction : MonoBehaviour
                 {
                     LoadScene(_evidencesSystem.currentEvidence.ReactionInspector);
                 }
-                Destroy(_currentEvidence);
             }
         }
     }
