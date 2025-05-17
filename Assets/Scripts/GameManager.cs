@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     public bool PlayerHasEvidence = false;
 
+    [SerializeField]
+    private GameObject _inventoryWindow;
+
     void Awake()
     {
         if (Instance == null)
@@ -31,10 +34,12 @@ public class GameManager : MonoBehaviour
         if (controller.isActive == false && readingNote == false)
         {
             playerCanMove = true;
+            _inventoryWindow.SetActive(true);
         }
         else
         {
             playerCanMove = false;
+            _inventoryWindow.SetActive(false);
         }
     }
 
