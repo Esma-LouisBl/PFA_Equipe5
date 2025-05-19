@@ -237,6 +237,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &54835354
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1047,6 +1048,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &75349378
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1218,6 +1220,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &87019274
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2139,6 +2142,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!65 &189066123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2553,6 +2557,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &217885906
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3074,6 +3079,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &313829480
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3369,6 +3375,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &355805131
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3715,6 +3722,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &381194583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4007,6 +4015,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &405775289
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4312,6 +4321,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &429093344
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4634,6 +4644,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &466606401
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4902,6 +4913,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &523007350
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5073,6 +5085,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &525147953
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5244,6 +5257,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &540542154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5415,6 +5429,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &543743308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5739,6 +5754,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &573321147
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5972,6 +5988,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &594842177
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6504,6 +6521,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &646380523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6652,6 +6670,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &648946322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7045,6 +7064,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &669803075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7464,6 +7484,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &683271010
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7634,6 +7655,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!1 &720317845
 GameObject:
   m_ObjectHideFlags: 0
@@ -7752,6 +7774,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &720317851
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7923,6 +7946,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &721534961
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8018,6 +8042,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &735234163
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8158,6 +8183,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &739256652
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8464,6 +8490,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!65 &742705494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9441,6 +9468,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &837421976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9643,6 +9671,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &882496783
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9783,6 +9812,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &887928825
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10195,6 +10225,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!68 &926643005
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -10397,10 +10428,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_SmallCabinet_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1032188589}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1375896904}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1375896903}
   m_SourcePrefab: {fileID: 100100000, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
 --- !u!4 &934720020 stripped
 Transform:
@@ -10525,6 +10569,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &935351746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10758,6 +10803,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &950430984
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11038,6 +11084,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!65 &951766331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11230,6 +11277,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &963346576
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11522,6 +11570,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &979958164
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11737,6 +11786,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!65 &981888688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11944,6 +11994,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &1004273158
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12272,6 +12323,37 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1032188588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032188589}
+  m_Layer: 0
+  m_Name: Waypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032188589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032188588}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.261, z: 2.825}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 934720020}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045449767
 GameObject:
   m_ObjectHideFlags: 0
@@ -12304,7 +12386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed45e1b6815f30048b66ac092e8103e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: {fileID: 11400000, guid: b734977b553f2f74a82c64414ecc4db9, type: 2}
+  currentScene: {fileID: 11400000, guid: 8157eee26ed449e4180b2df48a5f5257, type: 2}
   bottomBar: {fileID: 1310856695}
   backgroundController: {fileID: 1084729996}
   chooseController: {fileID: 1667052412}
@@ -12514,6 +12596,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1048822387
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12957,6 +13040,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!1 &1061653449
 GameObject:
   m_ObjectHideFlags: 0
@@ -13169,6 +13253,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1078248137
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13758,6 +13843,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1149082574
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15253,6 +15339,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1243184713
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15556,6 +15643,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1255574462
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16446,6 +16534,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1337471302
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16617,6 +16706,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1354655287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16920,6 +17010,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1368668998
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17351,6 +17442,52 @@ MonoBehaviour:
   _outliner: {fileID: 1004273155}
   _gameManager: {fileID: 97514707}
   _evidencesSystem: {fileID: 89023273}
+--- !u!1 &1375896900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
+  m_PrefabInstance: {fileID: 934720019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1375896903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375896900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9acb47e2be296af4f9e32321f1e4cb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: Cabinet
+  selectedSuspects: 0
+  selectedEvidences: 0
+  selectedTestimonies: 0
+  selectedPhone: 0
+  selectedDesk: 0
+  selectedCabinet: 0
+--- !u!64 &1375896904
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375896900}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4946161353717251316, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
 --- !u!1001 &1403629098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17446,6 +17583,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!64 &1403629102
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17662,6 +17800,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1409878683
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18787,6 +18926,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!65 &1561199792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19100,6 +19240,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1571607890
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19205,6 +19346,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!68 &1577437687
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -19594,6 +19736,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1603265750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19868,6 +20011,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &1631307785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21174,6 +21318,7 @@ GameObject:
   - component: {fileID: 1797189651}
   - component: {fileID: 1797189653}
   - component: {fileID: 1797189652}
+  - component: {fileID: 1797189654}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -21237,6 +21382,23 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   isRotating: 0
+--- !u!114 &1797189654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797189650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc06ef3cf3f28304c97468a4f216049f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerTransform: {fileID: 1797189651}
+  _waypoint: {fileID: 1032188589}
+  _gameManager: {fileID: 97514707}
+  _outliner: {fileID: 1375896903}
+  _speed: 20
 --- !u!1 &1807708878
 GameObject:
   m_ObjectHideFlags: 0
@@ -21969,6 +22131,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!65 &1903860001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22669,6 +22832,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &2005173231
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23929,6 +24093,7 @@ MonoBehaviour:
   selectedTestimonies: 0
   selectedPhone: 0
   selectedDesk: 0
+  selectedCabinet: 0
 --- !u!23 &2134913220
 MeshRenderer:
   m_ObjectHideFlags: 0
