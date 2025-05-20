@@ -22,7 +22,7 @@ public class NewMovement : MonoBehaviour
     private Quaternion _targetRotation;
 
     [SerializeField]
-    private GameObject _realCabinet, _falseCabinet;
+    private GameObject _realCabinet, _falseCabinet, _realEvidenceBook, _falseEvidencebook, _realTestimonyBook, _falseTestimonyBook, _realSuspectBook, _falseSuspectBook, _realBoard, _falseBoard;
 
     private void Update()
     {
@@ -38,8 +38,22 @@ public class NewMovement : MonoBehaviour
     private void MoveToCabinet()
     {
         StartCoroutine(Moving());
+
         _realCabinet.SetActive(false);
         _falseCabinet.SetActive(true);
+
+        _realEvidenceBook.SetActive(true);
+        _falseEvidencebook.SetActive(false);
+
+        _realSuspectBook.SetActive(true);
+        _falseSuspectBook.SetActive(false);
+
+        _realTestimonyBook.SetActive(true);
+        _falseTestimonyBook.SetActive(false);
+
+        _realBoard.SetActive(true);
+        _falseBoard.SetActive(false);
+
         _outliner.selectedCabinet = false;
     }
 
