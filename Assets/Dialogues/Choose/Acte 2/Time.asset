@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 653a19eafa2e9bf43bf155c64d39467e, type: 3}
-  m_Name: FamilyReturn
+  m_Name: Time
   m_EditorClassIdentifier: 
   labels:
-  - text: Dans un mois
-    nextScene: {fileID: 11400000, guid: d4286def77a81cd4b843022f2af9b851, type: 2}
-  - text: Demain
-    nextScene: {fileID: 11400000, guid: 6ab7ae334aec3db4f998fe54c6d5ab18, type: 2}
-  - text: "Ils ont d\xE9m\xE9nag\xE9"
-    nextScene: {fileID: 11400000, guid: efa3a0635a23faf4fbd8e02fe7d53144, type: 2}
+  - text: 19h00
+    nextScene: {fileID: 11400000, guid: f7e075da4bde0704da5a1e55b43d6c61, type: 2}
+  - text: 19h30
+    nextScene: {fileID: 11400000, guid: 586610eac5149b846984c7fb004de084, type: 2}
+  - text: 19h45
+    nextScene: {fileID: 11400000, guid: 619598b08539d2f4f8e365324f774941, type: 2}

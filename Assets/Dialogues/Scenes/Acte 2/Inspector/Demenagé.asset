@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: CallWarner
+  m_Name: "Demenag\xE9"
   m_EditorClassIdentifier: 
   sentences:
-  - text: " Bonjour Monsieur. Je suis navr\xE9 de devoir vous d\xE9ranger aussi t\xF4t."
+  - text: "Ils ont d\xE9m\xE9nag\xE9. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -23,22 +23,8 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "\xC9pargnez-moi les politesses, Edwin. C\u2019est une v\xE9ritable trag\xE9die...
-      Je ne sais pas si j\u2019arriverais \xE0 retrouver le sommeil apr\xE8s une
-      telle sc\xE8ne."
-    speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 1
-    hideSprite: 0
-  - text: "Cela dit, je dois admettre que je suis un peu soulag\xE9 de vous voir
-      prendre les choses en main. Vous avez toujours su faire preuve de discr\xE9tion
-      et de m\xE9thode. On a besoin de \xE7a ici, surtout apr\xE8s cet \xE9v\xE9nement."
-    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+  - text: "D\xE9m\xE9nag\xE9 durant leur d\xE9placement\u202F?"
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -47,7 +33,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Vous me l'aviez demand\xE9, et je suis \xE0 votre service."
+  - text: "\u2026 J\u2019ai d\xFB me tromper. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -57,10 +43,9 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Cela dit, je vais devoir vous poser quelques questions.  Je suis d\xE9sol\xE9
-      de ne pas pouvoir \xEAtre plus\u2026 courtois, mais la situation ne me laisse
-      gu\xE8re le choix."
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+  - text: "Ce n\u2019est rien, \xE7a fait longtemps aussi que tu n\u2019as pas \xE9t\xE9
+      sur une enqu\xEAte. "
+    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -69,17 +54,17 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: 'Ne vous excusez pas, Edwin. Faites ce que vous devez faire.  '
-    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+  - text: 'il faut que je relise mes notes plus souvent. '
+    speaker: {fileID: 0}
     collectedCondition: 
     testimony: {fileID: 0}
-    suspect: {fileID: 11400000, guid: 8f1b486e20867ef4a9abf473c343f1d3, type: 2}
+    suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: c44557dbfa2ef594db116b2e087d890e, type: 2}
+  nextScene: {fileID: 11400000, guid: 4d8d56b4448c7a84eb072d709db4b776, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: 
