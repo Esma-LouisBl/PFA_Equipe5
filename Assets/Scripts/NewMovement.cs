@@ -7,13 +7,15 @@ public class NewMovement : MonoBehaviour
     [SerializeField]
     private Transform _playerTransform;
     [SerializeField]
-    private Transform _waypoint;
+    private Transform _waypointCabinet, _waypointDesk;
     [SerializeField]
     private GameManager _gameManager;
     [SerializeField]
     private MeshOutliner _outliner;
     [SerializeField]
     private CursorController _cursorController;
+    [SerializeField]
+    private GameObject _canvas;
 
     [SerializeField]
     private float _speed = 20f;
@@ -37,7 +39,7 @@ public class NewMovement : MonoBehaviour
 
     private void MoveToCabinet()
     {
-        StartCoroutine(Moving());
+        StartCoroutine(Moving(_waypointCabinet, true));
 
         _realCabinet.SetActive(false);
         _falseCabinet.SetActive(true);
@@ -54,25 +56,55 @@ public class NewMovement : MonoBehaviour
         _realBoard.SetActive(true);
         _falseBoard.SetActive(false);
 
+        _canvas.SetActive(true);
+
         _outliner.selectedCabinet = false;
     }
 
-    private IEnumerator Moving()
+    public void ReturnDesk()
+    {
+        _canvas.SetActive(false);
+
+        StartCoroutine(Moving(_waypointDesk, false));
+
+        _realCabinet.SetActive(true);
+        _falseCabinet.SetActive(false);
+
+        _realEvidenceBook.SetActive(false);
+        _falseEvidencebook.SetActive(true);
+
+        _realSuspectBook.SetActive(false);
+        _falseSuspectBook.SetActive(true);
+
+        _realTestimonyBook.SetActive(false);
+        _falseTestimonyBook.SetActive(true);
+
+        _realBoard.SetActive(false);
+        _falseBoard.SetActive(true);
+    }
+
+    private IEnumerator Moving(Transform waypoint, bool goRight)
     {
         _cursorController.EnableCursor(false);
-        while (Vector3.Distance(_playerTransform.position, _waypoint.position) > 0.01f)
+        while (Vector3.Distance(_playerTransform.position, waypoint.position) > 0.01f)
         {
-            _playerTransform.position = Vector3.MoveTowards(_playerTransform.position, _waypoint.position, _speed * Time.deltaTime);
+            _playerTransform.position = Vector3.MoveTowards(_playerTransform.position, waypoint.position, _speed * Time.deltaTime);
 
-            if (Vector3.Distance(_playerTransform.position, _waypoint.position) < 0.01f)
+            if (Vector3.Distance(_playerTransform.position, waypoint.position) < 0.01f)
             {
-                _playerTransform.position = _waypoint.position;
-                //isMoving = false;
+                _playerTransform.position = waypoint.position;
             }
             yield return new WaitForSeconds(0.01f);
         }
 
-        _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y + 90f, 0f);
+        if (goRight)
+        {
+            _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y + 90f, 0f);
+        }
+        else
+        {
+            _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y - 90f, 0f);
+        }
 
         while (Quaternion.Angle(_playerTransform.rotation, _targetRotation) > 1f)
         {
