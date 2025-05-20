@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: HollyWrongProof
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Reconnaissez-vous cet objet\u202F? "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Cela ne me dit rien, est-ce que vous voulez continuer \xE0 me faire perdre
+      mon temps\u202F?"
+    speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []

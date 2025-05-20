@@ -78,8 +78,20 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Avez-vous parl\xE9 ou aper\xE7u la victime lors de la soir\xE9e ? "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+  - text: "H\xE9las, non. J\u2019\xE9tais bien trop occup\xE9e \xE0 renouer avec
+      d\u2019anciennes connaissances. "
+    speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Cependant il me semble avoir aper\xE7u Mme Brown en pleine conversation
+      avec M. Warner, aux alentours de 19 heures. "
+    speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}

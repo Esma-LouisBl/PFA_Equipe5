@@ -17,6 +17,6 @@ MonoBehaviour:
   EvidenceGO: {fileID: 919132149155446097, guid: 1eb4b4666c927a34b88d253e4c507b86, type: 3}
   Informations: "Tach\xE9e de sang"
   ReactionPeter: {fileID: 0}
-  ReactionHolly: {fileID: 0}
+  ReactionHolly: {fileID: 11400000, guid: b59aea81c3bd189419a348312e348f66, type: 2}
   ReactionOliver: {fileID: 0}
   ReactionInspector: {fileID: 0}
