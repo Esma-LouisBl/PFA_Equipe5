@@ -7932,7 +7932,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -7983,7 +7983,7 @@ LineRenderer:
       m_NumAlphaKeys: 2
     numCornerVertices: 10
     numCapVertices: 0
-    alignment: 0
+    alignment: 1
     textureMode: 0
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
@@ -9189,7 +9189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed45e1b6815f30048b66ac092e8103e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: {fileID: 11400000, guid: 8157eee26ed449e4180b2df48a5f5257, type: 2}
+  currentScene: {fileID: 11400000, guid: 596ab460a4d993042bfaea8a52b1f03b, type: 2}
   bottomBar: {fileID: 1310856695}
   backgroundController: {fileID: 1084729996}
   chooseController: {fileID: 1667052412}
