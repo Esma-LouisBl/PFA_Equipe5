@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class SuspectsManager : MonoBehaviour
 {
+    [SerializeField]
     private List<SuspectData> _unlockedSuspects = new List<SuspectData>();
     private int _currentIndex;
 

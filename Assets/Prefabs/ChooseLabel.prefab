@@ -150,4 +150,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.74509805}
+  hoverColor: {r: 0.46564615, g: 0.9056604, b: 0.7988238, a: 0.74509805}

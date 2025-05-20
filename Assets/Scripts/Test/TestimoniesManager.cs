@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TestimoniesManager : MonoBehaviour
 {
+    [SerializeField]
     private List<TestimonyData> _unlockedTestimonies = new List<TestimonyData>();
     private int _currentIndex;
 
