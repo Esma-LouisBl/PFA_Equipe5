@@ -48,20 +48,21 @@ public class GameController : MonoBehaviour
                             bool allConditions = false;
                             int numberConditions = 0;
 
-                            for (int i = 0; i < (currentScene as StoryScene).conditionToUnlock.Count -1; i++)
+                            for (int i = 0; i < (currentScene as StoryScene).conditionToUnlock.Count; i++)
                             {
-                                    if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock[i]))
-                                    {
+                                Debug.Log("i = " + i);
+                                if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock[i]))
+                                {
                                         numberConditions++;
-                                    }
+                                }
                             }
 
-                            if (numberConditions == (currentScene as StoryScene).conditionToUnlock.Count -1)
+                            if (numberConditions == (currentScene as StoryScene).conditionToUnlock.Count)
                             {
                                 allConditions = true;
                             }
 
-                            if (allConditions)  //if there is a condition for the next Scene and the player completed it
+                            if (allConditions == true)  //if there is a condition for the next Scene and the player completed it
                             {
                                 PlayScene((currentScene as StoryScene).conditionScene); //play the Scene "conditionScene"
                             }
