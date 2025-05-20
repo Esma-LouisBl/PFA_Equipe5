@@ -29,6 +29,8 @@ public class TestimoniesManager : MonoBehaviour
     private MeshOutliner _outliner;
     [SerializeField]
     private GameManager _gameManager;
+    [SerializeField]
+    private GameObject _returnCanvas;
 
     private void Update()
     {
@@ -96,6 +98,7 @@ public class TestimoniesManager : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
+            _returnCanvas.SetActive(true);
         }
         else
         {
@@ -103,6 +106,7 @@ public class TestimoniesManager : MonoBehaviour
             {
                 _window.SetActive(true);
                 _gameManager.readingNote = true;
+                _returnCanvas.SetActive(false);
             }
         }
     }

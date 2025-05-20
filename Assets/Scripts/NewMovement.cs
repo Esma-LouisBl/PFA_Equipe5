@@ -56,8 +56,6 @@ public class NewMovement : MonoBehaviour
         _realBoard.SetActive(true);
         _falseBoard.SetActive(false);
 
-        _canvas.SetActive(true);
-
         _outliner.selectedCabinet = false;
     }
 
@@ -117,6 +115,11 @@ public class NewMovement : MonoBehaviour
                 _cursorController.EnableCursor(true);
             }
             yield return new WaitForSeconds(0.005f);
+        }
+
+        if (goRight)
+        {
+            _canvas.SetActive(true);
         }
     }
 }

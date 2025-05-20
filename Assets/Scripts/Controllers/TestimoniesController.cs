@@ -17,6 +17,9 @@ public class TestimoniesController : MonoBehaviour
     [SerializeField]
     private MeshOutliner _outliner;
 
+    [SerializeField]
+    private GameObject _returnCanvas;
+
     private GameManager _gameManager;
 
     private void Start()
@@ -114,11 +117,13 @@ public class TestimoniesController : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
+            _returnCanvas.SetActive(true);
         }
         else
         {
             _window.SetActive(true);
             _gameManager.readingNote = true;
+            _returnCanvas.SetActive(false);
         }
     }
 }
