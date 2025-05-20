@@ -10,20 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: HollyCall
+  m_Name: HollyQ3
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Qui est la personne qui accapare mon pr\xE9cieux temps ? "
-    speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 1
-    hideSprite: 0
-  - text: 'Bonjour Madame, je suis le majordome de ce manoir, Monsieur Edwin Justice. '
+  - text: "Connaissiez-vous Madame Lawrence Brown avant les \xE9v\xE8nements ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -33,8 +23,8 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Je ne crois pas vous avoir demand\xE9 votre nom, je me trompe ? Que me
-      voulez-vous ?"
+  - text: "Hmm\u2026 Lawrence Brown\u2026 Ah ! Mais oui, la journaliste du Times
+      ! "
     speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -44,8 +34,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Comme vous le savez s\xFBrement, il y a eu un meurtre durant la soir\xE9e.
-      J\u2019aurais besoin de vous poser plusieurs questions \xE0 ce sujet."
+  - text: "C\u2019est bien cela."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -55,9 +44,42 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "\xD4 ciel, je n\u2019\xE9tais point au courant de ce drame ! Soit, faites
-      vite, j\u2019ai beaucoup \xE0 faire."
+  - text: "Oh, ch\xE9ri. Bien s\xFBr que je la connaissais. Une femme charmante.
+      Elle m\u2019a interview\xE9e \xE0 plusieurs reprises, toujours apr\xE8s mes
+      plus belles repr\xE9sentations."
+    speaker: {fileID: 11400000, guid: fc1691753e0209f4487f5d670f9bd2d0, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "C\u2019est un choc, vraiment. Une femme si raffin\xE9e\u2026 c\u2019est
+      une grande perte."
     speaker: {fileID: 11400000, guid: 8c8d0a0c7222fe74f9da285981bc475b, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Enfin... elle n\u2019a jamais \xE9gal\xE9 mon \xE9l\xE9gance, cela va
+      sans dire. "
+    speaker: {fileID: 11400000, guid: fc1691753e0209f4487f5d670f9bd2d0, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Avez-vous parl\xE9 ou aper\xE7u la victime lors de la soir\xE9e ? "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
