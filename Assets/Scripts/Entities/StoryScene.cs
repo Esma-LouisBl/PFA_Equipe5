@@ -10,7 +10,7 @@ public class StoryScene : GameScene
     public GameScene nextScene;
     public GameScene conditionScene;
 
-    public string conditionToUnlock;
+    public List<string> conditionToUnlock;
 
     [System.Serializable]
     public struct Sentence

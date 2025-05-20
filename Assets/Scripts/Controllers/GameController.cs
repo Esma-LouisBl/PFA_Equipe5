@@ -39,13 +39,29 @@ public class GameController : MonoBehaviour
                 {
                     if ((currentScene as StoryScene).nextScene != null) //check if there is a scene after this one
                     {
-                        if ((currentScene as StoryScene).conditionToUnlock == "")   //if there is no condition for the next Scene
+                        if ((currentScene as StoryScene).conditionToUnlock.Count == 0)   //if there is no condition for the next Scene
                         {
                             PlayScene((currentScene as StoryScene).nextScene);  //play the Scene "nextScene"
                         }
                         else
                         {
-                            if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock))  //if there is a condition for the next Scene and the player completed it
+                            bool allConditions = false;
+                            int numberConditions = 0;
+
+                            for (int i = 0; i < (currentScene as StoryScene).conditionToUnlock.Count -1; i++)
+                            {
+                                    if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock[i]))
+                                    {
+                                        numberConditions++;
+                                    }
+                            }
+
+                            if (numberConditions == (currentScene as StoryScene).conditionToUnlock.Count -1)
+                            {
+                                allConditions = true;
+                            }
+
+                            if (allConditions)  //if there is a condition for the next Scene and the player completed it
                             {
                                 PlayScene((currentScene as StoryScene).conditionScene); //play the Scene "conditionScene"
                             }
