@@ -57,4 +57,4 @@ MonoBehaviour:
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 4d8d56b4448c7a84eb072d709db4b776, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []

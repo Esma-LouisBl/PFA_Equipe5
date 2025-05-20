@@ -132,7 +132,7 @@ MonoBehaviour:
     hideSprite: 0
   - text: "Sa base est compl\xE8tement d\xE9form\xE9e sans oublier les t\xE2ches
       dessus \u2026 Je pense qu\u2019on a bien l\u2019arme du crime. "
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -166,4 +166,4 @@ MonoBehaviour:
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 899c5b9aef409eb4da395486bb786ab3, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []

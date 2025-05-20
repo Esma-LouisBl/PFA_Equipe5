@@ -63,7 +63,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: af01ad19b1750ea4dbe674ab90fe0d8f, type: 2}
     showSprite: 0
     hideSprite: 0
   - text: 'Normalement non, pas que je sache.  '
@@ -95,7 +95,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: dd0599129b2beb24cbc036fdcabba29c, type: 2}
     showSprite: 0
     hideSprite: 0
   - text: " Je ne connais personne ici avec ces initiales\u2026 "
@@ -164,7 +164,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 1
   - text: "Bon j\u2019ai beaucoup de personnes \xE0 interroger ..."
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -176,4 +176,4 @@ MonoBehaviour:
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []

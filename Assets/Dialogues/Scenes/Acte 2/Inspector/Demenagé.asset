@@ -55,7 +55,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
   - text: 'il faut que je relise mes notes plus souvent. '
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -67,4 +67,4 @@ MonoBehaviour:
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 4d8d56b4448c7a84eb072d709db4b776, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []
