@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: HollyQ2
+  m_Name: HollyCupProof
   m_EditorClassIdentifier: 
   sentences:
-  - text: "O\xF9 \xE9tiez-vous au moment des faits ? "
+  - text: "Buvez-vous souvent du caf\xE9 ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -23,13 +23,21 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "J\u2019\xE9tais dans la salle toute la soir\xE9e, \xE0 discuter avec une
-      foule de gens tous \xE9blouis, que dis-je... aveugl\xE9s par ma pr\xE9sence,
-      ch\xE9ri. J\u2019ai aussi interpr\xE9t\xE9 un petit air mais je n\u2019ai pas
-      quitt\xE9 la pi\xE8ce une seule fois. "
+  - text: "Du caf\xE9 ? Oh non ch\xE9ri, tr\xE8s peu pour moi. "
     speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
     collectedCondition: 
-    testimony: {fileID: 11400000, guid: c1f1464c1c27b0845a2f2833716eea13, type: 2}
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Ce n\u2019est vraiment pas bon pour mes cordes vocales. Le th\xE9 d\u2019Inde,
+      c\u2019est le vrai succ\xE8s voix parfaite !"
+    speaker: {fileID: 11400000, guid: fc1691753e0209f4487f5d670f9bd2d0, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 11400000, guid: d938e0910856bd249adc905c296aa9f1, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
@@ -38,6 +46,5 @@ MonoBehaviour:
     hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
-  conditionScene: {fileID: 11400000, guid: ce9e9e7587e37fb47a9e5eb0857a735e, type: 2}
-  conditionToUnlock:
-  - Glove
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []

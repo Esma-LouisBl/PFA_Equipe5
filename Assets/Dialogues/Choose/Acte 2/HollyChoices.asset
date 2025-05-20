@@ -18,8 +18,8 @@ MonoBehaviour:
   - text: 'Moment des faits '
     nextScene: {fileID: 11400000, guid: 1d51d99b3cec35b40af2298b54f72078, type: 2}
   - text: 'Lawrence Brown '
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 3e04873eaa726d94688d4183c5f589e0, type: 2}
   - text: "Pr\xE9senter une preuve"
     nextScene: {fileID: 11400000, guid: 8df459725d360bd49a639d6302ae4504, type: 2}
   - text: Fin de l'interrogatoire
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 57b6a1ed15194e246a6f89fcd47a88dc, type: 2}
