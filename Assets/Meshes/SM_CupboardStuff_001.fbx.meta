@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ae2813fcbf8cf814e8dc39549faf9710
+guid: b54854b1f8285134b83301050dd5bce7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_WallAssets_001
-    second: {fileID: 2100000, guid: 9afcbd88e69b48942aeede540df713d8, type: 2}
+      name: M_CupboardStuff_001
+    second: {fileID: 2100000, guid: b04583eb3511d7149adb9df7ee52731d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,9 +45,9 @@ ModelImporter:
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 1
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -81,7 +81,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []

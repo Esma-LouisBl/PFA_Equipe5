@@ -19,6 +19,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Bonjour, ai-je l\u2019honneur de parler \xE0 Madame Brown ?"
@@ -27,6 +29,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Oh non, Monsieur. Madame est en d\xE9placement \xE0 l\u2019\xE9tranger
@@ -37,6 +41,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Oh, pardonnez ma maladresse, je suis Edwin Justice. J\u2019enqu\xEAte
@@ -47,6 +53,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Je suis navr\xE9e, Monsieur, mais ils sont partis pour affaires \xE0 l\u2019\xE9tranger.
@@ -56,6 +64,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Je vois. Aviez-vous rencontr\xE9 personnellement Madame Lawrence Brown\u202F?"
@@ -64,6 +74,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Pas vraiment, Madame ne venait pas souvent \xE0 la r\xE9sidence familiale
@@ -74,6 +86,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Est-ce que vous conna\xEEtriez quelqu\u2019un de son entourage qui pourrait
@@ -83,6 +97,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Franchement, je ne saurais pas vous dire. Si vous voulez en savoir plus,
@@ -92,6 +108,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Tr\xE8s bien. Pourriez-vous leur faire savoir que j'ai appel\xE9 ?"
@@ -100,6 +118,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Bien s\xFBr, je n\u2019y manquerais pas. Bonne journ\xE9e \xE0 vous, Monsieur. "
@@ -108,9 +128,12 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 327b4e85061087c4b93048f5edf24fc7, type: 2}
   conditionScene: {fileID: 11400000, guid: 750c2c814dc84724eb49e89259d8a415, type: 2}
-  conditionToUnlock: Act1 2
+  conditionToUnlock:
+  - 'Act1 2 '

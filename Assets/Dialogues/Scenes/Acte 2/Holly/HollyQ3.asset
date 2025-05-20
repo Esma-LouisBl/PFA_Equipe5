@@ -102,5 +102,5 @@ MonoBehaviour:
     hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
-  conditionScene: {fileID: 0}
+  conditionScene: {fileID: 11400000, guid: f9009b76c191a99438b98ac7b2a5feb9, type: 2}
   conditionToUnlock: []

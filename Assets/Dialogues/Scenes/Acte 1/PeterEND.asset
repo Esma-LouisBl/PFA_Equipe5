@@ -19,6 +19,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Tr\xE8s bien, n'h\xE9sitez pas si vous avez besoin d\u2019autres informations
@@ -28,9 +30,12 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 1
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: c687583ad6568fa408903f5e89bcad84, type: 2}
   conditionScene: {fileID: 11400000, guid: 750c2c814dc84724eb49e89259d8a415, type: 2}
-  conditionToUnlock: Act1 1
+  conditionToUnlock:
+  - Act1 1

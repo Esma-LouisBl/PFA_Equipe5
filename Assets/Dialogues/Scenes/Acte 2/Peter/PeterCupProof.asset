@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: HollyEND
+  m_Name: PeterCupProof
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Merci pour vos r\xE9ponses, ce sera tout. "
+  - text: "Buvez-vous du caf\xE9 ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -23,8 +23,9 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Il \xE9tait temps ! "
-    speaker: {fileID: 11400000, guid: bb1ab57dc7d625546a1864103ed83d8f, type: 2}
+  - text: "... Il est possible que j\u2019en ais rebu un peu r\xE9cemment mais je
+      ne vois pas en quoi cette information pourrait \xEAtre int\xE9ressante.  "
+    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -32,11 +33,21 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
-  - text: "J\u2019ai appris pas mal de nouvelles choses ... Je devrais regarder de
-      nouveau mes notes."
+    hideSprite: 0
+  - text: "Je croyais que vous aviez enfin arr\xEAt\xE9 votre addiction ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: Holly
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Que veux-tu, Edwin, j\u2019ai besoin de force pour remplir la paperasse
+      de temps en temps !\_"
+    speaker: {fileID: 11400000, guid: fe83f170e3888fb4b9d1a90293d70ad1, type: 2}
+    collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
@@ -45,7 +56,6 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: e22a8c6da86b7594db23e3ae1b48600e, type: 2}
-  conditionScene: {fileID: 11400000, guid: f9009b76c191a99438b98ac7b2a5feb9, type: 2}
-  conditionToUnlock:
-  - Glove
+  nextScene: {fileID: 11400000, guid: 3f84c3dbd021498479795300fbabc67a, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []

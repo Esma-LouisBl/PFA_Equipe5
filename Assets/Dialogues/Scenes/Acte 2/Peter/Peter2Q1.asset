@@ -10,31 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: CallMaid_003
+  m_Name: Peter2Q1
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Edwin Justice \xE0 l\u2019appareil. "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 1
-  - text: 'Oh, Majordome Edwin, que puis-je pour vous ? '
-    speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "J\u2019aurais voulu savoir si l\u2019une d'entre vous auriez vu quelque
-      chose d\u2019anormal durant la soir\xE9e d\u2019inauguration ? "
+  - text: "J\u2019ai pu \xE9changer avec madame Marie qui m\u2019a parl\xE9 de votre
+      pass\xE9 commun. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -44,9 +24,30 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Je vous laisse patienter quelques secondes, je vais voir avec les autres
-      \u2026 "
-    speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
+  - text: '...Je ne pensais pas qu''elle vous en parlerait. '
+    speaker: {fileID: 11400000, guid: 01c793bd5695150458beb223b0ca19d1, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Nous avons eu une aventure ensemble mais cela fait plusieurs ann\xE9es
+      que je ne l\u2019avais pas revue. "
+    speaker: {fileID: 11400000, guid: fe83f170e3888fb4b9d1a90293d70ad1, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Avant mon interview, elle est venue \xE0 moi en me disant vouloir discuter.
+      Nous avons un peu convers\xE9 puis elle a quitt\xE9 mes appartements.  "
+    speaker: {fileID: 11400000, guid: fe83f170e3888fb4b9d1a90293d70ad1, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -56,6 +57,6 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 301c8ef776c998445a7ed9075e3a013d, type: 2}
+  nextScene: {fileID: 11400000, guid: 3f84c3dbd021498479795300fbabc67a, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
