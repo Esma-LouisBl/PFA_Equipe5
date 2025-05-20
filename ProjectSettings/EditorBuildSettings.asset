@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AlphaLouis.unity
     guid: 502d8ce31dc34c346964f7a20f8c03eb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WhiteRoom_3C.unity
     guid: dc2f2d188cfd5ab468853475b3a1f8a5
   m_configObjects:
