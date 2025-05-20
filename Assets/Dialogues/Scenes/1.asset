@@ -18,7 +18,7 @@ MonoBehaviour:
     collectedCondition: 
     testimony: {fileID: 11400000, guid: 4a56515a55002654c915dbeb998e5d69, type: 2}
     suspect: {fileID: 11400000, guid: 8c4075b6cc510754a839a3e4c5212426, type: 2}
-    phoneContact: {fileID: 11400000, guid: e2aee803db11d184b9824d494601b6bb, type: 2}
+    phoneContact: {fileID: 11400000, guid: db690d80e3909a244942e346919e7e8b, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
@@ -33,7 +33,17 @@ MonoBehaviour:
     evidence: {fileID: 11400000, guid: 0b0fa5356d128b04fa717033e10d65bc, type: 2}
     showSprite: 0
     hideSprite: 0
+  - text: bla blab la
+    speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 11400000, guid: 4a56515a55002654c915dbeb998e5d69, type: 2}
+    suspect: {fileID: 11400000, guid: 8c4075b6cc510754a839a3e4c5212426, type: 2}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 11400000, guid: 0b0fa5356d128b04fa717033e10d65bc, type: 2}
+    showSprite: 0
+    hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 8747a5a62bca3764cba5a8be913f3de0, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []
