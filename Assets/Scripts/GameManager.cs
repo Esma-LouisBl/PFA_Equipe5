@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
 
     public bool PlayerHasEvidence = false;
 
+    //public Texture2D mainCursor, interactCursor, dialogueCursor;
+    //public CursorMode cursorMode = CursorMode.Auto;
+    //public Vector2 hotspot = Vector2.zero;
+
     [SerializeField]
     private GameObject _inventoryWindow;
 
