@@ -36,6 +36,8 @@ public class SuspectsManager : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private GameObject _returnCanvas;
+    [SerializeField]
+    private AudioSource _audioSource;
 
     private void Update()
     {
@@ -84,6 +86,7 @@ public class SuspectsManager : MonoBehaviour
             _currentIndex = 0;
         }
         UIUpdate();
+        _audioSource.Play();
     }
     
     public void PreviousSuspect()
@@ -97,6 +100,7 @@ public class SuspectsManager : MonoBehaviour
             _currentIndex = _unlockedSuspects.Count - 1;
         }
         UIUpdate();
+        _audioSource.Play();
     }
 
     public void OpenAndClose()
