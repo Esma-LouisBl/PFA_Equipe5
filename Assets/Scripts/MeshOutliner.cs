@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -82,5 +83,10 @@ public class MeshOutliner : MonoBehaviour
                 selectedDesk = false;
                 selectedCabinet = false;
             }
+        if (selectedCabinet && selectedDesk)
+        {
+            selectedCabinet = false;
+            selectedDesk = true;
+        }
     }
 }
