@@ -25,7 +25,7 @@ public class Handler : MonoBehaviour
 
     public void DropEvidence()
     {
-        _evidence.sprite = null;
+        _evidence.sprite = _emptyImage;
         GameManager.Instance.PlayerHasEvidence = false;
     }
 }

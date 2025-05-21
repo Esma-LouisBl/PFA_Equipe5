@@ -32,6 +32,8 @@ public class TestimoniesManager : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private GameObject _returnCanvas;
+    [SerializeField]
+    private AudioSource _audioSource;
 
     private void Update()
     {
@@ -78,6 +80,7 @@ public class TestimoniesManager : MonoBehaviour
             _currentIndex = 0;
         }
         UIUpdate();
+        _audioSource.Play();
     }
     
     public void PreviousTestimony()
@@ -91,6 +94,7 @@ public class TestimoniesManager : MonoBehaviour
             _currentIndex = _unlockedTestimonies.Count - 1;
         }
         UIUpdate();
+        _audioSource.Play();
     }
 
     public void OpenAndClose()

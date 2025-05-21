@@ -28,6 +28,8 @@ public class EvidencesController : MonoBehaviour
     private EvidencesSystem _evidencesSystem;
     [SerializeField]
     private GameObject _returnCanvas;
+    [SerializeField]
+    private AudioSource _audioSource;
 
     private void Start()
     {
@@ -67,11 +69,13 @@ public class EvidencesController : MonoBehaviour
     public void ChangeEvidenceUp()
     {
         _evidencesSystem.ChangeEvidenceUp();
+        _audioSource.Play();
     }
 
     public void ChangeEvidenceDown()
     {
         _evidencesSystem.ChangeEvidenceDown();
+        _audioSource.Play();
     }
 
     public void OpenAndClose()
