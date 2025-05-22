@@ -12,6 +12,9 @@ public class GameController : MonoBehaviour
     public ConditionsController conditionsController;
     public InspectorController inspectorController;
 
+    [SerializeField]
+    private GameObject _falseTable, _realTable, _falsePhone, _realPhone, _falseCabinet, _realCabinet;
+
     private State _state = State.IDLE;
     public bool isActive, restart;
 
@@ -99,6 +102,12 @@ public class GameController : MonoBehaviour
         if (_state == State.STOP)
         {
             isActive = false;
+            _realTable.SetActive(true);
+            _falseTable.SetActive(false);
+            _realPhone.SetActive(true);
+            _falsePhone.SetActive(false);
+            //_realCabinet.SetActive(true);
+            //_falseCabinet.SetActive(false);
         }
         else
         {
@@ -108,6 +117,12 @@ public class GameController : MonoBehaviour
         if (restart == true)
         {
             _state = State.RESTART;
+            _realTable.SetActive(false);
+            _falseTable.SetActive(true);
+            _realPhone.SetActive(false);
+            _falsePhone.SetActive(true);
+            //_realCabinet.SetActive(false);
+            //_falseCabinet.SetActive(true);
             restart = false;
         }
 
