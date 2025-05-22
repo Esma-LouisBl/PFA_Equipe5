@@ -107,13 +107,13 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
-    hideSprite: 0
+    hideSprite: 1
   - text: Je pense aussi
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
+    phoneContact: {fileID: 11400000, guid: 95a0ad8554e9b904b99d2dc263ba77f7, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
