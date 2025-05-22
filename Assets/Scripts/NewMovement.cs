@@ -7,15 +7,17 @@ public class NewMovement : MonoBehaviour
     [SerializeField]
     private Transform _playerTransform;
     [SerializeField]
-    private Transform _waypointCabinet, _waypointDesk;
+    private Transform _waypointCabinet, _waypointTable, _waypointDesk;
     [SerializeField]
     private GameManager _gameManager;
+    [SerializeField]
+    private InspectorController _inspectorController;
     [SerializeField]
     private MeshOutliner _outliner;
     [SerializeField]
     private CursorController _cursorController;
     [SerializeField]
-    private GameObject _canvas;
+    private GameObject _canvas, _canvasTable;
 
     [SerializeField]
     private float _speed = 20f;
@@ -24,7 +26,7 @@ public class NewMovement : MonoBehaviour
     private Quaternion _targetRotation;
 
     [SerializeField]
-    private GameObject _realCabinet, _falseCabinet, _realEvidenceBook, _falseEvidencebook, _realTestimonyBook, _falseTestimonyBook, _realSuspectBook, _falseSuspectBook, _realBoard, _falseBoard;
+    private GameObject _realCabinet, _falseCabinet, _realEvidenceBook, _falseEvidencebook, _realTestimonyBook, _falseTestimonyBook, _realSuspectBook, _falseSuspectBook, _realBoard, _falseBoard, _realTable, _falseTable;
 
     private void Update()
     {
@@ -33,6 +35,14 @@ public class NewMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0) && _gameManager.playerCanMove)
             {
                 MoveToCabinet();
+            }
+        }
+
+        if (_outliner.selectedTable == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0) && _gameManager.playerCanMove)
+            {
+                MoveToTable();
             }
         }
     }
@@ -56,7 +66,22 @@ public class NewMovement : MonoBehaviour
         _realBoard.SetActive(true);
         _falseBoard.SetActive(false);
 
+        _canvas.SetActive(true);
+
         _outliner.selectedCabinet = false;
+    }
+    private void MoveToTable()
+    {
+        StartCoroutine(Moving(_waypointTable, false));
+
+        _realTable.SetActive(false);
+        _falseTable.SetActive(true);
+
+        _canvasTable.SetActive(true);
+
+        _inspectorController.ChangeCursor();
+
+        _outliner.selectedTable = false;
     }
 
     public void ReturnDesk()
@@ -79,6 +104,36 @@ public class NewMovement : MonoBehaviour
 
         _realBoard.SetActive(false);
         _falseBoard.SetActive(true);
+
+        _realTable.SetActive(true);
+        _falseTable.SetActive(false);
+    }
+
+    public void ReturnDeskFromTable()
+    {
+        _canvasTable.SetActive(false);
+
+        _inspectorController.ChangeCursor();
+
+        StartCoroutine(Moving(_waypointDesk, true));
+
+        _realCabinet.SetActive(true);
+        _falseCabinet.SetActive(false);
+
+        _realEvidenceBook.SetActive(false);
+        _falseEvidencebook.SetActive(true);
+
+        _realSuspectBook.SetActive(false);
+        _falseSuspectBook.SetActive(true);
+
+        _realTestimonyBook.SetActive(false);
+        _falseTestimonyBook.SetActive(true);
+
+        _realBoard.SetActive(false);
+        _falseBoard.SetActive(true);
+
+        _realTable.SetActive(true);
+        _falseTable.SetActive(false);
     }
 
     private IEnumerator Moving(Transform waypoint, bool goRight)
@@ -117,9 +172,5 @@ public class NewMovement : MonoBehaviour
             yield return new WaitForSeconds(0.005f);
         }
 
-        if (goRight)
-        {
-            _canvas.SetActive(true);
-        }
     }
 }

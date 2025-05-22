@@ -12,6 +12,8 @@ public class StoryScene : GameScene
 
     public List<string> conditionToUnlock;
 
+    public bool callInspector;
+
     [System.Serializable]
     public struct Sentence
     {
@@ -27,6 +29,7 @@ public class StoryScene : GameScene
 
         public bool showSprite;
         public bool hideSprite;
+
     }
 }
 
