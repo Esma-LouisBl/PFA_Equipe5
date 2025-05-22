@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 70b5797880d790045b0bf4d7e2695640
+guid: 210c302fe9c157c4f95bc7f04cfa6741
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface1
-    second: {fileID: 2100000, guid: f48660b3d57434044b7c431370b674d0, type: 2}
+      name: M_Cupboard_001
+    second: {fileID: 2100000, guid: 6751e07ed1d8e5e42ae212ca89cc7971, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,9 +45,9 @@ ModelImporter:
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -81,7 +81,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []
