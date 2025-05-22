@@ -16459,9 +16459,11 @@ GameObject:
   - component: {fileID: 1637156571}
   - component: {fileID: 1637156570}
   - component: {fileID: 1637156572}
+  - component: {fileID: 1637156573}
+  - component: {fileID: 1637156574}
   m_Layer: 0
   m_Name: InspectorSprite
-  m_TagString: Selectable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16549,6 +16551,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspectorSprite: {fileID: 1637156570}
+  cursorAspect: {fileID: 1637156573}
+  mainCursor: {fileID: 2800000, guid: 4a6bfb317561b284eba2ff719ffdc412, type: 3}
+  dialogueCursor: {fileID: 2800000, guid: 744a53788b915994f98a0197e442de31, type: 3}
+--- !u!114 &1637156573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637156568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519b98644be01994d9a158aa8c0b4ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCursor: {fileID: 2800000, guid: 4a6bfb317561b284eba2ff719ffdc412, type: 3}
+  interactCursor: {fileID: 2800000, guid: 4a6bfb317561b284eba2ff719ffdc412, type: 3}
+  cursorMode: 0
+  hotspot: {x: 0, y: 0}
+--- !u!65 &1637156574
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637156568}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.24, y: 10.24, z: 0.2}
+  m_Center: {x: 0, y: 5.12, z: 0}
 --- !u!1001 &1651350882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17445,6 +17487,7 @@ MonoBehaviour:
   _waypointTable: {fileID: 2116095935}
   _waypointDesk: {fileID: 1785840200}
   _gameManager: {fileID: 97514707}
+  _inspectorController: {fileID: 0}
   _outliner: {fileID: 1375896903}
   _cursorController: {fileID: 1797189652}
   _canvas: {fileID: 1526739298}

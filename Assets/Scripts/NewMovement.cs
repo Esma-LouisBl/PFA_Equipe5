@@ -11,6 +11,8 @@ public class NewMovement : MonoBehaviour
     [SerializeField]
     private GameManager _gameManager;
     [SerializeField]
+    private InspectorController _inspectorController;
+    [SerializeField]
     private MeshOutliner _outliner;
     [SerializeField]
     private CursorController _cursorController;
@@ -77,6 +79,8 @@ public class NewMovement : MonoBehaviour
 
         _canvasTable.SetActive(true);
 
+        _inspectorController.ChangeCursor();
+
         _outliner.selectedTable = false;
     }
 
@@ -108,6 +112,8 @@ public class NewMovement : MonoBehaviour
     public void ReturnDeskFromTable()
     {
         _canvasTable.SetActive(false);
+
+        _inspectorController.ChangeCursor();
 
         StartCoroutine(Moving(_waypointDesk, true));
 
