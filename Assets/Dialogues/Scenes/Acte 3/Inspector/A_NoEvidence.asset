@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: A_MadameMarie
+  m_Name: A_NoEvidence
   m_EditorClassIdentifier: 
   sentences:
-  - text: 'Je pense que Madame Marie est innocente. '
+  - text: "On n'a rien retrouv\xE9 lui appartement sur la sc\xE8ne de crime "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -23,7 +23,8 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: 'Je vois. As-tu une preuve qui justifierait cette accusation ? '
+  - text: "On a retrouv\xE9 un de ses gants sur la sc\xE8ne de crime, je te l\u2019ai
+      m\xEAme ramen\xE9 "
     speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -33,7 +34,27 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+  - text: "A oui c\u2019est vrai  "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: 'Prend le temp de relire les notes que tu as prise '
+    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: d3d6a641f010ef840aa7d86310dc44c0, type: 2}
+  nextScene: {fileID: 11400000, guid: 77cf333607a95d94bb774a0e903bd31b, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
