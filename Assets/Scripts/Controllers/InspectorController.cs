@@ -6,15 +6,36 @@ public class InspectorController : MonoBehaviour
     public CursorAspect cursorAspect;
     public Texture2D mainCursor, dialogueCursor;
 
+    public StoryScene inspectorScene;
+
+    [SerializeField]
+    private GameController _gameController;
+    [SerializeField]
+    private GameManager _gameManager;
+
     private void Start()
     {
         HideInspector();
         cursorAspect.interactCursor = mainCursor;
     }
 
+    private void Update()
+    {
+        if (cursorAspect.interactCursor == dialogueCursor && _gameManager.inspectorAble)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                _gameController.currentScene = inspectorScene;
+                _gameController.restart = true;
+                _gameManager.inspectorAble = false;
+            }
+        }
+    }
+
     public void ShowInspector()
     {
         inspectorSprite.enabled = true;
+        _gameManager.inspectorAble = true;
     }
 
     public void HideInspector()
