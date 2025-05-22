@@ -16589,8 +16589,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.24, y: 10.24, z: 0.2}
-  m_Center: {x: 0, y: 5.12, z: 0}
+  m_Size: {x: 3.98, y: 5.87, z: 0.2}
+  m_Center: {x: 0, y: 6.05, z: 0}
 --- !u!1001 &1651350882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17487,7 +17487,7 @@ MonoBehaviour:
   _waypointTable: {fileID: 2116095935}
   _waypointDesk: {fileID: 1785840200}
   _gameManager: {fileID: 97514707}
-  _inspectorController: {fileID: 0}
+  _inspectorController: {fileID: 1637156572}
   _outliner: {fileID: 1375896903}
   _cursorController: {fileID: 1797189652}
   _canvas: {fileID: 1526739298}

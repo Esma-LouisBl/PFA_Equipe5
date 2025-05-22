@@ -28,7 +28,8 @@ public class InspectorController : MonoBehaviour
         {
             cursorAspect.interactCursor = dialogueCursor;
         }
-        if (cursorAspect.interactCursor == dialogueCursor)
+
+        else if (cursorAspect.interactCursor == dialogueCursor)
         {
             cursorAspect.interactCursor = mainCursor;
         }
