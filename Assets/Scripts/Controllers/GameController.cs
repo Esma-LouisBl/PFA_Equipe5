@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public ChooseController chooseController;
 
     public ConditionsController conditionsController;
+    public InspectorController inspectorController;
 
     private State _state = State.IDLE;
     public bool isActive, restart;
@@ -76,6 +77,11 @@ public class GameController : MonoBehaviour
                     {
                         _state = State.STOP;    //DOESN'T WORK IF IT ENDS WITH A CHOOSE SCENE
                         bottomBar.Hide();
+
+                        if ((currentScene as StoryScene).callInspector)     //check if Inspector is called
+                        {
+                            inspectorController.ShowInspector();
+                        }
                     }
                 }
                 else
