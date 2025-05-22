@@ -100,6 +100,7 @@ public class SuspectsManager : MonoBehaviour
         }
         UIUpdate();
         _audioSource.Play();
+        Debug.Log("Teemo is watching you");
     }
 
     public void OpenAndClose()

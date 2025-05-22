@@ -32,8 +32,9 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 11400000, guid: 0b0fa5356d128b04fa717033e10d65bc, type: 2}
     showSprite: 0
-    hideSprite: 0
+    hideSprite: 1
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 1
