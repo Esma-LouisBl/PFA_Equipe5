@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: 19h30
+  m_Name: A_UnMois
   m_EditorClassIdentifier: 
   sentences:
-  - text: "19h30. Cependant apr\xE8s s\u2019\xEAtre chang\xE9, il l'a trouv\xE9 sans
-      vie"
+  - text: 'Pas avant un mois. '
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -24,7 +23,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Hmm, \xE7a se tient. Penses-tu qu\u2019il disait vrai ? "
+  - text: "On n'aura rien de plus sur la victime alors \u2026 "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -34,50 +33,8 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Je connais Monsieur Warner depuis longtemps maintenant, j\u2019ai senti
-      qu\u2019il cachait quelque chose. Mais on manque de preuves dans l\u2019imm\xE9diat. "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "Autre chose\u202F? "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "Oui, j\u2019ai aussi ressenti une forte odeur de caf\xE9 dans le bureau.
-      Est-ce-que M.Warner boit r\xE9guli\xE8rement du caf\xE9 dans son bureau ? "
-    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 11400000, guid: af01ad19b1750ea4dbe674ab90fe0d8f, type: 2}
-    showSprite: 0
-    hideSprite: 0
-  - text: 'Normalement non, pas que je sache.  '
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "\xC9trange car l\u2019odeur de caf\xE9 \xE9tait vraiment forte sur la
-      sc\xE8ne du crime \u2026"
+  - text: "Je vois. De mon c\xF4t\xE9, j\u2019ai pu acc\xE9der \xE0 la sc\xE8ne de
+      crime. "
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -87,19 +44,9 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Mais j\u2019ai gard\xE9 le meilleur pour fin\u202F! J\u2019ai trouv\xE9
-      un gant sur la sc\xE8ne de crime avec les initiales H.M"
+  - text: "Heureusement que tu n\u2019es pas venu. Je pense que je t\u2019aurais
+      retrouv\xE9 par terre en quelques secondes\u202F!"
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 11400000, guid: dd0599129b2beb24cbc036fdcabba29c, type: 2}
-    showSprite: 0
-    hideSprite: 0
-  - text: " Je ne connais personne ici avec ces initiales\u2026 "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -108,19 +55,30 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Figure-toi que j\u2019ai fouill\xE9 cette piste et je suis remont\xE9
-      \xE0 une certaine Holly Marie qui \xE9tait au manoir au moment des faits. "
+  - text: "Mais tr\xEAve de blagues, comme tu le sais la victime a \xE9t\xE9 tu\xE9e
+      dans le bureau de Monsieur Warner. "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
-    phoneContact: {fileID: 11400000, guid: d2cf0fef1fc381b43b34bd74e787eab9, type: 2}
+    phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Parfait, avec tout \xE7a je pense pouvoir r\xE9interroger Monsieur Warner
-      ainsi que Madame Marie pour en savoir plus. "
+  - text: "La pi\xE8ce en elle-m\xEAme n\u2019avait rien de tr\xE8s sp\xE9cial mis
+      \xE0 part que le bureau \xE9tait sens dessus dessous. "
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Ce n\u2019est pas normal, je sais tr\xE8s bien que Monsieur Warner est
+      un grand maniaque."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -130,30 +88,8 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Je vais aussi appeler les servantes, on pourra peut-\xEAtre en tirer quelque
-      chose. "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 11400000, guid: 9ad1b66d53da48e41a2aacd435a202d7, type: 2}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "Tu pourrais aussi interroger la s\xE9curit\xE9, je crois avoir entendu
-      qu\u2019ils avaient vu quelqu\u2019un d\u2019\xE9trange."
-    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 11400000, guid: 0cdd40c01e9395f4c80e32515a18a06d, type: 2}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "Pour ma part je vais continuer \xE0 fouiller le manoir. Appelle-moi quand
-      tu auras du nouveau."
+  - text: " Il y a peut-\xEAtre eu une lutte entre le meurtrier et la victime, ou
+      alors la pi\xE8ce a \xE9t\xE9 fouill\xE9e."
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -162,8 +98,19 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
-  - text: "Bon j\u2019ai beaucoup de personnes \xE0 interroger ..."
+    hideSprite: 0
+  - text: "La victime a \xE9t\xE9 retrouv\xE9e sur le dos et serait morte de plusieurs
+      coups \xE0 l\u2019arri\xE8re du cr\xE2ne. "
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Tu as pu mettre la main sur l\u2019arme du crime ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -172,8 +119,51 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
+    hideSprite: 0
+  - text: "Je pense que oui, jettes-y un coup d\u2019\u0153il.  "
+    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 11400000, guid: 422d2131e896603498fc65c811e19688, type: 2}
+    showSprite: 0
+    hideSprite: 0
+  - text: "(Sa base est compl\xE8tement d\xE9form\xE9e sans oublier les t\xE2ches
+      dessus \u2026 Je pense qu\u2019on a bien l\u2019arme du crime.))"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "J\u2019y pense, qu\u2019en est-il de Monsieur Warner ? Tu as pu l\u2019interroger\u202F? "
+    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "J\u2019ai pris sa d\xE9position, il m\u2019a expliqu\xE9 qu\u2019il avait
+      organis\xE9 une interview avec la victime dans son bureau. Il m\u2019a dit
+      que c\u2019\xE9tait vers \u2026"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 899c5b9aef409eb4da395486bb786ab3, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41b93f82b1515146896b9cbe680119e, type: 3}
-  m_Name: PlayerHead
+  m_Script: {fileID: 11500000, guid: d1d0401e44afab541a2f29d6180c6f1a, type: 3}
+  m_Name: Family
   m_EditorClassIdentifier: 
-  speakerName: ' '
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  speakerSprite: {fileID: 0}
+  Name: Famille de la victime
+  Description: "La famille de la victime ne pourra pas \xEAtre contact\xE9e avant
+    un mois."

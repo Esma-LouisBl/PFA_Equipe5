@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: "Cela ne me ressemble pas de revenir en arri\xE8re. Je suis un homme de
-      parole et j\u2019irai jusqu\u2019au bout.\_"
+      parole et j\u2019irai jusqu\u2019au bout."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Essayons de joindre la famille de Madame Brown. Je me souviens d\u2019avoir
@@ -29,9 +31,11 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 11400000, guid: e2aee803db11d184b9824d494601b6bb, type: 2}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []

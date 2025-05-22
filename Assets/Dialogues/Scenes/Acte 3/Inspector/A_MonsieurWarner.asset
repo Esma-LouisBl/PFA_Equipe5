@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: "Demenag\xE9"
+  m_Name: A_MonsieurWarner
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Ils ont d\xE9m\xE9nag\xE9. "
+  - text: Je pense que M. Warner est innocent.
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -23,8 +23,9 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "D\xE9m\xE9nag\xE9 durant leur d\xE9placement\u202F?"
-    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+  - text: "Tu crois ? Je ne sais pas, il me semble assez suspect dans cette histoire.
+      Peut-\xEAtre es-tu aveugl\xE9 par ton d\xE9vouement pour lui ? "
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -33,7 +34,19 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "\u2026 J\u2019ai d\xFB me tromper. "
+  - text: "Tu crois ? Je ne sais pas, il me semble assez suspect dans cette histoire.
+      Peut-\xEAtre es-tu aveugl\xE9 par ton d\xE9vouement pour lui ? "
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Quoi ? Je sais faire la part des choses entre mon m\xE9tier et cette enqu\xEAte
+      ! "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -43,18 +56,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Ce n\u2019est rien, \xE7a fait longtemps aussi que tu n\u2019as pas \xE9t\xE9
-      sur une enqu\xEAte. "
-    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: 'il faut que je relise mes notes plus souvent. '
+  - text: "(Mais il n\u2019a pas tort, je pense que je me suis tromp\xE9.)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -65,6 +67,6 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 4d8d56b4448c7a84eb072d709db4b776, type: 2}
+  nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []

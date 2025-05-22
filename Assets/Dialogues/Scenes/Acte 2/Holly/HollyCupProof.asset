@@ -36,7 +36,7 @@ MonoBehaviour:
   - text: "Ce n\u2019est vraiment pas bon pour mes cordes vocales. Le th\xE9 d\u2019Inde,
       c\u2019est le vrai succ\xE8s voix parfaite !"
     speaker: {fileID: 11400000, guid: fc1691753e0209f4487f5d670f9bd2d0, type: 2}
-    collectedCondition: 
+    collectedCondition: Tea
     testimony: {fileID: 11400000, guid: d938e0910856bd249adc905c296aa9f1, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}

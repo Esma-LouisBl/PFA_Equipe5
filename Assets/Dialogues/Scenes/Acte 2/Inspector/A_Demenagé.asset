@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: 19h45
+  m_Name: "A_Demenag\xE9"
   m_EditorClassIdentifier: 
   sentences:
-  - text: 19h45.
+  - text: "Ils ont d\xE9m\xE9nag\xE9. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -23,29 +23,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Ah bon\u202F? \xC7a ne colle pas pourtant, le meurtre a eu lieu avant
-      cet horaire donc que ferait la victime dans le bureau de Monsieur Warner ? "
-    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "Elle voulait peut-\xEAtre pr\xE9parer son interview\u202F? "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "\xC7a m\u2019\xE9tonnerait qu\u2019elle ait pu entrer dans son bureau
-      sans soucis. "
+  - text: "D\xE9m\xE9nag\xE9 durant leur d\xE9placement\u202F?"
     speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -55,7 +33,28 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Mince, j\u2019ai d\xFB me tromper."
+  - text: "\u2026 J\u2019ai d\xFB me tromper. "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Ce n\u2019est rien, \xE7a fait longtemps aussi que tu n\u2019as pas \xE9t\xE9
+      sur une enqu\xEAte. "
+    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: (il faut que je relise mes notes plus souvent.)
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -66,6 +65,6 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 899c5b9aef409eb4da395486bb786ab3, type: 2}
+  nextScene: {fileID: 11400000, guid: 4d8d56b4448c7a84eb072d709db4b776, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []

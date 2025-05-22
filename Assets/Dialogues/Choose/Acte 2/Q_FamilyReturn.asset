@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 653a19eafa2e9bf43bf155c64d39467e, type: 3}
-  m_Name: PeterChoices2
+  m_Name: Q_FamilyReturn
   m_EditorClassIdentifier: 
   labels:
-  - text: Holly Marie
-    nextScene: {fileID: 11400000, guid: f3e4f30b7b38c9b4290aeeb967c92a8a, type: 2}
-  - text: "Pr\xE9senter une preuve"
-    nextScene: {fileID: 11400000, guid: a0d09f66dcb85104f8e338179f1734e6, type: 2}
-  - text: Fin de l'interrogatoire
-    nextScene: {fileID: 11400000, guid: 72ff67e8cb89e2c4bbba0419304ae5bb, type: 2}
+  - text: Dans un mois
+    nextScene: {fileID: 11400000, guid: d4286def77a81cd4b843022f2af9b851, type: 2}
+  - text: Demain
+    nextScene: {fileID: 11400000, guid: 6ab7ae334aec3db4f998fe54c6d5ab18, type: 2}
+  - text: "Ils ont d\xE9m\xE9nag\xE9"
+    nextScene: {fileID: 11400000, guid: efa3a0635a23faf4fbd8e02fe7d53144, type: 2}

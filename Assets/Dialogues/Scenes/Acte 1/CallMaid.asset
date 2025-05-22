@@ -61,7 +61,7 @@ MonoBehaviour:
       Ils ne rentreront pas avant le mois prochain."
     speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
     collectedCondition: 
-    testimony: {fileID: 0}
+    testimony: {fileID: 11400000, guid: 632e0066320bbcd45b48f2ca1c77beaf, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
