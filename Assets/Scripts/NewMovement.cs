@@ -111,7 +111,7 @@ public class NewMovement : MonoBehaviour
 
     public void ReturnDeskFromTable()
     {
-        _canvasTable.SetActive(false);
+        HideCanvasTable();
 
         _inspectorController.ChangeCursor();
 
@@ -134,6 +134,15 @@ public class NewMovement : MonoBehaviour
 
         _realTable.SetActive(true);
         _falseTable.SetActive(false);
+    }
+
+    public void HideCanvasTable()
+    {
+        _canvasTable.SetActive(false);
+    }
+    public void ShowCanvasTable()
+    {
+        _canvasTable.SetActive(true);
     }
 
     private IEnumerator Moving(Transform waypoint, bool goRight)
