@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: PeterLampProof
+  m_Name: PeterWrongProofACT3
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Nous avons trouv\xE9 cette lampe dont la base est d\xE9form\xE9e. "
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+  - text: "Je ne crois pas l\u2019avoir d\xE9j\xE0 vu. Il y a beaucoup d\u2019objets
+      dans le manoir, je ne me souviens pas de tout ce qui y est conserv\xE9... "
+    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -27,9 +28,8 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 82b73fd3947248842aea2ce21299e7be, type: 2}
-  conditionScene: {fileID: 11400000, guid: bc6f50eb635f9d2428f29107d86d5986, type: 2}
-  conditionToUnlock:
-  - ACT3
+  nextScene: {fileID: 11400000}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []
   callInspector: 0
   endInspector: 0

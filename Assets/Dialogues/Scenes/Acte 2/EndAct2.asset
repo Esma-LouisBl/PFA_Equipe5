@@ -15,15 +15,20 @@ MonoBehaviour:
   sentences:
   - text: "(Je pense avoir recolt\xE9 assez d'information, je devrais rapeller l'inspecteur)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
+    collectedCondition: ACT3
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 11400000, guid: 2fbf2b38a1c8acc40bdb6922f04023e3, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
