@@ -100,5 +100,10 @@ public class MeshOutliner : MonoBehaviour
             selectedCabinet = false;
             selectedPhone = true;
         }
+        if (selectedDesk && selectedPhone)
+        {
+            selectedPhone = false;
+            selectedDesk = true;
+        }
     }
 }

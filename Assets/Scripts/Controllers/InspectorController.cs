@@ -22,8 +22,6 @@ public class InspectorController : MonoBehaviour
         Color transparent = new(1f, 1f, 1f, 0f);
         cursorAspect.interactCursor = mainCursor;
         inspectorSprite.color = transparent;
-        Debug.Log(transparent);
-        Debug.Log(inspectorSprite.color);
         _animator.SetTrigger("Init");
     }
 
@@ -39,7 +37,6 @@ public class InspectorController : MonoBehaviour
                 inspectorTalking = true;
             }
         }
-        Debug.Log(inspectorSprite.color);
 
     }
 

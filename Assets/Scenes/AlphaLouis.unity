@@ -14412,6 +14412,7 @@ MonoBehaviour:
   _gameManager: {fileID: 97514707}
   _evidencesSystem: {fileID: 89023273}
   _inspectorController: {fileID: 1637156572}
+  _deskInteraction: {fileID: 735234161}
 --- !u!224 &1310856696
 RectTransform:
   m_ObjectHideFlags: 0

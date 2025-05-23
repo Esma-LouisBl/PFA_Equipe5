@@ -33,6 +33,8 @@ public class StoryScene : GameScene
         public bool showSprite;
         public bool hideSprite;
 
+        public bool destroyEvidence;
+
     }
 }
 

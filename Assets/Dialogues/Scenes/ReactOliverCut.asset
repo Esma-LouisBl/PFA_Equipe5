@@ -19,9 +19,29 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+  - text: "hop, la preuve est effac\xE9e"
+    speaker: {fileID: 11400000, guid: 4c5043fd174becf4295a439bc899bd7f, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 1
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
