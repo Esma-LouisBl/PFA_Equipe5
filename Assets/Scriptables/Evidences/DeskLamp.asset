@@ -19,5 +19,5 @@ MonoBehaviour:
     de sang."
   ReactionPeter: {fileID: 0}
   ReactionHolly: {fileID: 11400000, guid: b59aea81c3bd189419a348312e348f66, type: 2}
-  ReactionOliver: {fileID: 0}
+  ReactionOliver: {fileID: 11400000, guid: 09734bb0697965142a5e3281e1c81105, type: 2}
   ReactionInspector: {fileID: 0}

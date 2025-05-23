@@ -10,31 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: test inspecteur
+  m_Name: NewStoryScene
   m_EditorClassIdentifier: 
   sentences:
-  - text: oui
-    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
+  - text: yo
+    speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: fi
-    speaker: {fileID: 11400000, guid: dc808623fe61c0e4fa9d5c8b0b4bdfa1, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 11400000, guid: 8ddf47cf21026b0499f1eadb973ba404, type: 2}
     PhotoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
@@ -43,5 +30,5 @@ MonoBehaviour:
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
-  callInspector: 0
-  endInspector: 1
+  callInspector: 1
+  endInspector: 0
