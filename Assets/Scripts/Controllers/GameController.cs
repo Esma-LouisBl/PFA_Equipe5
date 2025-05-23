@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
 
     public ConditionsController conditionsController;
     public InspectorController inspectorController;
+    public NewMovement newMovement;
 
     [SerializeField]
     private GameObject _falseTable, _realTable, _falsePhone, _realPhone, _falseCabinet, _realCabinet;
@@ -88,7 +89,10 @@ public class GameController : MonoBehaviour
                         if ((currentScene as StoryScene).endInspector)      //check if Inspector has to go
                         {
                             inspectorController.HideInspector();
+                            newMovement.canShowCanvas = true;
+                            newMovement.ShowCanvasTable();
                         }
+
                     }
                 }
                 else
@@ -112,6 +116,7 @@ public class GameController : MonoBehaviour
             _falsePhone.SetActive(false);
             //_realCabinet.SetActive(true);
             //_falseCabinet.SetActive(false);
+            newMovement.canShowCanvas = true;
         }
         else
         {
@@ -128,6 +133,8 @@ public class GameController : MonoBehaviour
             //_realCabinet.SetActive(false);
             //_falseCabinet.SetActive(true);
             restart = false;
+            newMovement.HideCanvasTable();
+            newMovement.canShowCanvas = false;
         }
 
         if (_state == State.RESTART)

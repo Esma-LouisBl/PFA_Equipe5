@@ -12,7 +12,6 @@ public class FrameController : MonoBehaviour
     {
         if (frameData == null || frameData.PhotoFrame == null)
         {
-            Debug.LogWarning("Invalid frame data.");
             return;
         }
         FrameInstance[] instances = FindObjectsByType<FrameInstance>(FindObjectsInactive.Include, FindObjectsSortMode.None);
@@ -22,12 +21,10 @@ public class FrameController : MonoBehaviour
             if (instance.prefabReference == frameData.PhotoFrame)
             {
                 instance.gameObject.SetActive(true);
-                Debug.Log("Frame activated: " + instance.name);
                 return;
             }
         }
 
-        Debug.LogWarning("No matching scene object found for prefab: " + frameData.PhotoFrame.name);
     }
 }
 
