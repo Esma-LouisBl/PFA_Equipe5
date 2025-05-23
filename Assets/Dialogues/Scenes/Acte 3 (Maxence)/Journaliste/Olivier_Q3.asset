@@ -21,16 +21,18 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Oui, nous \xE9tions des rivaux de longue date."
     speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
     collectedCondition: 
-    testimony: {fileID: 0}
+    testimony: {fileID: 11400000, guid: 301788e387c5c9d4ab9c8171fd28e702, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "On se croisait souvent sur divers lieux pour essayer d\u2019avoir une
@@ -43,6 +45,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Malgr\xE9 tout, cela me fend le c\u0153ur de la savoir morte. Malgr\xE9
@@ -54,9 +57,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 2c719513821ff6946b5c8eede532181d, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
