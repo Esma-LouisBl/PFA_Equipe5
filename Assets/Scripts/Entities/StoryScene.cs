@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewStoryScene", menuName ="Data/New Story Scene")]
+[CreateAssetMenu(fileName = "NewStoryScene", menuName = "Data/New Story Scene")]
 [System.Serializable]
 public class StoryScene : GameScene
 {
@@ -28,6 +28,7 @@ public class StoryScene : GameScene
         public PhoneContact contactToRemove;
         public EvidenceData evidence;
         public StoryScene inspectorSceneToCollect;
+        public Frame PhotoFrame;
 
         public bool showSprite;
         public bool hideSprite;
