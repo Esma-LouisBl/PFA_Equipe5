@@ -9,18 +9,6 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private GameObject _pauseMenu;
 
-    public void PauseMenuBehaviour()
-    {
-        if (_gameIsPaused)
-        {
-            Resume();
-        }
-        else
-        {
-            Pause();
-        }
-    }
-
     public void Resume()
     {
         _pauseMenu.SetActive(false);
@@ -31,11 +19,11 @@ public class PauseMenu : MonoBehaviour
     {
         _pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        _gameIsPaused = true;
     }
 
     public void LoadMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("TitleScreen");
     }
 

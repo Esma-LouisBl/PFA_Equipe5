@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c530afecd4f814eb81eac58dd26019, type: 3}
-  m_Name: testProut
+  m_Script: {fileID: 11500000, guid: 3256df1e3fc412644a77510c48935f72, type: 3}
+  m_Name: Slow
   m_EditorClassIdentifier: 
-  contactName: prout man
-  scene: {fileID: 11400000, guid: f49997b24c29f514eb6b5ab55709abe7, type: 2}
+  Text: Lent
+  ValueSpeed: 0.06

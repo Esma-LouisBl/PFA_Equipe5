@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: Coupe papier
   EvidenceSprite: {fileID: 21300000, guid: 4f58c74fa2e090b49b5260ea6367908a, type: 3}
   EvidenceGO: {fileID: 919132149155446097, guid: 2ebbe591ecfca6841b3cc7f3c19e257b, type: 3}
-  Informations: "Trouv\xE9 dans un mouchoir tach\xE9 de sang"
+  Informations: "Retrouv\xE9 dans le mouchoir en tissu. Il semble avoir \xE9t\xE9
+    nettoy\xE9."
   ReactionPeter: {fileID: 0}
   ReactionHolly: {fileID: 0}
   ReactionOliver: {fileID: 0}

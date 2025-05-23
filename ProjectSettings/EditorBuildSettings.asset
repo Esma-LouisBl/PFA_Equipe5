@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: f82d831f9f1aadc4a887c0c97b4b24af
   - enabled: 1
-    path: Assets/Scenes/AlphaLouis.unity
+    path: Assets/Scenes/MainGame.unity
     guid: 502d8ce31dc34c346964f7a20f8c03eb
   - enabled: 0
     path: Assets/Scenes/WhiteRoom_Dialogue.unity
@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/AlphaThomas.unity
     guid: b0f10d7b428291042bf652470146b5af
   - enabled: 1
-    path: Assets/Scenes/AlphaLouis.unity
+    path: Assets/Scenes/MainGame.unity
     guid: 502d8ce31dc34c346964f7a20f8c03eb
   - enabled: 0
     path: Assets/Scenes/WhiteRoom_3C.unity

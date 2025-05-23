@@ -16,10 +16,6 @@ public class GameManager : MonoBehaviour
 
     public bool inspectorAble;
 
-    //public Texture2D mainCursor, interactCursor, dialogueCursor;
-    //public CursorMode cursorMode = CursorMode.Auto;
-    //public Vector2 hotspot = Vector2.zero;
-
     [SerializeField]
     private GameObject _inventoryWindow;
 
@@ -47,16 +43,5 @@ public class GameManager : MonoBehaviour
             playerCanMove = false;
             _inventoryWindow.SetActive(false);
         }
-    }
-
-    public void GameOver()      //POUR LA DEMO (1er choix)
-    {
-        StartCoroutine(BlackScreen());
-    }
-
-    private IEnumerator BlackScreen()
-    {
-        yield return new WaitForSeconds(10);
-        SceneManager.LoadScene(0);
     }
 }
