@@ -14,11 +14,17 @@ public class InspectorController : MonoBehaviour
     private GameController _gameController;
     [SerializeField]
     private GameManager _gameManager;
+    [SerializeField]
+    private Animator _animator;
 
     private void Start()
     {
-        HideInspector();
+        Color transparent = new(1f, 1f, 1f, 0f);
         cursorAspect.interactCursor = mainCursor;
+        inspectorSprite.color = transparent;
+        Debug.Log(transparent);
+        Debug.Log(inspectorSprite.color);
+        _animator.SetTrigger("Init");
     }
 
     private void Update()
@@ -33,17 +39,19 @@ public class InspectorController : MonoBehaviour
                 inspectorTalking = true;
             }
         }
+        Debug.Log(inspectorSprite.color);
+
     }
 
     public void ShowInspector()
     {
-        inspectorSprite.enabled = true;
+        _animator.SetTrigger("Show");
         _gameManager.inspectorAble = true;
     }
 
     public void HideInspector()
     {
-        inspectorSprite.enabled = false;
+        _animator.SetTrigger("Hide");
         inspectorTalking = false;
     }
 
