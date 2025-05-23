@@ -10,10 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: Petter_Q4
+  m_Name: Olivier_Cup_Proof
   m_EditorClassIdentifier: 
   sentences:
-  - text: Connaissez-vous un certain Oliver Scott ?
+  - text: "Une tasse de caf\xE9\u202F? N\u2019auriez-vous pas d\xFB d\u2019abord
+      me proposer \xE7a en rentrant dans la pi\xE8ce\u202F?"
+    speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Je n\u2019avais pas eu le temps de le faire, mon r\xF4le d\u2019enqu\xEAteur
+      ne me laisse pas forc\xE9ment le temps d\u2019\xEAtre courtois."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -24,43 +37,20 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Je crois bien oui, n\u2019est-il pas journaliste ?"
-    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+  - text: "Je vois\u2026 Eh bien cela ne pourra que me faire du bien, le caf\xE9
+      est r\xE9ellement un moteur dans mon m\xE9tier\u202F!"
+    speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
     collectedCondition: 
-    testimony: {fileID: 0}
+    testimony: {fileID: 11400000, guid: 32851cbace6cbcf49902c6829a4ca438, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "Oui, il s\u2019agit d\u2019un des journalistes convi\xE9s \xE0 la soir\xE9e.
-      Aviez-vous discut\xE9 avec lui\u202F?"
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "Oui, il m\u2019avait demand\xE9 une interview un peu apr\xE8s Madame Brown
-      mais j\u2019\xE9tais d\xE9j\xE0 pris pour la soir\xE9e."
-    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 11400000, guid: 394dc623a8447034faaf0a4e719b0040, type: 2}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: af01ad19b1750ea4dbe674ab90fe0d8f, type: 2}
     inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 2c719513821ff6946b5c8eede532181d, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0
