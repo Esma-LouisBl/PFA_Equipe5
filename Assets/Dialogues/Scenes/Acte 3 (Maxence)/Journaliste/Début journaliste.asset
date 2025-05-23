@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: "D\xE9but journaliste"
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Bonjour, vous m\u2019aviez appel\xE9 ?"
+    speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: ' Bonjour, Edwin Justice, je suis le majordome de ce manoir.'
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Edwin Justice, comme le d\xE9tective qui a pris sa retraite ?"
+    speaker: {fileID: 11400000, guid: bb78998e8e801c943a05166514b4b2f8, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "C\u2019est \xE7a, comment me connaissez-vous ?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "j\u2019ai lu beaucoup de vos enqu\xEAtes et j\u2019\xE9tais tr\xE8s impressionn\xE9
+      par votre logique et sans froid."
+    speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Mais jamais je n\u2019aurais imagin\xE9 que vous vous seriez reconverti
+      en majordome\u202F!"
+    speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Sinon pourquoi m\u2019avez-vous fait venir ?"
+    speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "J\u2019aurai \xE0 vous poser des questions au sujet du meurtre"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Tr\xE8s bien, allez-si."
+    speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []

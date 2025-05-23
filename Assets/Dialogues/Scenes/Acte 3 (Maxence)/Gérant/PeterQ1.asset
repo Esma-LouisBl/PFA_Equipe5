@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: PeterQ1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "O\xF9 \xE9tiez-vous hier soir ? "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "En d\xE9but de soir\xE9e, je m\u2019occupais d\u2019accueillir les invit\xE9s
+      pour l\u2019inauguration du nouveau b\xE2timent de mon entreprise, ainsi que
+      de discuter avec eux dans le salon."
+    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Je crois qu\u2019il \xE9tait 19h00 quand Madame Brown est venue me voir
+      pour me proposer d\u2019\xE9crire une interview. Elle \xE9tait journaliste
+      pour le Times, un journal auquel nous sommes affili\xE9s. "
+    speaker: {fileID: 11400000, guid: 1882c8f5fd824fb42a890614c3da354f, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Je lui ai donc propos\xE9 de me rejoindre dans mon bureau vers 19h30 pour
+      la r\xE9aliser dans un espace calme et \xE0 l'abri des \xE9coutes indiscr\xE8tes.  "
+    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Mais avant que je n\u2019arrive, un convive a malheureusement renvers\xE9
+      son verre sur ma veste et j\u2019ai d\xFB d\u2019abord passer par ma chambre
+      pour me changer. "
+    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 11400000, guid: 4a56515a55002654c915dbeb998e5d69, type: 2}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "La suite vous la connaissez... Lorsque je suis revenu, j\u2019ai trouv\xE9
+      Madame Brown sans vie au sol."
+    speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: c44557dbfa2ef594db116b2e087d890e, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: 

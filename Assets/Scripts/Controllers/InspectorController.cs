@@ -8,6 +8,8 @@ public class InspectorController : MonoBehaviour
 
     public StoryScene inspectorScene;
 
+    public bool inspectorTalking = false;
+
     [SerializeField]
     private GameController _gameController;
     [SerializeField]
@@ -28,6 +30,7 @@ public class InspectorController : MonoBehaviour
                 _gameController.currentScene = inspectorScene;
                 _gameController.restart = true;
                 _gameManager.inspectorAble = false;
+                inspectorTalking = true;
             }
         }
     }
@@ -41,6 +44,7 @@ public class InspectorController : MonoBehaviour
     public void HideInspector()
     {
         inspectorSprite.enabled = false;
+        inspectorTalking = false;
     }
 
     public void ChangeCursor()
@@ -54,5 +58,10 @@ public class InspectorController : MonoBehaviour
         {
             cursorAspect.interactCursor = mainCursor;
         }
+    }
+
+    public void CollectScene(StoryScene scene)
+    {
+        inspectorScene = scene;
     }
 }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653a19eafa2e9bf43bf155c64d39467e, type: 3}
+  m_Name: Q_WhoInnocent
+  m_EditorClassIdentifier: 
+  labels:
+  - text: Monsieur Warner
+    nextScene: {fileID: 11400000, guid: b87cb1a6c320d7c4896c1f4002438f80, type: 2}
+  - text: Madame Marie
+    nextScene: {fileID: 11400000, guid: 279d7169e73ccbd40b073cd269ce6336, type: 2}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SuspectSprite: {fileID: 21300000, guid: 0da403fa66837de48bca963ea7838971, type: 3}
   SuspectNumber: 001
-  Informations: "G\xE9rant de la Warner House"
+  Informations: "Peter Warner - G\xE9rant de la Warner House"
   Alibi: "\xC9tait en train de r\xE9ceptionner les invit\xE9s"

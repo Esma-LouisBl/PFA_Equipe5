@@ -45,19 +45,10 @@ MonoBehaviour:
     evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: Oh, pardonnez ma maladresse, je suis Edwin Justice.
+  - text: "Oh, pardonnez ma maladresse, je suis Edwin Justice. J\u2019enqu\xEAte
+      sur le d\xE9c\xE8s de Madame Lawrence Brown et j\u2019aurais besoin de m\u2019entretenir
+      avec la famille."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-  - text: "J\u2019enqu\xEAte sur le d\xE9c\xE8s de Madame Lawrence Brown et j\u2019aurais
-      besoin de m\u2019entretenir avec la famille."
-    speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -70,7 +61,7 @@ MonoBehaviour:
       Ils ne rentreront pas avant le mois prochain."
     speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
     collectedCondition: 
-    testimony: {fileID: 0}
+    testimony: {fileID: 11400000, guid: 632e0066320bbcd45b48f2ca1c77beaf, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
@@ -79,7 +70,7 @@ MonoBehaviour:
     hideSprite: 0
   - text: "Je vois. Aviez-vous rencontr\xE9 personnellement Madame Lawrence Brown\u202F?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
+    collectedCondition: Act1 1
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
@@ -143,5 +134,6 @@ MonoBehaviour:
     hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 327b4e85061087c4b93048f5edf24fc7, type: 2}
-  conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionScene: {fileID: 11400000, guid: 750c2c814dc84724eb49e89259d8a415, type: 2}
+  conditionToUnlock:
+  - 'Act1 2 '

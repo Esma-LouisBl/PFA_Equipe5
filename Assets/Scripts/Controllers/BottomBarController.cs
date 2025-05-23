@@ -36,6 +36,8 @@ public class BottomBarController : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
+    [SerializeField]
+    private InspectorController _inspectorController;
 
     private enum State
     {
@@ -93,7 +95,15 @@ public class BottomBarController : MonoBehaviour
 
         if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
         {
-            spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+            if (_inspectorController.inspectorTalking)
+            {
+                Debug.Log("affiched");
+                _inspectorController.inspectorSprite.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+            }
+            else
+            {
+                spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+            }
         }
 
         if (currentScene.name == "Abandon")     //POUR LA DEMO
@@ -116,6 +126,7 @@ public class BottomBarController : MonoBehaviour
         CollectPhoneContacts();
         CollectEvidences();
         RemoveContact();
+        CollectInspectorScene();
     }
 
     public bool IsCompleted()
@@ -182,6 +193,14 @@ public class BottomBarController : MonoBehaviour
         if (currentScene.sentences[sentenceIndex].evidence != null)
         {
             _evidencesSystem.AddEvidence(currentScene.sentences[sentenceIndex].evidence);
+        }
+    }
+
+    public void CollectInspectorScene()
+    {
+        if (currentScene.sentences[sentenceIndex].inspectorSceneToCollect != null)
+        {
+            _inspectorController.CollectScene(currentScene.sentences[sentenceIndex].inspectorSceneToCollect);
         }
     }
 

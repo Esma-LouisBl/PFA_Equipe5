@@ -19,6 +19,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "\xC9pargnez-moi les politesses, Edwin. C\u2019est une v\xE9ritable trag\xE9die...
@@ -29,6 +31,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 1
     hideSprite: 0
   - text: "Cela dit, je dois admettre que je suis un peu soulag\xE9 de vous voir
@@ -39,6 +43,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Vous me l'aviez demand\xE9, et je suis \xE0 votre service."
@@ -47,6 +53,8 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Cela dit, je vais devoir vous poser quelques questions.  Je suis d\xE9sol\xE9
@@ -57,14 +65,18 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: 'Ne vous excusez pas, Edwin. Faites ce que vous devez faire.  '
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
-    suspect: {fileID: 0}
+    suspect: {fileID: 11400000, guid: 8f1b486e20867ef4a9abf473c343f1d3, type: 2}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}

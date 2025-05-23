@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: Olivier_Q3
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Vous sembliez conna\xEEtre Madame Brown, non\u202F?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Oui, nous \xE9tions des rivaux de longue date."
+    speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "On se croisait souvent sur divers lieux pour essayer d\u2019avoir une
+      information juteuse en avant-premi\xE8re mais elle y parvenait souvent avant
+      moi."
+    speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Malgr\xE9 tout, cela me fend le c\u0153ur de la savoir morte. Malgr\xE9
+      notre rivalit\xE9, cela me poussait toujours \xE0 redoubler d\u2019effort."
+    speaker: {fileID: 11400000, guid: 48a2c39d6f03db348baab1f3a19e9c3f, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 2c719513821ff6946b5c8eede532181d, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: PeterQ2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Connaissiez-vous la victime ?
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Non, elle devait \xEAtre une nouvelle recrue comme je ne me souviens pas
+      de l\u2019avoir d\xE9j\xE0 aper\xE7u. "
+    speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Cependant, nous avions eu l\u2019occasion de discuter un peu durant la
+      soir\xE9e et elle paraissait \xEAtre une personne bienveillante en qu\xEAte
+      de savoir, d\u2019histoire et de v\xE9rit\xE9 dans ses \xE9crits."
+    speaker: {fileID: 11400000, guid: 1882c8f5fd824fb42a890614c3da354f, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 11400000, guid: 19660fcb44b47dd49aff55585aa843d2, type: 2}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: c44557dbfa2ef594db116b2e087d890e, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: 

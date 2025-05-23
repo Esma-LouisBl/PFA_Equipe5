@@ -34,7 +34,7 @@ MonoBehaviour:
       pour sa fabrication de vins, bi\xE8res et spiritueux, il n\u2019y avait de
       meilleur sujet."
     speaker: {fileID: 11400000, guid: 1882c8f5fd824fb42a890614c3da354f, type: 2}
-    collectedCondition: 
+    collectedCondition: Act1 4
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
