@@ -36,8 +36,10 @@ public class BottomBarController : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
+    //[SerializeField]
+    //private FrameController _PhotoFrame;
     [SerializeField]
-    private FrameController _PhotoFrame;
+    private InspectorController _inspectorController;
     private enum State
     {
         PLAYING, COMPLETED
@@ -123,7 +125,7 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
-        CollectFrame();
+        //CollectFrame();
 
 
         RemoveContact();
@@ -196,15 +198,15 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
-    public void CollectFrame()
-    {
-        if (currentScene.sentences[sentenceIndex].PhotoFrame != null)
-        {
-            _PhotoFrame.gameObject.SetActive(true);
+    //public void CollectFrame()
+    //{
+    //    if (currentScene.sentences[sentenceIndex].PhotoFrame != null)
+    //    {
+    //        _PhotoFrame.gameObject.SetActive(true);
 
-            Debug.Log("holly");
-        }
-    }
+    //        Debug.Log("holly");
+    //    }
+    //}
 
     public string GetCurrentSpeaker()
     {
