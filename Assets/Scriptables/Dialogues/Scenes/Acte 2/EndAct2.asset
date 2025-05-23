@@ -18,10 +18,10 @@ MonoBehaviour:
     collectedCondition: ACT3
     testimony: {fileID: 0}
     suspect: {fileID: 0}
-    phoneContact: {fileID: 11400000, guid: 2fbf2b38a1c8acc40bdb6922f04023e3, type: 2}
+    phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 11400000, guid: f4746641599d7e64a8c65f884f6d2968, type: 2}
     photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
@@ -30,5 +30,5 @@ MonoBehaviour:
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
-  callInspector: 0
+  callInspector: 1
   endInspector: 0

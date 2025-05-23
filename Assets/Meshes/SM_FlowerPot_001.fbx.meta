@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec81643b4569ae54398767072ce6ee8b
+guid: 6aecad2197758104ca94f758f30b777e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Curtains_001
-    second: {fileID: 2100000, guid: 7a19f0f1ac7a30d44b0a3ccb9a7d6c88, type: 2}
+      name: M_Flowers_001
+    second: {fileID: 2100000, guid: 1bea1b7ec3cd00d4096251c4d5fe5c47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Flowers_002
+    second: {fileID: 2100000, guid: b452368aa92daed4b98eb45015a9ba26, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,9 +50,9 @@ ModelImporter:
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -81,7 +86,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []

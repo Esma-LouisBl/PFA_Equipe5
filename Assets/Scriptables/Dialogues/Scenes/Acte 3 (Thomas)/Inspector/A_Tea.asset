@@ -22,8 +22,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Du coup, on peut ais\xE9ment dire que l\u2019odeur venait du meurtrier.
       Or, on sait que Madame Marie n\u2019aime pas le caf\xE9 et pr\xE9f\xE8re le
       th\xE9. "
@@ -34,8 +37,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Il est vrai que je n\u2019ai pas senti d\u2019odeur de th\xE9. "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
@@ -44,8 +50,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: 'Je pense donc que nous pouvons retirer Madame Holly Marie des suspects. '
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -54,8 +63,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Tu as raison, cependant je pense que ses t\xE9moignages restent importants.
       Il vaut mieux les conserver. "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
@@ -65,8 +77,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "En tout cas, bon travail ! Tu n\u2019as pas perdu la main. "
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
@@ -75,8 +90,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "J\u2019ai juste interrog\xE9 quelques t\xE9moins et suspects tu sais ...  "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -85,8 +103,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: Quelle modestie, tu pouvais juste accepter mon compliment
     speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
     collectedCondition: 
@@ -95,8 +116,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Enfin, je pense que la prochaine \xE9tape est que tu interroges ce fameux
       journaliste."
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
@@ -106,8 +130,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 1
+    destroyEvidence: 0
   - text: Je pense aussi
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -116,9 +143,14 @@ MonoBehaviour:
     phoneContact: {fileID: 11400000, guid: 95a0ad8554e9b904b99d2dc263ba77f7, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 1
