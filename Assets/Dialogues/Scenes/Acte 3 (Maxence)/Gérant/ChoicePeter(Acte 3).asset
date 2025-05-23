@@ -22,6 +22,6 @@ MonoBehaviour:
   - text: lien avec le journaliste
     nextScene: {fileID: 11400000, guid: 466963865ec17e6408c521480f6ab95c, type: 2}
   - text: "Pr\xE9senter les preuves"
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 2ca92899a19f5a44897fb86f01bda1b0, type: 2}
   - text: Fin de l'interrogatoire
     nextScene: {fileID: 11400000, guid: 3a9b1a5ea1956234d9e3aa1a2c66f042, type: 2}
