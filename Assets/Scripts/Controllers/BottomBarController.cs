@@ -37,7 +37,7 @@ public class BottomBarController : MonoBehaviour
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
     [SerializeField]
-    
+    private FrameController _PhotoFrame;
     private enum State
     {
         PLAYING, COMPLETED
@@ -116,6 +116,7 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
+        
         RemoveContact();
     }
 
@@ -183,6 +184,15 @@ public class BottomBarController : MonoBehaviour
         if (currentScene.sentences[sentenceIndex].evidence != null)
         {
             _evidencesSystem.AddEvidence(currentScene.sentences[sentenceIndex].evidence);
+        }
+    }
+
+    public void CollectFrame()
+    {
+        if (currentScene.sentences[sentenceIndex].suspect != null)
+        {
+            _PhotoFrame.SetActive(true);
+            Debug.Log("holly");
         }
     }
 
