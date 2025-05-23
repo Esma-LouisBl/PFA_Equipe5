@@ -95,5 +95,10 @@ public class MeshOutliner : MonoBehaviour
             selectedCabinet = false;
             selectedDesk = true;
         }
+        if (selectedCabinet && selectedPhone)   //avoid the same bug with the phone
+        {
+            selectedCabinet = false;
+            selectedPhone = true;
+        }
     }
 }
