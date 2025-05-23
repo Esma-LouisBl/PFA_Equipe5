@@ -35,8 +35,7 @@ public class BottomBarController : MonoBehaviour
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
     [SerializeField]
-    private InspectorController _inspectorController;
-
+    private FrameController _PhotoFrame;
     private enum State
     {
         PLAYING, COMPLETED
@@ -93,15 +92,7 @@ public class BottomBarController : MonoBehaviour
 
         if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
         {
-            if (_inspectorController.inspectorTalking)
-            {
-                Debug.Log("affiched");
-                _inspectorController.inspectorSprite.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
-            }
-            else
-            {
-                spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
-            }
+            spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
         }
 
         if (currentScene.sentences[sentenceIndex].showSprite)
@@ -118,8 +109,10 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
+        CollectFrame();
+
+
         RemoveContact();
-        CollectInspectorScene();
     }
 
     public bool IsCompleted()
@@ -189,13 +182,17 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
-    public void CollectInspectorScene()
+    public void CollectFrame()
     {
-        if (currentScene.sentences[sentenceIndex].inspectorSceneToCollect != null)
+        var frameData = currentScene.sentences[sentenceIndex].photoFrame;
+        if (frameData != null)
         {
-            _inspectorController.CollectScene(currentScene.sentences[sentenceIndex].inspectorSceneToCollect);
+            
+            _PhotoFrame.ShowFrame(frameData);
+            
         }
     }
+
 
     public string GetCurrentSpeaker()
     {

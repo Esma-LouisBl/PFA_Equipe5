@@ -18,5 +18,5 @@ MonoBehaviour:
   Informations: "Une forte odeur de caf\xE9 en ressort."
   ReactionPeter: {fileID: 11400000, guid: 502e50e4d2da9374cbbaa45b7ee6477a, type: 2}
   ReactionHolly: {fileID: 11400000, guid: 5f383f4f5d03a364eb0d98ad698889b6, type: 2}
-  ReactionOliver: {fileID: 0}
+  ReactionOliver: {fileID: 11400000, guid: 6cce4b435536e6545b7fcce9f2bc898e, type: 2}
   ReactionInspector: {fileID: 0}

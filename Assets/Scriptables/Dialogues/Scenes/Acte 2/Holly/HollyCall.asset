@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 11400000, guid: 3db5824db4718d547b3d7bbfe0d9bf53, type: 2}
     showSprite: 1
     hideSprite: 0
+    destroyEvidence: 0
   - text: 'Bonjour Madame, je suis le majordome de ce manoir, Monsieur Edwin Justice. '
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -31,8 +34,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Je ne crois pas vous avoir demand\xE9 votre nom, je me trompe ? Que me
       voulez-vous ?"
     speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
@@ -42,8 +48,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Comme vous le savez s\xFBrement, il y a eu un meurtre durant la soir\xE9e.
       J\u2019aurais besoin de vous poser plusieurs questions \xE0 ce sujet."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -53,8 +62,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "\xD4 ciel, je n\u2019\xE9tais point au courant de ce drame ! Soit, faites
       vite, j\u2019ai beaucoup \xE0 faire."
     speaker: {fileID: 11400000, guid: 8c8d0a0c7222fe74f9da285981bc475b, type: 2}
@@ -64,9 +76,14 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

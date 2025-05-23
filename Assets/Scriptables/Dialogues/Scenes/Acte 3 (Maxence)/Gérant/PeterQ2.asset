@@ -19,6 +19,9 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Non, elle devait \xEAtre une nouvelle recrue comme je ne me souviens pas
@@ -28,6 +31,9 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Cependant, nous avions eu l\u2019occasion de discuter un peu durant la
@@ -38,9 +44,14 @@ MonoBehaviour:
     testimony: {fileID: 11400000, guid: 19660fcb44b47dd49aff55585aa843d2, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: c44557dbfa2ef594db116b2e087d890e, type: 2}
+  nextScene: {fileID: 11400000, guid: c5f6c13105d7be64ebdfcd4663bc496e, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

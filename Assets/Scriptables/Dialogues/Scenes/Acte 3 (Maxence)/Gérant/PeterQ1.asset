@@ -19,6 +19,9 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "En d\xE9but de soir\xE9e, je m\u2019occupais d\u2019accueillir les invit\xE9s
@@ -29,6 +32,9 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Je crois qu\u2019il \xE9tait 19h00 quand Madame Brown est venue me voir
@@ -39,6 +45,9 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Je lui ai donc propos\xE9 de me rejoindre dans mon bureau vers 19h30 pour
@@ -48,6 +57,9 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Mais avant que je n\u2019arrive, un convive a malheureusement renvers\xE9
@@ -58,6 +70,9 @@ MonoBehaviour:
     testimony: {fileID: 11400000, guid: 4a56515a55002654c915dbeb998e5d69, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "La suite vous la connaissez... Lorsque je suis revenu, j\u2019ai trouv\xE9
@@ -67,9 +82,14 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: c44557dbfa2ef594db116b2e087d890e, type: 2}
+  nextScene: {fileID: 11400000, guid: c5f6c13105d7be64ebdfcd4663bc496e, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

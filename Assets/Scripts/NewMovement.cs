@@ -25,6 +25,8 @@ public class NewMovement : MonoBehaviour
     private float _rotationSpeed = 350f;
     private Quaternion _targetRotation;
 
+    public bool canShowCanvas;
+
     [SerializeField]
     private GameObject _realCabinet, _falseCabinet, _realEvidenceBook, _falseEvidencebook, _realTestimonyBook, _falseTestimonyBook, _realSuspectBook, _falseSuspectBook, _realBoard, _falseBoard, _realTable, _falseTable;
 
@@ -77,7 +79,8 @@ public class NewMovement : MonoBehaviour
         _realTable.SetActive(false);
         _falseTable.SetActive(true);
 
-        _canvasTable.SetActive(true);
+        canShowCanvas = true;
+        ShowCanvasTable();
 
         _inspectorController.ChangeCursor();
 
@@ -111,7 +114,7 @@ public class NewMovement : MonoBehaviour
 
     public void ReturnDeskFromTable()
     {
-        _canvasTable.SetActive(false);
+        HideCanvasTable();
 
         _inspectorController.ChangeCursor();
 
@@ -134,6 +137,19 @@ public class NewMovement : MonoBehaviour
 
         _realTable.SetActive(true);
         _falseTable.SetActive(false);
+    }
+
+    public void HideCanvasTable()
+    {
+        _canvasTable.SetActive(false);
+    }
+    public void ShowCanvasTable()
+    {
+        if (canShowCanvas)
+        {
+            _canvasTable.SetActive(true);
+            canShowCanvas = false;
+        }
     }
 
     private IEnumerator Moving(Transform waypoint, bool goRight)

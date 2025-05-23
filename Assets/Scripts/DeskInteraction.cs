@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DeskInteraction : MonoBehaviour
@@ -62,5 +63,10 @@ public class DeskInteraction : MonoBehaviour
     {
         _gameController.currentScene = scene;
         _gameController.restart = true;
+    }
+
+    public void DestroyEvidence()
+    {
+        Destroy(_currentEvidence);
     }
 }

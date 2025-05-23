@@ -18,5 +18,5 @@ MonoBehaviour:
   Informations: "Provient de la poubelle de la cuisine. Il est tach\xE9 de sang."
   ReactionPeter: {fileID: 0}
   ReactionHolly: {fileID: 0}
-  ReactionOliver: {fileID: 0}
+  ReactionOliver: {fileID: 11400000, guid: 6cce4b435536e6545b7fcce9f2bc898e, type: 2}
   ReactionInspector: {fileID: 0}

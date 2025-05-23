@@ -21,6 +21,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Je suis arriv\xE9 \xE0 la soir\xE9e vers 19h00 pour y interviewer Monsieur
@@ -32,6 +33,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Mais ce dernier m\u2019a pr\xE9cis\xE9 avoir d\xE9j\xE0 organis\xE9 une
@@ -43,6 +45,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Alors j\u2019ai pass\xE9 ma soir\xE9e \xE0 discuter avec les invit\xE9s
@@ -54,6 +57,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Pourtant, l\u2019une des servantes vous a vu \xE0 la porte de Monsieur.\_"
@@ -64,6 +68,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: ....
@@ -74,6 +79,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Hum, je voulais surveiller madame Brown durant la soir\xE9e. Donc lorsque
@@ -85,6 +91,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Oui j\u2019ai \xE9cout\xE9 \xE0 la porte pour essayer de r\xE9cup\xE9rer
@@ -92,14 +99,17 @@ MonoBehaviour:
       dans le couloir et j\u2019ai d\xFB partir tr\xE8s vite."
     speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
     collectedCondition: 
-    testimony: {fileID: 0}
+    testimony: {fileID: 11400000, guid: 8c03d2174d8f80c4a9ee6c7040d7442d, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 2c719513821ff6946b5c8eede532181d, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

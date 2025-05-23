@@ -21,6 +21,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Pas de probl\xE8me, n\u2019h\xE9sitez pas \xE0 me contacter si besoin."
@@ -31,6 +32,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Ah\u202F!"
@@ -41,6 +43,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "J\u2019y pense, j\u2019ai crois\xE9 un homme avant de venir qui m\u2019a
@@ -52,6 +55,7 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   - text: "Le cuisinier\u202F? Tr\xE8s bien, je le ferais. Merci \xE0 vous."
@@ -62,9 +66,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
     showSprite: 0
-    hideSprite: 0
+    hideSprite: 1
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 905e2e5dbad79744486b01720974d79f, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 11400000, guid: 5377f82c2a34f764f9f128ff72aa01ce, type: 2}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: ' Bonjour, Edwin Justice, je suis le majordome de ce manoir.'
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -31,8 +34,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Edwin Justice, comme le d\xE9tective qui a pris sa retraite ?"
     speaker: {fileID: 11400000, guid: bb78998e8e801c943a05166514b4b2f8, type: 2}
     collectedCondition: 
@@ -41,8 +47,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "C\u2019est \xE7a, comment me connaissez-vous ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -51,8 +60,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "j\u2019ai lu beaucoup de vos enqu\xEAtes et j\u2019\xE9tais tr\xE8s impressionn\xE9
       par votre logique et sans froid."
     speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
@@ -62,8 +74,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Mais jamais je n\u2019aurais imagin\xE9 que vous vous seriez reconverti
       en majordome\u202F!"
     speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
@@ -73,8 +88,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Sinon pourquoi m\u2019avez-vous fait venir ?"
     speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
     collectedCondition: 
@@ -83,8 +101,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "J\u2019aurai \xE0 vous poser des questions au sujet du meurtre"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -93,8 +114,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Tr\xE8s bien, allez-si."
     speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
     collectedCondition: 
@@ -103,9 +127,14 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 2c719513821ff6946b5c8eede532181d, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
