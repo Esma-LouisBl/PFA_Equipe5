@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Ah M. Edwin, j\u2019attendais votre appel.  "
     speaker: {fileID: 11400000, guid: 647b8e1df6227a94cac2eff8a4f8e80d, type: 2}
     collectedCondition: 
@@ -31,8 +34,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 11400000, guid: 97d86ff07bccfd04c8ba5fb8fee1eb02, type: 2}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Que puis-je pour vous\u202F? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -41,8 +47,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 11400000, guid: a2b4d97fa2df7e54f9ec50fa041980fb, type: 2}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "A vrai dire lorsque j\u2019ai vid\xE9 les poubelles ce matin, j\u2019ai
       trouv\xE9 un mouchoir tach\xE9 de sang. Il y avait un coupe papier dedans. "
     speaker: {fileID: 11400000, guid: 647b8e1df6227a94cac2eff8a4f8e80d, type: 2}
@@ -52,8 +61,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 11400000, guid: ec6246dda826fa1419ff1cccf013db39, type: 2}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Pouvez-vous me l\u2019apporter\u202F? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -62,8 +74,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 11400000, guid: 4e1e3fb9fe567c848b5e748dbc4291f8, type: 2}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "J\u2019ai d\xE9j\xE0 demand\xE9 \xE0 une servante de venir vous le donner,
       il devrait \xEAtre sur votre chariot."
     speaker: {fileID: 11400000, guid: 647b8e1df6227a94cac2eff8a4f8e80d, type: 2}
@@ -73,8 +88,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Parfait, je vous remercie, bonne journ\xE9e"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -83,8 +101,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "(Je crois avoir vu quelqu\u2019un poser quelque chose dans mes preuves
       pendant que je t\xE9l\xE9phonais\u2026 Je devrais jeter un \u0153il et rappeler
       l\u2019inspecteur.)"
@@ -95,9 +116,14 @@ MonoBehaviour:
     phoneContact: {fileID: 11400000, guid: d06b8968bc34756429973584d1a2f681, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
