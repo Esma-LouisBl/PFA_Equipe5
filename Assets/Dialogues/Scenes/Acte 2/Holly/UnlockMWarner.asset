@@ -22,7 +22,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 11400000, guid: 3db5824db4718d547b3d7bbfe0d9bf53, type: 2}
+    PhotoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
   background: {fileID: 0}

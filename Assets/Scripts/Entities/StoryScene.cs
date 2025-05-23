@@ -28,7 +28,7 @@ public class StoryScene : GameScene
         public PhoneContact contactToRemove;
         public EvidenceData evidence;
         public StoryScene inspectorSceneToCollect;
-        public Frame PhotoFrame;
+        public Frame photoFrame;
 
         public bool showSprite;
         public bool hideSprite;

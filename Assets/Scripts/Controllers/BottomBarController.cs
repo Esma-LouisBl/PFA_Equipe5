@@ -191,13 +191,15 @@ public class BottomBarController : MonoBehaviour
 
     public void CollectFrame()
     {
-        if (currentScene.sentences[sentenceIndex].PhotoFrame != null)
+        var frameData = currentScene.sentences[sentenceIndex].photoFrame;
+        if (frameData != null)
         {
-            _PhotoFrame.gameObject.SetActive(true);
-
-            Debug.Log("holly");
+            
+            _PhotoFrame.ShowFrame(frameData);
+            
         }
     }
+
 
     public string GetCurrentSpeaker()
     {
