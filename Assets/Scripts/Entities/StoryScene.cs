@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewStoryScene", menuName ="Data/New Story Scene")]
+[CreateAssetMenu(fileName = "NewStoryScene", menuName = "Data/New Story Scene")]
 [System.Serializable]
 public class StoryScene : GameScene
 {
@@ -11,6 +11,9 @@ public class StoryScene : GameScene
     public GameScene conditionScene;
 
     public List<string> conditionToUnlock;
+
+    public bool callInspector;
+    public bool endInspector;
 
     [System.Serializable]
     public struct Sentence
@@ -24,10 +27,12 @@ public class StoryScene : GameScene
         public PhoneContact phoneContact;
         public PhoneContact contactToRemove;
         public EvidenceData evidence;
-        public Frame Frame;
+        public StoryScene inspectorSceneToCollect;
+        public Frame PhotoFrame;
 
         public bool showSprite;
         public bool hideSprite;
+
     }
 }
 

@@ -116,7 +116,9 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
-        
+        CollectFrame();
+
+
         RemoveContact();
     }
 
@@ -189,9 +191,10 @@ public class BottomBarController : MonoBehaviour
 
     public void CollectFrame()
     {
-        if (currentScene.sentences[sentenceIndex].suspect != null)
+        if (currentScene.sentences[sentenceIndex].PhotoFrame != null)
         {
-            _PhotoFrame.SetActive(true);
+            _PhotoFrame.gameObject.SetActive(true);
+
             Debug.Log("holly");
         }
     }
