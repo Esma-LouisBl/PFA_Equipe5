@@ -2,10 +2,14 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewMovement : MonoBehaviour
+public class TESTNewMovement : MonoBehaviour
 {
     [SerializeField]
     private Transform _playerTransform;
+
+    [SerializeField]
+    private Animator _animation;
+    
     [SerializeField]
     private Transform _waypointCabinet, _waypointTable, _waypointDesk;
     [SerializeField]
@@ -19,10 +23,6 @@ public class NewMovement : MonoBehaviour
     [SerializeField]
     private GameObject _fromtTableButton, _fromBoardButton;
 
-    [SerializeField]
-    private float _speed = 20f;
-    [SerializeField]
-    private float _rotationSpeed = 350f;
     private Quaternion _targetRotation;
 
     public bool canShowCanvas;
@@ -37,6 +37,7 @@ public class NewMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0) && _gameManager.playerCanMove)
             {
                 MoveToCabinet();
+                WantToMove("DeskToCabinet");
             }
         }
 
@@ -45,14 +46,13 @@ public class NewMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0) && _gameManager.playerCanMove)
             {
                 MoveToTable();
+                WantToMove("DeskToTable");
             }
         }
     }
 
     private void MoveToCabinet()
     {
-        StartCoroutine(Moving(_waypointCabinet, true));
-
         _realCabinet.SetActive(false);
         _falseCabinet.SetActive(true);
 
@@ -74,7 +74,6 @@ public class NewMovement : MonoBehaviour
     }
     private void MoveToTable()
     {
-        StartCoroutine(Moving(_waypointTable, false));
 
         _realTable.SetActive(false);
         _falseTable.SetActive(true);
@@ -90,8 +89,6 @@ public class NewMovement : MonoBehaviour
     public void ReturnDesk()
     {
         _fromBoardButton.SetActive(false);
-
-        StartCoroutine(Moving(_waypointDesk, false));
 
         _realCabinet.SetActive(true);
         _falseCabinet.SetActive(false);
@@ -117,8 +114,6 @@ public class NewMovement : MonoBehaviour
         HideCanvasTable();
 
         _inspectorController.ChangeCursor();
-
-        StartCoroutine(Moving(_waypointDesk, true));
 
         _realCabinet.SetActive(true);
         _falseCabinet.SetActive(false);
@@ -151,42 +146,28 @@ public class NewMovement : MonoBehaviour
             canShowCanvas = false;
         }
     }
+   
 
-    private IEnumerator Moving(Transform waypoint, bool goRight)
+    public void WantToMove(string triggerName)
     {
         _cursorController.EnableCursor(false);
-        while (Vector3.Distance(_playerTransform.position, waypoint.position) > 0.01f)
-        {
-            _playerTransform.position = Vector3.MoveTowards(_playerTransform.position, waypoint.position, _speed * Time.deltaTime);
-
-            if (Vector3.Distance(_playerTransform.position, waypoint.position) < 0.01f)
-            {
-                _playerTransform.position = waypoint.position;
-            }
-            yield return new WaitForSeconds(0.01f);
-        }
-
-        if (goRight)
-        {
-            _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y + 90f, 0f);
-        }
-        else
-        {
-            _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y - 90f, 0f);
-        }
-
-        while (Quaternion.Angle(_playerTransform.rotation, _targetRotation) > 1f)
-        {
-            _playerTransform.rotation = Quaternion.RotateTowards(_playerTransform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
-            
-            if (Quaternion.Angle(_playerTransform.rotation, _targetRotation) < 1f)
-            {
-                _playerTransform.rotation = _targetRotation;
-
-                _cursorController.EnableCursor(true);
-            }
-            yield return new WaitForSeconds(0.005f);
-        }
-
+        _animation.SetTrigger("" + triggerName);
     }
+
+    public void MovingToTheRight () //For Animations
+    {
+        _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y + 90f, 0f);
+        _playerTransform.rotation = _targetRotation;
+        _playerTransform.position = _waypointCabinet.position;
+        _cursorController.EnableCursor(true);
+    }
+
+    public void MovingToTheLeft(GameObject waypoint)
+    {
+        _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y - 90f, 0f);
+        _playerTransform.rotation = _targetRotation;
+        _playerTransform.position = waypoint.transform.position;
+        _cursorController.EnableCursor(true);
+    }
+
 }

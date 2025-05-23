@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro.Examples;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -31,6 +32,7 @@ public class GameController : MonoBehaviour
             StoryScene storyScene = currentScene as StoryScene;
             bottomBar.PlayScene(storyScene);
             backgroundController.SetImage(storyScene.background);
+            Debug.Log("Pebble is watching you");
         }
     }
 
