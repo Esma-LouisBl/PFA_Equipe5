@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10665b98bf475c343ac5e31e9589229e, type: 3}
+  m_Name: Tissue
+  m_EditorClassIdentifier: 
+  Name: Mouchoir
+  EvidenceSprite: {fileID: 21300000, guid: 2b81591978a4bef48a5dd0fe5c2d303c, type: 3}
+  EvidenceGO: {fileID: 919132149155446097, guid: 1540d6bf357f79847b1a4fddc2ecf3b6, type: 3}
+  Informations: "Un mouchoir tach\xE9 de sang"
+  ReactionPeter: {fileID: 0}
+  ReactionHolly: {fileID: 0}
+  ReactionOliver: {fileID: 0}
+  ReactionInspector: {fileID: 0}

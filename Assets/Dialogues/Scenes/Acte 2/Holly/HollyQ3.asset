@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: HollyQ3
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Connaissiez-vous Madame Lawrence Brown avant les \xE9v\xE8nements ? "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Hmm\u2026 Lawrence Brown\u2026 Ah ! Mais oui, la journaliste du Times
+      ! "
+    speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "C\u2019est bien cela."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Oh, ch\xE9ri. Bien s\xFBr que je la connaissais. Une femme charmante.
+      Elle m\u2019a interview\xE9e \xE0 plusieurs reprises, toujours apr\xE8s mes
+      plus belles repr\xE9sentations."
+    speaker: {fileID: 11400000, guid: fc1691753e0209f4487f5d670f9bd2d0, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "C\u2019est un choc, vraiment. Une femme si raffin\xE9e\u2026 c\u2019est
+      une grande perte."
+    speaker: {fileID: 11400000, guid: 8c8d0a0c7222fe74f9da285981bc475b, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Enfin... elle n\u2019a jamais \xE9gal\xE9 mon \xE9l\xE9gance, cela va
+      sans dire. "
+    speaker: {fileID: 11400000, guid: fc1691753e0209f4487f5d670f9bd2d0, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "H\xE9las, non. J\u2019\xE9tais bien trop occup\xE9e \xE0 renouer avec
+      d\u2019anciennes connaissances. "
+    speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  - text: "Cependant il me semble avoir aper\xE7u Mme Brown en pleine conversation
+      avec M. Warner, aux alentours de 19 heures. "
+    speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
+  conditionScene: {fileID: 11400000, guid: f9009b76c191a99438b98ac7b2a5feb9, type: 2}
+  conditionToUnlock: []

@@ -18,6 +18,6 @@ MonoBehaviour:
   Informations: "Pos\xE9 sur le bureau de la sc\xE8ne de crime. Son socle est renfonc\xE9
     avec des taches de sang."
   ReactionPeter: {fileID: 0}
-  ReactionHolly: {fileID: 0}
+  ReactionHolly: {fileID: 11400000, guid: b59aea81c3bd189419a348312e348f66, type: 2}
   ReactionOliver: {fileID: 0}
   ReactionInspector: {fileID: 0}
