@@ -3419,6 +3419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicSource: {fileID: 1544507102}
   _sfxSource: {fileID: 1472274168}
+  _pageTurned: {fileID: 8300000, guid: 5a39271cdccdfd846a7d52053421d412, type: 3}
   _hangUp: {fileID: 8300000, guid: b072ea5c91e70304fb7ed21f68b7b8a5, type: 3}
   _pickUp: {fileID: 8300000, guid: 9f710386aa65eef48b3c508b09ed8dea, type: 3}
   _Phone01: {fileID: 8300000, guid: 546b9c0be2202a64d905eb4fb809800b, type: 3}

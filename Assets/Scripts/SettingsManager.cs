@@ -8,6 +8,11 @@ public class SettingsManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
         DontDestroyOnLoad(this.gameObject);
     }
 }

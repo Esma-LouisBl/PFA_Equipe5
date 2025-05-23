@@ -28,17 +28,17 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
         DontDestroyOnLoad(this.gameObject);
     }
 
     void Start()
     {
         PlayMusic(_mainMenuTheme);
-    }
-
-    void Update()
-    {
-        
     }
 
     public void PlayMusic(AudioClip music)
