@@ -31,7 +31,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169391220407223280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -11.251}
+  m_LocalPosition: {x: 0, y: 0, z: -11.242}
   m_LocalScale: {x: 0.0031727012, y: 0.28615412, z: 0.24043532}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -136,6 +136,7 @@ MonoBehaviour:
   selectedPhone: 0
   selectedDesk: 0
   selectedCabinet: 0
+  selectedTable: 0
 --- !u!114 &2220427945240685353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +261,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0da403fa66837de48bca963ea7838971, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4caae10eb9682fb4dba912c6749646ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
