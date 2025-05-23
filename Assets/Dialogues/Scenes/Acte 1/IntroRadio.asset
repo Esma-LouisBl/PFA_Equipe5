@@ -17,9 +17,13 @@ MonoBehaviour:
       pour une information de derni\xE8re minute."
     speaker: {fileID: 11400000, guid: 7f24d978b6e625e48ba9626a1a59dcc2, type: 2}
     collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
+    testimony: {fileID: 11400000, guid: 4a56515a55002654c915dbeb998e5d69, type: 2}
+    suspect: {fileID: 11400000, guid: 8f1b486e20867ef4a9abf473c343f1d3, type: 2}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
   - text: "Le corps d\u2019une femme a \xE9t\xE9 retrouv\xE9 plus t\xF4t dans la
       matin\xE9e au manoir Warner House."
     speaker: {fileID: 11400000, guid: 7f24d978b6e625e48ba9626a1a59dcc2, type: 2}
@@ -27,6 +31,10 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
   - text: "La police a \xE9t\xE9 appel\xE9e sur les lieux apr\xE8s la d\xE9couverte
       du corps, on ignore toujours l\u2019identit\xE9 de la jeune femme ou de son
       meurtrier."
@@ -35,7 +43,11 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 524a3c74bbfbf8543b7e50372eb0f50c, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []

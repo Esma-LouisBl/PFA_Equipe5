@@ -20,24 +20,24 @@ public class PlayerController : MonoBehaviour
         {
             if (!isMoving && !isRotating)
             {
-                if (Input.GetKeyDown(KeyCode.LeftArrow))
-                {
-                    targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y - 90f, 0f);
-                    isRotating = true;
-                }
-                else if (Input.GetKeyDown(KeyCode.RightArrow))
-                {
-                    targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y + 90f, 0f);
-                    isRotating = true;
-                }
-                else if (Input.GetKeyDown(KeyCode.UpArrow))
-                {
-                    TryToMove(transform.forward);
-                }
-                else if (Input.GetKeyDown(KeyCode.DownArrow))
-                {
-                    TryToMove(-transform.forward);
-                }
+                //if (Input.GetKeyDown(KeyCode.LeftArrow))
+                //{
+                //    targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y - 90f, 0f);
+                //    isRotating = true;
+                //}
+                //else if (Input.GetKeyDown(KeyCode.RightArrow))
+                //{
+                //    targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y + 90f, 0f);
+                //    isRotating = true;
+                //}
+                //else if (Input.GetKeyDown(KeyCode.UpArrow))
+                //{
+                //    TryToMove(transform.forward);
+                //}
+                //else if (Input.GetKeyDown(KeyCode.DownArrow))
+                //{
+                //    TryToMove(-transform.forward);
+                //}
             }
 
             if (isMoving)

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653a19eafa2e9bf43bf155c64d39467e, type: 3}
+  m_Name: Chose_Oliver
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Pr\xE9sentation"
+    nextScene: {fileID: 11400000, guid: 2d0154a325ad56348a2185ffbe08a63a, type: 2}
+  - text: Moment des faits
+    nextScene: {fileID: 11400000, guid: f8e51db805c7e7e44b9b6de6f1df9759, type: 2}
+  - text: Liens avec la victime
+    nextScene: {fileID: 11400000, guid: 59207f103600c1f48bb5c797e29de41a, type: 2}
+  - text: "Pr\xE9senter les preuves"
+    nextScene: {fileID: 0}
+  - text: Fin de Dialogue
+    nextScene: {fileID: 11400000, guid: f12ff566a39bedb4990b300ae89cafff, type: 2}

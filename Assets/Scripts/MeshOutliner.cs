@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,7 +8,7 @@ public class MeshOutliner : MonoBehaviour
     private RaycastHit raycastHit;
 
     public string item;
-    public bool selectedSuspects, selectedEvidences, selectedTestimonies, selectedPhone, selectedDesk, selectedCabinet;
+    public bool selectedSuspects, selectedEvidences, selectedTestimonies, selectedPhone, selectedDesk, selectedCabinet, selectedTable;
 
     void Update()
     {
@@ -70,6 +71,10 @@ public class MeshOutliner : MonoBehaviour
                     {
                         selectedCabinet = true;
                     }
+                    if (meshOutliner.item == "Table")
+                    {
+                        selectedTable = true;
+                    }
 
                 }
             }
@@ -81,6 +86,14 @@ public class MeshOutliner : MonoBehaviour
                 selectedPhone = false;
                 selectedDesk = false;
                 selectedCabinet = false;
+                selectedTable = false;
             }
+
+
+        if (selectedCabinet && selectedDesk)    //avoid to go to the cabinet when the player drops an evidence
+        {
+            selectedCabinet = false;
+            selectedDesk = true;
+        }
     }
 }

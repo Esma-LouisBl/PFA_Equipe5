@@ -20,6 +20,11 @@ public class PhoneController : MonoBehaviour
     [SerializeField]
     private CursorController _cursorController;
 
+    [SerializeField]
+    private AudioSource _audioSource;
+    [SerializeField]
+    private AudioClip _pickup, _hangup, _change1, _change2, _change3;
+
     void Update()
     {
         _name.text = contactList[_index].contactName;
@@ -52,6 +57,8 @@ public class PhoneController : MonoBehaviour
         {
             _index = 0;
         }
+        UseASound();
+        _audioSource.Play();
     }
 
     public void ChangeIndexDown()
@@ -64,7 +71,8 @@ public class PhoneController : MonoBehaviour
         {
             _index = contactList.Count -1;
         }
-
+        UseASound();
+        _audioSource.Play();
     }
 
     public void OpenAndClose()
@@ -73,6 +81,8 @@ public class PhoneController : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
+            _audioSource.clip = _pickup;
+            _audioSource.Play();
         }
         else
         {
@@ -80,7 +90,26 @@ public class PhoneController : MonoBehaviour
             {
                 _window.SetActive(true);
                 _gameManager.readingNote = true;
+                _audioSource.clip = _hangup;
+                _audioSource.Play();
             }
+        }
+    }
+
+    private void UseASound()
+    {
+        int random = Random.Range(0, 3);
+        if (random == 0)
+        {
+            _audioSource.clip = _change1;
+        }
+        if (random == 1)
+        {
+            _audioSource.clip = _change2;
+        }
+        if (random == 2)
+        {
+            _audioSource.clip = _change3;
         }
     }
 }

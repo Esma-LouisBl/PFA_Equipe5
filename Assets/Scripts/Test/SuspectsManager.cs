@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SuspectsManager : MonoBehaviour
 {
+    [SerializeField]
     private List<SuspectData> _unlockedSuspects = new List<SuspectData>();
     private int _currentIndex;
 
@@ -35,6 +35,8 @@ public class SuspectsManager : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private GameObject _returnCanvas;
+    [SerializeField]
+    private AudioSource _audioSource;
 
     private void Update()
     {
@@ -83,6 +85,7 @@ public class SuspectsManager : MonoBehaviour
             _currentIndex = 0;
         }
         UIUpdate();
+        _audioSource.Play();
     }
     
     public void PreviousSuspect()
@@ -96,6 +99,7 @@ public class SuspectsManager : MonoBehaviour
             _currentIndex = _unlockedSuspects.Count - 1;
         }
         UIUpdate();
+        _audioSource.Play();
     }
 
     public void OpenAndClose()
