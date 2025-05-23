@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: "Suspect_G\xE9rant"
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Je pense que Peter Warner, le ma\xEEtre de ce manoir, est le meurtrier."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "\u2026 Nous sommes sur la m\xEAme longueur d\u2019onde alors, j\u2019ai
+      plusieurs doutes sur lui aussi."
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Bien que cela reste des th\xE9ories, as-tu des preuves pour l\u2019affirmer\u202F?"
+    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

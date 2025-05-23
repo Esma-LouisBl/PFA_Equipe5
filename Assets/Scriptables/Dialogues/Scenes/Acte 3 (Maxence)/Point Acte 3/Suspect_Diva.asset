@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: Suspect_Diva
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Je pense que Holly Marie, la chanteuse, est notre meurtri\xE8re."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Ne l'avions-nous pas \xE9limin\xE9e de nos suspects il y a quelques heures
+      ? Sans compter que la majorit\xE9 de nos preuves nous l\u2019a prouv\xE9."
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Je suis assez d\xE9\xE7u je t\u2019avoue, ce n\u2019est pas l\u2019heure
+      des fausses accusations. Ne me fais pas de faux espoirs la prochaine fois."
+    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "J\u2019ai d\xFB me tromper, d\xE9sol\xE9. Je suis un peu rouill\xE9."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: Eh bien respire un bon coup, fais une pause et revois tes notes. Je sais
+      que tu peux y arriver.
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 9a7c16eb31ec312409eceb562a93779b, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

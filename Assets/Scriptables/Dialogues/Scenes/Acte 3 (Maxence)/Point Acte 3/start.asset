@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: NewStoryScene
+  m_Name: start
   m_EditorClassIdentifier: 
   sentences:
   - text: yo
@@ -21,10 +21,23 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 11400000, guid: 8ddf47cf21026b0499f1eadb973ba404, type: 2}
-    PhotoFrame: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+  - text: lo
+    speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 11400000, guid: 93a978923c2003b4eb4de04ea985dcd8, type: 2}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 1
     destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
