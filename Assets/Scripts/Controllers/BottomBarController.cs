@@ -36,7 +36,8 @@ public class BottomBarController : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
-
+    [SerializeField]
+    
     private enum State
     {
         PLAYING, COMPLETED

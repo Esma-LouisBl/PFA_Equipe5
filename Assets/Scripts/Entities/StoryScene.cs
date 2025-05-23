@@ -24,6 +24,7 @@ public class StoryScene : GameScene
         public PhoneContact phoneContact;
         public PhoneContact contactToRemove;
         public EvidenceData evidence;
+        public Frame Frame;
 
         public bool showSprite;
         public bool hideSprite;
