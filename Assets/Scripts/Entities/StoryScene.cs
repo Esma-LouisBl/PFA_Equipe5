@@ -13,6 +13,7 @@ public class StoryScene : GameScene
     public List<string> conditionToUnlock;
 
     public bool callInspector;
+    public bool endInspector;
 
     [System.Serializable]
     public struct Sentence
@@ -26,6 +27,7 @@ public class StoryScene : GameScene
         public PhoneContact phoneContact;
         public PhoneContact contactToRemove;
         public EvidenceData evidence;
+        public StoryScene inspectorSceneToCollect;
 
         public bool showSprite;
         public bool hideSprite;

@@ -85,6 +85,10 @@ public class GameController : MonoBehaviour
                         {
                             inspectorController.ShowInspector();
                         }
+                        if ((currentScene as StoryScene).endInspector)      //check if Inspector has to go
+                        {
+                            inspectorController.HideInspector();
+                        }
                     }
                 }
                 else

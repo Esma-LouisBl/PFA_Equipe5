@@ -12747,6 +12747,7 @@ MonoBehaviour:
   _phoneController: {fileID: 1151773686}
   _gameManager: {fileID: 97514707}
   _evidencesSystem: {fileID: 89023273}
+  _inspectorController: {fileID: 1637156572}
 --- !u!224 &1310856696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16556,6 +16557,7 @@ MonoBehaviour:
   mainCursor: {fileID: 2800000, guid: 4a6bfb317561b284eba2ff719ffdc412, type: 3}
   dialogueCursor: {fileID: 2800000, guid: 744a53788b915994f98a0197e442de31, type: 3}
   inspectorScene: {fileID: 11400000, guid: acfd32b288f056a498d25c5c96720109, type: 2}
+  inspectorTalking: 0
   _gameController: {fileID: 1045449768}
   _gameManager: {fileID: 97514707}
 --- !u!114 &1637156573
