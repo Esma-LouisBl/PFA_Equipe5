@@ -9,45 +9,26 @@ public class AudioManager : MonoBehaviour
     private AudioSource _musicSource, _sfxSource;
 
     [Header("Sounds")]
-    [SerializeField]
-    private AudioClip _hangUp;
-    [SerializeField]
-    private AudioClip _pickUp;
-    [SerializeField]
-    private AudioClip _Phone01;
-    [SerializeField]
-    private AudioClip _Phone02;
-    [SerializeField]
-    private AudioClip _Phone03;
+    public AudioClip _pageTurned;
+    public AudioClip _hangUp;
+    public AudioClip _pickUp;
+    public AudioClip _Phone01;
+    public AudioClip _Phone02;
+    public AudioClip _Phone03;
 
     [Header("Themes")]
-    [SerializeField]
-    private AudioClip _mainMenuTheme;
-    [SerializeField]
-    private AudioClip _investigationTheme;
-    [SerializeField]
-    private AudioClip _endingTheme;
-    [SerializeField]
-    private AudioClip _inspectorTheme;
-    [SerializeField]
-    private AudioClip _warnerTheme;
-    [SerializeField]
-    private AudioClip _hollyTheme;
-    [SerializeField]
-    private AudioClip _scootTheme;
-    [SerializeField]
-    private AudioClip _witnessTheme;
+    public AudioClip _mainMenuTheme;
+    public AudioClip _investigationTheme;
+    public AudioClip _endingTheme;
+    public AudioClip _inspectorTheme;
+    public AudioClip _warnerTheme;
+    public AudioClip _hollyTheme;
+    public AudioClip _scootTheme;
+    public AudioClip _witnessTheme;
 
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Start()

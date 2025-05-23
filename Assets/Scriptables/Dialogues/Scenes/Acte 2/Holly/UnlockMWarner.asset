@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: UnlockMWarner
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Je devrais peu etre Rapeller M. Warner
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 11400000, guid: 4e8b0952fd02ce843a8b6d84d4206073, type: 2}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

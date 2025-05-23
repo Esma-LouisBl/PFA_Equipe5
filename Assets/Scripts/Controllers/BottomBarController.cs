@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
-    [SerializeField]
-    private float _textSpeed = 0.05f;
     public SpriteRenderer spriteRenderer;
 
     public TextMeshProUGUI barText;
@@ -36,13 +34,8 @@ public class BottomBarController : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
-    //[SerializeField]
-    //private FrameController _PhotoFrame;
     [SerializeField]
-    private InspectorController _inspectorController;
-    [SerializeField]
-    private DeskInteraction _deskInteraction;
-
+    private FrameController _PhotoFrame;
     private enum State
     {
         PLAYING, COMPLETED
@@ -99,19 +92,7 @@ public class BottomBarController : MonoBehaviour
 
         if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
         {
-            if (_inspectorController.inspectorTalking)
-            {
-                _inspectorController.inspectorSprite.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
-            }
-            else
-            {
-                spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
-            }
-        }
-
-        if (currentScene.name == "Abandon")     //POUR LA DEMO
-        {
-            _gameManager.GameOver();
+            spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
         }
 
         if (currentScene.sentences[sentenceIndex].showSprite)
@@ -128,8 +109,7 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
-        EvidenceToDestroy();
-        //CollectFrame();
+        CollectFrame();
 
 
         RemoveContact();
@@ -202,23 +182,17 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
-    public void EvidenceToDestroy()
+    public void CollectFrame()
     {
-        if (currentScene.sentences[sentenceIndex].destroyEvidence)
+        var frameData = currentScene.sentences[sentenceIndex].photoFrame;
+        if (frameData != null)
         {
-            _deskInteraction.DestroyEvidence();
+            
+            _PhotoFrame.ShowFrame(frameData);
+            
         }
     }
 
-    //public void CollectFrame()
-    //{
-    //    if (currentScene.sentences[sentenceIndex].PhotoFrame != null)
-    //    {
-    //        _PhotoFrame.gameObject.SetActive(true);
-
-    //        Debug.Log("holly");
-    //    }
-    //}
 
     public string GetCurrentSpeaker()
     {
@@ -238,7 +212,7 @@ public class BottomBarController : MonoBehaviour
             if (!_interrupted)
             {
                 barText.text += text[wordIndex];
-                yield return new WaitForSeconds(_textSpeed);
+                yield return new WaitForSeconds(SettingsManager.Instance.TextSpeed);
                 if (++wordIndex == text.Length)
                 {
                     state = State.COMPLETED;

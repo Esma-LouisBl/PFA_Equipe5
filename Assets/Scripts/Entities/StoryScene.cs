@@ -6,6 +6,7 @@ using UnityEngine;
 public class StoryScene : GameScene
 {
     public List<Sentence> sentences;
+    [HideInInspector]
     public Sprite background;
     public GameScene nextScene;
     public GameScene conditionScene;
@@ -28,7 +29,7 @@ public class StoryScene : GameScene
         public PhoneContact contactToRemove;
         public EvidenceData evidence;
         public StoryScene inspectorSceneToCollect;
-        public Frame PhotoFrame;
+        public Frame photoFrame;
 
         public bool showSprite;
         public bool hideSprite;
