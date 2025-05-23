@@ -90,7 +90,7 @@ public class BottomBarController : MonoBehaviour
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
 
-        if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
+        if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is pronounced by the player, do not change the sprite
         {
             spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
         }
@@ -212,7 +212,8 @@ public class BottomBarController : MonoBehaviour
             if (!_interrupted)
             {
                 barText.text += text[wordIndex];
-                yield return new WaitForSeconds(0.005f);
+                yield return new WaitForSeconds(SettingsManager.Instance.TextSpeed);
+                if (++wordIndex == text.Length)
                 {
                     state = State.COMPLETED;
                     break;
