@@ -97,7 +97,6 @@ public class BottomBarController : MonoBehaviour
         {
             if (_inspectorController.inspectorTalking)
             {
-                Debug.Log("affiched");
                 _inspectorController.inspectorSprite.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
             }
             else

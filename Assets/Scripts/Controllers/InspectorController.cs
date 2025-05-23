@@ -14,10 +14,11 @@ public class InspectorController : MonoBehaviour
     private GameController _gameController;
     [SerializeField]
     private GameManager _gameManager;
+    [SerializeField]
+    private Animator _animator;
 
     private void Start()
     {
-        HideInspector();
         cursorAspect.interactCursor = mainCursor;
     }
 
@@ -37,13 +38,13 @@ public class InspectorController : MonoBehaviour
 
     public void ShowInspector()
     {
-        inspectorSprite.enabled = true;
+        _animator.SetTrigger("Show");
         _gameManager.inspectorAble = true;
     }
 
     public void HideInspector()
     {
-        inspectorSprite.enabled = false;
+        _animator.SetTrigger("Hide");
         inspectorTalking = false;
     }
 
