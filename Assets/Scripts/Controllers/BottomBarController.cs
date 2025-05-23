@@ -36,8 +36,12 @@ public class BottomBarController : MonoBehaviour
     private GameManager _gameManager;
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
+    //[SerializeField]
+    //private FrameController _PhotoFrame;
     [SerializeField]
     private InspectorController _inspectorController;
+    [SerializeField]
+    private DeskInteraction _deskInteraction;
 
     private enum State
     {
@@ -97,7 +101,6 @@ public class BottomBarController : MonoBehaviour
         {
             if (_inspectorController.inspectorTalking)
             {
-                Debug.Log("affiched");
                 _inspectorController.inspectorSprite.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
             }
             else
@@ -125,8 +128,11 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
+        EvidenceToDestroy();
+        //CollectFrame();
+
+
         RemoveContact();
-        CollectInspectorScene();
     }
 
     public bool IsCompleted()
@@ -196,13 +202,23 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
-    public void CollectInspectorScene()
+    public void EvidenceToDestroy()
     {
-        if (currentScene.sentences[sentenceIndex].inspectorSceneToCollect != null)
+        if (currentScene.sentences[sentenceIndex].destroyEvidence)
         {
-            _inspectorController.CollectScene(currentScene.sentences[sentenceIndex].inspectorSceneToCollect);
+            _deskInteraction.DestroyEvidence();
         }
     }
+
+    //public void CollectFrame()
+    //{
+    //    if (currentScene.sentences[sentenceIndex].PhotoFrame != null)
+    //    {
+    //        _PhotoFrame.gameObject.SetActive(true);
+
+    //        Debug.Log("holly");
+    //    }
+    //}
 
     public string GetCurrentSpeaker()
     {

@@ -21,7 +21,7 @@ public class CursorController : MonoBehaviour
     private Vector2 screenCenter;
     private bool playerCanUseCursor = true;
 
-    // Ajouté pour recentrage fluide
+
     private bool _isRecentering = false;
     [SerializeField] private float _recenterDuration = 0.5f;
 
