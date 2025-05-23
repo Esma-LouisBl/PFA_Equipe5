@@ -14400,7 +14400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6886b6781d4d14f8725ca1aa63ec34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textSpeed: 0.02
+  _textSpeed: 0.06
   spriteRenderer: {fileID: 1542248770}
   barText: {fileID: 784211749}
   personNameText: {fileID: 1334907748}
