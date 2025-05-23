@@ -9762,6 +9762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834674325}
   - component: {fileID: 834674324}
+  - component: {fileID: 834674326}
   m_Layer: 0
   m_Name: Area_Paper
   m_TagString: Untagged
@@ -9805,6 +9806,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1956403146}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834674326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834674323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519b98644be01994d9a158aa8c0b4ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCursor: {fileID: 2800000, guid: 4a6bfb317561b284eba2ff719ffdc412, type: 3}
+  interactCursor: {fileID: 2800000, guid: 4a6bfb317561b284eba2ff719ffdc412, type: 3}
+  cursorMode: 0
+  hotspot: {x: 0, y: 0}
 --- !u!1 &836306973
 GameObject:
   m_ObjectHideFlags: 0
