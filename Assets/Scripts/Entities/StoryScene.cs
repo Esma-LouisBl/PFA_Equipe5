@@ -6,6 +6,7 @@ using UnityEngine;
 public class StoryScene : GameScene
 {
     public List<Sentence> sentences;
+    [HideInInspector]
     public Sprite background;
     public GameScene nextScene;
     public GameScene conditionScene;

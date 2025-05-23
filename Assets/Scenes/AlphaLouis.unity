@@ -11092,6 +11092,7 @@ MonoBehaviour:
   chooseController: {fileID: 1667052412}
   conditionsController: {fileID: 1698584220}
   inspectorController: {fileID: 1637156572}
+  newMovement: {fileID: 1797189654}
   _falseTable: {fileID: 1831183352}
   _realTable: {fileID: 1267681954}
   _falsePhone: {fileID: 1195587958}
@@ -14400,7 +14401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6886b6781d4d14f8725ca1aa63ec34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textSpeed: 0.06
+  _textSpeed: 0.02
   spriteRenderer: {fileID: 1542248770}
   barText: {fileID: 784211749}
   personNameText: {fileID: 1334907748}
@@ -20185,6 +20186,7 @@ MonoBehaviour:
   _canvasTable: {fileID: 106734903}
   _speed: 20
   _rotationSpeed: 350
+  canShowCanvas: 0
   _realCabinet: {fileID: 1375896900}
   _falseCabinet: {fileID: 112079993}
   _realEvidenceBook: {fileID: 1403629100}
