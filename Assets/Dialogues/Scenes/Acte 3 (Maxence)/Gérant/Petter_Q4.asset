@@ -22,8 +22,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Je crois bien oui, n\u2019est-il pas journaliste ?"
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
     collectedCondition: 
@@ -33,8 +35,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Oui, il s\u2019agit d\u2019un des journalistes convi\xE9s \xE0 la soir\xE9e.
       Aviez-vous discut\xE9 avec lui\u202F?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -45,8 +49,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Oui, il m\u2019avait demand\xE9 une interview un peu apr\xE8s Madame Brown
       mais j\u2019\xE9tais d\xE9j\xE0 pris pour la soir\xE9e."
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
@@ -57,10 +63,12 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 1
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: c5f6c13105d7be64ebdfcd4663bc496e, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0
