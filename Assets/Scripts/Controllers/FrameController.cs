@@ -15,7 +15,7 @@ public class FrameController : MonoBehaviour
             Debug.LogWarning("Invalid frame data.");
             return;
         }
-        FrameInstance[] instances = FindObjectsOfType<FrameInstance>();
+        FrameInstance[] instances = FindObjectsByType<FrameInstance>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
         foreach (var instance in instances)
         {
