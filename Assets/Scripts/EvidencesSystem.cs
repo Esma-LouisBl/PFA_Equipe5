@@ -9,8 +9,6 @@ public class EvidencesSystem : MonoBehaviour
     private int currentIndex = 0;
     public EvidenceData currentEvidence;
 
-
-
     [SerializeField]
     private Handler _playerHandler;
     [SerializeField]

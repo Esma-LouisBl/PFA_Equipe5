@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
-    [SerializeField]
-    private float _textSpeed = 0.05f;
     public SpriteRenderer spriteRenderer;
 
     public TextMeshProUGUI barText;
@@ -104,11 +102,6 @@ public class BottomBarController : MonoBehaviour
             {
                 spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
             }
-        }
-
-        if (currentScene.name == "Abandon")     //POUR LA DEMO
-        {
-            _gameManager.GameOver();
         }
 
         if (currentScene.sentences[sentenceIndex].showSprite)
@@ -222,7 +215,7 @@ public class BottomBarController : MonoBehaviour
             if (!_interrupted)
             {
                 barText.text += text[wordIndex];
-                yield return new WaitForSeconds(_textSpeed);
+                yield return new WaitForSeconds(SettingsManager.Instance.TextSpeed);
                 if (++wordIndex == text.Length)
                 {
                     state = State.COMPLETED;
