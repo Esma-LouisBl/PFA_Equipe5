@@ -37,8 +37,7 @@ public class BottomBarController : MonoBehaviour
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
     [SerializeField]
-    private InspectorController _inspectorController;
-
+    private FrameController _PhotoFrame;
     private enum State
     {
         PLAYING, COMPLETED
@@ -124,8 +123,10 @@ public class BottomBarController : MonoBehaviour
         CollectConditions();
         CollectPhoneContacts();
         CollectEvidences();
+        CollectFrame();
+
+
         RemoveContact();
-        CollectInspectorScene();
     }
 
     public bool IsCompleted()
@@ -195,11 +196,13 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
-    public void CollectInspectorScene()
+    public void CollectFrame()
     {
-        if (currentScene.sentences[sentenceIndex].inspectorSceneToCollect != null)
+        if (currentScene.sentences[sentenceIndex].PhotoFrame != null)
         {
-            _inspectorController.CollectScene(currentScene.sentences[sentenceIndex].inspectorSceneToCollect);
+            _PhotoFrame.gameObject.SetActive(true);
+
+            Debug.Log("holly");
         }
     }
 
