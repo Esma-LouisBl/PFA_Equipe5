@@ -28,8 +28,6 @@ public class EvidencesController : MonoBehaviour
     private EvidencesSystem _evidencesSystem;
     [SerializeField]
     private GameObject _returnCanvas;
-    [SerializeField]
-    private AudioSource _audioSource;
 
     private void Start()
     {
@@ -69,13 +67,13 @@ public class EvidencesController : MonoBehaviour
     public void ChangeEvidenceUp()
     {
         _evidencesSystem.ChangeEvidenceUp();
-        _audioSource.Play();
+        PlayASound();
     }
 
     public void ChangeEvidenceDown()
     {
         _evidencesSystem.ChangeEvidenceDown();
-        _audioSource.Play();
+        PlayASound();
     }
 
     public void OpenAndClose()
@@ -95,5 +93,10 @@ public class EvidencesController : MonoBehaviour
                 _returnCanvas.SetActive(false);
             }
         }
+    }
+
+    public void PlayASound()
+    {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance._pageTurned);
     }
 }

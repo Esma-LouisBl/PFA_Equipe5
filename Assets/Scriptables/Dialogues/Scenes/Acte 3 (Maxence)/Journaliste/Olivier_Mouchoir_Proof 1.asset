@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
+  m_Name: Olivier_Mouchoir_Proof 1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Qu\u2019est-ce que c\u2019est que ce mouchoir\u202F?"
+    speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Est-ce que vous poss\xE9dez votre propre mouchoir\u202F?"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: Oui, comme tout le monde de nos jours.
+    speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Mais pas d\u2019une telle qualit\xE9, celui-ci doit valoir une fortune
+      en vu de son motif."
+    speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 11400000, guid: 87d03cc5ad5636046b9b537ae574033b, type: 2}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    PhotoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 1
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 2c719513821ff6946b5c8eede532181d, type: 2}
+  conditionScene: {fileID: 0}
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

@@ -8,9 +8,10 @@ public class MenuBehaviour : MonoBehaviour
     [SerializeField]
     private Button _optionsButton;
     [SerializeField]
-    private Button _creditsButton;
+    private Button _bonusButton;
     [SerializeField]
     private Button _quitButton;
+
 
     private bool menuActivated;
 
@@ -20,14 +21,14 @@ public class MenuBehaviour : MonoBehaviour
         {
             _startButton.interactable = false;
             _optionsButton.interactable = false;
-            _creditsButton.interactable = false;
+            _bonusButton.interactable = false;
             _quitButton.interactable = false;
         }
         else
         {
             _startButton.interactable = true;
             _optionsButton.interactable = true;
-            _creditsButton.interactable = true;
+            _bonusButton.interactable = true;
             _quitButton.interactable = true;
         }
     }

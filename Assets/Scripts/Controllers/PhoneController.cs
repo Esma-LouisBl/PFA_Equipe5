@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class PhoneController : MonoBehaviour
 {
@@ -20,10 +21,7 @@ public class PhoneController : MonoBehaviour
     [SerializeField]
     private CursorController _cursorController;
 
-    [SerializeField]
-    private AudioSource _audioSource;
-    [SerializeField]
-    private AudioClip _pickup, _hangup, _change1, _change2, _change3;
+    private AudioClip audioClipChoice;
 
     void Update()
     {
@@ -57,8 +55,7 @@ public class PhoneController : MonoBehaviour
         {
             _index = 0;
         }
-        UseASound();
-        _audioSource.Play();
+        RandomAudioClip();
     }
 
     public void ChangeIndexDown()
@@ -71,8 +68,8 @@ public class PhoneController : MonoBehaviour
         {
             _index = contactList.Count -1;
         }
-        UseASound();
-        _audioSource.Play();
+
+        RandomAudioClip();
     }
 
     public void OpenAndClose()
@@ -81,8 +78,7 @@ public class PhoneController : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
-            _audioSource.clip = _pickup;
-            _audioSource.Play();
+            PlayASound(AudioManager.Instance._pickUp);
         }
         else
         {
@@ -90,26 +86,19 @@ public class PhoneController : MonoBehaviour
             {
                 _window.SetActive(true);
                 _gameManager.readingNote = true;
-                _audioSource.clip = _hangup;
-                _audioSource.Play();
+                PlayASound(AudioManager.Instance._hangUp);
             }
         }
     }
 
-    private void UseASound()
+    public void PlayASound(AudioClip audioClip)
     {
-        int random = Random.Range(0, 3);
-        if (random == 0)
-        {
-            _audioSource.clip = _change1;
-        }
-        if (random == 1)
-        {
-            _audioSource.clip = _change2;
-        }
-        if (random == 2)
-        {
-            _audioSource.clip = _change3;
-        }
+        AudioManager.Instance.PlaySFX(audioClip);
+    }
+    public void RandomAudioClip()
+    {
+        AudioClip[] audioClips = new AudioClip[3] { AudioManager.Instance._Phone01, AudioManager.Instance._Phone02, AudioManager.Instance._Phone03 };
+        audioClipChoice = audioClips[Random.Range(0, audioClips.Length)];
+        PlayASound(audioClipChoice);
     }
 }
