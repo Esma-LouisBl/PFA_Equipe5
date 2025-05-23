@@ -212,7 +212,8 @@ public class BottomBarController : MonoBehaviour
             if (!_interrupted)
             {
                 barText.text += text[wordIndex];
-                yield return new WaitForSeconds(0.005f);
+                yield return new WaitForSeconds(SettingsManager.Instance.TextSpeed);
+                if (++wordIndex == text.Length)
                 {
                     state = State.COMPLETED;
                     break;
