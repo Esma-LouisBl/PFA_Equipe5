@@ -4984,6 +4984,7 @@ Transform:
   - {fileID: 1511790931}
   - {fileID: 638452505}
   - {fileID: 703631922}
+  - {fileID: 1032188589}
   - {fileID: 934720020}
   - {fileID: 112079992}
   - {fileID: 900282604}
@@ -8969,10 +8970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1032188589}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e74df1c8c32cdc45a941ad6cda5a8d5, type: 3}
       insertIndex: -1
@@ -9906,12 +9904,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032188588}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.557, z: 2.501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.0815164, y: 2.220603, z: -1.8254471}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 934720020}
+  m_Father: {fileID: 433647309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045449767
 GameObject:
@@ -12498,7 +12496,7 @@ GameObject:
   - component: {fileID: 1212234445}
   - component: {fileID: 1212234444}
   m_Layer: 0
-  m_Name: Button_FromBoard
+  m_Name: Button_FromCabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12550,23 +12548,23 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1797189654}
         m_TargetAssemblyTypeName: NewMovement, Assembly-CSharp
-        m_MethodName: ReturnDesk
-        m_Mode: 1
+        m_MethodName: WantToMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: CabinetToDesk
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1797189650}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1797189654}
+        m_TargetAssemblyTypeName: NewMovement, Assembly-CSharp
+        m_MethodName: ReturnDesk
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -13660,6 +13658,7 @@ MonoBehaviour:
   _gameManager: {fileID: 97514707}
   _evidencesSystem: {fileID: 89023273}
   _PhotoFrame: {fileID: 1649574614}
+  _inspectorController: {fileID: 0}
 --- !u!224 &1310856696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18146,11 +18145,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797189651}
-  - component: {fileID: 1797189653}
+  - component: {fileID: 1797189655}
+  - component: {fileID: 1797189656}
   - component: {fileID: 1797189652}
   - component: {fileID: 1797189654}
-  - component: {fileID: 1797189657}
-  - component: {fileID: 1797189655}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -18194,7 +18192,7 @@ MonoBehaviour:
   maxAngleX: 10
   maxAngleY: 10
   _recenterDuration: 0.5
---- !u!114 &1797189653
+--- !u!114 &1797189654
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18203,29 +18201,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1797189650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366107af60a45db4b8e3ae1d6fbc69a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 20
-  rotationSpeed: 350
-  distance: 50
-  cursorController: {fileID: 1797189652}
-  waypointLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  isRotating: 0
---- !u!114 &1797189654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797189650}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc06ef3cf3f28304c97468a4f216049f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animation: {fileID: 1797189655}
   _playerTransform: {fileID: 1797189651}
   _waypointCabinet: {fileID: 1032188589}
   _waypointTable: {fileID: 2116095935}
@@ -18273,7 +18252,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1797189657
+--- !u!114 &1797189656
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18282,33 +18261,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1797189650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b109f00ca6971804c901027405b38932, type: 3}
+  m_Script: {fileID: 11500000, guid: 366107af60a45db4b8e3ae1d6fbc69a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 1797189651}
-  _animation: {fileID: 1797189655}
-  _waypointCabinet: {fileID: 1032188589}
-  _waypointTable: {fileID: 2116095935}
-  _waypointDesk: {fileID: 1785840200}
-  _gameManager: {fileID: 97514707}
-  _inspectorController: {fileID: 1637156572}
-  _outliner: {fileID: 1375896903}
-  _cursorController: {fileID: 1797189652}
-  _fromtTableButton: {fileID: 1894752373}
-  _fromBoardButton: {fileID: 1212234443}
-  canShowCanvas: 0
-  _realCabinet: {fileID: 1375896900}
-  _falseCabinet: {fileID: 112079993}
-  _realEvidenceBook: {fileID: 1403629100}
-  _falseEvidencebook: {fileID: 1464218611}
-  _realTestimonyBook: {fileID: 429093342}
-  _falseTestimonyBook: {fileID: 213804334}
-  _realSuspectBook: {fileID: 217885904}
-  _falseSuspectBook: {fileID: 1744403080}
-  _realBoard: {fileID: 1956403145}
-  _falseBoard: {fileID: 432809685}
-  _realTable: {fileID: 1267681954}
-  _falseTable: {fileID: 1831183352}
+  movementSpeed: 20
+  rotationSpeed: 350
+  distance: 50
+  cursorController: {fileID: 1797189652}
+  waypointLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  isRotating: 0
 --- !u!1 &1807708878
 GameObject:
   m_ObjectHideFlags: 0
@@ -19054,6 +19017,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1797189654}
+        m_TargetAssemblyTypeName: NewMovement, Assembly-CSharp
+        m_MethodName: WantToMove
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TableToDesk
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1797189654}
         m_TargetAssemblyTypeName: NewMovement, Assembly-CSharp
         m_MethodName: ReturnDeskFromTable
