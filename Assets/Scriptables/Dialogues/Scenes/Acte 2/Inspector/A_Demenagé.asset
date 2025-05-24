@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "D\xE9m\xE9nag\xE9 durant leur d\xE9placement\u202F?"
     speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
     collectedCondition: 
@@ -31,9 +34,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "\u2026 J\u2019ai d\xFB me tromper. "
+    destroyEvidence: 0
+  - text: "\u2026J\u2019ai d\xFB me tromper. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -41,9 +47,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Ce n\u2019est rien, \xE7a fait longtemps aussi que tu n\u2019as pas \xE9t\xE9
+    destroyEvidence: 0
+  - text: "Ce n\u2019est rien, \xE7a fait longtemps que tu n\u2019as pas \xE9t\xE9
       sur une enqu\xEAte. "
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
@@ -52,9 +61,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: (il faut que je relise mes notes plus souvent.)
+    destroyEvidence: 0
+  - text: (Il faut que je relise mes notes plus souvent.)
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -62,9 +74,14 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 4d8d56b4448c7a84eb072d709db4b776, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
