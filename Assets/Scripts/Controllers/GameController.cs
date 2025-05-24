@@ -32,7 +32,6 @@ public class GameController : MonoBehaviour
             StoryScene storyScene = currentScene as StoryScene;
             bottomBar.PlayScene(storyScene);
             backgroundController.SetImage(storyScene.background);
-            Debug.Log("Pebble is watching you");
         }
     }
 
@@ -57,7 +56,6 @@ public class GameController : MonoBehaviour
 
                             for (int i = 0; i < (currentScene as StoryScene).conditionToUnlock.Count; i++)
                             {
-                                Debug.Log("i = " + i);
                                 if (conditionsController.collectedConditions.Contains((currentScene as StoryScene).conditionToUnlock[i]))
                                 {
                                         numberConditions++;
