@@ -23,7 +23,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
-    showSprite: 1
+    showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
   - text: "A vrai dire pas vraiment, j\u2019ai tent\xE9 d\u2019avoir la famille de

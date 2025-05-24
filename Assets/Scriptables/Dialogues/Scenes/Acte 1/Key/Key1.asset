@@ -19,9 +19,20 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: c687583ad6568fa408903f5e89bcad84, type: 2}
   conditionScene: {fileID: 11400000, guid: 6421c96298357684f8b0b586b6dfaaf1, type: 2}
-  conditionToUnlock: Act1 1
+  conditionToUnlock:
+  - Act1 1
+  - Act1 2
+  - Act1 3
+  - Act1 4
+  callInspector: 0
+  endInspector: 0

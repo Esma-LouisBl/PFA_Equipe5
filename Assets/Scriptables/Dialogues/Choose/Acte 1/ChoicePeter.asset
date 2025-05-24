@@ -17,7 +17,7 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 618fd2679d72fbf48b4254a95eb57673, type: 2}
   - text: La victime
     nextScene: {fileID: 11400000, guid: 91c3568db748c9f46aa4194cc114f827, type: 2}
-  - text: L'entreprise
+  - text: L'interview
     nextScene: {fileID: 11400000, guid: 12cf86e4c20cc3544947e512bb5fdb36, type: 2}
   - text: Fin de l'interrogatoire
     nextScene: {fileID: 11400000, guid: 3a9b1a5ea1956234d9e3aa1a2c66f042, type: 2}

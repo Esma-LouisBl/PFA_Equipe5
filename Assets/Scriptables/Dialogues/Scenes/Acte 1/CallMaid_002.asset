@@ -20,18 +20,30 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: En attendant, je devrais faire venir Monsieur Warner pour lui poser des
       questions.
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
+    phoneContact: {fileID: 11400000, guid: e2aee803db11d184b9824d494601b6bb, type: 2}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
