@@ -5,6 +5,9 @@ using UnityEngine.UI;
 public class NewMovement : MonoBehaviour
 {
     [SerializeField]
+    private Animator _animation;
+
+    [SerializeField]
     private Transform _playerTransform;
     [SerializeField]
     private Transform _waypointCabinet, _waypointTable, _waypointDesk;
@@ -37,6 +40,7 @@ public class NewMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0) && _gameManager.playerCanMove)
             {
                 MoveToCabinet();
+                WantToMove("DeskToCabinet");
             }
         }
 
@@ -45,13 +49,14 @@ public class NewMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0) && _gameManager.playerCanMove)
             {
                 MoveToTable();
+                WantToMove("DeskToTable");
             }
         }
     }
 
     private void MoveToCabinet()
     {
-        StartCoroutine(Moving(_waypointCabinet, true));
+        //StartCoroutine(Moving(_waypointCabinet, true));
 
         _realCabinet.SetActive(false);
         _falseCabinet.SetActive(true);
@@ -74,7 +79,7 @@ public class NewMovement : MonoBehaviour
     }
     private void MoveToTable()
     {
-        StartCoroutine(Moving(_waypointTable, false));
+        //StartCoroutine(Moving(_waypointTable, false));
 
         _realTable.SetActive(false);
         _falseTable.SetActive(true);
@@ -86,12 +91,11 @@ public class NewMovement : MonoBehaviour
 
         _outliner.selectedTable = false;
     }
-
     public void ReturnDesk()
     {
         _fromBoardButton.SetActive(false);
 
-        StartCoroutine(Moving(_waypointDesk, false));
+        //StartCoroutine(Moving(_waypointDesk, false));
 
         _realCabinet.SetActive(true);
         _falseCabinet.SetActive(false);
@@ -111,14 +115,13 @@ public class NewMovement : MonoBehaviour
         _realTable.SetActive(true);
         _falseTable.SetActive(false);
     }
-
     public void ReturnDeskFromTable()
     {
         HideCanvasTable();
 
         _inspectorController.ChangeCursor();
 
-        StartCoroutine(Moving(_waypointDesk, true));
+        //StartCoroutine(Moving(_waypointDesk, true));
 
         _realCabinet.SetActive(true);
         _falseCabinet.SetActive(false);
@@ -138,7 +141,6 @@ public class NewMovement : MonoBehaviour
         _realTable.SetActive(true);
         _falseTable.SetActive(false);
     }
-
     public void HideCanvasTable()
     {
         _fromtTableButton.SetActive(false);
@@ -152,41 +154,75 @@ public class NewMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator Moving(Transform waypoint, bool goRight)
+
+    public void WantToMove(string triggerName)
     {
-        _cursorController.EnableCursor(false);
-        while (Vector3.Distance(_playerTransform.position, waypoint.position) > 0.01f)
-        {
-            _playerTransform.position = Vector3.MoveTowards(_playerTransform.position, waypoint.position, _speed * Time.deltaTime);
-
-            if (Vector3.Distance(_playerTransform.position, waypoint.position) < 0.01f)
-            {
-                _playerTransform.position = waypoint.position;
-            }
-            yield return new WaitForSeconds(0.01f);
-        }
-
-        if (goRight)
-        {
-            _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y + 90f, 0f);
-        }
-        else
-        {
-            _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y - 90f, 0f);
-        }
-
-        while (Quaternion.Angle(_playerTransform.rotation, _targetRotation) > 1f)
-        {
-            _playerTransform.rotation = Quaternion.RotateTowards(_playerTransform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
-            
-            if (Quaternion.Angle(_playerTransform.rotation, _targetRotation) < 1f)
-            {
-                _playerTransform.rotation = _targetRotation;
-
-                _cursorController.EnableCursor(true);
-            }
-            yield return new WaitForSeconds(0.005f);
-        }
-
+        EnableCursor(false);
+        _animation.SetTrigger("" + triggerName);
     }
+
+    public void MovePlayerToCabinet()
+    {
+        _playerTransform.position = _waypointCabinet.position;
+        _playerTransform.rotation = _waypointCabinet.rotation;
+        EnableCursor(true);
+    }
+
+    public void MovePlayerToTable()
+    {
+        _playerTransform.position = _waypointTable.position;
+        _playerTransform.rotation = _waypointTable.rotation;
+        EnableCursor(true);
+    }
+
+    public void MovePlayerToDesk()
+    {
+        _playerTransform.position = _waypointDesk.position;
+        _playerTransform.rotation = _waypointDesk.rotation;
+        EnableCursor(true);
+    }
+
+    public void EnableCursor(bool condition)
+    {
+        _cursorController.EnableCursor(condition);
+    }
+
+    //private IEnumerator Moving(Transform waypoint, bool goRight)
+    //{
+    //    _cursorController.EnableCursor(false);
+
+    //    while (Vector3.Distance(_playerTransform.position, waypoint.position) > 0.01f)
+    //    {
+    //        _playerTransform.position = Vector3.MoveTowards(_playerTransform.position, waypoint.position, _speed * Time.deltaTime);
+
+    //        if (Vector3.Distance(_playerTransform.position, waypoint.position) < 0.01f)
+    //        {
+    //            _playerTransform.position = waypoint.position;
+    //        }
+    //        yield return new WaitForSeconds(0.01f);
+    //    }
+
+    //    if (goRight)
+    //    {
+    //        _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y + 90f, 0f);
+    //    }
+    //    else
+    //    {
+    //        _targetRotation = Quaternion.Euler(0f, _playerTransform.eulerAngles.y - 90f, 0f);
+    //    }
+
+    //    while (Quaternion.Angle(_playerTransform.rotation, _targetRotation) > 1f)
+    //    {
+    //        _playerTransform.rotation = Quaternion.RotateTowards(_playerTransform.rotation, _targetRotation, _rotationSpeed * Time.deltaTime);
+
+    //        if (Quaternion.Angle(_playerTransform.rotation, _targetRotation) < 1f)
+    //        {
+    //            _playerTransform.rotation = _targetRotation;
+
+    //            _cursorController.EnableCursor(true);
+    //        }
+    //        yield return new WaitForSeconds(0.005f);
+    //    }
+
+    //}
 }
