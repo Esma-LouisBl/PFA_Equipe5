@@ -17,7 +17,7 @@ MonoBehaviour:
   EvidenceGO: {fileID: 919132149155446097, guid: 1eb4b4666c927a34b88d253e4c507b86, type: 3}
   Informations: "Pos\xE9e sur le bureau de la sc\xE8ne de crime. Elle est tach\xE9e
     de sang."
-  ReactionPeter: {fileID: 0}
+  ReactionPeter: {fileID: 11400000, guid: f5e56d32df73c17439b8d758e6e18ffc, type: 2}
   ReactionHolly: {fileID: 11400000, guid: b59aea81c3bd189419a348312e348f66, type: 2}
   ReactionOliver: {fileID: 11400000, guid: 09734bb0697965142a5e3281e1c81105, type: 2}
   ReactionInspector: {fileID: 0}

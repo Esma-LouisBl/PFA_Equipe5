@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Du caf\xE9 ? Oh non ch\xE9ri, tr\xE8s peu pour moi. "
     speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
     collectedCondition: 
@@ -31,8 +34,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Ce n\u2019est vraiment pas bon pour mes cordes vocales. Le th\xE9 d\u2019Inde,
       c\u2019est le vrai succ\xE8s voix parfaite !"
     speaker: {fileID: 11400000, guid: fc1691753e0209f4487f5d670f9bd2d0, type: 2}
@@ -42,9 +48,14 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 1
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

@@ -22,8 +22,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: '!'
     speaker: {fileID: 11400000, guid: 3c6c8bac783cea24b9d0ba5ffc24e629, type: 2}
     collectedCondition: 
@@ -32,8 +35,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Ce gant m\u2019appartient effectivement ... "
     speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
     collectedCondition: 
@@ -42,8 +48,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: " Alors je vous repose la question. Connaissiez-vous M. Warner avant la
       soir\xE9e ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -53,8 +62,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: 'Pourquoi votre gant se trouvait dans son bureau ? '
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -63,8 +75,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Oui, nous avons \xE9t\xE9 tr\xE8s proches il y a quelques ann\xE9es. "
     speaker: {fileID: 11400000, guid: 8ebce823b70dba24fb5d53915dd7ec57, type: 2}
     collectedCondition: 
@@ -73,8 +88,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Je voulais m\u2019entretenir avec lui en priv\xE9. Vous savez, \xEAtre
       une femme dans ce business est \xE0 double tranchant, la moindre rumeur douteuse
       et c\u2019est ma carri\xE8re enti\xE8re que je vois s\u2019envol\xE9..."
@@ -85,8 +103,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Mais pour en revenir \xE0 ce qui vous importe, Je suis all\xE9e \xE0 son
       bureau vers 19h20. Je l\u2019ai crois\xE9 donc nous nous sommes dirig\xE9s
       dans ses appartements car cette journaliste allait venir. "
@@ -97,8 +118,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "J'avais retir\xE9 mes gants ... j\u2019ai s\xFBrement d\xFB en oublier
       un.  "
     speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
@@ -108,8 +132,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Donc vous confirmez \xEAtre rest\xE9e avec Monsieur Warner \xE0 19h20
       ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -119,8 +146,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Oui, mais ne vous imaginez rien ! Notre fantaisie appartient au pass\xE9
       d\xE9sormais. Et bien s\xFBr, je vous demande de ne pas \xE9bruiter cette histoire
       ..."
@@ -131,9 +161,14 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 1
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
