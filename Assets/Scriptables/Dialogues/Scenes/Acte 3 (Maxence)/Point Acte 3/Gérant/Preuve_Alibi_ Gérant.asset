@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: HollyGloveProof
+  m_Name: "Preuve_Alibi_ G\xE9rant"
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Nous avons trouv\xE9 ce gant avec les initiales H.M., est-ce le v\xF4tre
-      ? "
+  - text: Son alibi est assez flou au moment des faits, il est le dernier ayant eu
+      un contact avec la victime.
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -27,8 +27,9 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: '!'
-    speaker: {fileID: 11400000, guid: 3c6c8bac783cea24b9d0ba5ffc24e629, type: 2}
+  - text: "C\u2019est vrai et puis, il est la personne qui l\u2019a invit\xE9 dans
+      son bureau."
+    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -40,21 +41,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Ce gant m\u2019appartient effectivement ... "
-    speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: " Alors je vous repose la question. Connaissiez-vous M. Warner avant la
-      soir\xE9e ? "
+  - text: "Exactement. Je pense donc que le meurtre s\u2019est d\xE9roul\xE9 de la
+      fa\xE7on suivante\u202F:"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -67,7 +55,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: 'Pourquoi votre gant se trouvait dans son bureau ? '
+  - text: "Monsieur Warner a invit\xE9 Madame Brown pour son interview dans son bureau
+      vers 19h30."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -80,65 +69,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Oui, nous avons \xE9t\xE9 tr\xE8s proches il y a quelques ann\xE9es. "
-    speaker: {fileID: 11400000, guid: 8ebce823b70dba24fb5d53915dd7ec57, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "Je voulais m\u2019entretenir avec lui en priv\xE9. Vous savez, \xEAtre
-      une femme dans ce business est \xE0 double tranchant, la moindre rumeur douteuse
-      et c\u2019est ma carri\xE8re enti\xE8re que je vois s\u2019envol\xE9..."
-    speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "Mais pour en revenir \xE0 ce qui vous importe, Je suis all\xE9e \xE0 son
-      bureau vers 19h20. Je l\u2019ai crois\xE9 donc nous nous sommes dirig\xE9s
-      dans ses appartements car cette journaliste allait venir. "
-    speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "J'avais retir\xE9 mes gants ... j\u2019ai s\xFBrement d\xFB en oublier
-      un.  "
-    speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "Donc vous confirmez \xEAtre rest\xE9e avec Monsieur Warner \xE0 19h20
-      ?"
+  - text: "Elle s\u2019est entretenue avec Madame Marie mais a mis fin rapidement
+      \xE0 la conversation."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -151,12 +83,11 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Oui, mais ne vous imaginez rien ! Notre fantaisie appartient au pass\xE9
-      d\xE9sormais. Et bien s\xFBr, je vous demande de ne pas \xE9bruiter cette histoire
-      ..."
-    speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
-    collectedCondition: Glove
-    testimony: {fileID: 11400000, guid: 54ab3213cca2cf9448314cb7e1393aaa, type: 2}
+  - text: "Un peu avant l\u2019heure pr\xE9sum\xE9e de l\u2019interview, Monsieur
+      Warner est entr\xE9 dans son bureau o\xF9 Madame Brown installait son mat\xE9riel."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
@@ -165,9 +96,108 @@ MonoBehaviour:
     photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-    destroyEvidence: 1
+    destroyEvidence: 0
+  - text: "Il a profit\xE9 qu\u2019elle soit occup\xE9e pour tenter de lui assigner
+      un coup mortel. Mais la victime l\u2019a aper\xE7u et a tent\xE9 de se d\xE9fendre
+      contre lui."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Et c\u2019est \xE0 ce moment-l\xE0 que notre victime a d\xFB r\xE9cup\xE9rer
+      le coupe papier."
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Oui, elle est journaliste donc elle devait en avoir probablement un sur
+      elle et elle l\u2019a utilis\xE9 pour se d\xE9fendre."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Malheureusement elle n\u2019a pas r\xE9ussi. Et apr\xE8s l\u2019avoir
+      tu\xE9, Monsieur Warner a d\xFB r\xE9cup\xE9rer le coupe-papier dans son mouchoir
+      pour le jeter dans la poubelle."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Et enfin il a appel\xE9 la police pour signaler le meurtre, c\u2019est
+      \xE7a ?"
+    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Oui. Le seul point non \xE9clairci est donc ce fameux coupe-papier \u2026
+      Je ne me souviens pas avoir vu une quelconque blessure sur Monsieur Warner. "
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Il est possible qu\u2019il le cache derri\xE8re un de ses v\xEAtements."
+    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
+  nextScene: {fileID: 11400000, guid: 9a91a63d62eb141419d51de1e624d5b5, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0

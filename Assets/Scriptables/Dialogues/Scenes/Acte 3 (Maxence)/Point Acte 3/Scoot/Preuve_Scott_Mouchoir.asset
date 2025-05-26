@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Preuve_Scott_Mouchoir
   m_EditorClassIdentifier: 
   sentences:
-  - text: "On a retrouv\xE9 un mouchoir qui lui a surement appartenue \xE0 lui"
+  - text: "On a retrouv\xE9 un mouchoir qui lui a surement appartenue"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}

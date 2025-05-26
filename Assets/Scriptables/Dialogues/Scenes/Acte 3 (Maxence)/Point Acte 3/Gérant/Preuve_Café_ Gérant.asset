@@ -10,26 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: "Start Point enqu\xEAte 3"
+  m_Name: "Preuve_Caf\xE9_ G\xE9rant"
   m_EditorClassIdentifier: 
   sentences:
-  - text: "En vue de l\u2019expression sur ton visage, je sens qu\u2019on touche
-      \xE0 la fin de cette enqu\xEAte. "
-    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "Peut-\xEAtre bien. J\u2019ai pu discuter avec le journaliste, il m'a avou\xE9
-      avoir tent\xE9 d\u2019\xE9couter la conversation entre Monsieur Warner et Madame
-      Brown "
+  - text: "On sait qu\u2019il y avait une forte odeur de caf\xE9 sur la sc\xE8ne
+      de crime. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -42,7 +27,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Mais a fait rapidement demi-tour en entendant quelqu\u2019un arriver. "
+  - text: "Et apr\xE8s avoir \xE9chang\xE9 avec Monsieur Warner, il m\u2019a dit
+      qu\u2019il avait r\xE9cemment recommenc\xE9 \xE0 boire du caf\xE9. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -55,9 +41,9 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "J\u2019ai \xE9galement pu \xE9changer avec Monsieur Warner \xE0 ce sujet
-      et celui du mouchoir tach\xE9."
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+  - text: "Mais cela ne l\u2019accuse pas d\u2019\xEAtre le meurtrier, apr\xE8s tout
+      le crime a \xE9t\xE9 commis dans son bureau."
+    speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -69,49 +55,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Int\xE9ressant... Continue."
-    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "J'ai pu obtenir beaucoup d\u2019informations suppl\xE9mentaires et apr\xE8s
-      avoir r\xE9fl\xE9chi et v\xE9rifier mes th\xE9ories, je pense avoir d\xE9couvert
-      le coupable de cette affaire."
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "Rien que \xE7a ! Toujours aussi rapide, tu ne cesseras de m\u2019impressionner. "
-    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: " ... Mais j\u2019ai du mal \xE0 y croire. Je t\u2019\xE9coute alors, qui
-      est le meurtrier\u202F?"
+  - text: "On peut donc penser que l\u2019odeur n\u2019appartenait pas au meurtrier
+      mais tout simplement au propri\xE9taire de la pi\xE8ce."
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -124,8 +69,35 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
+  - text: "Oui, tu as raison\u2026\_"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "(D\xE9cid\xE9ment, je suis un peu rouill\xE9. Je devrais revoir les preuves
+      obtenues \u2026)"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 9a7c16eb31ec312409eceb562a93779b, type: 2}
+  nextScene: {fileID: 11400000, guid: 81f39bb6b3bd9c0418cb2f208fdfbdb5, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0

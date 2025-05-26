@@ -15,12 +15,17 @@ MonoBehaviour:
   sentences:
   - text: 'Merci, ce sera tout pour le moment. '
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
+    collectedCondition: Warner3
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Tr\xE8s bien, n'h\xE9sitez pas si vous avez besoin d\u2019autres informations
       et tenez-moi au courant de la suite de l\u2019enqu\xEAte. "
     speaker: {fileID: 11400000, guid: 1882c8f5fd824fb42a890614c3da354f, type: 2}
@@ -28,9 +33,16 @@ MonoBehaviour:
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 1
+    destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: b2f694627a176b94595f9b7142ec6e20, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock: 
+  conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

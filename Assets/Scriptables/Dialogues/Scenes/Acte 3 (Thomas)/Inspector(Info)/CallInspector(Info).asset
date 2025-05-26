@@ -15,14 +15,17 @@ MonoBehaviour:
   sentences:
   - text: "D\xE9j\xE0\u202F? Ravi de te voir autant investi. "
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
-    collectedCondition: 
+    collectedCondition: inspector
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 1
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Eh bien, le cuisiner a trouv\xE9 un mouchoir avec un coupe papier tach\xE9
       de sang."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -32,8 +35,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Attends, o\xF9 a-t-il trouv\xE9 \xE7a !? "
     speaker: {fileID: 11400000, guid: dc808623fe61c0e4fa9d5c8b0b4bdfa1, type: 2}
     collectedCondition: 
@@ -42,8 +48,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: 'Dans les poubelles du manoir '
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -52,8 +61,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Pas tr\xE8s malin de s\u2019en \xEAtre d\xE9barrass\xE9 aussi proche de
       la sc\xE8ne du crime. M\u2019enfin je ne vais pas m\u2019en plaindre\u202F! "
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
@@ -63,8 +75,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "La victime a pu peut-\xEAtre l\u2019utiliser pour se d\xE9fendre comme
       je n\u2019ai pas vue de blessure son corps. "
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
@@ -74,8 +89,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Mais il est possible que le mouchoir appartienne au meurtrier qui a voulu
       se d\xE9barrasser de la preuve."
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
@@ -85,8 +103,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Je crois que le mouchoir provient de Liberty & Co, une marque assez luxueuse.
       Monsieur Warner avait d\xE9j\xE0 achet\xE9 auparavant de mon souvenir."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -96,8 +117,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Dans ce cas, tu sais ce qu\u2019il te reste \xE0 faire\u202F! Je sens
       qu\u2019on tient bient\xF4t le bout de cette histoire."
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
@@ -107,8 +131,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "J\u2019esp\xE8re que tu as raison \u2026"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -117,8 +144,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "(...M\xEAme si je sens que la conclusion de cette histoire ne me plaira
       pas.)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -128,9 +158,14 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: b2f694627a176b94595f9b7142ec6e20, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0

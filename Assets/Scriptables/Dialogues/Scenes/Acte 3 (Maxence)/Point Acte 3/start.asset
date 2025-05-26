@@ -27,7 +27,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: lo
-    speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
+    speaker: {fileID: 11400000, guid: 0d691f116a18cfd43b72ba0e77721004, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}

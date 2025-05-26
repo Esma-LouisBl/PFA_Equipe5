@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: "Start Point enqu\xEAte 3"
+  m_Name: "fin_enqu\xEAte_3"
   m_EditorClassIdentifier: 
   sentences:
-  - text: "En vue de l\u2019expression sur ton visage, je sens qu\u2019on touche
-      \xE0 la fin de cette enqu\xEAte. "
-    speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
+  - text: "\xC7a fait du bien de clore une enqu\xEAte, pas vrai ?"
+    speaker: {fileID: 11400000, guid: 91c12d8a854297743ae6bd570bce8650, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -24,12 +23,11 @@ MonoBehaviour:
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
-    showSprite: 0
+    showSprite: 1
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Peut-\xEAtre bien. J\u2019ai pu discuter avec le journaliste, il m'a avou\xE9
-      avoir tent\xE9 d\u2019\xE9couter la conversation entre Monsieur Warner et Madame
-      Brown "
+  - text: "Disons que c\u2019est\u2026 particulier. On parle de mon patron, apr\xE8s
+      tout. Difficile de savoir ce que je ressens."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -42,7 +40,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Mais a fait rapidement demi-tour en entendant quelqu\u2019un arriver. "
+  - text: "A-t-il fini par avouer les faits\u202F? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -55,8 +53,36 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "J\u2019ai \xE9galement pu \xE9changer avec Monsieur Warner \xE0 ce sujet
-      et celui du mouchoir tach\xE9."
+  - text: "Pas du tout. Il nie tout en bloc. Mais avec les preuves et les t\xE9moignages\u2026
+      il risque bien la perp\xE9tuit\xE9."
+    speaker: {fileID: 11400000, guid: b2b59167c301014478be887406d38a18, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Ses avocats vont s\xFBrement adoucir la peine. Vous pensez pouvoir tenir
+      la maison sans lui ? "
+    speaker: {fileID: 11400000, guid: b2b59167c301014478be887406d38a18, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Ne t\u2019en fais pas. On tiendra le manoir, le temps que Monsieur Warner
+      paie sa dette."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -69,22 +95,9 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Int\xE9ressant... Continue."
-    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
-    collectedCondition: 
-    testimony: {fileID: 0}
-    suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
-    contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
-    inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 0
-    destroyEvidence: 0
-  - text: "J'ai pu obtenir beaucoup d\u2019informations suppl\xE9mentaires et apr\xE8s
-      avoir r\xE9fl\xE9chi et v\xE9rifier mes th\xE9ories, je pense avoir d\xE9couvert
-      le coupable de cette affaire."
+  - text: "Et s\u2019il n\u2019y parvient pas\u2026 eh bien, peut-\xEAtre serons-nous
+      envoy\xE9s servir les autres branches de la famille. Qui sait ce que l\u2019avenir
+      nous r\xE9serve ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -97,8 +110,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Rien que \xE7a ! Toujours aussi rapide, tu ne cesseras de m\u2019impressionner. "
-    speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
+  - text: "Bon \xE9tat d\u2019esprit."
+    speaker: {fileID: 11400000, guid: b2b59167c301014478be887406d38a18, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -110,9 +123,34 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: " ... Mais j\u2019ai du mal \xE0 y croire. Je t\u2019\xE9coute alors, qui
-      est le meurtrier\u202F?"
-    speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
+  - text: "Enfin\u2026 ne parlons plus de cette affaire. C\u2019est termin\xE9."
+    speaker: {fileID: 11400000, guid: 91c12d8a854297743ae6bd570bce8650, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Certains pr\xE9f\xE8rent garder le silence."
+    speaker: {fileID: 11400000, guid: 91c12d8a854297743ae6bd570bce8650, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: "Et parfois\u2026 c\u2019est mieux ainsi. L\u2019affaire est close."
+    speaker: {fileID: 11400000, guid: d01bd033cdae78b45b5edff30c498259, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -125,7 +163,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 9a7c16eb31ec312409eceb562a93779b, type: 2}
+  nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0

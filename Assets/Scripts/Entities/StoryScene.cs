@@ -36,6 +36,8 @@ public class StoryScene : GameScene
 
         public bool destroyEvidence;
 
+        public bool BlackScreen;
+
     }
 }
 
