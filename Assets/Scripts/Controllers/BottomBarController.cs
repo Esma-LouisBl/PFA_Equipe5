@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
@@ -11,7 +9,7 @@ public class BottomBarController : MonoBehaviour
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
 
-    private int sentenceIndex = -1;
+    private int _sentenceIndex = -1;
     private StoryScene currentScene;
     private State state = State.COMPLETED;
     private Animator animator;
@@ -82,33 +80,33 @@ public class BottomBarController : MonoBehaviour
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;
-        sentenceIndex = -1;
+        _sentenceIndex = -1;
         PlayNextSentence();
     }
 
     public void PlayNextSentence()
     {
-        StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
-        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
-        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        StartCoroutine(TypeText(currentScene.sentences[++_sentenceIndex].text));
+        personNameText.text = currentScene.sentences[_sentenceIndex].speaker.speakerName;
+        personNameText.color = currentScene.sentences[_sentenceIndex].speaker.textColor;
 
-        if (currentScene.sentences[sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
+        if (currentScene.sentences[_sentenceIndex].speaker.name != "Player")    //if the sentence is prononced by the player, do not change the sprite
         {
             if (_inspectorController.inspectorTalking)
             {
-                _inspectorController.inspectorSprite.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+                _inspectorController.inspectorSprite.sprite = currentScene.sentences[_sentenceIndex].speaker.speakerSprite;
             }
             else
             {
-                spriteRenderer.sprite = currentScene.sentences[sentenceIndex].speaker.speakerSprite;
+                spriteRenderer.sprite = currentScene.sentences[_sentenceIndex].speaker.speakerSprite;
             }
         }
 
-        if (currentScene.sentences[sentenceIndex].showSprite)
+        if (currentScene.sentences[_sentenceIndex].showSprite)
         {
             ShowSpeaker();
         }
-        if (currentScene.sentences[sentenceIndex].hideSprite)
+        if (currentScene.sentences[_sentenceIndex].hideSprite)
         {
             HideSpeaker();
         }
@@ -131,69 +129,69 @@ public class BottomBarController : MonoBehaviour
 
     public bool IsLastSentence()
     {
-        return sentenceIndex + 1 == currentScene.sentences.Count;
+        return _sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
     public void CollectTestimonies()
     {
-        if (currentScene.sentences[sentenceIndex].testimony != null)  //Check if there's a testimony in the sentence
+        if (currentScene.sentences[_sentenceIndex].testimony != null)  //Check if there's a testimony in the sentence
         {
-            _testimoniesManager.UnlockedTestimony(currentScene.sentences[sentenceIndex].testimony);
+            _testimoniesManager.UnlockedTestimony(currentScene.sentences[_sentenceIndex].testimony);
         }
     }
 
     public void CollectSuspects()
     {
-        if (currentScene.sentences[sentenceIndex].suspect != null)
+        if (currentScene.sentences[_sentenceIndex].suspect != null)
         {
-            _suspectsManager.UnlockedEvidence(currentScene.sentences[sentenceIndex].suspect);
+            _suspectsManager.UnlockedEvidence(currentScene.sentences[_sentenceIndex].suspect);
         }
     }
 
     public void CollectConditions()
     {
-        if (currentScene.sentences[sentenceIndex].collectedCondition != "")
+        if (currentScene.sentences[_sentenceIndex].collectedCondition != "")
         {
-            if (!_conditionsController.collectedConditions.Contains(currentScene.sentences[sentenceIndex].collectedCondition))
+            if (!_conditionsController.collectedConditions.Contains(currentScene.sentences[_sentenceIndex].collectedCondition))
             {
-                _conditionsController.collectedConditions.Add(currentScene.sentences[sentenceIndex].collectedCondition);
+                _conditionsController.collectedConditions.Add(currentScene.sentences[_sentenceIndex].collectedCondition);
             }
         }
     }
 
     public void CollectPhoneContacts()
     {
-        if (currentScene.sentences[sentenceIndex].phoneContact != null)
+        if (currentScene.sentences[_sentenceIndex].phoneContact != null)
         {
-            if (!_phoneController.contactList.Contains(currentScene.sentences[sentenceIndex].phoneContact))
+            if (!_phoneController.contactList.Contains(currentScene.sentences[_sentenceIndex].phoneContact))
             {
-                _phoneController.contactList.Add(currentScene.sentences[sentenceIndex].phoneContact);
+                _phoneController.contactList.Add(currentScene.sentences[_sentenceIndex].phoneContact);
             }
         }
     }
 
     public void RemoveContact()
     {
-        if (currentScene.sentences[sentenceIndex].contactToRemove != null)
+        if (currentScene.sentences[_sentenceIndex].contactToRemove != null)
         {
-            if (_phoneController.contactList.Contains(currentScene.sentences[sentenceIndex].contactToRemove))
+            if (_phoneController.contactList.Contains(currentScene.sentences[_sentenceIndex].contactToRemove))
             {
-                _phoneController.contactList.Remove(currentScene.sentences[sentenceIndex].contactToRemove);
+                _phoneController.contactList.Remove(currentScene.sentences[_sentenceIndex].contactToRemove);
             }
         }
     }
 
     public void CollectEvidences()
     {
-        if (currentScene.sentences[sentenceIndex].evidence != null)
+        if (currentScene.sentences[_sentenceIndex].evidence != null)
         {
-            _evidencesSystem.AddEvidence(currentScene.sentences[sentenceIndex].evidence);
+            _evidencesSystem.AddEvidence(currentScene.sentences[_sentenceIndex].evidence);
         }
     }
 
     public void CollectFrame()
     {
-        var frameData = currentScene.sentences[sentenceIndex].photoFrame;
+        var frameData = currentScene.sentences[_sentenceIndex].photoFrame;
         if (frameData != null)
         {
             
@@ -204,9 +202,9 @@ public class BottomBarController : MonoBehaviour
 
     public void CollectInspectorScene()
     {
-        if (currentScene.sentences[sentenceIndex].inspectorSceneToCollect != null)
+        if (currentScene.sentences[_sentenceIndex].inspectorSceneToCollect != null)
         {
-            _inspectorController.CollectScene(currentScene.sentences[sentenceIndex].inspectorSceneToCollect);
+            _inspectorController.CollectScene(currentScene.sentences[_sentenceIndex].inspectorSceneToCollect);
         }
     }
 
@@ -214,7 +212,7 @@ public class BottomBarController : MonoBehaviour
     public string GetCurrentSpeaker()
     {
         string currentSpeakerName;
-        currentSpeakerName = (currentScene.sentences[sentenceIndex].speaker.speakerName);
+        currentSpeakerName = (currentScene.sentences[_sentenceIndex].speaker.speakerName);
         return currentSpeakerName;
     }
 

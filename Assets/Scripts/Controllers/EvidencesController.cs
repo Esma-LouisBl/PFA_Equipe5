@@ -1,11 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class EvidencesController : MonoBehaviour
 {
-    private int _evidenceIndex;
 
     [SerializeField]
     private GameObject _window;
