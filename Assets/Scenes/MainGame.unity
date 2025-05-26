@@ -3493,6 +3493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[A RETIRER] SettingsManager'
       objectReference: {fileID: 0}
+    - target: {fileID: 1637400635535720822, guid: e673f0f9be8769243820f507c781d023, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5627386393122762489, guid: e673f0f9be8769243820f507c781d023, type: 3}
       propertyPath: m_LocalPosition.x
       value: -363.98645
@@ -9166,6 +9170,10 @@ PrefabInstance:
     - target: {fileID: 3416978482219767467, guid: 00748130d388dca4ba6e436ea42affb0, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416978482219767467, guid: 00748130d388dca4ba6e436ea42affb0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5313960435556997068, guid: 00748130d388dca4ba6e436ea42affb0, type: 3}
       propertyPath: m_Pivot.x
@@ -19092,6 +19100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[A RETIRER] SettingsManager'
       objectReference: {fileID: 0}
+    - target: {fileID: 1637400635535720822, guid: e673f0f9be8769243820f507c781d023, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5627386393122762489, guid: e673f0f9be8769243820f507c781d023, type: 3}
       propertyPath: m_LocalPosition.x
       value: -363.98645
@@ -21656,6 +21668,10 @@ PrefabInstance:
     - target: {fileID: 3416978482219767467, guid: 00748130d388dca4ba6e436ea42affb0, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416978482219767467, guid: 00748130d388dca4ba6e436ea42affb0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5313960435556997068, guid: 00748130d388dca4ba6e436ea42affb0, type: 3}
       propertyPath: m_Pivot.x
