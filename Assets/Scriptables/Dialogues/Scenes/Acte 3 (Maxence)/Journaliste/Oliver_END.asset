@@ -15,15 +15,17 @@ MonoBehaviour:
   sentences:
   - text: "Merci d\u2019avoir pris le temps de r\xE9pondre \xE0 mes questions"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
+    collectedCondition: Oliver
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Pas de probl\xE8me, n\u2019h\xE9sitez pas \xE0 me contacter si besoin."
     speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
     collectedCondition: 
@@ -33,8 +35,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Ah\u202F!"
     speaker: {fileID: 11400000, guid: bb78998e8e801c943a05166514b4b2f8, type: 2}
     collectedCondition: 
@@ -44,8 +48,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "J\u2019y pense, j\u2019ai crois\xE9 un homme avant de venir qui m\u2019a
       demand\xE9 que vous le contactez. Je crois qu\u2019il s\u2019agit du cuisiner\u2026"
     speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
@@ -56,8 +62,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Le cuisinier\u202F? Tr\xE8s bien, je le ferais. Merci \xE0 vous."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: Cuisinier
@@ -67,8 +75,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 1
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 905e2e5dbad79744486b01720974d79f, type: 2}
   conditionScene: {fileID: 0}

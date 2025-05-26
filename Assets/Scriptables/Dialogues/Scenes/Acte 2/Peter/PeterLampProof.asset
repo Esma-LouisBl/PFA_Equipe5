@@ -15,7 +15,7 @@ MonoBehaviour:
   sentences:
   - text: "Nous avons trouv\xE9 cette lampe dont la base est d\xE9form\xE9e. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
-    collectedCondition: 
+    collectedCondition: WLamp
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}

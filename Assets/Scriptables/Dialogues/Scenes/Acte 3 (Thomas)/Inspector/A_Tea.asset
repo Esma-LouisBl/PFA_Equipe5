@@ -127,7 +127,7 @@ MonoBehaviour:
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
+    phoneContact: {fileID: 11400000, guid: 7114521d43e986f4fb6045fd2ba1b6a3, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
