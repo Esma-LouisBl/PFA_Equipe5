@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: UnlockMWarner
   m_EditorClassIdentifier: 
   sentences:
-  - text: Je devrais peu etre Rapeller M. Warner
-    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+  - text: Je devrais peu etre Rapeller M. Warner apres
+    speaker: {fileID: 11400000, guid: 0d691f116a18cfd43b72ba0e77721004, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -22,11 +22,13 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0

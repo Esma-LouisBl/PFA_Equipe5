@@ -22,8 +22,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   - text: "Je croyais que leur relation appartenait au pass\xE9 ? "
     speaker: {fileID: 11400000, guid: dc808623fe61c0e4fa9d5c8b0b4bdfa1, type: 2}
     collectedCondition: 
@@ -32,8 +36,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   - text: "Apparemment elle souhaitait quand m\xEAme s\u2019entretenir avec lui.
       Ils m\u2019ont tous deux confirm\xE9 \xEAtre dans les appartements de Monsieur
       vers 19h20. "
@@ -44,8 +52,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   - text: "Je me demande bien de quoi ils ont discut\xE9, m\xEAme si \xE7a n\u2019a
       sans doute pas de rapport avec l\u2019enqu\xEAte ... "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
@@ -55,8 +67,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   - text: "En tout cas nous avons d\xE9j\xE0 obtenu un bon nombre de t\xE9moignages
       et de preuves. Il est peut-\xEAtre tent\xE9 de faire le tri. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -66,8 +82,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   - text: "Je pense aussi. Nous n\u2019avons pas encore pu avoir la d\xE9position
       de ce journaliste suspect mais avec les informations que l\u2019on a je pense
       que l\u2019on peut commencer \xE0 rayer un de nos suspects."
@@ -78,8 +98,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   - text: "A ton avis, qui n\u2019a pas pu r\xE9aliser le meurtre ? "
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
@@ -88,9 +112,15 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
+    BlackScreen: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 77cf333607a95d94bb774a0e903bd31b, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
