@@ -77,7 +77,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 11400000, guid: af01ad19b1750ea4dbe674ab90fe0d8f, type: 2}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
+    photoFrame: {fileID: 11400000, guid: ead5d3f16c602a5469f48705e346fff9, type: 2}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
+    photoFrame: {fileID: 11400000, guid: 960d0244b0851ee4a8e98d9957de9278, type: 2}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 0}
+    photoFrame: {fileID: 11400000, guid: 314d888db71073340bbe9c66a5271781, type: 2}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
