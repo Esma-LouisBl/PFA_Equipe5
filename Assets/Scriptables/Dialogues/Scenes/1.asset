@@ -34,7 +34,7 @@ MonoBehaviour:
     phoneContact: {fileID: 11400000, guid: db690d80e3909a244942e346919e7e8b, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 11400000, guid: 0b0fa5356d128b04fa717033e10d65bc, type: 2}
-    inspectorSceneToCollect: {fileID: 11400000, guid: 8585994df274f064eb857f8ee7e93115, type: 2}
+    inspectorSceneToCollect: {fileID: 11400000, guid: 2bf3411c518a41c419eb794929bdb901, type: 2}
     photoFrame: {fileID: 11400000, guid: 3db5824db4718d547b3d7bbfe0d9bf53, type: 2}
     showSprite: 0
     hideSprite: 1
