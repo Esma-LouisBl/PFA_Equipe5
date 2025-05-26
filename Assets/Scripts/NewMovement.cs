@@ -20,13 +20,13 @@ public class NewMovement : MonoBehaviour
     [SerializeField]
     private CursorController _cursorController;
     [SerializeField]
-    private GameObject _fromtTableButton, _fromBoardButton;
+    private GameObject _fromTableButton, _fromBoardButton;
 
     [SerializeField]
     private float _speed = 20f;
     [SerializeField]
     private float _rotationSpeed = 350f;
-    private Quaternion _targetRotation;
+    //private Quaternion _targetRotation;
 
     public bool canShowCanvas;
 
@@ -143,13 +143,13 @@ public class NewMovement : MonoBehaviour
     }
     public void HideCanvasTable()
     {
-        _fromtTableButton.SetActive(false);
+        _fromTableButton.SetActive(false);
     }
     public void ShowCanvasTable()
     {
         if (canShowCanvas)
         {
-            _fromtTableButton.SetActive(true);
+            _fromTableButton.SetActive(true);
             canShowCanvas = false;
         }
     }

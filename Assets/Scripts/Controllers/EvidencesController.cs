@@ -27,7 +27,7 @@ public class EvidencesController : MonoBehaviour
     [SerializeField]
     private EvidencesSystem _evidencesSystem;
     [SerializeField]
-    private GameObject _returnCanvas;
+    private GameObject _returnButton;
 
     private void Start()
     {
@@ -82,7 +82,7 @@ public class EvidencesController : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
-            _returnCanvas.SetActive(true);
+            _returnButton.SetActive(true);
         }
         else
         {
@@ -90,7 +90,7 @@ public class EvidencesController : MonoBehaviour
             {
                 _window.SetActive(true);
                 _gameManager.readingNote = true;
-                _returnCanvas.SetActive(false);
+                _returnButton.SetActive(false);
             }
         }
     }

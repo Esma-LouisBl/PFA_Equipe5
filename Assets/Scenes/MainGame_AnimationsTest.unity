@@ -2611,7 +2611,7 @@ MonoBehaviour:
   _window: {fileID: 124842125}
   _outliner: {fileID: 429093343}
   _gameManager: {fileID: 97514707}
-  _returnCanvas: {fileID: 0}
+  _returnButton: {fileID: 1212234443}
 --- !u!82 &195364491
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14704,7 +14704,7 @@ MonoBehaviour:
   _outliner: {fileID: 1403629101}
   _gameManager: {fileID: 97514707}
   _evidencesSystem: {fileID: 89023273}
-  _returnCanvas: {fileID: 0}
+  _returnButton: {fileID: 1212234443}
 --- !u!82 &1375152487
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15128,7 +15128,7 @@ MonoBehaviour:
   _window: {fileID: 1950142462}
   _outliner: {fileID: 217885905}
   _gameManager: {fileID: 97514707}
-  _returnCanvas: {fileID: 0}
+  _returnButton: {fileID: 1212234443}
   _audioSource: {fileID: 1431849091}
 --- !u!114 &1431849087
 MonoBehaviour:
@@ -18213,7 +18213,7 @@ MonoBehaviour:
   _inspectorController: {fileID: 1637156572}
   _outliner: {fileID: 1375896903}
   _cursorController: {fileID: 1797189652}
-  _fromtTableButton: {fileID: 1894752373}
+  _fromTableButton: {fileID: 1894752373}
   _fromBoardButton: {fileID: 1212234443}
   _speed: 20
   _rotationSpeed: 350

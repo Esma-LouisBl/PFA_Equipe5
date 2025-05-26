@@ -34,7 +34,7 @@ public class SuspectsManager : MonoBehaviour
     [SerializeField]
     private GameManager _gameManager;
     [SerializeField]
-    private GameObject _returnCanvas;
+    private GameObject _returnButton;
     [SerializeField]
     private AudioSource _audioSource;
 
@@ -108,7 +108,7 @@ public class SuspectsManager : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
-            _returnCanvas.SetActive(true);
+            _returnButton.SetActive(true);
         }
         else
         {
@@ -116,7 +116,7 @@ public class SuspectsManager : MonoBehaviour
             {
                 _window.SetActive(true);
                 _gameManager.readingNote = true;
-                _returnCanvas.SetActive(false);
+                _returnButton.SetActive(false);
             }
         }
     }

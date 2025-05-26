@@ -30,7 +30,7 @@ public class TestimoniesManager : MonoBehaviour
     [SerializeField]
     private GameManager _gameManager;
     [SerializeField]
-    private GameObject _returnCanvas;
+    private GameObject _returnButton;
 
 
     private void Update()
@@ -101,7 +101,7 @@ public class TestimoniesManager : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
-            _returnCanvas.SetActive(true);
+            _returnButton.SetActive(true);
         }
         else
         {
@@ -109,7 +109,7 @@ public class TestimoniesManager : MonoBehaviour
             {
                 _window.SetActive(true);
                 _gameManager.readingNote = true;
-                _returnCanvas.SetActive(false);
+                _returnButton.SetActive(false);
             }
         }
     }
