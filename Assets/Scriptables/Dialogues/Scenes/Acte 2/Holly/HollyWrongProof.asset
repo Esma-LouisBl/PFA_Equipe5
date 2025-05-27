@@ -26,6 +26,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
+    BlackScreen: 0
   - text: "Cela ne me dit rien, est-ce que vous voulez continuer \xE0 me faire perdre
       mon temps\u202F?"
     speaker: {fileID: 11400000, guid: 9b70230fa44baea4a809b06cb0790bc5, type: 2}
@@ -40,6 +41,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 1
+    BlackScreen: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 85660359ba689184cb051a49f7101068, type: 2}
   conditionScene: {fileID: 0}

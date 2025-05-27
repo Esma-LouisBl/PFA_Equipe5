@@ -59,7 +59,6 @@ MonoBehaviour:
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: e22a8c6da86b7594db23e3ae1b48600e, type: 2}
   conditionScene: {fileID: 0}
-  conditionToUnlock:
-  - Glove
+  conditionToUnlock: []
   callInspector: 0
   endInspector: 0

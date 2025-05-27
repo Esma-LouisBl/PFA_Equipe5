@@ -23,7 +23,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
-    showSprite: 0
+    showSprite: 1
     hideSprite: 0
     destroyEvidence: 0
     BlackScreen: 0

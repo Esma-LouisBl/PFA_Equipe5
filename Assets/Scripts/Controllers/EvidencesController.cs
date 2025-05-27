@@ -65,13 +65,13 @@ public class EvidencesController : MonoBehaviour
     public void ChangeEvidenceUp()
     {
         _evidencesSystem.ChangeEvidenceUp();
-        PlayASound();
+        // PlayASound();
     }
 
     public void ChangeEvidenceDown()
     {
         _evidencesSystem.ChangeEvidenceDown();
-        PlayASound();
+        // PlayASound();
     }
 
     public void OpenAndClose()
@@ -93,8 +93,8 @@ public class EvidencesController : MonoBehaviour
         }
     }
 
-    public void PlayASound()
-    {
-        AudioManager.Instance.PlaySFX(AudioManager.Instance._pageTurned);
-    }
+    // public void PlayASound()
+    // {
+    //     AudioManager.Instance.PlaySFX(AudioManager.Instance._pageTurned);
+    // }
 }
