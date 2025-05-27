@@ -43,6 +43,7 @@ public class InspectorController : MonoBehaviour
         _gameController.restart = true;
         _gameManager.inspectorAble = false;
         inspectorTalking = true;
+        cursorAspect.interactCursor = mainCursor;
     }
 
     public void ShowInspector()
