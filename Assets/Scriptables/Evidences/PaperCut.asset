@@ -18,6 +18,6 @@ MonoBehaviour:
   Informations: "Retrouv\xE9 dans le mouchoir en tissu. Il semble avoir \xE9t\xE9
     nettoy\xE9."
   ReactionPeter: {fileID: 0}
-  ReactionHolly: {fileID: 0}
+  ReactionHolly: {fileID: 11400000, guid: 2c50001be7d489a4aa20888767cf43a9, type: 2}
   ReactionOliver: {fileID: 0}
   ReactionInspector: {fileID: 0}
