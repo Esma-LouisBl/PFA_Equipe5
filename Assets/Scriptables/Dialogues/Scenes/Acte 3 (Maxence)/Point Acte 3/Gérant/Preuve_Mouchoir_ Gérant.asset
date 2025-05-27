@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: "Preuve_Mouchoir_ G\xE9rant"
   m_EditorClassIdentifier: 
   sentences:
-  - text: "D\xE9cid\xE9ment, je suis un peu rouill\xE9. Je devrais revoir les preuves
-      obtenues \u2026"
+  - text: "Gr\xE2ce \xE0 l\u2019un de nos t\xE9moins, nous avons obtenu ce mouchoir
+      du fabriquant \u201CLiberty & co\u201D"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -27,8 +27,9 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: 
-    speaker: {fileID: 0}
+  - text: "J\u2019ai donc ensuite demand\xE9 \xE0 Monsieur Warner s\u2019il le reconnaissait
+      et il m\u2019a avou\xE9 acheter chez cette marque depuis son succ\xE8s r\xE9cent."
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -101,3 +102,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
