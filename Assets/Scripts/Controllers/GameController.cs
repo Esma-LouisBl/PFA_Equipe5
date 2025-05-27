@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -115,6 +116,11 @@ public class GameController : MonoBehaviour
                             gameManager.inspectorAble = false;
                             _blackScreenObject.SetActive(true);
                             StartCoroutine(FadeIn());
+                        }
+
+                        if ((currentScene as StoryScene).theEnd)
+                        {
+                            SceneManager.LoadSceneAsync(2);
                         }
 
                     }
