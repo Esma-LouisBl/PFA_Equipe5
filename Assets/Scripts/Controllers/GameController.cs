@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour
 
     [Header("Act 4 Dusk")]
     [SerializeField]
+    private GameObject _blackScreenObject;
+    [SerializeField]
     private MeshRenderer _window;
     [SerializeField]
     private Material _windowMaterialDusk;
@@ -107,6 +109,7 @@ public class GameController : MonoBehaviour
 
                         if ((currentScene as StoryScene).blackScreen)       //check if BlackScreen must play
                         {
+                            _blackScreenObject.SetActive(true);
                             StartCoroutine(FadeIn());
                         }
 
@@ -204,5 +207,6 @@ public class GameController : MonoBehaviour
         _duskLights.SetActive(true);
         yield return new WaitForSeconds(3f);
         cursorController.EnableCursor(true);
+        _blackScreenObject.SetActive(false);
     }
 }
