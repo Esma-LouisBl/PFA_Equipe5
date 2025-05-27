@@ -36,6 +36,8 @@ public class BottomBarController : MonoBehaviour
     private FrameController _PhotoFrame;
     [SerializeField]
     private InspectorController _inspectorController;
+    [SerializeField]
+    private DeskInteraction _deskInteraction;
     private enum State
     {
         PLAYING, COMPLETED
@@ -118,6 +120,8 @@ public class BottomBarController : MonoBehaviour
         CollectEvidences();
         CollectFrame();
         CollectInspectorScene();
+
+        DestroyEvidence();
         
         RemoveContact();
     }
@@ -186,6 +190,14 @@ public class BottomBarController : MonoBehaviour
         if (currentScene.sentences[_sentenceIndex].evidence != null)
         {
             _evidencesSystem.AddEvidence(currentScene.sentences[_sentenceIndex].evidence);
+        }
+    }
+
+    public void DestroyEvidence()
+    {
+        if (currentScene.sentences[_sentenceIndex].destroyEvidence)
+        {
+            _deskInteraction.DestroyEvidence();
         }
     }
 

@@ -11280,6 +11280,7 @@ MonoBehaviour:
   conditionsController: {fileID: 1698584220}
   inspectorController: {fileID: 1637156572}
   newMovement: {fileID: 1797189654}
+  gameManager: {fileID: 97514707}
   cursorController: {fileID: 1797189652}
   _blackScreenAnimator: {fileID: 651662795}
   _falseTable: {fileID: 1831183352}
@@ -14593,6 +14594,7 @@ MonoBehaviour:
   _evidencesSystem: {fileID: 89023273}
   _PhotoFrame: {fileID: 1649574614}
   _inspectorController: {fileID: 1637156572}
+  _deskInteraction: {fileID: 0}
 --- !u!224 &1310856696
 RectTransform:
   m_ObjectHideFlags: 0

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41b93f82b1515146896b9cbe680119e, type: 3}
   m_Name: Holly_Surprised
   m_EditorClassIdentifier: 
-  speakerName: Holly
+  speakerName: Holly Marie
   textColor: {r: 0.9245283, g: 0.22241008, b: 0.53825235, a: 0}
   speakerSprite: {fileID: 21300000, guid: 9e225229a57ce3a4a967dd3a2639974d, type: 3}
