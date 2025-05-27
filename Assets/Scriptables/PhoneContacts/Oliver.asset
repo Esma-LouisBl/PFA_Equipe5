@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c530afecd4f814eb81eac58dd26019, type: 3}
   m_Name: Oliver
   m_EditorClassIdentifier: 
-  contactName: Oliver
+  contactName: Oliver Scott
   scene: {fileID: 11400000, guid: b80a6ed4bd7528e4995dcf57c006c25f, type: 2}

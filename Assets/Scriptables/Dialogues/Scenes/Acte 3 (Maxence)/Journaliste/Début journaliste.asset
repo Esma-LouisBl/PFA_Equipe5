@@ -23,7 +23,7 @@ MonoBehaviour:
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 11400000, guid: 5377f82c2a34f764f9f128ff72aa01ce, type: 2}
-    showSprite: 0
+    showSprite: 1
     hideSprite: 0
     destroyEvidence: 0
   - text: ' Bonjour, Edwin Justice, je suis le majordome de ce manoir.'
@@ -138,3 +138,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
