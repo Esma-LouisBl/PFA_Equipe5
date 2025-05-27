@@ -32,6 +32,8 @@ public class GameController : MonoBehaviour
     private Material _windowMaterialDusk;
     [SerializeField]
     private GameObject _baseLights, _duskLights;
+    [SerializeField]
+    private StoryScene _lastScene;
 
 
     private enum State
@@ -208,5 +210,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         cursorController.EnableCursor(true);
         _blackScreenObject.SetActive(false);
+        inspectorController.CollectScene(_lastScene);
+        inspectorController.LoadInspectorScene();
     }
 }
