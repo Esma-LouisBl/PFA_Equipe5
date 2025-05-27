@@ -13,6 +13,9 @@ public class GameController : MonoBehaviour
     public NewMovement newMovement;
 
     [SerializeField]
+    private Animator _blackScreenAnimator;
+
+    [SerializeField]
     private GameObject _falseTable, _realTable, _falsePhone, _realPhone, _falseCabinet, _realCabinet;
 
     private State _state = State.IDLE;
@@ -89,6 +92,11 @@ public class GameController : MonoBehaviour
                             inspectorController.HideInspector();
                             newMovement.canShowCanvas = true;
                             newMovement.ShowCanvasTable();
+                        }
+
+                        if ((currentScene as StoryScene).blackScreen)       //check if BlackScreen must play
+                        {
+                            _blackScreenAnimator.SetTrigger("Fade");
                         }
 
                     }
