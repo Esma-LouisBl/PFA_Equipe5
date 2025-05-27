@@ -19,5 +19,5 @@ MonoBehaviour:
     \"H.M\"."
   ReactionPeter: {fileID: 11400000, guid: 0f786be6cdd188d44882b7dd6fdd2104, type: 2}
   ReactionHolly: {fileID: 11400000, guid: 74f460ff6ee76194e901e2485c23baee, type: 2}
-  ReactionOliver: {fileID: 0}
+  ReactionOliver: {fileID: 11400000, guid: 09734bb0697965142a5e3281e1c81105, type: 2}
   ReactionInspector: {fileID: 0}

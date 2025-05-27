@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b59e5109641be024fb790db23ec12cf0, type: 3}
-  m_Name: Olivier_Lamp_Proof
+  m_Name: Olivier_wrong_Proof
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Nous avons trouv\xE9 cette lampe qui \xE0 surment \xE9t\xE9 utilis\xE9
-      sur la victime."
+  - text: "Nous avons trouv\xE9 objet cette proche de la victime."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -23,7 +22,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -36,7 +35,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 1
@@ -46,3 +45,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
