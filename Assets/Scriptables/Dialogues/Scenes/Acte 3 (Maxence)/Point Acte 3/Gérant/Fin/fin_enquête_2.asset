@@ -25,7 +25,7 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
-    hideSprite: 0
+    hideSprite: 1
     destroyEvidence: 0
   - text: "(Monsieur Warner, arr\xEAt\xE9... Quelle chute. On nous a tous cong\xE9di\xE9s,
       en attendant que la famille d\xE9cide de l\u2019avenir de l\u2019entreprise.
@@ -96,7 +96,7 @@ MonoBehaviour:
     hideSprite: 1
     destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 28c799fa6d72e3b4eaa1510d7bc4a0fd, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0
