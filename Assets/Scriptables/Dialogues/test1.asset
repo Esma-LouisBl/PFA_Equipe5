@@ -20,7 +20,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 11400000, guid: ec6246dda826fa1419ff1cccf013db39, type: 2}
+    evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 11400000, guid: ec6246dda826fa1419ff1cccf013db39, type: 2}
+    evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
@@ -43,6 +43,6 @@ MonoBehaviour:
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
-  callInspector: 0
+  callInspector: 1
   endInspector: 0
-  blackScreen: 0
+  blackScreen: 1

@@ -11295,7 +11295,7 @@ MonoBehaviour:
   _windowMaterialDusk: {fileID: 2100000, guid: 112e1ee3505e3794db2ee4be1a4016c8, type: 2}
   _baseLights: {fileID: 1573065591}
   _duskLights: {fileID: 1155752391}
-  _lastScene: {fileID: 0}
+  _lastScene: {fileID: 11400000, guid: 2c50001be7d489a4aa20888767cf43a9, type: 2}
 --- !u!114 &1045449769
 MonoBehaviour:
   m_ObjectHideFlags: 0
