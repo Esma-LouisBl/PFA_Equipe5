@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public ConditionsController conditionsController;
     public InspectorController inspectorController;
     public NewMovement newMovement;
+    public GameManager gameManager;
 
     public CursorController cursorController;
 
@@ -111,6 +112,7 @@ public class GameController : MonoBehaviour
 
                         if ((currentScene as StoryScene).blackScreen)       //check if BlackScreen must play
                         {
+                            gameManager.inspectorAble = false;
                             _blackScreenObject.SetActive(true);
                             StartCoroutine(FadeIn());
                         }
