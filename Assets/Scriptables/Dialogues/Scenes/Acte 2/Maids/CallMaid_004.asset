@@ -23,8 +23,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Le cuisinier m\u2019a aussi inform\xE9 qu\u2019il voudrait s\u2019entretenir
       avec vous quand vous aurez le temps, il aurait quelque chose pour l\u2019enqu\xEAte. "
     speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
@@ -34,10 +37,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "\xE0 lui-m\xEAme\u202F: Vraiment ? Mais il n\u2019\xE9tait pas \xE0 la
-      soir\xE9e ? "
+    destroyEvidence: 0
+  - text: "(Vraiment ? Mais il n\u2019\xE9tait pas \xE0 la soir\xE9e ?)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -45,8 +50,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Merci pour cette information, dites-lui que je le joindrais d\xE8s que
       possible. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -56,8 +64,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: 'Ce sera fait en temps et en heure, Monsieur. '
     speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
     collectedCondition: 
@@ -66,8 +77,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Tr\xE8s bien. Et si vous avez du nouveau, tenez-moi au courant. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: Maid
@@ -76,9 +90,15 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: e22a8c6da86b7594db23e3ae1b48600e, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
+  blackScreen: 0
