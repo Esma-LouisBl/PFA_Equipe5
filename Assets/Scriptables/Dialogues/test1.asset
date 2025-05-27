@@ -20,16 +20,29 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 11400000, guid: ec6246dda826fa1419ff1cccf013db39, type: 2}
+    evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 1
     hideSprite: 0
     destroyEvidence: 0
+  - text: zizi fesse
+    speaker: {fileID: 11400000, guid: bb1ab57dc7d625546a1864103ed83d8f, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 1
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
-  callInspector: 0
+  callInspector: 1
   endInspector: 0
-  blackScreen: 0
+  blackScreen: 1
