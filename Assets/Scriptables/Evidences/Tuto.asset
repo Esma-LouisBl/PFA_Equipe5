@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Evidences
   EvidenceSprite: {fileID: 0}
-  EvidenceGO: {fileID: 0}
-  Informations: "Retrouv\xE9 pr\xE8s du corps de la victime. Il est inscrit les initiales
-    \"H.M\"."
+  EvidenceGO: {fileID: 919132149155446097, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
+  Informations: Vous ressemblerez toutes Vos preuves ici
   ReactionPeter: {fileID: 11400000, guid: 0f786be6cdd188d44882b7dd6fdd2104, type: 2}
   ReactionHolly: {fileID: 11400000, guid: b59aea81c3bd189419a348312e348f66, type: 2}
-  ReactionOliver: {fileID: 0}
+  ReactionOliver: {fileID: 11400000, guid: 09734bb0697965142a5e3281e1c81105, type: 2}
   ReactionInspector: {fileID: 0}
