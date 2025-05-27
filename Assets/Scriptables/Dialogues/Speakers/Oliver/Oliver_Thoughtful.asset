@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41b93f82b1515146896b9cbe680119e, type: 3}
   m_Name: Oliver_Thoughtful
   m_EditorClassIdentifier: 
-  speakerName: Oliver
+  speakerName: Oliver Scott
   textColor: {r: 0.1615112, g: 0.3679245, b: 0.1509879, a: 0}
   speakerSprite: {fileID: 21300000, guid: 894435c67fb8d434484d553583c66f9c, type: 3}
