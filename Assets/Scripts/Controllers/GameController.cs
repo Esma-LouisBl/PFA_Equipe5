@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     public InspectorController inspectorController;
     public NewMovement newMovement;
 
+    public CursorController cursorController;
+
     [SerializeField]
     private Animator _blackScreenAnimator;
 
@@ -96,7 +98,7 @@ public class GameController : MonoBehaviour
 
                         if ((currentScene as StoryScene).blackScreen)       //check if BlackScreen must play
                         {
-                            _blackScreenAnimator.SetTrigger("Fade");
+                            StartCoroutine(FadeIn());
                         }
 
                     }
@@ -181,5 +183,13 @@ public class GameController : MonoBehaviour
             _state = State.CHOOSE;
             chooseController.SetupChoose(scene as ChooseScene);
         }
+    }
+
+    private IEnumerator FadeIn()
+    {
+        _blackScreenAnimator.SetTrigger("Fade");
+        cursorController.EnableCursor(false);
+        yield return new WaitForSeconds(6.5f);
+        cursorController.EnableCursor(true);
     }
 }
