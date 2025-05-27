@@ -17,6 +17,7 @@ public class StoryScene : GameScene
     public bool endInspector;
 
     public bool blackScreen;
+    public bool theEnd;
 
     [System.Serializable]
     public struct Sentence

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameController : MonoBehaviour
     public ConditionsController conditionsController;
     public InspectorController inspectorController;
     public NewMovement newMovement;
+    public GameManager gameManager;
 
     public CursorController cursorController;
 
@@ -111,8 +113,14 @@ public class GameController : MonoBehaviour
 
                         if ((currentScene as StoryScene).blackScreen)       //check if BlackScreen must play
                         {
+                            gameManager.inspectorAble = false;
                             _blackScreenObject.SetActive(true);
                             StartCoroutine(FadeIn());
+                        }
+
+                        if ((currentScene as StoryScene).theEnd)
+                        {
+                            SceneManager.LoadSceneAsync(2);
                         }
 
                     }

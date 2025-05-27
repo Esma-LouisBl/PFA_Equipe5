@@ -70,7 +70,7 @@ MonoBehaviour:
     hideSprite: 1
     destroyEvidence: 0
   - text: "Edwin ? C\u2019est moi. Tu es l\xE0 ?"
-    speaker: {fileID: 11400000, guid: 91c12d8a854297743ae6bd570bce8650, type: 2}
+    speaker: {fileID: 11400000, guid: f2e3f60cc6c47c141970981cc997e513, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
