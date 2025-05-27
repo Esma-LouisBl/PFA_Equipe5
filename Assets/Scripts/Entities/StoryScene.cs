@@ -16,6 +16,8 @@ public class StoryScene : GameScene
     public bool callInspector;
     public bool endInspector;
 
+    public bool blackScreen;
+
     [System.Serializable]
     public struct Sentence
     {
@@ -35,9 +37,6 @@ public class StoryScene : GameScene
         public bool hideSprite;
 
         public bool destroyEvidence;
-
-        public bool BlackScreen;
-
     }
 }
 
