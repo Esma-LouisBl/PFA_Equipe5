@@ -23,6 +23,17 @@ public class GameController : MonoBehaviour
     private State _state = State.IDLE;
     public bool isActive, restart;
 
+    [Header("Act 4 Dusk")]
+    [SerializeField]
+    private GameObject _blackScreenObject;
+    [SerializeField]
+    private MeshRenderer _window;
+    [SerializeField]
+    private Material _windowMaterialDusk;
+    [SerializeField]
+    private GameObject _baseLights, _duskLights;
+
+
     private enum State
     {
         IDLE, ANIMATE, CHOOSE, STOP, RESTART
@@ -98,6 +109,7 @@ public class GameController : MonoBehaviour
 
                         if ((currentScene as StoryScene).blackScreen)       //check if BlackScreen must play
                         {
+                            _blackScreenObject.SetActive(true);
                             StartCoroutine(FadeIn());
                         }
 
@@ -189,7 +201,12 @@ public class GameController : MonoBehaviour
     {
         _blackScreenAnimator.SetTrigger("Fade");
         cursorController.EnableCursor(false);
-        yield return new WaitForSeconds(6.5f);
+        yield return new WaitForSeconds(3.5f);
+        _window.material = _windowMaterialDusk;
+        _baseLights.SetActive(false);
+        _duskLights.SetActive(true);
+        yield return new WaitForSeconds(3f);
         cursorController.EnableCursor(true);
+        _blackScreenObject.SetActive(false);
     }
 }

@@ -54,7 +54,7 @@ public class PhoneController : MonoBehaviour
         {
             _index = 0;
         }
-        //RandomAudioClip();
+        RandomAudioClip();
     }
 
     public void ChangeIndexDown()
@@ -68,7 +68,7 @@ public class PhoneController : MonoBehaviour
             _index = contactList.Count -1;
         }
 
-        //RandomAudioClip();
+        RandomAudioClip();
     }
 
     public void OpenAndClose()
@@ -77,7 +77,7 @@ public class PhoneController : MonoBehaviour
         {
             _window.SetActive(false);
             _gameManager.readingNote = false;
-            //PlayASound(AudioManager.Instance._pickUp);
+            PlayASound(AudioManager.Instance._pickUp);
         }
         else
         {
@@ -85,7 +85,7 @@ public class PhoneController : MonoBehaviour
             {
                 _window.SetActive(true);
                 _gameManager.readingNote = true;
-                //PlayASound(AudioManager.Instance._hangUp);
+                PlayASound(AudioManager.Instance._hangUp);
             }
         }
     }
@@ -94,10 +94,10 @@ public class PhoneController : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX(audioClip);
     }
-    //public void RandomAudioClip()
-    //{
-    //    AudioClip[] audioClips = new AudioClip[3] { AudioManager.Instance._Phone01, AudioManager.Instance._Phone02, AudioManager.Instance._Phone03 };
-    //    audioClipChoice = audioClips[Random.Range(0, audioClips.Length)];
-        //PlayASound(audioClipChoice);
-    //}
+    public void RandomAudioClip()
+    {
+        AudioClip[] audioClips = new AudioClip[3] { AudioManager.Instance._Phone01, AudioManager.Instance._Phone02, AudioManager.Instance._Phone03 };
+        audioClipChoice = audioClips[Random.Range(0, audioClips.Length)];
+        PlayASound(audioClipChoice);
+    }
 }
