@@ -18,4 +18,4 @@ MonoBehaviour:
   - text: Le journaliste
     nextScene: {fileID: 11400000, guid: 14127e866b12b914b87ad895f93c87d9, type: 2}
   - text: "Le g\xE9rant"
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 4d0b76c69df8be54580fb67889553669, type: 2}

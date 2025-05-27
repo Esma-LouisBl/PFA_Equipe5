@@ -54,8 +54,9 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 81f39bb6b3bd9c0418cb2f208fdfbdb5, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
