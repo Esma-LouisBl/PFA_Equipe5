@@ -17,11 +17,11 @@ MonoBehaviour:
       pour une information de derni\xE8re minute."
     speaker: {fileID: 11400000, guid: 7f24d978b6e625e48ba9626a1a59dcc2, type: 2}
     collectedCondition: 
-    testimony: {fileID: 11400000, guid: 4a56515a55002654c915dbeb998e5d69, type: 2}
-    suspect: {fileID: 11400000, guid: 8f1b486e20867ef4a9abf473c343f1d3, type: 2}
+    testimony: {fileID: 11400000, guid: f010858876c88a54882f4d5fd5bc8649, type: 2}
+    suspect: {fileID: 11400000, guid: c29d870101076594eaf62618ed1f8747, type: 2}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: 3f67e9aa9af9845459039462292e340f, type: 2}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
@@ -62,3 +62,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0

@@ -102,7 +102,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 11400000, guid: a2b4d97fa2df7e54f9ec50fa041980fb, type: 2}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -127,3 +127,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0

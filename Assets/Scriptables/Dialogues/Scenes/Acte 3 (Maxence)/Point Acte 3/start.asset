@@ -36,8 +36,21 @@ MonoBehaviour:
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 11400000, guid: 93a978923c2003b4eb4de04ea985dcd8, type: 2}
     photoFrame: {fileID: 0}
-    showSprite: 0
-    hideSprite: 1
+    showSprite: 1
+    hideSprite: 0
+    destroyEvidence: 0
+  - text: lo
+    speaker: {fileID: 11400000, guid: 3c6c8bac783cea24b9d0ba5ffc24e629, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 11400000, guid: 93a978923c2003b4eb4de04ea985dcd8, type: 2}
+    photoFrame: {fileID: 0}
+    showSprite: 1
+    hideSprite: 0
     destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
@@ -45,3 +58,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 1
   endInspector: 0
+  blackScreen: 0
