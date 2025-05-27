@@ -20,6 +20,6 @@ MonoBehaviour:
   - text: Lien avec la diva
     nextScene: {fileID: 11400000, guid: 05ae337c2991a1245bfc4f735f7c3adb, type: 2}
   - text: son Alibi
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: e0bde308ac4aec74ab2f14d29b8c6521, type: 2}
   - text: "Je me suis tromp\xE9"
     nextScene: {fileID: 11400000, guid: ee00a80cc5b1aab4d8e76f27f126d4ea, type: 2}

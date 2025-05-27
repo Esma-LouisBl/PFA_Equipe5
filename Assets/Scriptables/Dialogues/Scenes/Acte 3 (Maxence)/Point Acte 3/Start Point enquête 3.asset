@@ -130,3 +130,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0

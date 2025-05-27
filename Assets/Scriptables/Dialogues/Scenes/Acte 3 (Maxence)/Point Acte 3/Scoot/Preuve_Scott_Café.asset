@@ -40,8 +40,9 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: 
-    speaker: {fileID: 0}
+  - text: "J\u2019ai \xE9chang\xE9 avec Monsieur Scott qui il m\u2019a dit ne pouvoir
+      travailler sans consommer r\xE9guli\xE8rement du caf\xE9"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -86,3 +87,4 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
