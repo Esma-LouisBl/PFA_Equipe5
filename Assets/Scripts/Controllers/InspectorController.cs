@@ -31,13 +31,18 @@ public class InspectorController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                _gameController.currentScene = inspectorScene;
-                _gameController.restart = true;
-                _gameManager.inspectorAble = false;
-                inspectorTalking = true;
+                LoadInspectorScene();
             }
         }
 
+    }
+
+    public void LoadInspectorScene()
+    {
+        _gameController.currentScene = inspectorScene;
+        _gameController.restart = true;
+        _gameManager.inspectorAble = false;
+        inspectorTalking = true;
     }
 
     public void ShowInspector()
