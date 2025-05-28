@@ -10,7 +10,7 @@ public class BottomBarController : MonoBehaviour
     public TextMeshProUGUI personNameText;
 
     private int _sentenceIndex = -1;
-    private StoryScene currentScene;
+    public StoryScene currentScene;
     private State state = State.COMPLETED;
     private Animator animator;
     [SerializeField]

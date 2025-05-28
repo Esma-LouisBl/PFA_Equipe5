@@ -38,23 +38,27 @@ public class DeskInteraction : MonoBehaviour
                 _currentEvidence = Instantiate(_playerHandler.CurrentEvidence, _dropPoint);
                 _playerHandler.DropEvidence();
 
-                if (_bottomBarController.GetCurrentSpeaker() == "Peter")
+                if (_bottomBarController.currentScene.somebodyAtDesk)
+
                 {
-                    LoadScene(_evidencesSystem.currentEvidence.ReactionPeter);
+                    if (_bottomBarController.GetCurrentSpeaker() == "Peter Warner")
+                    {
+                        LoadScene(_evidencesSystem.currentEvidence.ReactionPeter);
+                    }
+                    if (_bottomBarController.GetCurrentSpeaker() == "Holly Marie")
+                    {
+                        LoadScene(_evidencesSystem.currentEvidence.ReactionHolly);
+                    }
+                    if (_bottomBarController.GetCurrentSpeaker() == "Oliver Scott")
+                    {
+                        LoadScene(_evidencesSystem.currentEvidence.ReactionOliver);
+                    }
+                    if (_bottomBarController.GetCurrentSpeaker() == "Inspecteur Gavin")
+                    {
+                        LoadScene(_evidencesSystem.currentEvidence.ReactionInspector);
+                    }
                 }
-                if (_bottomBarController.GetCurrentSpeaker() == "Holly")
-                {
-                    LoadScene(_evidencesSystem.currentEvidence.ReactionHolly);
-                }
-                if (_bottomBarController.GetCurrentSpeaker() == "Oliver")
-                {
-                    LoadScene(_evidencesSystem.currentEvidence.ReactionOliver);
-                }
-                if (_bottomBarController.GetCurrentSpeaker() == "Inspecteur Gavin")
-                {
-                    LoadScene(_evidencesSystem.currentEvidence.ReactionInspector);
-                }
-                else
+                else if (_bottomBarController.currentScene.somebodyAtDesk == false)
                 {
                     DestroyEvidence();
                 }
