@@ -14595,7 +14595,7 @@ MonoBehaviour:
   _evidencesSystem: {fileID: 89023273}
   _PhotoFrame: {fileID: 1649574614}
   _inspectorController: {fileID: 1637156572}
-  _deskInteraction: {fileID: 0}
+  _deskInteraction: {fileID: 735234161}
 --- !u!224 &1310856696
 RectTransform:
   m_ObjectHideFlags: 0
