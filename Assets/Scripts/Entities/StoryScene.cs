@@ -16,6 +16,8 @@ public class StoryScene : GameScene
     public bool callInspector;
     public bool endInspector;
 
+    public bool somebodyAtDesk;
+
     public bool blackScreen;
     public bool theEnd;
 
