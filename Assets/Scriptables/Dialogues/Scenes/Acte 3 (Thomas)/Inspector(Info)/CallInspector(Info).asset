@@ -53,7 +53,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: 'Dans les poubelles du manoir '
+  - text: Dans les poubelles du manoir.
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -81,7 +81,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "La victime a pu peut-\xEAtre l\u2019utiliser pour se d\xE9fendre comme
-      je n\u2019ai pas vue de blessure son corps. "
+      je n\u2019ai pas vue de blessure sur son corps. "
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Je crois que le mouchoir provient de Liberty & Co, une marque assez luxueuse.
-      Monsieur Warner avait d\xE9j\xE0 achet\xE9 auparavant de mon souvenir."
+      Monsieur Warner en avait d\xE9j\xE0 achet\xE9 auparavant de mon souvenir."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "J\u2019esp\xE8re que tu as raison \u2026"
+  - text: "J\u2019esp\xE8re que tu as raison\u2026"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -169,3 +169,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

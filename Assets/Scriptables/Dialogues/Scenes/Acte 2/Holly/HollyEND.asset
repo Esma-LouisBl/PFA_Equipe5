@@ -26,7 +26,6 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-    BlackScreen: 0
   - text: "Il \xE9tait temps ! "
     speaker: {fileID: 11400000, guid: bb1ab57dc7d625546a1864103ed83d8f, type: 2}
     collectedCondition: 
@@ -40,9 +39,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 1
     destroyEvidence: 0
-    BlackScreen: 0
-  - text: "J\u2019ai appris pas mal de nouvelles choses ... Je devrais regarder de
-      nouveau mes notes."
+  - text: "(J\u2019ai appris pas mal de nouvelles choses... Je devrais regarder de
+      nouveau mes notes.)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: Holly
     testimony: {fileID: 0}
@@ -55,10 +53,12 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-    BlackScreen: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: e22a8c6da86b7594db23e3ae1b48600e, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: OliverTestimonies_Q3
   m_EditorClassIdentifier: 
   Name: Oliver Scott
-  Description: "M. Scott connaissait la victime et \xE9tait rivaux de longue date"
+  Description: "M. Scott connaissait la victime. Ils \xE9taient rivaux de longue
+    date."

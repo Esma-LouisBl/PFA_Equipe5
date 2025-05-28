@@ -39,7 +39,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "J\u2019aurais voulu savoir si l\u2019une d'entre vous auriez vu quelque
+  - text: "J\u2019aurais voulu savoir si l\u2019une d'entre vous aurait vu quelque
       chose d\u2019anormal durant la soir\xE9e d\u2019inauguration ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -53,8 +53,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Je vous laisse patienter quelques secondes, je vais voir avec les autres
-      \u2026 "
+  - text: "Je vous laisse patienter quelques secondes, je vais voir avec les autres\u2026 "
     speaker: {fileID: 11400000, guid: bd895e725e3919943846e588674f3505, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -73,4 +72,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0

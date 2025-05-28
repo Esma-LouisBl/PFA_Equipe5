@@ -53,7 +53,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "J\u2019y pense, j\u2019ai crois\xE9 un homme avant de venir qui m\u2019a
-      demand\xE9 que vous le contactez. Je crois qu\u2019il s\u2019agit du cuisiner\u2026"
+      demand\xE9 que vous le contactiez. Je crois qu\u2019il s\u2019agit du cuisiner\u2026"
     speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -66,7 +66,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Le cuisinier\u202F? Tr\xE8s bien, je le ferais. Merci \xE0 vous."
+  - text: "Le cuisinier\u202F? Tr\xE8s bien, je le ferai. Merci \xE0 vous."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: Cuisinier
     testimony: {fileID: 0}
@@ -85,4 +85,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0

@@ -53,7 +53,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Mais pas d\u2019une telle qualit\xE9, celui-ci doit valoir une fortune
-      en vu de son motif."
+      au vu de son motif."
     speaker: {fileID: 11400000, guid: 6f7dea1d319d6cb4583762e0d0da2cc2, type: 2}
     collectedCondition: Tissue
     testimony: {fileID: 11400000, guid: 87d03cc5ad5636046b9b537ae574033b, type: 2}
@@ -72,3 +72,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

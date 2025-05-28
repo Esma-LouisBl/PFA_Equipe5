@@ -22,9 +22,11 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: Je suis Oliver Scott, journaliste pour la BBC Home Service
+    destroyEvidence: 0
+  - text: Je suis Oliver Scott, journaliste pour la BBC Home Service.
     speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -33,8 +35,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Attendez, vous n\u2019\xEAtes pas celui qui a signal\xE9 \xE0 la radio
       le meurtre dans le manoir ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -45,8 +49,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "C\u2019\xE9tait bien moi oui."
     speaker: {fileID: 11400000, guid: 772b40428ba65d143bf3d00500b6573e, type: 2}
     collectedCondition: 
@@ -56,8 +62,10 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Mais vous auriez pu attendre que l\u2019enqu\xEAte commence ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -67,10 +75,12 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Les gens ont le droit de savoir ce qu\u2019il se passe peu importe le
-      moment et c\u2019est mon r\xF4le de les pr\xE9venir."
+      moment et c\u2019est mon r\xF4le de les pr\xE9venir !"
     speaker: {fileID: 11400000, guid: 4c5043fd174becf4295a439bc899bd7f, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -79,11 +89,16 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 2c719513821ff6946b5c8eede532181d, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

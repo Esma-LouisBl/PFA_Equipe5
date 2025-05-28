@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 11400000, guid: 2fbf2b38a1c8acc40bdb6922f04023e3, type: 2}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 1
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Une servante m\u2019a pr\xE9venu qu'un journaliste aurait \xE9t\xE9 vu
       pr\xE8s de la porte du bureau. Le probl\xE8me est que je n\u2019ai pas d\u2019informations
       suppl\xE9mentaires dessus. "
@@ -33,8 +36,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 11400000, guid: 4e8b0952fd02ce843a8b6d84d4206073, type: 2}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Hmmm. Je pense savoir qui elle a aper\xE7u, on a un suspect correspondant
       \xE0 ce profil. Je te donnerai son num\xE9ro. Elle t\u2019a dit autre chose
       ?  "
@@ -45,10 +51,13 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 11400000, guid: d2cf0fef1fc381b43b34bd74e787eab9, type: 2}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Apparemment, la s\xE9curit\xE9 voulait me parler et je les ai donc contact\xE9s.
-      A part le fait qu'ils m\u2019accusent du meurtre, je n\u2019ai rien obtenu
+      \xC0 part le fait qu'ils m\u2019accusent du meurtre, je n\u2019ai rien obtenu
       d\u2019important ! "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -57,8 +66,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 11400000, guid: 0cdd40c01e9395f4c80e32515a18a06d, type: 2}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Si \xE7a se trouve... "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
@@ -67,8 +79,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 11400000, guid: 9ad1b66d53da48e41a2aacd435a202d7, type: 2}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Non je plaisante, je sais bien que tu ne ferais pas \xE7a. Tu as pu contacter
       la fameuse Holly Marie ?"
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
@@ -78,10 +93,14 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Oui, elle semble avoir pass\xE9 la soir\xE9e dans le salon. Cependant,
-      elle m\u2019a aussi avou\xE9 avoir eu une relation pass\xE9 avec Monsieur Warner."
+      elle m\u2019a aussi avou\xE9 avoir eu une relation pass\xE9e avec Monsieur
+      Warner."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -89,9 +108,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Tr\xE8s int\xE9ressant ... Tu as pu confirmer son alibi ? "
+    destroyEvidence: 0
+  - text: "Tr\xE8s int\xE9ressant... Tu as pu confirmer son alibi ? "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -99,21 +121,32 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "A vrai dire, elle m\u2019a avou\xE9 qu\u2019elle n\u2019\xE9tait pas toute
-      la soir\xE9e dans le salon. Et une autre personne me l\u2019a confirm\xE9.
-      Il s\u2019agissait de ... "
+    destroyEvidence: 0
+  - text: "\xC0 vrai dire, elle m\u2019a avou\xE9 qu\u2019elle n\u2019\xE9tait pas
+      toute la soir\xE9e dans le salon. Et une autre personne me l\u2019a confirm\xE9.
+      Il s\u2019agissait de... "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
-    phoneContact: {fileID: 0}
+    phoneContact: {fileID: 11400000, guid: c9eed29ce5d901749a981f5822ca5f1b, type: 2}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: d126d54a7a42cb741be5fcbb08a76353, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

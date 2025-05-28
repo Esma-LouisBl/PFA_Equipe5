@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Olivier_wrong_Proof
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Nous avons trouv\xE9 objet cette proche de la victime."
+  - text: "Nous avons trouv\xE9 cet objet proche de la victime."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -26,7 +26,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Vous m'en voyer d\xE9sol\xE9 mais je n'ai jamais vu cette objet"
+  - text: "Vous m'en voyez d\xE9sol\xE9 mais je n'ai jamais vu cet objet."
     speaker: {fileID: 11400000, guid: c1ea30fb2f07ec84382ca382ddb38ca8, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -45,4 +45,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0

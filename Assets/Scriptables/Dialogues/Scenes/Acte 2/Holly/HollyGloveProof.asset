@@ -27,7 +27,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: '!'
+  - text: Oh !
     speaker: {fileID: 11400000, guid: 3c6c8bac783cea24b9d0ba5ffc24e629, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Ce gant m\u2019appartient effectivement ... "
+  - text: "Ce gant m\u2019appartient effectivement... "
     speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
     destroyEvidence: 0
   - text: "Je voulais m\u2019entretenir avec lui en priv\xE9. Vous savez, \xEAtre
       une femme dans ce business est \xE0 double tranchant, la moindre rumeur douteuse
-      et c\u2019est ma carri\xE8re enti\xE8re que je vois s\u2019envol\xE9..."
+      et c\u2019est ma carri\xE8re enti\xE8re que je vois s\u2019envoler..."
     speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Mais pour en revenir \xE0 ce qui vous importe, Je suis all\xE9e \xE0 son
+  - text: "Mais pour en revenir \xE0 ce qui vous importe, je suis all\xE9e \xE0 son
       bureau vers 19h20. Je l\u2019ai crois\xE9 donc nous nous sommes dirig\xE9s
       dans ses appartements car cette journaliste allait venir. "
     speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
@@ -123,7 +123,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "J'avais retir\xE9 mes gants ... j\u2019ai s\xFBrement d\xFB en oublier
+  - text: "J'avais retir\xE9 mes gants... J\u2019ai s\xFBrement d\xFB en oublier
       un.  "
     speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
     collectedCondition: 
@@ -152,8 +152,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Oui, mais ne vous imaginez rien ! Notre fantaisie appartient au pass\xE9
-      d\xE9sormais. Et bien s\xFBr, je vous demande de ne pas \xE9bruiter cette histoire
-      ..."
+      d\xE9sormais. Et bien s\xFBr, je vous demande de ne pas \xE9bruiter cette histoire..."
     speaker: {fileID: 11400000, guid: cbea4de213129d34a9ca9a2c5bfcff3c, type: 2}
     collectedCondition: Glove
     testimony: {fileID: 11400000, guid: 54ab3213cca2cf9448314cb7e1393aaa, type: 2}
@@ -166,7 +165,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: Je devrais peu etre Rapeller M. Warner apres
+  - text: "(Je devrais peut-\xEAtre rappeler M. Warner apr\xE8s.)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -185,4 +184,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0

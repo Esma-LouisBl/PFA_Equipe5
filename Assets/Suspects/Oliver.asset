@@ -15,5 +15,4 @@ MonoBehaviour:
   SuspectSprite: {fileID: 21300000, guid: baede525eb6b5334aa37476db1275939, type: 3}
   SuspectNumber: 003
   Informations: Oliver - Journaliste
-  Alibi: Fuyait vers un monde meilleur, probablement loin de toute forme de prog
-    OSKOUR
+  Alibi: "\xC9tait en train de chercher un nouveau scoop durant la soir\xE9e."

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: OliverTestimonies_Q2
   m_EditorClassIdentifier: 
   Name: Oliver Scott
-  Description: "M.Scott \xE9coutait \xE0 la porte de g\xE9rant peu avant le meurtre "
+  Description: "M. Scott \xE9coutait \xE0 la porte du g\xE9rant peu avant le meurtre
+    ."

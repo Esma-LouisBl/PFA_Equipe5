@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_NoEvidence
   m_EditorClassIdentifier: 
   sentences:
-  - text: "On n'a rien retrouv\xE9 lui appartement sur la sc\xE8ne de crime "
+  - text: "On n'a rien retrouv\xE9 lui appartement sur la sc\xE8ne de crime ."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -21,10 +21,13 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "On a retrouv\xE9 un de ses gants sur la sc\xE8ne de crime, je te l\u2019ai
-      m\xEAme ramen\xE9 "
+      m\xEAme ramen\xE9."
     speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -32,9 +35,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "A oui c\u2019est vrai  "
+    destroyEvidence: 0
+  - text: Effectivement.
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -42,9 +48,12 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: 'Prend le temp de relire les notes que tu as prise '
+    destroyEvidence: 0
+  - text: Prends le temps de relire les notes que tu as pris.
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -52,9 +61,17 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: d3d6a641f010ef840aa7d86310dc44c0, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

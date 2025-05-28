@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SecurityCall
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u2026 Ici le service s\xE9curit\xE9. "
+  - text: "\u2026Ici le service s\xE9curit\xE9. "
     speaker: {fileID: 11400000, guid: d6cf5ce6282ef48409ae37e87c7d34ae, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 1
+    destroyEvidence: 0
   - text: 'Bonjour, je suis le majordome Edwin Justice. '
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -31,8 +34,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: 'Ah enfin, je pensais que vous ne nous appelleriez pas.  '
     speaker: {fileID: 11400000, guid: d6cf5ce6282ef48409ae37e87c7d34ae, type: 2}
     collectedCondition: 
@@ -41,8 +47,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "D\xE9sol\xE9 d\u2019avoir tard\xE9. Que vouliez-vous me dire ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -51,8 +60,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Eh bien, nous \xE9tions plusieurs \xE0 surveiller la soir\xE9e comme le
       stipulait le contrat. On a aper\xE7u une personne \xE9trange dans la soir\xE9e. "
     speaker: {fileID: 11400000, guid: d6cf5ce6282ef48409ae37e87c7d34ae, type: 2}
@@ -62,8 +74,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Pouvez-vous me d\xE9crire son comportement ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -72,8 +87,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "En fait, il servait les invit\xE9s en alcool puis restait immobile dans
       un coin de la salle et partait de temps en temps."
     speaker: {fileID: 11400000, guid: d6cf5ce6282ef48409ae37e87c7d34ae, type: 2}
@@ -83,8 +101,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "\u2026Est-ce-que cette personne portait un costume et un n\u0153ud papillon
       ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -94,8 +115,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Oui exactement, vous savez de qui il s\u2019agit ? "
     speaker: {fileID: 11400000, guid: d6cf5ce6282ef48409ae37e87c7d34ae, type: 2}
     collectedCondition: 
@@ -104,8 +128,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Il s'agit de moi-m\xEAme. Je servais les invit\xE9s et j\u2019attendais
       leurs demandes."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -115,8 +142,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Ah\u202F! Dans ce cas, je pense que vous avez \xE9t\xE9 le plus suspect
       de tous les individus de la soir\xE9e. C\u2019est tout ce que nous avons remarqu\xE9. "
     speaker: {fileID: 11400000, guid: d6cf5ce6282ef48409ae37e87c7d34ae, type: 2}
@@ -126,8 +156,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Je vois, merci quand m\xEAme. Je suis navr\xE9 de ne pouvoir vous accorder
       plus de temps mais celui-ci me presse. Si vous avez de nouvelles informations,
       n\u2019h\xE9sitez pas \xE0 m\u2019appeler.  "
@@ -138,9 +171,17 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: e22a8c6da86b7594db23e3ae1b48600e, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

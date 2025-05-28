@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EndAct2
   m_EditorClassIdentifier: 
   sentences:
-  - text: "(Je pense avoir recolt\xE9 assez d'information, je devrais rapeller l'inspecteur)"
+  - text: "(Je pense avoir recolt\xE9 assez d'informations, je devrais rappeler l'inspecteur.)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: ACT3
     testimony: {fileID: 0}
@@ -32,3 +32,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 1
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

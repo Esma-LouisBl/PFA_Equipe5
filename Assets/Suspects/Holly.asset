@@ -15,4 +15,4 @@ MonoBehaviour:
   SuspectSprite: {fileID: 21300000, guid: 33b4bdf1a28d2e3419b4560e13346c6f, type: 3}
   SuspectNumber: 002
   Informations: "Holly Marie - C\xE9l\xE8bre chanteuse"
-  Alibi: "\xE0 chant\xE9 lors de la soir\xE9"
+  Alibi: "A chant\xE9 lors de la soir\xE9e"

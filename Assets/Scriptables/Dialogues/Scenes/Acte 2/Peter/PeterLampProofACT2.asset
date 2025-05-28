@@ -27,7 +27,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "J\u2019ai cette lampe depuis plusieurs ann\xE9es, c'est une trag\xE9die
-      de la voir dans un tel \xE9tat ... "
+      de la voir dans un tel \xE9tat... "
     speaker: {fileID: 11400000, guid: 01c793bd5695150458beb223b0ca19d1, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -46,3 +46,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

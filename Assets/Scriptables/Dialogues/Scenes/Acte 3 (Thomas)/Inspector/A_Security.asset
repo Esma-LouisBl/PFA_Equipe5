@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Tu es assez contradictoire, je croyais que tu avais \xE9t\xE9 le seul
       \xE0 \xEAtre tr\xE8s suspect durant la soir\xE9e ? "
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
@@ -32,10 +35,13 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "Tu \xE9tais oblig\xE9 \xE0 appuyer autant sur les termes \u201Ctr\xE8s
-      suspect\u201D ? "
+    destroyEvidence: 0
+  - text: "Tu \xE9tais oblig\xE9 d'appuyer autant sur les termes \u201Ctr\xE8s suspect\u201D
+      ? "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -43,20 +49,30 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
-  - text: "(En tout cas il a raison, j\u2019ai d\xFB me tromper dans mon raisonnement
-      ...)"
-    speaker: {fileID: 11400000, guid: 0d691f116a18cfd43b72ba0e77721004, type: 2}
+    destroyEvidence: 0
+  - text: "(En tout cas il a raison, j\u2019ai d\xFB me tromper dans mon raisonnement...)"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: d126d54a7a42cb741be5fcbb08a76353, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

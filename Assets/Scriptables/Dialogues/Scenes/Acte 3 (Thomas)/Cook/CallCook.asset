@@ -48,11 +48,11 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 11400000, guid: a2b4d97fa2df7e54f9ec50fa041980fb, type: 2}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "A vrai dire lorsque j\u2019ai vid\xE9 les poubelles ce matin, j\u2019ai
+  - text: "\xC0 vrai dire lorsque j\u2019ai vid\xE9 les poubelles ce matin, j\u2019ai
       trouv\xE9 un mouchoir tach\xE9 de sang. Il y avait un coupe papier dedans. "
     speaker: {fileID: 11400000, guid: 647b8e1df6227a94cac2eff8a4f8e80d, type: 2}
     collectedCondition: 
@@ -93,7 +93,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Parfait, je vous remercie, bonne journ\xE9e"
+  - text: "Parfait, je vous remercie, bonne journ\xE9e."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -127,4 +127,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0
