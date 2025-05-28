@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d0401e44afab541a2f29d6180c6f1a, type: 3}
   m_Name: Tuto
   m_EditorClassIdentifier: 
-  Name: Temoignage
-  Description: Vous ressemblerez toutes les informations importantes ici
+  Name: "T\xE9moignages"
+  Description: Vous rassemblerez toutes les informations importantes ici

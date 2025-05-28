@@ -182,3 +182,4 @@ MonoBehaviour:
   callInspector: 0
   endInspector: 0
   blackScreen: 0
+  theEnd: 1

@@ -26,8 +26,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "A vrai dire pas vraiment, j\u2019ai tent\xE9 d\u2019avoir la famille de
-      la victime mais je n\u2019ai pu \xE9changer qu\u2019avec une de leur domestique."
+  - text: "\xC0 vrai dire pas vraiment, j\u2019ai tent\xE9 d\u2019avoir la famille
+      de la victime mais je n\u2019ai pu \xE9changer qu\u2019avec une de leur domestique."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -86,3 +86,5 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
+  theEnd: 0

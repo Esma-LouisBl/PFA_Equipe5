@@ -26,7 +26,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Mais \xE7a serait \xE9trange, plusieurs t\xE9moins ont \xE9t\xE9 accueilli
+  - text: "Mais \xE7a serait \xE9trange, plusieurs t\xE9moins ont \xE9t\xE9 accueillis
       par Monsieur Warner \xE0 cette heure-ci. Pourquoi aurait-il propos\xE9 le rendez-vous
       lorsque la soir\xE9e commen\xE7ait\u202F? "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
@@ -37,7 +37,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 11400000, guid: ead5d3f16c602a5469f48705e346fff9, type: 2}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -50,11 +50,11 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 11400000, guid: 97d86ff07bccfd04c8ba5fb8fee1eb02, type: 2}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Majordome et \xE7a se trompe dans les horaires \u2026  "
+  - text: "Majordome et \xE7a se trompe dans les horaires\u2026 "
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    photoFrame: {fileID: 11400000, guid: 314d888db71073340bbe9c66a5271781, type: 2}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -73,3 +73,5 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
+  theEnd: 0

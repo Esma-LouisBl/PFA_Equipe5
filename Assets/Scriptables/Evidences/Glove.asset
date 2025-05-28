@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10665b98bf475c343ac5e31e9589229e, type: 3}
   m_Name: Glove
   m_EditorClassIdentifier: 
-  Name: Long gant
+  Name: Gant
   EvidenceSprite: {fileID: 21300000, guid: 3c99219c62526b340bf39805728fe918, type: 3}
   EvidenceGO: {fileID: 919132149155446097, guid: 3c3836b59ab40a245aa5aea19f460bb9, type: 3}
   Informations: "Retrouv\xE9 pr\xE8s du corps de la victime. Il est inscrit les initiales

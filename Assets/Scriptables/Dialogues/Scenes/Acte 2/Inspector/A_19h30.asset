@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: A_19h30
   m_EditorClassIdentifier: 
   sentences:
-  - text: "19h30. Cependant apr\xE8s s\u2019\xEAtre chang\xE9, il l'a trouv\xE9 sans
-      vie"
+  - text: "19h30. Cependant apr\xE8s s\u2019\xEAtre chang\xE9, il l'a trouv\xE9e
+      sans vie."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -68,7 +68,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Oui, j\u2019ai aussi ressenti une forte odeur de caf\xE9 dans le bureau.
-      Est-ce-que M.Warner boit r\xE9guli\xE8rement du caf\xE9 dans son bureau ? "
+      Est-ce que M. Warner boit r\xE9guli\xE8rement du caf\xE9 dans son bureau ? "
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "\xC9trange car l\u2019odeur de caf\xE9 \xE9tait vraiment forte sur la
-      sc\xE8ne du crime \u2026"
+      sc\xE8ne du crime\u2026"
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Mais j\u2019ai gard\xE9 le meilleur pour fin\u202F! J\u2019ai trouv\xE9
-      un gant sur la sc\xE8ne de crime avec les initiales H.M"
+      un gant sur la sc\xE8ne de crime avec les initiales H.M."
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Figure-toi que j\u2019ai fouill\xE9 cette piste et je suis remont\xE9
-      \xE0 une certaine Holly Marie qui \xE9tait au manoir au moment des faits. "
+      \xE0 une certaine Holly Marie qui \xE9tait au manoir au moment des faits."
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -149,8 +149,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Parfait, avec tout \xE7a je pense pouvoir r\xE9interroger Monsieur Warner
-      ainsi que Madame Marie pour en savoir plus. "
+  - text: "Parfait, avec tout \xE7a je pense pouvoir interroger de nouveau Monsieur
+      Warner ainsi que Madame Marie pour en savoir plus. "
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Je vais aussi appeler les servantes, on pourra peut-\xEAtre en tirer quelque
-      chose. "
+      chose."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -205,7 +205,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 1
     destroyEvidence: 0
-  - text: "(Bon j\u2019ai beaucoup de personnes \xE0 interroger ...)"
+  - text: "(Bon, j\u2019ai beaucoup de personnes \xE0 interroger... )"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -224,3 +224,5 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 1
+  blackScreen: 0
+  theEnd: 0

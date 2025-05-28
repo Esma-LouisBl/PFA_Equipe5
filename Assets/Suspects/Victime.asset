@@ -15,4 +15,4 @@ MonoBehaviour:
   SuspectSprite: {fileID: 21300000, guid: 7f49c0c2b9ef6c34f88a76f70e998ee0, type: 3}
   SuspectNumber: Victime
   Informations: Lawrence Brown - Journaliste
-  Alibi: "A \xE9t\xE9 tuer vers 19h30"
+  Alibi: "\xC0 \xE9t\xE9 tu\xE9e vers 19h30"

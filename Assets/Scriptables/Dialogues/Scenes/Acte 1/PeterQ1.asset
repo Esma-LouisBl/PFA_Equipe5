@@ -21,8 +21,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "En d\xE9but de soir\xE9e, je m\u2019occupais d\u2019accueillir les invit\xE9s
       pour l\u2019inauguration du nouveau b\xE2timent de mon entreprise, ainsi que
       de discuter avec eux dans le salon."
@@ -33,8 +36,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Je crois qu\u2019il \xE9tait 19h00 quand Madame Brown est venue me voir
       pour me proposer d\u2019\xE9crire une interview. Elle \xE9tait journaliste
       pour le Times, un journal auquel nous sommes affili\xE9s. "
@@ -45,8 +51,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Je lui ai donc propos\xE9 de me rejoindre dans mon bureau vers 19h30 pour
       la r\xE9aliser dans un espace calme et \xE0 l'abri des \xE9coutes indiscr\xE8tes.  "
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
@@ -56,8 +65,11 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "Mais avant que je n\u2019arrive, un convive a malheureusement renvers\xE9
       son verre sur ma veste et j\u2019ai d\xFB d\u2019abord passer par ma chambre
       pour me changer. "
@@ -68,10 +80,13 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   - text: "La suite vous la connaissez... Lorsque je suis revenu, j\u2019ai trouv\xE9
-      Madame Brown sans vie au sol."
+      Madame Brown sans vie, allong\xE9e sur le sol."
     speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -79,9 +94,16 @@ MonoBehaviour:
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
+    destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: c44557dbfa2ef594db116b2e087d890e, type: 2}
   conditionScene: {fileID: 0}
   conditionToUnlock: []
+  callInspector: 0
+  endInspector: 0
+  blackScreen: 0
+  theEnd: 0

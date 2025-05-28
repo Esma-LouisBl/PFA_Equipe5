@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10665b98bf475c343ac5e31e9589229e, type: 3}
   m_Name: Tuto
   m_EditorClassIdentifier: 
-  Name: Evidences
-  EvidenceSprite: {fileID: 0}
+  Name: Preuves
+  EvidenceSprite: {fileID: 21300000, guid: 4a6129e32bed78641b454015dcf3eefd, type: 3}
   EvidenceGO: {fileID: 919132149155446097, guid: 822f5b63a9bb35348826a0eb5c4e8564, type: 3}
-  Informations: Vous ressemblerez toutes Vos preuves ici
+  Informations: Vous ressemblerez toutes vos preuves ici
   ReactionPeter: {fileID: 11400000, guid: 0f786be6cdd188d44882b7dd6fdd2104, type: 2}
   ReactionHolly: {fileID: 11400000, guid: b59aea81c3bd189419a348312e348f66, type: 2}
   ReactionOliver: {fileID: 11400000, guid: 09734bb0697965142a5e3281e1c81105, type: 2}

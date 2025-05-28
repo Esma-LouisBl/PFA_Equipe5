@@ -40,7 +40,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: Je pourrais aussi me diriger vers le tableau pour rassembler mes informations
+  - text: Je pourrais aussi me diriger vers le tableau pour rassembler mes informations.
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -59,3 +59,5 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  blackScreen: 0
+  theEnd: 0

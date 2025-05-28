@@ -20,7 +20,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: af01ad19b1750ea4dbe674ab90fe0d8f, type: 2}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 11400000, guid: 5377f82c2a34f764f9f128ff72aa01ce, type: 2}
     showSprite: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: dd0599129b2beb24cbc036fdcabba29c, type: 2}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: 4e1e3fb9fe567c848b5e748dbc4291f8, type: 2}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
-    evidence: {fileID: 0}
+    evidence: {fileID: 11400000, guid: 422d2131e896603498fc65c811e19688, type: 2}
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
@@ -139,3 +139,4 @@ MonoBehaviour:
   callInspector: 0
   endInspector: 0
   blackScreen: 0
+  theEnd: 0
