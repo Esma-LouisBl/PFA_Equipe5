@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Preuve_Scott_Mouchoir
   m_EditorClassIdentifier: 
   sentences:
-  - text: "On a retrouv\xE9 un mouchoir qui lui a surement appartenue"
+  - text: "On a retrouv\xE9 un mouchoir qui lui a s\xFBrement appartenu."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -39,7 +39,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "j\u2019ai un doute maintenant"
+  - text: "J\u2019ai un doute maintenant."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Ce n\u2019est rien, reprend tes notes si tu as un doute "
+  - text: "Ce n\u2019est rien, reprends tes notes si tu as un doute."
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -71,3 +71,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

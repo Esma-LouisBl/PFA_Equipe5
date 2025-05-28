@@ -26,7 +26,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "\u2026 Nous sommes sur la m\xEAme longueur d\u2019onde alors, j\u2019ai
+  - text: "\u2026Nous sommes sur la m\xEAme longueur d\u2019onde alors, j\u2019ai
       plusieurs doutes sur lui aussi."
     speaker: {fileID: 11400000, guid: a70d6988c421ce943bbf9815b7ae3f56, type: 2}
     collectedCondition: 
@@ -59,4 +59,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0

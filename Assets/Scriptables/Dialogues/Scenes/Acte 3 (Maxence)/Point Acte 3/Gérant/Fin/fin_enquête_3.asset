@@ -67,7 +67,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Pas du tout. Il nie tout en bloc. Mais avec les preuves et les t\xE9moignages\u2026
-      il risque bien la perp\xE9tuit\xE9."
+      Il risque bien la perp\xE9tuit\xE9."
     speaker: {fileID: 11400000, guid: b2b59167c301014478be887406d38a18, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Et s\u2019il n\u2019y parvient pas\u2026 eh bien, peut-\xEAtre serons-nous
+  - text: "Et s\u2019il n\u2019y parvient pas\u2026 Eh bien, peut-\xEAtre serons-nous
       envoy\xE9s servir les autres branches de la famille. Qui sait ce que l\u2019avenir
       nous r\xE9serve ?"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -136,7 +136,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Enfin\u2026 ne parlons plus de cette affaire. C\u2019est termin\xE9."
+  - text: "Enfin\u2026 Ne parlons plus de cette affaire. C\u2019est termin\xE9."
     speaker: {fileID: 11400000, guid: 91c12d8a854297743ae6bd570bce8650, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -181,5 +181,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
   theEnd: 1

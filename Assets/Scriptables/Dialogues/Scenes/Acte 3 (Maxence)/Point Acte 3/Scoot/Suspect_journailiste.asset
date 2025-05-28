@@ -27,7 +27,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "Scott ? C\u2019est vrai qu\u2019il semblait avoir une sacr\xE9e rivalit\xE9
-      avec notre victime ..."
+      avec notre victime..."
     speaker: {fileID: 11400000, guid: 94f552401d853464eba92c33f32b25fd, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -59,3 +59,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

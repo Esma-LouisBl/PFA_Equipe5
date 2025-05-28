@@ -22,7 +22,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
@@ -49,21 +49,21 @@ MonoBehaviour:
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
   - text: "Oui, il m\u2019avait demand\xE9 une interview un peu apr\xE8s Madame Brown
       mais j\u2019\xE9tais d\xE9j\xE0 pris pour la soir\xE9e."
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
-    collectedCondition: 
+    collectedCondition: Warner3
     testimony: {fileID: 11400000, guid: 394dc623a8447034faaf0a4e719b0040, type: 2}
     suspect: {fileID: 0}
     phoneContact: {fileID: 0}
     contactToRemove: {fileID: 0}
     evidence: {fileID: 0}
     inspectorSceneToCollect: {fileID: 0}
-    PhotoFrame: {fileID: 0}
+    photoFrame: {fileID: 0}
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 1
@@ -73,3 +73,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 6909ae0ebb6115540a2746f89f634890, type: 2}
   - text: L'entreprise
     nextScene: {fileID: 11400000, guid: c98c3687536c37e45beef9b7fd55c69f, type: 2}
-  - text: lien avec le journaliste
+  - text: Lien avec le journaliste
     nextScene: {fileID: 11400000, guid: 466963865ec17e6408c521480f6ab95c, type: 2}
   - text: "Pr\xE9senter les preuves"
     nextScene: {fileID: 11400000, guid: 2ca92899a19f5a44897fb86f01bda1b0, type: 2}

@@ -24,7 +24,7 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 11400000, guid: 93a978923c2003b4eb4de04ea985dcd8, type: 2}
     photoFrame: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
+    hideSprite: 0
     destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 0}
@@ -32,3 +32,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 1
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

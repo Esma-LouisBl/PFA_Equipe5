@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: aucune_preuve
   m_EditorClassIdentifier: 
   sentences:
-  - text: "J'ai d\xFB me tromper de suspect "
+  - text: "J'ai d\xFB me tromper de suspect."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -26,7 +26,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "ce n\u2019est rien, reprend tes notes si tu as un doute"
+  - text: "Ce n\u2019est rien, reprends tes notes si tu as un doute."
     speaker: {fileID: 11400000, guid: e7a68b2376e53284bb4ce3103615c962, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -45,3 +45,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

@@ -161,7 +161,7 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
-    hideSprite: 0
+    hideSprite: 1
     destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: b2f694627a176b94595f9b7142ec6e20, type: 2}

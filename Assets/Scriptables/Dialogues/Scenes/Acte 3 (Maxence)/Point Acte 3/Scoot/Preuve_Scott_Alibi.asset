@@ -15,7 +15,7 @@ MonoBehaviour:
   sentences:
   - text: "D\u2019apr\xE8s son alibi, il \xE9tait devant la porte du g\xE9rant peu
       avant le meurtre. Il aurait tr\xE8s bien pu la tuer puis retourner dans la
-      grande salle"
+      grande salle."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -28,8 +28,8 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Non impossible car des invit\xE9s mon dit avoir vu le journaliste dans
-      la soir\xE9e au moment des faits"
+  - text: "Non impossible car des invit\xE9s m'ont dit avoir vu le journaliste dans
+      la soir\xE9e au moment des faits."
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -42,7 +42,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "Je n\u2019avais pas cette information, je vais revoir mon r\xE9sonnement"
+  - text: "Je n\u2019avais pas cette information, je vais revoir mon raisonnement."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -61,3 +61,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

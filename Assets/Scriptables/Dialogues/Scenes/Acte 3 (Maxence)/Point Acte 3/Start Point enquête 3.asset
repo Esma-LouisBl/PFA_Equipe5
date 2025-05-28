@@ -29,7 +29,7 @@ MonoBehaviour:
     destroyEvidence: 0
   - text: "Peut-\xEAtre bien. J\u2019ai pu discuter avec le journaliste, il m'a avou\xE9
       avoir tent\xE9 d\u2019\xE9couter la conversation entre Monsieur Warner et Madame
-      Brown "
+      Brown."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -83,7 +83,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "J'ai pu obtenir beaucoup d\u2019informations suppl\xE9mentaires et apr\xE8s
-      avoir r\xE9fl\xE9chi et v\xE9rifier mes th\xE9ories, je pense avoir d\xE9couvert
+      avoir r\xE9fl\xE9chi et v\xE9rifi\xE9 mes th\xE9ories, je pense avoir d\xE9couvert
       le coupable de cette affaire."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
@@ -110,7 +110,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: " ... Mais j\u2019ai du mal \xE0 y croire. Je t\u2019\xE9coute alors, qui
+  - text: " ...Mais j\u2019ai du mal \xE0 y croire. Je t\u2019\xE9coute alors, qui
       est le meurtrier\u202F?"
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
@@ -130,4 +130,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0

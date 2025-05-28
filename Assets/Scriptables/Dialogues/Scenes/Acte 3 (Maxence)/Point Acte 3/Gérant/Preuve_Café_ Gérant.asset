@@ -83,7 +83,7 @@ MonoBehaviour:
     hideSprite: 0
     destroyEvidence: 0
   - text: "(D\xE9cid\xE9ment, je suis un peu rouill\xE9. Je devrais revoir les preuves
-      obtenues \u2026)"
+      obtenues\u2026)"
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -102,3 +102,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

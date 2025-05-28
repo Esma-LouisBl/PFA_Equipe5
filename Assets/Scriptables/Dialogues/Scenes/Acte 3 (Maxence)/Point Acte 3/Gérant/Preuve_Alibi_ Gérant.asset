@@ -27,7 +27,7 @@ MonoBehaviour:
     showSprite: 0
     hideSprite: 0
     destroyEvidence: 0
-  - text: "C\u2019est vrai et puis, il est la personne qui l\u2019a invit\xE9 dans
+  - text: "C\u2019est vrai et puis, il est la personne qui l\u2019a invit\xE9e dans
       son bureau."
     speaker: {fileID: 11400000, guid: 21b87153fb3e5f94c809d9a129d0e1ee, type: 2}
     collectedCondition: 
@@ -202,3 +202,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

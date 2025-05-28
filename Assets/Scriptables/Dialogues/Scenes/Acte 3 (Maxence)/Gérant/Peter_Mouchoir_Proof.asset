@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Peter_Mouchoir_Proof
   m_EditorClassIdentifier: 
   sentences:
-  - text: "Oh quel beau tissu, si on oublie les \xE9claboussures de sang \u2026"
+  - text: "Oh quel beau tissu, si on oublie les \xE9claboussures de sang\u2026"
     speaker: {fileID: 11400000, guid: d2830c21c628c0942b64963ab35955b5, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
     destroyEvidence: 0
   - text: "Eh bien je reconnais ces motifs. Il y a de grandes chances qu\u2019il
       provienne de Liberty & Co, leurs mouchoirs sont tr\xE8s populaires de nos jours
-      et de bonnes qualit\xE9s."
+      et de bonne qualit\xE9."
     speaker: {fileID: 11400000, guid: 80fc6151c1a269d4fbe227d2353da448, type: 2}
     collectedCondition: Tissue
     testimony: {fileID: 0}
@@ -87,3 +87,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
+  blackScreen: 0
+  theEnd: 0

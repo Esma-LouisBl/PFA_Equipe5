@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "fin_enqu\xEAte_2"
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\xAB \u2026 Le coupable serait Peter Warner, l\u2019organisateur de la
+  - text: "\xAB \u2026Le coupable serait Peter Warner, l\u2019organisateur de la
       soir\xE9e. Il a \xE9t\xE9 arr\xEAt\xE9 ce matin. \xBB"
     speaker: {fileID: 11400000, guid: 7f24d978b6e625e48ba9626a1a59dcc2, type: 2}
     collectedCondition: 
@@ -28,9 +28,8 @@ MonoBehaviour:
     hideSprite: 1
     destroyEvidence: 0
   - text: "(Monsieur Warner, arr\xEAt\xE9... Quelle chute. On nous a tous cong\xE9di\xE9s,
-      en attendant que la famille d\xE9cide de l\u2019avenir de l\u2019entreprise.
-      )"
-    speaker: {fileID: 11400000, guid: 0d691f116a18cfd43b72ba0e77721004, type: 2}
+      en attendant que la famille d\xE9cide de l\u2019avenir de l\u2019entreprise.)"
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -44,7 +43,7 @@ MonoBehaviour:
     destroyEvidence: 0
   - text: "(J\u2019ai vou\xE9 ma loyaut\xE9 \xE0 un homme que j\u2019ai d\xFB livrer
       aux autorit\xE9s... \xC9tait-ce une erreur de vouloir tourner la page ?)"
-    speaker: {fileID: 11400000, guid: 0d691f116a18cfd43b72ba0e77721004, type: 2}
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
     collectedCondition: 
     testimony: {fileID: 0}
     suspect: {fileID: 0}
@@ -54,7 +53,7 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
+    hideSprite: 0
     destroyEvidence: 0
   - text: Toc-toc
     speaker: {fileID: 11400000, guid: 0d691f116a18cfd43b72ba0e77721004, type: 2}
@@ -67,7 +66,7 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
+    hideSprite: 0
     destroyEvidence: 0
   - text: "Edwin ? C\u2019est moi. Tu es l\xE0 ?"
     speaker: {fileID: 11400000, guid: f2e3f60cc6c47c141970981cc997e513, type: 2}
@@ -80,7 +79,7 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
+    hideSprite: 0
     destroyEvidence: 0
   - text: "J\u2019arrive."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -93,7 +92,7 @@ MonoBehaviour:
     inspectorSceneToCollect: {fileID: 0}
     photoFrame: {fileID: 0}
     showSprite: 0
-    hideSprite: 1
+    hideSprite: 0
     destroyEvidence: 0
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 28c799fa6d72e3b4eaa1510d7bc4a0fd, type: 2}
@@ -101,4 +100,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
+  theEnd: 0
