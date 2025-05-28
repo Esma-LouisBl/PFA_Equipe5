@@ -13,6 +13,19 @@ MonoBehaviour:
   m_Name: Accept
   m_EditorClassIdentifier: 
   sentences:
+  - text: Non !
+    speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
+    collectedCondition: 
+    testimony: {fileID: 0}
+    suspect: {fileID: 0}
+    phoneContact: {fileID: 0}
+    contactToRemove: {fileID: 0}
+    evidence: {fileID: 0}
+    inspectorSceneToCollect: {fileID: 0}
+    photoFrame: {fileID: 0}
+    showSprite: 0
+    hideSprite: 0
+    destroyEvidence: 0
   - text: "Cela ne me ressemble pas de revenir en arri\xE8re. Je suis un homme de
       parole et j\u2019irai jusqu\u2019au bout."
     speaker: {fileID: 11400000, guid: 10e726bdc8934bb42b9ea78a54dd1aa3, type: 2}
@@ -59,5 +72,6 @@ MonoBehaviour:
   conditionToUnlock: []
   callInspector: 0
   endInspector: 0
+  somebodyAtDesk: 0
   blackScreen: 0
   theEnd: 0
